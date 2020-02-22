@@ -1,6 +1,6 @@
-update=Sun Feb 16 22:50:02 2020
+update=Sa 22 Feb 2020 13:51:46 UTC
 version=1
-last_client=eeschema
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -289,7 +289,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [schematic_editor]
 version=1
-PageLayoutDescrFile=/home/user/Projects/ProMicro/template/template.kicad_wks
+PageLayoutDescrFile=/home/user/Projects/ProMicro/_template/ProMicro_template.kicad_wks
 PlotDirectoryName=/output/schematic/pdf/
 SubpartIdSeparator=0
 SubpartFirstId=65

@@ -12,11 +12,11 @@
   (page A4)
   (title_block
     (title ProMicro_SX1276)
-    (date 2020-02-12)
+    (date 2020-02-22)
     (rev v1.0)
     (company https://twitter.com/nerdyscout84)
     (comment 1 "CERN Open Hardware Licence v1.2")
-    (comment 2 https://github.com/nerdyscout/ProMicro/SX1276)
+    (comment 2 https://github.com/nerdyscout/ProMicro_SX1276)
   )
 
   (layers
