@@ -70,7 +70,7 @@ to be done
 <p id="BOM_table"></p>
 -->
 
-[interactive BOM](https://nerdyscout.github.io/ProMicro/SX1276/docs/bom/interactive.html)
+[interactive BOM](https://nerdyscout.github.io/ProMicro_SX1276/docs/bom/index.html)
 
 <!--
 ### external
