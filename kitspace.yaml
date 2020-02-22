@@ -1,9 +1,9 @@
 site: https://nerdyscout.github.io/ProMicro_SX1276
 summary: LoRaWAN Transceiver Modul with 868Mhz
-readme: https://github.com/nerdyscout/ProMicro_SX1276/README.md 
-bom: https://github.com/nerdyscout/ProMicro_SX1276/docs/ProMicro_SX1276_bom.csv
+readme: README.md 
+bom: docs/bom/ProMicro_SX1276_bom.csv
 eda:
   type: kicad
-  pcb: https://github.com/nerdyscout/ProMicro_SX1276/SX1276.kicad_pcb
-gerbers: https://github.com/nerdyscout/ProMicro_SX1276/gerber
+  pcb: ProMicro_SX1276.kicad_pcb
+gerbers: gerber
 color: green
