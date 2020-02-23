@@ -15,23 +15,23 @@ to be done
 ### Schematic
 [![ProMicro_Serial_schematic](docs/ProMicro_Serial_schematic.svg)](docs/ProMicro_Serial_schematic.pdf)
 
-<!--
-to be done
 ### Layout
-[![ProMicro_Serial_layout_front](docs/ProMicro_Serial_layout_front.svg)](docs/ProMicro_Serial_layout_front.pdf)
-[![ProMicro_Serial_layout_bottom](docs/ProMicro_Serial_layout_bottom.svg)](docs/ProMicro_Serial_layout_bottom.pdf)
+<!--
+<a href="docs/ProMicro_Serial_layout_front.pdf" alt="ProMicro_Serial_layout_front"><img src="docs/ProMicro_Serial_layout_front.svg" width=20%></a>
+<a href="docs/ProMicro_Serial_layout_bottom.pdf" alt="ProMicro_Serial_layout_bottom"><img src="docs/ProMicro_Serial_layout_bottom.svg" width=20%></a>
 -->
+<img src="docs/ProMicro_Serial_layout_front.svg" width=20%>
+<img src="docs/ProMicro_Serial_layout_bottom.svg" width=20%>
 
 ### Bill of Materials
-
 <script src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
 <script type='text/javascript'>
+<!--
     $.ajax({
         url: 'docs/bom/ProMicro_Serial_bom.csv',
         type: 'GET',
         dataType: 'text',
     }).done(createTable);
-
     function createTable(data) {
         var allRows = data.split(/\r?\n|\r/);
         var table = '\n<table>\n';
@@ -42,9 +42,7 @@ to be done
             } else {
                 table += '    <tr>\n';
             }
-
             var rowCells = allRows[singleRow].split(',');
-
             for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
                 if (singleRow === 0) {
                     table += '      <th>'+rowCells[rowCell]+'</th>\n';
@@ -60,16 +58,15 @@ to be done
                 table += '    </tr>\n';
             }
         }
-
         table += '  </tbody>\n';
         table += '</table>\n';
         table = table.split('"').join('');
         document.getElementById("BOM_table").innerHTML = table;
     }
+-->
 </script>
+<noscript>can be found in `docs/bom/ProMicro_*.csv` or as [interactive BOM](https://nerdyscout.github.io/ProMicro_Serial/docs/bom/index.html)</noscript>
 <p id="BOM_table"></p>
-
-or as [interactive BOM](https://nerdyscout.github.io/ProMicro_Serial/docs/bom/index.html)
 
 <!--
 ### external
