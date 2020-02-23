@@ -1,0 +1,97 @@
+name: kicad-tools
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v1
+      id:   cache
+      with:
+        path: /var/cache
+        key: ${{ runner.os }}-kicad
+
+    - name: install git
+      run:  |
+            sudo apt install git
+            git config --global user.email ""
+            git config --global user.name "bot"
+
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '2.7'
+    - run:  pip install svgwrite 
+
+    - name: install gerber-to-svg
+      run:  sudo npm install -g @tracespace/cli
+
+    - name: install kicost
+      run:  pip install kicost
+
+    - name: clone nerdyscout/kicad-tools
+      if:   steps.cache.outputs.cache-hit != 'true'
+      run:  |
+            git clone https://github.com/nerdyscout/kicad-tools.git /opt/kicad-tools
+            cd /opt/kicad-tools
+            git checkout origin/ProMicro
+            git submodule update --init
+            make
+
+    - name: make board
+      run:  |
+            cp /opt/kicad-tools/etc/Makefile ./Makefile
+            make debug
+            make gerbers
+            make schematic
+            make bom
+            make interactive-bom
+
+    - name: run gerber2svg
+      run:  |
+            cd out/ProMicro_GPS-heads/master/layout/gerber/
+            tracespace -L *.gbr
+
+    - name: move result data into clean folder
+      run:  |
+            rm -r -f gerber
+            mkdir gerber
+            rm -r -f docs
+            mkdir docs
+            mkdir docs/bom
+            sudo mv -u out/ProMicro_GPS-heads/master/schematic/svg/ProMicro_GPS.svg docs/ProMicro_GPS_schematic.svg
+            sudo mv -u out/ProMicro_GPS-heads/master/schematic/pdf/* docs/ProMicro_GPS_schematic.pdf
+            sudo mv -u out/ProMicro_GPS-heads/master/bom/interactive/ibom.html docs/bom/index.html
+            sudo mv -u out/ProMicro_GPS-heads/master/bom/bom.csv docs/bom/ProMicro_GPS_bom.csv
+            sudo mv -u out/ProMicro_GPS-heads/master/layout/gerber/* gerber/
+            sudo mv -u gerber/ProMicro*top.svg docs/ProMicro_GPS_layout_front.svg
+            sudo mv -u gerber/ProMicro*bottom.svg docs/ProMicro_GPS_layout_bottom.svg
+
+    - name: run kicost
+      run:  |
+            kicost -i ProMicro_*.xml -o docs/bom/ProMicro_GPS_kicost.xlsx -w -q --currency EUR
+            rm ProMicro_*.xml
+
+    - name: clean folder
+      run:  |
+            sudo rm -r -f out
+            rm Makefile
+
+    - name: commit results
+      run:  |
+            git stage .
+            git commit -m "update by github actions"
+
+    - name: push results
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}

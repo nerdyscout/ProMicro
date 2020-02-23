@@ -1,0 +1,9 @@
+site: https://nerdyscout.github.io/ProMicro_GPS
+summary: GPS receiver
+readme: README.md 
+bom: docs/bom/ProMicro_GPS_bom.csv
+eda:
+  type: kicad
+  pcb: ProMicro_GPS.kicad_pcb
+gerbers: gerber
+color: green
