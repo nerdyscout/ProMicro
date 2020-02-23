@@ -15,19 +15,20 @@ to be done
 ### Schematic
 [![ProMicro_SX1276_schematic](docs/ProMicro_SX1276_schematic.svg)](docs/ProMicro_SX1276_schematic.pdf)
 
-<!--
-to be done
 ### Layout
-[![ProMicro_SX1276_layout_front](docs/ProMicro_SX1276_layout_front.svg)](docs/ProMicro_SX1276_layout_front.pdf)
-[![ProMicro_SX1276_layout_bottom](docs/ProMicro_SX1276_layout_bottom.svg)](docs/ProMicro_SX1276_layout_bottom.pdf)
+<!--
+<a href="docs/ProMicro_SX1276_layout_front.pdf" alt="ProMicro_SX1276_layout_front"><img src="docs/ProMicro_SX1276_layout_front.svg" width=20%></a>
+<a href="docs/ProMicro_SX1276_layout_bottom.pdf" alt="ProMicro_SX1276_layout_bottom"><img src="docs/ProMicro_SX1276_layout_bottom.svg" width=20%></a>
 -->
+<img src="docs/ProMicro_SX1276_layout_front.svg" width=20%>
+<img src="docs/ProMicro_SX1276_layout_bottom.svg" width=20%>
 
 ### Bill of Materials
 <!--
 <script src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
 <script type='text/javascript'>
     $.ajax({
-        url: 'https://raw.githubusercontent.com/nerdyscout/ProMicro/master/SX1276/docs/bom/ProMicro_SX1276_bom.csv',
+        url: 'docs/bom/ProMicro_SX1276_bom.csv',
         type: 'GET',
         dataType: 'text',
     }).done(createTable);
@@ -82,7 +83,7 @@ to be done
 
 ## Credits
 * [obra](https://github.com/obra) for [kicad-tools](https://github.com/obra/kicad-tools)
-
+* [tracespace](https://github.com/tracespace) for [gerber-to-svg](https://github.com/tracespace/tracespace)
 <!--
 * [Sparkfun](sparkfun.com/) for [Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)
 -->

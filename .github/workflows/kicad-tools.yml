@@ -15,22 +15,25 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: install git
-      run:  |
-            sudo apt install git
-            git config --global user.email ""
-            git config --global user.name "bot"
-
     - uses: actions/cache@v1
       id:   cache
       with:
         path: /var/cache
         key: ${{ runner.os }}-kicad
 
+    - name: install git
+      run:  |
+            sudo apt install git
+            git config --global user.email ""
+            git config --global user.name "bot"
+
     - uses: actions/setup-python@v1
       with:
         python-version: '2.7'
     - run:  pip install svgwrite 
+
+    - name: install gerber-to-svg
+      run:  sudo npm install -g @tracespace/cli
 
     - name: clone nerdyscout/kicad-tools
       if:   steps.cache.outputs.cache-hit != 'true'
@@ -49,20 +52,33 @@ jobs:
             make schematic
             make bom
             make interactive-bom
+
+    - name: run gerber2svg
+      run:  |
+            cd out/ProMicro_SX1276-heads/master/layout/gerber/
+            tracespace -L *.gbr
+
+    - name: move result data into clean folder
+      run:  |
             rm -r -f gerber
             mkdir gerber
             rm -r -f docs
             mkdir docs
             mkdir docs/bom
-            sudo mv out/ProMicro_SX1276-heads/master/schematic/svg/ProMicro_SX1276.svg docs/ProMicro_SX1276_schematic.svg
-            sudo mv out/ProMicro_SX1276-heads/master/schematic/pdf/* docs/ProMicro_SX1276_schematic.pdf
-            sudo mv out/ProMicro_SX1276-heads/master/bom/interactive/ibom.html docs/bom/index.html
-            sudo mv out/ProMicro_SX1276-heads/master/bom/bom.csv docs/bom/ProMicro_SX1276_bom.csv
-            sudo mv out/ProMicro_SX1276-heads/master/layout/gerber/* gerber/
+            sudo mv -u out/ProMicro_SX1276-heads/master/schematic/svg/ProMicro_SX1276.svg docs/ProMicro_SX1276_schematic.svg
+            sudo mv -u out/ProMicro_SX1276-heads/master/schematic/pdf/* docs/ProMicro_SX1276_schematic.pdf
+            sudo mv -u out/ProMicro_SX1276-heads/master/bom/interactive/ibom.html docs/bom/index.html
+            sudo mv -u out/ProMicro_SX1276-heads/master/bom/bom.csv docs/bom/ProMicro_SX1276_bom.csv
+            sudo mv -u out/ProMicro_SX1276-heads/master/layout/gerber/* gerber/
+            sudo mv -u gerber/ProMicro*top.svg docs/ProMicro_SX1276_layout_front.svg
+            sudo mv -u gerber/ProMicro*bottom.svg docs/ProMicro_SX1276_layout_bottom.svg
+
+    - name: clean folder
+      run:  |
             sudo rm -f ProMicro*.xml
             sudo rm -r -f out
             rm Makefile
-            
+
     - name: commit results
       run:  |
             git stage .
