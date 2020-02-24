@@ -385,8 +385,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 4100 8900 4100
 Wire Wire Line
-	5000 2850 5000 2990
-Wire Wire Line
 	5500 2400 5500 2550
 Wire Wire Line
 	6000 2400 6000 2550
@@ -874,4 +872,17 @@ F 3 "" H 4700 2300 50  0001 C CNN
 	1    4700 2300
 	0    1    1    0   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E54569E
+P 5000 3000
+F 0 "#PWR?" H 5000 2750 50  0001 C CNN
+F 1 "GND" H 5000 2850 50  0000 C CNN
+F 2 "" H 5000 3000 50  0001 C CNN
+F 3 "" H 5000 3000 50  0001 C CNN
+	1    5000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2850 5000 3000
 $EndSCHEMATC

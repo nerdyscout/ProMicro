@@ -25,6 +25,7 @@ to be done
 
 ### Bill of Materials
 
+<!--
 <script src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
 <script type='text/javascript'>
     $.ajax({
@@ -69,7 +70,7 @@ to be done
     }
 </script>
 <p id="BOM_table"></p>
-
+-->
 or as [interactive BOM](https://nerdyscout.github.io/ProMicro_GPS/docs/bom/index.html)
 
 <!--
