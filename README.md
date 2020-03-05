@@ -20,8 +20,7 @@ to be done
 <a href="docs/ProMicro_GPS_layout_front.pdf" alt="ProMicro_GPS_layout_front"><img src="docs/ProMicro_GPS_layout_front.svg" width=20%></a>
 <a href="docs/ProMicro_GPS_layout_bottom.pdf" alt="ProMicro_GPS_layout_bottom"><img src="docs/ProMicro_GPS_layout_bottom.svg" width=20%></a>
 -->
-<img src="docs/ProMicro_GPS_layout_front.svg" width=20%>
-<img src="docs/ProMicro_GPS_layout_bottom.svg" width=20%>
+<img src="docs/ProMicro_GPS_layout_front.svg" width=20%> <img src="docs/ProMicro_GPS_layout_bottom.svg" width=20%>
 
 ### Bill of Materials
 
