@@ -227,7 +227,7 @@ L Device:L L1
 U 1 1 5E1C6631
 P 4900 5000
 F 0 "L1" V 5150 5000 50  0000 C CNN
-F 1 "L" V 5050 5000 50  0000 C CNN
+F 1 "27n" V 5050 5000 50  0000 C CNN
 F 2 "Inductor_SMD:L_0402_1005Metric" H 4900 5000 50  0001 C CNN
 F 3 "~" H 4900 5000 50  0001 C CNN
 	1    4900 5000
@@ -238,7 +238,7 @@ L Device:R R1
 U 1 1 5E265E06
 P 3800 6100
 F 0 "R1" V 3710 6100 50  0000 C CNN
-F 1 "100" V 3910 6100 50  0000 C CNN
+F 1 "1k" V 3910 6100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 6100 50  0001 C CNN
 F 3 "~" H 3800 6100 50  0001 C CNN
 	1    3800 6100
@@ -474,7 +474,7 @@ Text GLabel 3000 1900 0    50   Input ~ 0
 D3
 Text GLabel 8200 2400 0    50   Input ~ 0
 D0
-Text GLabel 8200 2500 0    50   Input ~ 0
+Text GLabel 8200 2500 0    50   Output ~ 0
 D1
 Text GLabel 8200 2600 0    50   Input ~ 0
 D2
@@ -929,4 +929,8 @@ F 3 "" H 10500 5750 50  0001 C CNN
 	1    10500 5750
 	1    0    0    -1  
 $EndComp
+Text Notes 1500 1000 0    50   ~ 0
+GYRO
+Text Notes 3500 4000 0    50   ~ 0
+GPS
 $EndSCHEMATC
