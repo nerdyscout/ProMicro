@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title " ProMicro_GPS"
-Date "2020-02-23"
-Rev "v2.0"
+Date "2020-03-05"
+Rev "v2.2"
 Comp "https://twitter.com/nerdyscout84"
 Comment1 "CERN Open Hardware Licence v1.2"
 Comment2 "https://github.com/nerdyscout/ProMicro_GPS"
@@ -72,10 +72,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 6000 2300 6000
 Wire Wire Line
-	1900 5400 2300 5400
-Wire Wire Line
-	1900 5500 2300 5500
-Wire Wire Line
 	1900 5700 2300 5700
 Wire Wire Line
 	1900 5800 2300 5800
@@ -111,9 +107,9 @@ Wire Wire Line
 	3500 5800 4500 5800
 Text GLabel 1500 6000 0    50   Input ~ 0
 D5
-Text GLabel 1900 5400 0    50   Input ~ 0
+Text GLabel 1250 5400 0    50   Input ~ 0
 D1
-Text GLabel 1900 5500 0    50   Input ~ 0
+Text GLabel 1250 5500 0    50   Input ~ 0
 D0
 Text GLabel 1900 5700 0    50   Input ~ 0
 D2
@@ -933,4 +929,44 @@ Text Notes 1500 1000 0    50   ~ 0
 GYRO
 Text Notes 3500 4000 0    50   ~ 0
 GPS
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 5E617C03
+P 1500 5500
+F 0 "JP3" H 1500 5425 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1525 5600 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1500 5500 50  0001 C CNN
+F 3 "~" H 1500 5500 50  0001 C CNN
+	1    1500 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5500 2300 5500
+Wire Wire Line
+	1250 5500 1400 5500
+$Comp
+L Device:Jumper_NC_Small JP4
+U 1 1 5E620A66
+P 1500 5400
+F 0 "JP4" H 1500 5500 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 1525 5525 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1500 5400 50  0001 C CNN
+F 3 "~" H 1500 5400 50  0001 C CNN
+	1    1500 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5400 1400 5400
+Wire Wire Line
+	1600 5400 2300 5400
+Wire Notes Line
+	3750 5250 3750 4500
+Wire Notes Line
+	3750 4500 5250 4500
+Wire Notes Line
+	5250 4500 5250 5250
+Wire Notes Line
+	5250 5250 3750 5250
+Text Notes 3800 4625 0    50   ~ 0
+active antenna only
 $EndSCHEMATC
