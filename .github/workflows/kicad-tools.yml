@@ -56,6 +56,14 @@ jobs:
             make bom
             make interactive-bom
 
+    - name: rebuild dirs
+      run:  |
+            rm -r -f gerber
+            mkdir gerber
+            rm -r -f docs
+            mkdir docs
+            mkdir docs/bom
+
     - name: run gerber2svg
       run:  |
             cd out/ProMicro_GPS-heads/master/layout/gerber/
@@ -63,11 +71,6 @@ jobs:
 
     - name: move result data into clean folder
       run:  |
-            rm -r -f gerber
-            mkdir gerber
-            rm -r -f docs
-            mkdir docs
-            mkdir docs/bom
             sudo mv -u out/ProMicro_GPS-heads/master/schematic/svg/ProMicro_GPS.svg docs/ProMicro_GPS_schematic.svg
             sudo mv -u out/ProMicro_GPS-heads/master/schematic/pdf/* docs/ProMicro_GPS_schematic.pdf
             sudo mv -u out/ProMicro_GPS-heads/master/bom/interactive/ibom.html docs/bom/index.html
