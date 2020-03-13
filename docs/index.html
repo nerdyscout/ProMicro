@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>ProMicro_GPS</title>
+  <meta name="description" content="Documentation of ProMicro_GPS">
+  <meta name="author" content="Stefan Herold">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts -->
+  <script src="js/jquery-2.2.4.min.js"> </script>
+  <script src="js/site.js"></script>
+
+</head>
+
+<body class="code-snippets-visible">
+
+  <!-- Primary Page Layout -->
+  <div class="container">
+    <section class="header">
+      <h3 class="title">ProMicro_GPS</h3>
+      <div class="value-props row">
+        <div class="six columns value-prop">
+          <img class="value-img" src="img/ProMicro_GPS_top.png" width="100%">
+        </div>
+        <div class="six columns value-prop">
+          <img class="value-img" src="img/ProMicro_GPS_bottom.png" width="100%">
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#docuNavPopover">Documentation</a>
+            <div id="docuNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item"><a class="popover-link" href="#schematic">Schematic</a></li>
+<!--                <li class="popover-item"><a class="popover-link" href="#pinout">Pinout</a></li> -->
+                <li class="popover-item"><a class="popover-link" href="#assembly">Assembly</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Code</a>
+            <div id="codeNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="#promicro">Sparkfun ProMicro</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#nano">Arduino Nano</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item"><a class="navbar-link" href="#purchase">Purchase</a></li>          
+          <li class="navbar-item"><a class="navbar-link" href="#credits">Credits</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#license">License</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- intro -->
+    <div class="docs-section" id="intro">
+      <p><b>ProMicro_GPS</b> is on of several <a href="https://github.com/search?q=user:nerdyscout+promicro"><b>ProMicro modules</b></a></p>
+
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <a href="https://twitter.com/share" class="twitter-share-button navbar-link" data-url="http://www.github.com/nerdyscout/ProMicro_GPS" data-text="Module fitting onto the @Sparkfun #ProMicro, @Arduino #ProMini and several others." data-via="nerdyscout84" data-related="nerdyscout84">Tweet</a>
+      <iframe src="http://ghbtns.com/github-btn.html?user=nerdyscout&repo=ProMicro_GPS&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+    </div>
+
+    <div class="docs-section" id="documentation">
+      <h5>Documentation</h5>
+
+      <div id="schematic">
+        <h6 class="docs-header">Schematic</h6>
+        <a href="ProMicro_GPS_schematic.pdf"><img class="value-img" src="ProMicro_GPS_schematic.svg" alt="schematic" width="100%" /></a>
+      </div>
+<!--  
+      <div id="pinout">
+        <h6 class="docs-header">Pinout</h6>
+          not yet available.
+
+          <a href="ProMicro_GPS_pinout.pdf"><img class="value-img" src="ProMicro_GPS_pinout.svg" alt="pinout" width="100%" /></a>
+      </div>
+-->
+      <div id="assembly">
+        <h6 class="docs-header">Assembly</h6>
+
+        <div class="value-props row">
+          <div class="six columns value-prop">
+            <img class="value-img" src="ProMicro_GPS_layout_bottom.svg" width="50%">
+            <img class="value-img" src="ProMicro_GPS_assembly_bottom.svg" width="50%">
+          </div>
+          <div class="six columns value-prop">
+            <img class="value-img" src="ProMicro_GPS_layout_top.svg" width="50%">
+            <img class="value-img" src="ProMicro_GPS_assembly_top.svg" width="50%">
+          </div>
+        </div>
+
+        You could also use the <a href="bom/index.html">interactive BOM</a>.
+      </div>
+    </div>
+
+    <div class="docs-section" id="code">
+      <h5>Code</h5>
+
+      <div id="promicro">
+        <h6 class="docs-header">Sparkfun ProMicro</h6>
+        <pre class="code-example"><code class="code-example-body prettyprint">
+<!--
+#include <SoftwareSerial.h>
+#include <TinyGPS.h>
+
+// This sample code demonstrates the normal use of a TinyGPS object.
+// It requires the uses Serial1 for the GPS module with 9600 baud and regular Serial for debugging
+
+TinyGPS gps;
+
+void setup()
+{
+  Serial.begin(115200); // debug
+  Serial1.begin(9600);  // gps
+}
+
+void loop()
+{
+  bool newData = false;
+  unsigned long chars;
+  unsigned short sentences, failed;
+
+  // For one second we parse GPS data and report some key values
+  for (unsigned long start = millis(); millis() - start < 1000;)
+  {
+    while (Serial1.available())
+    {
+      char c = Serial1.read();
+      // Serial.write(c); // uncomment this line if you want to see the GPS data flowing
+      if (gps.encode(c)) // Did a new valid sentence come in?
+        newData = true;
+    }
+  }
+
+  if (newData)
+  {
+    float flat, flon;
+    unsigned long age;
+    gps.f_get_position(&flat, &flon, &age);
+    Serial.print("LAT=");
+    Serial.print(flat == TinyGPS::GPS_INVALID_F_ANGLE ? 0.0 : flat, 6);
+    Serial.print(" LON=");
+    Serial.print(flon == TinyGPS::GPS_INVALID_F_ANGLE ? 0.0 : flon, 6);
+    Serial.print(" SAT=");
+    Serial.print(gps.satellites() == TinyGPS::GPS_INVALID_SATELLITES ? 0 : gps.satellites());
+    Serial.print(" PREC=");
+    Serial.print(gps.hdop() == TinyGPS::GPS_INVALID_HDOP ? 0 : gps.hdop());
+  }
+  
+  gps.stats(&chars, &sentences, &failed);
+  Serial.print(" CHARS=");
+  Serial.print(chars);
+  Serial.print(" SENTENCES=");
+  Serial.print(sentences);
+  Serial.print(" CSUM ERR=");
+  Serial.println(failed);
+  if (chars == 0)
+    Serial.println("** No characters received from GPS: check wiring **");
+}
+-->
+          </code>
+        </pre>
+      </div>
+
+      <div id="nano">
+        <h6 class="docs-header">Arduino Nano</h6>
+        <pre class="code-example"><code class="code-example-body prettyprint">
+<!--
+#include <SoftwareSerial.h>
+#include <TinyGPS.h>
+
+// This sample code demonstrates the normal use of a TinyGPS object.
+// It requires the uses Serial1 for the GPS module with 9600 baud and regular Serial for debugging
+
+TinyGPS gps;
+
+SoftwareSerial Serial_GPS (0, 4);   // Softserial requires RX and TX but only RX is used!
+SoftwareSerial Serial_DEBUG (5, 1); // Softserial requires RX and TX but only TX is used!
+ 
+void setup()
+{
+  Serial_DEBUG.begin(115200); // debug
+  Serial_GPS.begin(9600);  // gps
+}
+
+void loop()
+{
+  bool newData = false;
+  unsigned long chars;
+  unsigned short sentences, failed;
+
+  // For one second we parse GPS data and report some key values
+  for (unsigned long start = millis(); millis() - start < 1000;)
+  {
+    while (Serial_GPS.available())
+    {
+      char c = Serial_GPS.read();
+      if (gps.encode(c)) // Did a new valid sentence come in?
+        newData = true;
+    }
+  }
+
+  if (newData)
+  {
+    float flat, flon;
+    unsigned long age;
+    gps.f_get_position(&flat, &flon, &age);
+    Serial_DEBUG.print("LAT=");
+    Serial_DEBUG.print(flat == TinyGPS::GPS_INVALID_F_ANGLE ? 0.0 : flat, 6);
+    Serial_DEBUG.print(" LON=");
+    Serial_DEBUG.print(flon == TinyGPS::GPS_INVALID_F_ANGLE ? 0.0 : flon, 6);
+    Serial_DEBUG.print(" SAT=");
+    Serial_DEBUG.print(gps.satellites() == TinyGPS::GPS_INVALID_SATELLITES ? 0 : gps.satellites());
+    Serial_DEBUG.print(" PREC=");
+    Serial_DEBUG.print(gps.hdop() == TinyGPS::GPS_INVALID_HDOP ? 0 : gps.hdop());
+  }
+  
+  gps.stats(&chars, &sentences, &failed);
+  Serial_DEBUG.print(" CHARS=");
+  Serial_DEBUG.print(chars);
+  Serial_DEBUG.print(" SENTENCES=");
+  Serial_DEBUG.print(sentences);
+  Serial_DEBUG.print(" CSUM ERR=");
+  Serial_DEBUG.println(failed);
+  if (chars == 0)
+    Serial_DEBUG.println("** No characters received from GPS: check wiring **");
+}
+-->
+          </code>
+        </pre>
+      </div>
+
+    </div>
+
+    <div class="docs-section" id="purchase">
+      <h5>Purchase</h5>
+      <div class="row">
+<!--
+        <p>You can get the PCB and all other components via <a href="http://kitspace.org/">kitspace</a> or fully assembled via <a href="http://tindie.com/">tindie</a>.</p>
+-->
+        <p>not yet available.</p>
+      </div>
+    </div>
+  
+    <div class="docs-section" id="credits">
+      <h5>Credits</h5>
+      <div class="row">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="docs-section" id="license">
+      <h5>License</h5>
+      <p>Copyright Stefan Herold 2020</p>
+      <p>This documentation describes Open Hardware and is licensed under the CERN OHL v.1.2.</p>
+      <p>You may redistribute and modify this documentation under the terms of the CERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions </p>
+
+    </div>
+
+  </div>
+<!-- End Document -->
+</body>
+</html>

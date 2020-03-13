@@ -9,92 +9,67 @@ on:
       - master
 
 jobs:
-  build:
+  kicad:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        
+      - uses: actions/cache@v1
+        id: kicad-tools
+        with:
+          path: /opt/kicad-tools
+          key: ${{ runner.os }}-kicad
 
-    - uses: actions/cache@v1
-      id:   cache
-      with:
-        path: /var/cache
-        key: ${{ runner.os }}-kicad
+#      - uses: actions/cache@v1
+#        id: docker
+#        with:
+#          path: ????
+#          key: ${{ runner.os }}-docker
 
-    - name: install git
-      run:  |
-            sudo apt install git
-            git config --global user.email ""
-            git config --global user.name "bot"
+      - name: install kicad-tools
+        if: steps.kicad-tools.outputs.cache-hit != 'true'
+        run: git clone --branch=ci https://github.com/nnarain/kicad-tools /opt/kicad-tools
+        
+      - name: generate KiCAD output
+#        if: steps.docker.outputs.cache-hit != 'true'
+        id: run-kicad-tools
+        env:
+          DOCKER_CONTAINER: nnarain/kicad-tools
+          DOCKER_INTERACTIVE: ""
+          KICAD_TOOLS_PATH: /opt/kicad-tools
+        run: cp /opt/kicad-tools/etc/Makefile ./Makefile && make fabrication-outputs
 
-    - uses: actions/setup-python@v1
-      with:
-        python-version: '2.7'
-    - run:  pip install svgwrite 
+      - name: move output files
+#        if: file generation successfull
+        run: |
+          PROJECT=$(basename "$PWD") 
+          mkdir -p docs/bom && cp -u $(find out/ -name "bom.csv") "docs/bom/"$PROJECT"_bom.csv"
+          mkdir -p docs/bom && cp -u $(find out/ -name "ibom.html") "docs/bom/index.html"
+          mkdir -p docs && cp -u $(find out/ -name $PROJECT".pdf") "docs/"$PROJECT"_schematic.pdf"
+          mkdir -p docs && cp -u $(find out/ -name $PROJECT".svg") "docs/"$PROJECT"_schematic.svg"
+          mkdir -p gerber && cp -u $(find out/ -type f \( -iname \*.gbr -o -iname \*.drl \)) gerber/
 
-    - name: install gerber-to-svg
-      run:  sudo npm install -g @tracespace/cli
+      - name: run tracespace
+#        if: file generation successfull
+        run: |
+          PROJECT=$(basename "$PWD") 
+          sudo npm install -g @tracespace/cli
+          tracespace -L --out=out gerber/*Cu.gbr gerber/*Mask.gbr gerber/*Paste.gbr gerber/*.drl gerber/*SilkS.gbr
+          mkdir -p docs/layout && mv -u $(find out/ -name $PROJECT"*top.svg") "docs/"$PROJECT"_layout_top.svg"
+          mkdir -p docs/layout && mv -u $(find out/ -name $PROJECT"*bottom.svg") "docs/"$PROJECT"_layout_bottom.svg"
+          tracespace -L --out=out gerber/*Edge_Cuts.gbr gerber/*.drl gerber/*Fab.gbr
+          mkdir -p docs/layout && mv -u $(find out/ -name $PROJECT"*top.svg") "docs/"$PROJECT"_assembly_top.svg"
+          mkdir -p docs/layout && mv -u $(find out/ -name $PROJECT"*bottom.svg") "docs/"$PROJECT"_assembly_bottom.svg"
 
-    - name: install kicost
-      run:  pip install kicost
+      - name: commit results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git stage docs/* && git stage gerber/*
+          git commit -m "Add changes"
 
-    - name: clone nerdyscout/kicad-tools
-      if:   steps.cache.outputs.cache-hit != 'true'
-      run:  |
-            git clone https://github.com/nerdyscout/kicad-tools.git /opt/kicad-tools
-            cd /opt/kicad-tools
-            git checkout origin/ProMicro
-            git submodule update --init
-            make
-
-    - name: make board
-      run:  |
-            cp /opt/kicad-tools/etc/Makefile ./Makefile
-            make debug
-            make gerbers
-            make schematic
-            make bom
-            make interactive-bom
-
-    - name: rebuild dirs
-      run:  |
-            rm -r -f gerber
-            mkdir gerber
-            rm -r -f docs
-            mkdir docs
-            mkdir docs/bom
-
-    - name: run gerber2svg
-      run:  |
-            cd out/ProMicro_GPS-heads/master/layout/gerber/
-            tracespace -L *.gbr
-
-    - name: move result data into clean folder
-      run:  |
-            sudo mv -u out/ProMicro_GPS-heads/master/schematic/svg/ProMicro_GPS.svg docs/ProMicro_GPS_schematic.svg
-            sudo mv -u out/ProMicro_GPS-heads/master/schematic/pdf/* docs/ProMicro_GPS_schematic.pdf
-            sudo mv -u out/ProMicro_GPS-heads/master/bom/interactive/ibom.html docs/bom/index.html
-            sudo mv -u out/ProMicro_GPS-heads/master/bom/bom.csv docs/bom/ProMicro_GPS_bom.csv
-            sudo mv -u out/ProMicro_GPS-heads/master/layout/gerber/* gerber/
-            sudo mv -u gerber/ProMicro*top.svg docs/ProMicro_GPS_layout_front.svg
-            sudo mv -u gerber/ProMicro*bottom.svg docs/ProMicro_GPS_layout_bottom.svg
-
-    - name: run kicost
-      run:  |
-            kicost -i ProMicro_*.xml -o docs/bom/ProMicro_GPS_kicost.xlsx -w -q --currency EUR
-            rm ProMicro_*.xml
-
-    - name: clean folder
-      run:  |
-            sudo rm -r -f out
-            rm Makefile
-
-    - name: commit results
-      run:  |
-            git stage .
-            git commit -m "update by github actions"
-
-    - name: push results
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
