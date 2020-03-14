@@ -3,10 +3,10 @@ name: kicad-tools
 on:
   push:
     branches:
-      - master
+      - dev
   pull_request:
     branches:
-      - master
+      - dev
 
 jobs:
   kicad:
@@ -56,11 +56,11 @@ jobs:
           PROJECT=$(basename "$PWD") 
           sudo npm install -g @tracespace/cli
           tracespace -L --out=out gerber/*Cu.gbr gerber/*Mask.gbr gerber/*Paste.gbr gerber/*.drl gerber/*SilkS.gbr
-          mkdir -p docs/layout && mv -u $(find out/ -name $PROJECT"*top.svg") "docs/"$PROJECT"_layout_top.svg"
-          mkdir -p docs/layout && mv -u $(find out/ -name $PROJECT"*bottom.svg") "docs/"$PROJECT"_layout_bottom.svg"
+          mkdir -p docs/img && mv -u $(find out/ -name $PROJECT"*top.svg") "docs/img/"$PROJECT"_layout_top.svg"
+          mkdir -p docs/img && mv -u $(find out/ -name $PROJECT"*bottom.svg") "docs/img/"$PROJECT"_layout_bottom.svg"
           tracespace -L --out=out gerber/*Edge_Cuts.gbr gerber/*.drl gerber/*Fab.gbr
-          mkdir -p docs/layout && mv -u $(find out/ -name $PROJECT"*top.svg") "docs/"$PROJECT"_assembly_top.svg"
-          mkdir -p docs/layout && mv -u $(find out/ -name $PROJECT"*bottom.svg") "docs/"$PROJECT"_assembly_bottom.svg"
+          mkdir -p docs/img && mv -u $(find out/ -name $PROJECT"*top.svg") "docs/img/"$PROJECT"_assembly_top.svg"
+          mkdir -p docs/img && mv -u $(find out/ -name $PROJECT"*bottom.svg") "docs/img/"$PROJECT"_assembly_bottom.svg"
 
       - name: commit results
         run: |
@@ -72,4 +72,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
+          branch: dev
           github_token: ${{ secrets.GITHUB_TOKEN }}
