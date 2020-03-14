@@ -30,10 +30,10 @@
       <h3 class="title">ProMicro_LORA</h3>
       <div class="value-props row">
         <div class="six columns value-prop">
-          <img class="value-img" src="img/top.png" width="100%">
+          <a href="img/ProMicro_LORA_top.png"><img class="value-img" src="img/ProMicro_LORA_top.png" width="100%"></a>
         </div>
         <div class="six columns value-prop">
-          <img class="value-img" src="img/bottom.png" width="100%">
+          <a href="img/ProMicro_LORA_bottom.png"><img class="value-img" src="img/ProMicro_LORA_bottom.png" width="100%"></a>
         </div>
       </div>
     </section>
@@ -43,6 +43,7 @@
       <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
+
           <li class="navbar-item">
             <a class="navbar-link" href="#" data-popover="#docuNavPopover">Documentation</a>
             <div id="docuNavPopover" class="popover">
@@ -53,22 +54,30 @@
               </ul>
             </div>
           </li>
+
           <li class="navbar-item">
             <a class="navbar-link" href="#" data-popover="#codeNavPopover">Code</a>
             <div id="codeNavPopover" class="popover">
               <ul class="popover-list">
-                <li class="popover-item">
-                  <a class="popover-link" href="#promicro">Sparkfun ProMicro</a>
-                </li>
-                <li class="popover-item">
-                  <a class="popover-link" href="#nano">Arduino Nano</a>
-                </li>
+                <li class="popover-item"><a class="popover-link" href="#promicro">Sparkfun ProMicro</a></li>
+                <li class="popover-item"><a class="popover-link" href="#nano">Arduino Nano</a></li>
               </ul>
             </div>
           </li>
+
           <li class="navbar-item"><a class="navbar-link" href="#purchase">Purchase</a></li>          
 <!--          <li class="navbar-item"><a class="navbar-link" href="#credits">Credits</a></li> -->
           <li class="navbar-item"><a class="navbar-link" href="#license">License</a></li>
+
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#modulesNavPopover">other modules</a>
+            <div id="modulesNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item"><a class="popover-link" href="https://nerdyscout.github.io/ProMicro_UART/">UART</a></li>
+                <li class="popover-item"><a class="popover-link" href="https://nerdyscout.github.io/ProMicro_GPS/">GPS</a></li>
+              </ul>
+            </div>
+          </li>
 
         </ul>
       </div>
@@ -76,17 +85,20 @@
 
     <!-- intro -->
     <div class="docs-section" id="intro">
-      <p><b>ProMicro_LORA</b> is on of several <a href="https://github.com/search?q=user:nerdyscout+promicro"><b>ProMicro modules</b></a></p>
-
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      <a href="https://twitter.com/share" class="twitter-share-button navbar-link" data-url="http://www.github.com/nerdyscout/ProMicro_LORA" data-text="Module fitting onto the @Sparkfun #ProMicro, @Arduino #ProMini and several others." data-via="nerdyscout84" data-related="nerdyscout84">Tweet</a>
-      <iframe src="http://ghbtns.com/github-btn.html?user=nerdyscout&repo=ProMicro_LORA&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
+      <div>
+        <p>This is an Lora radio module based on the SX1276, using 868Mhz for Europe.</p>
+      </div>
     </div>
 
     <div class="docs-section" id="documentation">
       <h5>Documentation</h5>
-
+      <div>
+        <p>All documentation can also be found on Github.</p>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <a href="https://twitter.com/share" class="twitter-share-button navbar-link" data-url="http://www.github.com/nerdyscout/ProMicro_LORA" data-text="Module fitting onto the @Sparkfun #ProMicro, @Arduino #ProMini and several others." data-via="nerdyscout84" data-related="nerdyscout84">Tweet</a>
+        <iframe src="http://ghbtns.com/github-btn.html?user=nerdyscout&repo=ProMicro_LORA&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+        <br><br>
+      </div>
       <div id="schematic">
         <h6 class="docs-header">Schematic</h6>
         <a href="ProMicro_LORA_schematic.pdf"><img class="value-img" src="ProMicro_LORA_schematic.svg" alt="schematic" width="100%" /></a>
