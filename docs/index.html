@@ -30,10 +30,10 @@
       <h3 class="title">ProMicro_GPS</h3>
       <div class="value-props row">
         <div class="six columns value-prop">
-          <img class="value-img" src="img/ProMicro_GPS_top.png" width="100%">
+          <a href="img/ProMicro_GPS_top.png"><img class="value-img" src="img/ProMicro_GPS_top.png" width="100%"></a>
         </div>
         <div class="six columns value-prop">
-          <img class="value-img" src="img/ProMicro_GPS_bottom.png" width="100%">
+          <a href="img/ProMicro_GPS_bottom.png"><img class="value-img" src="img/ProMicro_GPS_bottom.png" width="100%"></a>
         </div>
       </div>
     </section>
@@ -67,8 +67,18 @@
             </div>
           </li>
           <li class="navbar-item"><a class="navbar-link" href="#purchase">Purchase</a></li>          
-          <li class="navbar-item"><a class="navbar-link" href="#credits">Credits</a></li>
+<!--          <li class="navbar-item"><a class="navbar-link" href="#credits">Credits</a></li> -->
           <li class="navbar-item"><a class="navbar-link" href="#license">License</a></li>
+
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#modulesNavPopover">other modules</a>
+            <div id="modulesNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item"><a class="popover-link" href="https://nerdyscout.github.io/ProMicro_LORA/">LORA</a></li>
+                <li class="popover-item"><a class="popover-link" href="https://nerdyscout.github.io/ProMicro_UART/">UART</a></li>
+              </ul>
+            </div>
+          </li>
 
         </ul>
       </div>
@@ -76,21 +86,22 @@
 
     <!-- intro -->
     <div class="docs-section" id="intro">
-      <p><b>ProMicro_GPS</b> is on of several <a href="https://github.com/search?q=user:nerdyscout+promicro"><b>ProMicro modules</b></a></p>
-
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      <a href="https://twitter.com/share" class="twitter-share-button navbar-link" data-url="http://www.github.com/nerdyscout/ProMicro_GPS" data-text="Module fitting onto the @Sparkfun #ProMicro, @Arduino #ProMini and several others." data-via="nerdyscout84" data-related="nerdyscout84">Tweet</a>
-      <iframe src="http://ghbtns.com/github-btn.html?user=nerdyscout&repo=ProMicro_GPS&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
+      <p>GPS transceiver module.</p>
     </div>
 
     <div class="docs-section" id="documentation">
       <h5>Documentation</h5>
+        <p>All documentation can also be found on Github.</p>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <a href="https://twitter.com/share" class="twitter-share-button navbar-link" data-url="http://www.github.com/nerdyscout/ProMicro_LORA" data-text="Module fitting onto the @Sparkfun #ProMicro, @Arduino #ProMini and several others." data-via="nerdyscout84" data-related="nerdyscout84">Tweet</a>
+        <iframe src="http://ghbtns.com/github-btn.html?user=nerdyscout&repo=ProMicro_GPS&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+        <br><br>
+    </div>
 
-      <div id="schematic">
-        <h6 class="docs-header">Schematic</h6>
-        <a href="ProMicro_GPS_schematic.pdf"><img class="value-img" src="ProMicro_GPS_schematic.svg" alt="schematic" width="100%" /></a>
-      </div>
+    <div id="schematic">
+      <h6 class="docs-header">Schematic</h6>
+      <a href="ProMicro_GPS_schematic.pdf"><img class="value-img" src="ProMicro_GPS_schematic.svg" alt="schematic" width="100%" /></a>
+    </div>
 <!--  
       <div id="pinout">
         <h6 class="docs-header">Pinout</h6>
@@ -104,25 +115,26 @@
 
         <div class="value-props row">
           <div class="six columns value-prop">
-            <img class="value-img" src="ProMicro_GPS_layout_bottom.svg" width="50%">
-            <img class="value-img" src="ProMicro_GPS_assembly_bottom.svg" width="50%">
+            <img class="value-img" src="img/ProMicro_GPS_layout_bottom.svg" width="50%">
+            <img class="value-img" src="img/ProMicro_GPS_assembly_bottom.svg" width="50%">
           </div>
           <div class="six columns value-prop">
-            <img class="value-img" src="ProMicro_GPS_layout_top.svg" width="50%">
-            <img class="value-img" src="ProMicro_GPS_assembly_top.svg" width="50%">
+            <img class="value-img" src="img/ProMicro_GPS_layout_top.svg" width="50%">
+            <img class="value-img" src="img/ProMicro_GPS_assembly_top.svg" width="50%">
           </div>
         </div>
 
         You could also use the <a href="bom/index.html">interactive BOM</a>.
       </div>
-    </div>
+
 
     <div class="docs-section" id="code">
       <h5>Code</h5>
 
       <div id="promicro">
         <h6 class="docs-header">Sparkfun ProMicro</h6>
-        <pre class="code-example"><code class="code-example-body prettyprint">
+        <pre class="code-example">
+          <code class="code-example-body prettyprint">
 <!--
 #include <SoftwareSerial.h>
 #include <TinyGPS.h>
@@ -188,7 +200,8 @@ void loop()
 
       <div id="nano">
         <h6 class="docs-header">Arduino Nano</h6>
-        <pre class="code-example"><code class="code-example-body prettyprint">
+        <pre class="code-example">
+          <code class="code-example-body prettyprint">
 <!--
 #include <SoftwareSerial.h>
 #include <TinyGPS.h>
@@ -265,7 +278,7 @@ void loop()
         <p>not yet available.</p>
       </div>
     </div>
-  
+<!--  
     <div class="docs-section" id="credits">
       <h5>Credits</h5>
       <div class="row">
@@ -274,7 +287,7 @@ void loop()
         </ul>
       </div>
     </div>
-
+-->
     <div class="docs-section" id="license">
       <h5>License</h5>
       <p>Copyright Stefan Herold 2020</p>
