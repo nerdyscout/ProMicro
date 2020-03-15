@@ -292,6 +292,7 @@ F 0 "J1" H 6220 5280 50  0000 L CNN
 F 1 "uFL" H 6220 5180 50  0000 L CNN
 F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 6100 5250 50  0001 C CNN
 F 3 "~" H 6100 5250 50  0001 C CNN
+F 4 "DNP" H 6100 5250 50  0001 C CNN "variant"
 	1    6100 5250
 	1    0    0    -1  
 $EndComp
@@ -303,6 +304,7 @@ F 0 "J2" H 6220 5830 50  0000 L CNN
 F 1 "Coax" H 6220 5730 50  0000 L CNN
 F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount" H 6100 5800 50  0001 C CNN
 F 3 "~" H 6100 5800 50  0001 C CNN
+F 4 "DNP" H 6100 5800 50  0001 C CNN "variant"
 	1    6100 5800
 	1    0    0    -1  
 $EndComp
@@ -314,6 +316,7 @@ F 0 "C1" H 1530 4350 50  0000 L CNN
 F 1 "4,7µ" H 1530 4250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1438 4150 50  0001 C CNN
 F 3 "~" H 1400 4300 50  0001 C CNN
+F 4 "GRM155R60J475ME47D" H 1400 4300 50  0001 C CNN "manf#"
 	1    1400 4300
 	1    0    0    -1  
 $EndComp
@@ -325,6 +328,7 @@ F 0 "C2" H 2030 4350 50  0000 L CNN
 F 1 "100nF" H 2030 4250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1938 4150 50  0001 C CNN
 F 3 "~" H 1900 4300 50  0001 C CNN
+F 4 "CC0402KRX7R7BB104" H 1900 4300 50  0001 C CNN "manf#"
 	1    1900 4300
 	1    0    0    -1  
 $EndComp
@@ -336,6 +340,7 @@ F 0 "C3" H 4650 6150 50  0000 L CNN
 F 1 "DNP" H 4650 6075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4538 5950 50  0001 C CNN
 F 3 "~" H 4500 6100 50  0001 C CNN
+F 4 "DNP" H 4500 6100 50  0001 C CNN "variant"
 	1    4500 6100
 	1    0    0    -1  
 $EndComp
@@ -347,6 +352,7 @@ F 0 "C5" H 5450 6150 50  0000 L CNN
 F 1 "DNP" H 5450 6075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5338 5950 50  0001 C CNN
 F 3 "~" H 5300 6100 50  0001 C CNN
+F 4 "DNP" H 5300 6100 50  0001 C CNN "variant"
 	1    5300 6100
 	1    0    0    -1  
 $EndComp
@@ -358,6 +364,7 @@ F 0 "U1" H 2500 6450 50  0000 C CNN
 F 1 "MAX-8C" H 3200 5150 50  0000 C CNN
 F 2 "RF_GPS:ublox_MAX" H 3300 5150 50  0001 C CNN
 F 3 "https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf" H 2900 5800 50  0001 C CNN
+F 4 "MAX-8C-0-10" H 2900 5800 50  0001 C CNN "manf#"
 	1    2900 5800
 	1    0    0    -1  
 $EndComp
@@ -681,6 +688,7 @@ F 0 "R4" H 8700 5650 50  0000 L CNN
 F 1 "4k7" H 8700 5550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8530 5600 50  0001 C CNN
 F 3 "~" H 8600 5600 50  0001 C CNN
+F 4 "DNP" H 8600 5600 50  0001 C CNN "variant"
 	1    8600 5600
 	-1   0    0    -1  
 $EndComp
@@ -692,6 +700,7 @@ F 0 "R5" H 9300 5650 50  0000 L CNN
 F 1 "4k7" H 9300 5550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9130 5600 50  0001 C CNN
 F 3 "~" H 9200 5600 50  0001 C CNN
+F 4 "DNP" H 9200 5600 50  0001 C CNN "variant"
 	1    9200 5600
 	1    0    0    -1  
 $EndComp
@@ -703,6 +712,7 @@ F 0 "C4" H 5130 2750 50  0000 L CNN
 F 1 "100n" H 5130 2650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5038 2550 50  0001 C CNN
 F 3 "~" H 5000 2700 50  0001 C CNN
+F 4 "CC0402KRX7R7BB104" H 5000 2700 50  0001 C CNN "manf#"
 	1    5000 2700
 	1    0    0    -1  
 $EndComp
@@ -714,6 +724,7 @@ F 0 "C6" H 5630 2750 50  0000 L CNN
 F 1 "10n" H 5630 2650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5538 2550 50  0001 C CNN
 F 3 "~" H 5500 2700 50  0001 C CNN
+F 4 "CC0402ZRY5V7BB103" H 5500 2700 50  0001 C CNN "manf#"
 	1    5500 2700
 	1    0    0    -1  
 $EndComp
@@ -725,6 +736,7 @@ F 0 "C7" H 6130 2750 50  0000 L CNN
 F 1 "100n" H 6130 2650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6038 2550 50  0001 C CNN
 F 3 "~" H 6000 2700 50  0001 C CNN
+F 4 "CC0402KRX7R7BB104" H 6000 2700 50  0001 C CNN "manf#"
 	1    6000 2700
 	1    0    0    -1  
 $EndComp
@@ -796,6 +808,7 @@ F 0 "U2" H 3560 2750 50  0000 C CNN
 F 1 "MPU-9250" H 4300 1250 50  0000 C CNN
 F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 4000 1000 50  0001 C CNN
 F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 4000 1850 50  0001 C CNN
+F 4 "MPU-9250" H 4000 2000 50  0001 C CNN "manf#"
 	1    4000 2000
 	1    0    0    -1  
 $EndComp
@@ -813,6 +826,7 @@ F 0 "JP2" H 5150 1800 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 5160 1850 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5150 1700 50  0001 C CNN
 F 3 "~" H 5150 1700 50  0001 C CNN
+F 4 "DNP" H 5150 1700 50  0001 C CNN "variant"
 	1    5150 1700
 	1    0    0    -1  
 $EndComp
@@ -852,6 +866,7 @@ F 0 "C8" H 6630 2725 50  0000 L CNN
 F 1 "100n" H 6630 2625 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6538 2525 50  0001 C CNN
 F 3 "~" H 6500 2675 50  0001 C CNN
+F 4 "CC0402KRX7R7BB104" H 6500 2675 50  0001 C CNN "manf#"
 	1    6500 2675
 	1    0    0    -1  
 $EndComp
@@ -937,6 +952,7 @@ F 0 "JP3" H 1500 5425 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 1525 5600 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1500 5500 50  0001 C CNN
 F 3 "~" H 1500 5500 50  0001 C CNN
+F 4 "DNP" H 1500 5500 50  0001 C CNN "variant"
 	1    1500 5500
 	1    0    0    -1  
 $EndComp
@@ -952,6 +968,7 @@ F 0 "JP4" H 1500 5500 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 1525 5525 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1500 5400 50  0001 C CNN
 F 3 "~" H 1500 5400 50  0001 C CNN
+F 4 "DNP" H 1500 5400 50  0001 C CNN "variant"
 	1    1500 5400
 	1    0    0    -1  
 $EndComp
