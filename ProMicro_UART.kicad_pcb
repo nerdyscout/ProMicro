@@ -11,12 +11,12 @@
 
   (page A4)
   (title_block
-    (title ProMicro_Serial)
+    (title ProMicro_UART)
     (date 2020-03-15)
     (rev v1.2)
     (company https://twitter.com/nerdyscout84)
     (comment 1 "CERN Open Hardware Licence v1.2 ")
-    (comment 2 http://github.com/nerdyscout/ProMicro_Serial)
+    (comment 2 http://github.com/nerdyscout/ProMicro_UART)
   )
 
   (layers

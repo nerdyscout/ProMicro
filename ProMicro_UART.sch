@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ProMicro_Serial"
-Date "2020-03-01"
+Title "ProMicro_UART"
+Date "2020-03-15"
 Rev "v1.1"
 Comp "https://twitter.com/nerdyscout84"
 Comment1 "CERN Open Hardware Licence v1.2"
-Comment2 "https://github.com/nerdyscout/ProMicro_Serial"
+Comment2 "https://github.com/nerdyscout/ProMicro_UART"
 Comment3 ""
 Comment4 ""
 $EndDescr
