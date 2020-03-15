@@ -47,7 +47,7 @@ jobs:
 #        if: file generation successfull
         run: |
           PROJECT=$(basename "$PWD") 
-          mkdir -p docs/bom && cp -u $(find out/ -name "bom.csv") "docs/bom/"$PROJECT"_bom.csv"
+          # mkdir -p docs/bom && cp -u $(find out/ -name "bom.csv") "docs/bom/"$PROJECT"_bom.csv"
           mkdir -p docs/bom && cp -u $(find out/ -name "ibom.html") "docs/bom/index.html"
           mkdir -p docs && cp -u $(find out/ -name $PROJECT".pdf") "docs/"$PROJECT"_schematic.pdf"
           mkdir -p docs && cp -u $(find out/ -name $PROJECT".svg") "docs/"$PROJECT"_schematic.svg"
