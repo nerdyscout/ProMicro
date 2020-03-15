@@ -2,7 +2,7 @@
 There are all kinds of extension shields for the Arduino Uno and hundreds of breakout boards for various sensors. All [ProMicro modules](https://github.com/nerdyscout?tab=repositories&q=ProMicro) are a redesign of such boards, which still could be used for tinkering on a breadboard, but they are also stackable onto the [ProMicro](https://github.com/sparkfun/Pro_Micro).
 
 # ProMicro_UART
-this is a USB to UART, SPI, I2C, JTAG module with the footprint of an Arduino ProMicro
+USB-Serial module which can connect to RS232, RS485, SPI, I2C and JTAG.
 
 ## Documentation
 complete documentation can be found here: https://nerdyscout.github.io/ProMicro_UART/
