@@ -40,6 +40,9 @@ jobs:
           KICAD_TOOLS_PATH: /opt/kicad-tools
         run: cp /opt/kicad-tools/etc/Makefile ./Makefile && make fabrication-outputs
 
+      - name: debug
+        run: sudo apt install tree && tree
+
       - name: move output files
 #        if: file generation successfull
         run: |
