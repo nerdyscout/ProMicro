@@ -10,6 +10,9 @@ complete documentation can be found here: https://nerdyscout.github.io/ProMicro_
 ### Schematic
 [![ProMicro_GPS_schematic](docs/ProMicro_GPS_schematic.svg)](docs/ProMicro_GPS_schematic.pdf)
 
+### Layout
+[ProMicro_GPS_layout_top](docs/img/ProMicro_GPS_layout_top) [ProMicro_GPS_layout_bottom](docs/img/ProMicro_GPS_layout_bottom)
+
 ## License
 Copyright Stefan Herold 2020
 
