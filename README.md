@@ -2,7 +2,7 @@
 There are all kinds of extension shields for the Arduino Uno and hundreds of breakout boards for various sensors. All [ProMicro modules](https://github.com/nerdyscout?tab=repositories&q=ProMicro) are a redesign of such boards, which still could be used for tinkering on a breadboard, but they are also stackable onto the [ProMicro](https://github.com/sparkfun/Pro_Micro).
 
 # ProMicro_LORA
-Lora module with SX1276
+Lora module with SX1276 using 868MHz for Europe
 
 ## Documentation
 tbd
