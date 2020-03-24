@@ -1,5 +1,5 @@
 site: https://nerdyscout.github.io/ProMicro_LORA
-summary: LoRaWAN Transceiver Modul with 868Mhz
+summary: tbd
 readme: README.md 
 bom: docs/bom/ProMicro_LORA_bom.csv
 eda:
