@@ -1,0 +1,6 @@
+ {
+  "name": "ProMicro_LORA",
+  "abstract": "Lora module with SX1276",
+  "description": "tbd",
+  "version":"v1.0"
+}

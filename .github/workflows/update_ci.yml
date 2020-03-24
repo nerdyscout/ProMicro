@@ -1,0 +1,50 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
+
+      - name: Checkout template
+        uses: actions/checkout@v2
+        with:
+          repository: nerdyscout/ProMicro_TEMP
+          path: ProMicro_TEMP
+          ref: master
+
+      - name: get template files
+        run : |
+            cp ProMicro_TEMP/.github/workflows/*.yaml .github/workflows/*.yaml
+            cp ProMicro_TEMP/.github/workflows/*.yml .github/workflows/*.yml
+            rm -r ProMicro_TEMP/
+            
+      - name: Check if there are changes
+        id: changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+
+      - name: if changes commit them
+        if: steps.changes.outputs.changed == 1
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .github/workflows/*
+          git commit -m "update CI by Github Actions"
+          git pull --rebase
+
+      - name: Push changes
+        if: steps.changes.outputs.changed == 1
+        uses: ad-m/github-push-action@master
+        with:
+          branch: 'dev'
+          github_token: ${{ secrets.GITHUB_TOKEN }}

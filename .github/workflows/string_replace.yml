@@ -1,0 +1,110 @@
+name: string replace
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  string_replace:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
+
+      - name: Checkout template
+        uses: actions/checkout@v2
+        with:
+          repository: nerdyscout/ProMicro_TEMP
+          path: ProMicro_TEMP
+          ref: master
+
+      - name: get template files
+        run : |
+            cp ProMicro_TEMP/README.md README.md
+            #cp ProMicro_TEMP/docs/index.html docs/index.html
+            cp ProMicro_TEMP/kitspace.yaml kitspace.yaml
+            rm -r ProMicro_TEMP/
+
+      - name: JSON{"name"}
+        id: name
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'project.json'
+            prop_path: 'name'  
+      - name: JSON{"abstract"}
+        id: abstract
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'project.json'
+            prop_path: 'abstract'  
+      - name: JSON{"description"}
+        id: description
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'project.json'
+            prop_path: 'description'
+      - name: JSON{"version"}
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+            path: 'project.json'
+            prop_path: 'version'
+
+# replacements in README.md
+      - name: replacements in README.md
+        uses: BjornLuG/substitute-string-action@v1.0.0
+        with:
+            _input-file: 'README.md'
+            _output-file: 'README.md'
+            _format-key: '%%key%%'
+            name: ${{ steps.name.outputs.prop }}
+            abstract: ${{ steps.abstract.outputs.prop }}
+            description: ${{ steps.description.outputs.prop }}
+
+# replacements in docs/index.html
+#      - name: replacements in docs/index.html
+#        uses: BjornLuG/substitute-string-action@v1.0.0
+#        with:
+#            _input-file: 'docs/index.html'
+#            _output-file: 'docs/index.html'
+#            _format-key: '%%key%%'
+#            name: ${{ steps.name.outputs.prop }}
+#            abstract: ${{ steps.abstract.outputs.prop }}
+#            description: ${{ steps.description.outputs.prop }}
+
+# replacements in kitspace.yaml
+      - name: replacements in kitspace.yaml
+        uses: BjornLuG/substitute-string-action@v1.0.0
+        with:
+            _input-file: 'kitspace.yaml'
+            _output-file: 'kitspace.yaml'
+            _format-key: '%%key%%'
+            name: ${{ steps.name.outputs.prop }}
+            abstract: ${{ steps.abstract.outputs.prop }}
+            description: ${{ steps.description.outputs.prop }}
+
+      - name: Check if there are changes
+        id: changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+
+      - name: if changes exit commit them
+        if: steps.changes.outputs.changed == 1
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md kitspace.yaml
+          git commit -m "replacements by Github Actions"
+          git pull --rebase
+
+      - name: Push changes
+        if: steps.changes.outputs.changed == 1
+        uses: ad-m/github-push-action@master
+        with:
+          branch: 'dev'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: 'false'
