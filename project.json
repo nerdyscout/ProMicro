@@ -1,0 +1,6 @@
+ {
+  "name": "ProMicro_UART",
+  "abstract": "this is a USB to UART, SPI, I2C, JTAG module with the footprint of an Arduino ProMicro",
+  "description": "tbd",
+  "version":"v1.0"
+}
