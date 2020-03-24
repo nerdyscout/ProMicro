@@ -1,0 +1,6 @@
+ {
+  "name": "ProMicro_GPS",
+  "abstract": "GPS receiver and Gyro module",
+  "description": "tbd",
+  "version":"v1.0"
+}
