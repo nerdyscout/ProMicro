@@ -25,7 +25,7 @@ jobs:
 
       - name: get template files
         run : |
-            cp ProMicro_TEMP/.github/workflows/*.yaml .github/workflows/*.yaml
+            #cp ProMicro_TEMP/.github/workflows/*.yaml .github/workflows/*.yaml
             cp ProMicro_TEMP/.github/workflows/*.yml .github/workflows/*.yml
             rm -r ProMicro_TEMP/
             

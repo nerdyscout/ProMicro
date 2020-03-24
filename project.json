@@ -1,6 +1,6 @@
  {
   "name": "ProMicro_LORA",
-  "abstract": "Lora module with SX1276",
+  "abstract": "Lora module with SX1276 using 868MHz for Europe",
   "description": "tbd",
   "version":"v1.0"
 }
