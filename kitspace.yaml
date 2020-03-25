@@ -1,5 +1,5 @@
 site: https://nerdyscout.github.io/ProMicro_UART
-summary: USB <> JTAG, SPI, I2C Adapter 
+summary: tbd
 readme: README.md 
 bom: docs/bom/ProMicro_UART_bom.csv
 eda:
