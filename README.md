@@ -5,10 +5,15 @@ There are all kinds of extension shields for the Arduino Uno and hundreds of bre
 USB-Serial module which can connect to RS232, RS485, SPI, I2C and JTAG.
 
 ## Documentation
-complete documentation can be found here: https://nerdyscout.github.io/ProMicro_UART/
+tbd
+
+more detailed description can be found [nerdyscout.github.io/ProMicro_UART](https://nerdyscout.github.io/ProMicro_UART)
 
 ### Schematic
 [![ProMicro_UART_schematic](docs/ProMicro_UART_schematic.svg)](docs/ProMicro_UART_schematic.pdf)
+
+### Layout & Assembly
+<img src="docs/img/ProMicro_UART_layout_top.svg" width="200" alt="ProMicro_UART_layout_top"> <img src="docs/img/ProMicro_UART_assembly_top.svg" width="200" alt="ProMicro_UART_assembly_top"> <img src="docs/img/ProMicro_UART_layout_bottom.svg" width="200" alt="ProMicro_UART_layout_bottom"> <img src="docs/img/ProMicro_UART_assembly_bottom.svg" width="200" alt="ProMicro_UART_assembly_bottom">
 
 ## License
 Copyright Stefan Herold 2020
