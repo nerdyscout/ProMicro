@@ -1,6 +1,6 @@
-update=Sa 07 Mär 2020 19:38:06 UTC
+update=Mi 25 Mär 2020 18:59:41 UTC
 version=1
-last_client=pcbnew
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -27,7 +27,7 @@ version=1
 PageLayoutDescrFile=/home/user/Projects/ProMicro/_template/ProMicro_template.kicad_wks
 LastNetListRead=
 CopperLayerCount=4
-BoardThickness=0.8
+BoardThickness=1
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=1
@@ -38,7 +38,7 @@ MinViaDrill=0.2
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.15
+TrackWidth1=0.25
 TrackWidth2=0.1
 TrackWidth3=0.2
 TrackWidth4=0.25
@@ -248,7 +248,7 @@ Enabled=0
 [pcbnew/Netclasses/Default]
 Name=Default
 Clearance=0.15
-TrackWidth=0.15
+TrackWidth=0.25
 ViaDiameter=0.45
 ViaDrill=0.2
 uViaDiameter=0.3
