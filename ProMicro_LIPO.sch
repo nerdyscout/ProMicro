@@ -929,6 +929,6 @@ Text Notes 10500 2775 0    50   ~ 0
 TMS
 Text Notes 10500 2875 0    50   ~ 0
 TCK
-Text Notes 4000 7250 0    50   ~ 0
+Text Notes 3750 7250 0    50   ~ 0
 close 1-2 read analog voltage\nclose 2-3 read LBO status\nopen 1 2 3 if no battery status required
 $EndSCHEMATC
