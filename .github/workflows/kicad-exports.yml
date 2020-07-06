@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: nelonoel/branch-name@v1
     - name: kicad-exports kicad-erc
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: kicad-erc
         dir: docs
@@ -28,7 +28,7 @@ jobs:
         name: erc
         path: docs/*.erc
     - name: kicad-exports kicad-drc
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: kicad-drc
         dir: docs
@@ -44,12 +44,12 @@ jobs:
     - uses: actions/checkout@v2
     - uses: nelonoel/branch-name@v1
     - name: kicad-exports tracespace-assembly
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: tracespace-assembly
         dir: docs/img
     - name: kicad-exports tracespace-board
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: tracespace-board
         dir: docs/img
@@ -68,7 +68,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: nelonoel/branch-name@v1
     - name: kicad-exports fabrication
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: fabrication
         dir: gerbers
@@ -93,17 +93,17 @@ jobs:
     - uses: actions/checkout@v2
     - uses: nelonoel/branch-name@v1
     - name: kicad-exports schematic
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: schematic
         dir: docs
     - name: kicad-exports kicad-board
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: kicad-board
         dir: docs
     - name: kicad-exports bom
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: bom
         dir: docs/bom
@@ -122,19 +122,19 @@ jobs:
     - uses: actions/checkout@v2
     - uses: nelonoel/branch-name@v1
     - name: kicad-exports panelize
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: kikit-panelize
         dir: panel
         parameters: "--space 2.54 --gridsize 3 5 --tabwidth 2.54 --tabheight 2.54 --htabs 1 --vtabs 1 --mousebites 0.25 0.5 -0.25 --radius 1"
     - name: kicad-exports fabrication
-      uses: nerdyscout/kicad-exports@v1.1
+      uses: nerdyscout/kicad-exports@v1.0
       with:
         cmd: fabrication
         dir: panel/gerbers
         board: panel/*.kicad_pcb
 #    - name: kicad-exports bom
-#      uses: nerdyscout/kicad-exports@v1.1
+#      uses: nerdyscout/kicad-exports@v1.0
 #      with:
 #        cmd: kicad-bom
 #        dir: panel/docs

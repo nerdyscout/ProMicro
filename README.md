@@ -1,5 +1,5 @@
 # ProMicro_GPS
-This module can be mounted to an [Arduino Pro Mini](https://www.sparkfun.com/products/11113), [Arduino Nano](https://store.arduino.cc/arduino-nano) [Sparkfun Pro Micro](https://www.sparkfun.com/products/12587), or any other pincompatible MCU running with 3.3V. Depending on assembly it provides GPs and/or GYRO data.
+This module can be mounted to an [Arduino Pro Mini](https://www.sparkfun.com/products/11113), [Arduino Nano](https://store.arduino.cc/arduino-nano), [Sparkfun Pro Micro](https://www.sparkfun.com/products/12587), or any other pincompatible MCU running with 3.3V. Depending on assembly it provides GPS and/or GYRO data.
 
 
 ## Documentation
@@ -25,11 +25,13 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_GPS).
 can be found within the Github [repository](gerbers).
 
 
+
 ## Code
-  * [Arduino Nano GPS](examples/Arduino_Nano_GPS/Arduino_Nano_GPS.ino)
-  * [Arduino Nano GYRO](examples/Arduino_Nano_GYRO/Arduino_Nano_GYRO.ino)
-  * [Sparkfun ProMicro3V3 GPS](examples/Sparkfun_ProMicro_GPS/Sparkfun_ProMicro_GPS.ino)
-  * Sparkfun ProMicro3V3 GYRO [ICM20948](examples/Sparkfun_ProMicro_ICM20948/Sparkfun_ProMicro_ICM20948.ino) [MPU9250](examples/Sparkfun_ProMicro_MPU9250/Sparkfun_ProMicro_MPU9250.ino)
+| | GYRO | GPS |
+| --- | --- | --- |
+| Arduino Nano | tbd | [GPS](examples/Arduino_Nano_GPS/Arduino_Nano_GPS.ino) |
+| Sparkfun ProMicro | [ICM20948](examples/Sparkfun_ProMicro_ICM20948/Sparkfun_ProMicro_ICM20948.ino)<br>[MPU9250](examples/Sparkfun_ProMicro_MPU9250/Sparkfun_ProMicro_MPU9250.ino) | [GPS](examples/Sparkfun_ProMicro_GPS/Sparkfun_ProMicro_GPS.ino) |
+
 
 ## Links
   * [hackaday.io](https://hackaday.io/project/171898-promicro)
