@@ -7,7 +7,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_LIPO).
 
 
 ### Schematic
-[![ProMicro_LIPO_Schematic](docs/ProMicro_LIPO_Schematic.svg)](docs/ProMicro_LIPO_Schematic.pdf)
+[![ProMicro_LIPO_Schematic](docs/ProMicro_LIPO_schematic.svg)](docs/ProMicro_LIPO_schematic.pdf)
 
 
 ### Layout
