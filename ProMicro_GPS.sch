@@ -5,11 +5,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title " ProMicro_GPS"
-Date "2020-03-05"
-Rev "v2.2"
-Comp "https://twitter.com/nerdyscout84"
+Date "2020-05-30"
+Rev "v3"
+Comp "https://github.com/nerdyscout/ProMicro_GPS"
 Comment1 "CERN Open Hardware Licence v1.2"
-Comment2 "https://github.com/nerdyscout/ProMicro_GPS"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -68,8 +68,6 @@ Wire Wire Line
 Wire Wire Line
 	5300 5800 5050 5800
 Wire Wire Line
-	2900 4800 2900 5100
-Wire Wire Line
 	1950 6000 2300 6000
 Wire Wire Line
 	1900 5700 2300 5700
@@ -117,8 +115,6 @@ Text GLabel 1900 5800 0    50   Input ~ 0
 D3
 Text GLabel 1900 6200 0    50   Input ~ 0
 Reset
-Text GLabel 2900 4800 1    50   Input ~ 0
-D4
 $Comp
 L power:+3V3 #PWR01
 U 1 1 5E2638EA
@@ -362,7 +358,7 @@ L RF_GPS:MAX-8C U1
 U 1 1 5E1A505C
 P 2900 5800
 F 0 "U1" H 2500 6450 50  0000 C CNN
-F 1 "MAX-8C" H 3200 5150 50  0000 C CNN
+F 1 "SIM28ML" H 3200 5150 50  0000 C CNN
 F 2 "RF_GPS:ublox_MAX" H 3300 5150 50  0001 C CNN
 F 3 "https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf" H 2900 5800 50  0001 C CNN
 F 4 "MAX-8C-0-10" H 2900 5800 50  0001 C CNN "manf#"
@@ -463,8 +459,6 @@ Wire Notes Line
 	7000 1000 7000 6000
 Wire Notes Line
 	1000 3500 7000 3500
-Text Notes 7900 2830 2    50   ~ 0
-VBAT
 Text Notes 9800 3030 0    50   ~ 0
 TDI
 Text Notes 9800 3130 0    50   ~ 0
@@ -521,9 +515,9 @@ $Comp
 L Connector:TestPoint TP1
 U 1 1 5E1646E7
 P 3000 2200
-F 0 "TP1" V 3150 2250 50  0000 C CNN
+F 0 "TP1" V 3000 2450 50  0000 C CNN
 F 1 "FSYNC" V 3000 2420 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 2200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3200 2200 50  0001 C CNN
 F 3 "~" H 3200 2200 50  0001 C CNN
 	1    3000 2200
 	0    -1   -1   0   
@@ -532,9 +526,9 @@ $Comp
 L Connector:TestPoint TP2
 U 1 1 5E161450
 P 5000 1900
-F 0 "TP2" V 5000 2100 50  0000 L CNN
-F 1 "AUX_SDA" V 5000 2120 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5200 1900 50  0001 C CNN
+F 0 "TP2" V 5000 2100 50  0001 L CNN
+F 1 "AUX_SDA" V 5000 2120 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5200 1900 50  0001 C CNN
 F 3 "~" H 5200 1900 50  0001 C CNN
 	1    5000 1900
 	0    1    1    0   
@@ -543,9 +537,9 @@ $Comp
 L Connector:TestPoint TP3
 U 1 1 5E161DCE
 P 5000 2000
-F 0 "TP3" V 5000 2200 50  0000 L CNN
-F 1 "AUX_SCL" V 5000 2220 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5200 2000 50  0001 C CNN
+F 0 "TP3" V 5000 2200 50  0001 L CNN
+F 1 "AUX_SCL" V 5000 2220 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5200 2000 50  0001 C CNN
 F 3 "~" H 5200 2000 50  0001 C CNN
 	1    5000 2000
 	0    1    1    0   
@@ -621,7 +615,7 @@ L power:+3V3 #PWR025
 U 1 1 5E126446
 P 9000 1900
 F 0 "#PWR025" H 9000 1750 50  0001 C CNN
-F 1 "+3V3" H 9020 2080 50  0000 C CNN
+F 1 "+3V3" H 9000 2100 50  0000 C CNN
 F 2 "" H 9000 1900 50  0001 C CNN
 F 3 "" H 9000 1900 50  0001 C CNN
 	1    9000 1900
@@ -730,21 +724,9 @@ U 1 1 5E26136E
 P 10800 6900
 F 0 "LOGO1" H 10800 7175 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 10800 6675 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_9.8x8mm_SilkScreen" H 10800 6900 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 10800 6900 50  0001 C CNN
 F 3 "~" H 10800 6900 50  0001 C CNN
 	1    10800 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
-U 1 1 5E53883C
-P 8900 3000
-F 0 "A1" H 8550 3950 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 9500 2050 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
-F 4 "DNP" H 8900 3000 50  0001 C CNN "variant"
-	1    8900 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -821,8 +803,6 @@ Wire Wire Line
 	5500 1700 5300 1700
 Wire Wire Line
 	6500 2375 6500 2525
-Wire Wire Line
-	6500 2825 6500 2985
 $Comp
 L power:+3V3 #PWR021
 U 1 1 5E5AA8FA
@@ -832,17 +812,6 @@ F 1 "+3V3" H 6500 2525 50  0000 C CNN
 F 2 "" H 6500 2375 50  0001 C CNN
 F 3 "" H 6500 2375 50  0001 C CNN
 	1    6500 2375
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR022
-U 1 1 5E5AA904
-P 6500 2985
-F 0 "#PWR022" H 6500 2735 50  0001 C CNN
-F 1 "GND" H 6500 2835 50  0000 C CNN
-F 2 "" H 6500 2985 50  0001 C CNN
-F 3 "" H 6500 2985 50  0001 C CNN
-	1    6500 2985
 	1    0    0    -1  
 $EndComp
 Text Notes 7900 2925 2    50   ~ 0
@@ -922,14 +891,14 @@ GPS
 $Comp
 L Device:Jumper_NO_Small JP2
 U 1 1 5E617C03
-P 1500 5500
-F 0 "JP2" H 1500 5425 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 1525 5600 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1500 5500 50  0001 C CNN
-F 3 "~" H 1500 5500 50  0001 C CNN
-F 4 "DNP" H 1500 5500 50  0001 C CNN "variant"
-	1    1500 5500
-	1    0    0    -1  
+P 1500 5400
+F 0 "JP2" H 1500 5325 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1525 5500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1500 5400 50  0001 C CNN
+F 3 "~" H 1500 5400 50  0001 C CNN
+F 4 "DNP" H 1500 5400 50  0001 C CNN "variant"
+	1    1500 5400
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1600 5500 2300 5500
@@ -938,14 +907,14 @@ Wire Wire Line
 $Comp
 L Device:Jumper_NC_Small JP1
 U 1 1 5E620A66
-P 1500 5400
-F 0 "JP1" H 1500 5500 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 1525 5525 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1500 5400 50  0001 C CNN
-F 3 "~" H 1500 5400 50  0001 C CNN
-F 4 "DNP" H 1500 5400 50  0001 C CNN "variant"
-	1    1500 5400
-	1    0    0    -1  
+P 1500 5500
+F 0 "JP1" H 1500 5600 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 1525 5625 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1500 5500 50  0001 C CNN
+F 3 "~" H 1500 5500 50  0001 C CNN
+F 4 "DNP" H 1500 5500 50  0001 C CNN "variant"
+	1    1500 5500
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1250 5400 1400 5400
@@ -1017,4 +986,85 @@ F 6 "C1525" H 1900 4300 50  0001 C CNN "LCSC#"
 	1    1900 4300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6500 2825 6500 2985
+$Comp
+L power:GND #PWR022
+U 1 1 5E5AA904
+P 6500 2985
+F 0 "#PWR022" H 6500 2735 50  0001 C CNN
+F 1 "GND" H 6500 2835 50  0000 C CNN
+F 2 "" H 6500 2985 50  0001 C CNN
+F 3 "" H 6500 2985 50  0001 C CNN
+	1    6500 2985
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5EB55D45
+P 2900 4750
+F 0 "TP6" H 3000 4900 50  0000 L CNN
+F 1 "VBAT" H 3000 4800 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 3100 4750 50  0001 C CNN
+F 3 "~" H 3100 4750 50  0001 C CNN
+	1    2900 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4750 2900 5100
+Wire Wire Line
+	6500 1200 6500 1350
+Wire Wire Line
+	6500 1650 6500 1810
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5EB92BE9
+P 6500 1200
+F 0 "#PWR0101" H 6500 1050 50  0001 C CNN
+F 1 "+3V3" H 6500 1350 50  0000 C CNN
+F 2 "" H 6500 1200 50  0001 C CNN
+F 3 "" H 6500 1200 50  0001 C CNN
+	1    6500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EB92BF3
+P 6500 1810
+F 0 "#PWR0102" H 6500 1560 50  0001 C CNN
+F 1 "GND" H 6500 1660 50  0000 C CNN
+F 2 "" H 6500 1810 50  0001 C CNN
+F 3 "" H 6500 1810 50  0001 C CNN
+	1    6500 1810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5EB92C00
+P 6500 1500
+F 0 "C9" H 6630 1550 50  0000 L CNN
+F 1 "100n" H 6630 1450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6538 1350 50  0001 C CNN
+F 3 "~" H 6500 1500 50  0001 C CNN
+F 4 "CL05B103KB5NNNC" H 6500 1500 50  0001 C CNN "manf#"
+F 5 "GYRO" H 6500 1500 50  0001 C CNN "variant"
+F 6 "C15195" H 6500 1500 50  0001 C CNN "LCSC#"
+	1    6500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
+U 1 1 5ED4F2B4
+P 8900 3000
+F 0 "A1" H 8575 3950 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro_3V3" H 9550 2025 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
+F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
+	1    8900 3000
+	1    0    0    -1  
+$EndComp
+Text Notes 1750 2750 0    50   ~ 0
+Alternativ:\nICM-20948 requires 1.8V @VDDIO
+Text Notes 3250 6750 0    50   ~ 0
+Alternativ:\nMAX-8
 $EndSCHEMATC

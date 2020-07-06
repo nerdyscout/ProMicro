@@ -1,19 +1,39 @@
-# ProMicro
-There are all kinds of extension shields for the Arduino Uno and hundreds of breakout boards for various sensors. All [ProMicro modules](https://github.com/nerdyscout?tab=repositories&q=ProMicro) are a redesign of such boards, which still could be used for tinkering on a breadboard, but they are also stackable onto the [ProMicro](https://github.com/sparkfun/Pro_Micro).
-
 # ProMicro_GPS
-GPS receiver and Gyro module
+This module can be mounted to an [Arduino Pro Mini](https://www.sparkfun.com/products/11113), [Arduino Nano](https://store.arduino.cc/arduino-nano) [Sparkfun Pro Micro](https://www.sparkfun.com/products/12587), or any other pincompatible MCU running with 3.3V. Depending on assembly it provides GPs and/or GYRO data.
+
 
 ## Documentation
-tbd
+All files can be found on [Github](https://github.com/nerdyscout/ProMicro_GPS).
 
-more detailed description can be found [nerdyscout.github.io/ProMicro_GPS](https://nerdyscout.github.io/ProMicro_GPS)
 
 ### Schematic
-[![ProMicro_GPS_schematic](docs/ProMicro_GPS_schematic.svg)](docs/ProMicro_GPS_schematic.pdf)
+[![ProMicro_GPS_Schematic](docs/ProMicro_GPS_schematic.svg)](docs/ProMicro_GPS_schematic.pdf)
 
-### Layout & Assembly
-<img src="docs/img/ProMicro_GPS_layout_top.svg" width="200" alt="ProMicro_GPS_layout_top"> <img src="docs/img/ProMicro_GPS_assembly_top.svg" width="200" alt="ProMicro_GPS_assembly_top"> <img src="docs/img/ProMicro_GPS_layout_bottom.svg" width="200" alt="ProMicro_GPS_layout_bottom"> <img src="docs/img/ProMicro_GPS_assembly_bottom.svg" width="200" alt="ProMicro_GPS_assembly_bottom">
+
+### Layout
+<a href="docs/ProMicro_GPS_Board_Top.pdf"><img src="docs/img/ProMicro_GPS_Board_Top.svg" alt="ProMicro_GPS_Board_Top" width="20%"/></a>
+<a href="docs/ProMicro_GPS_Board_Bottom.pdf"><img src="docs/img/ProMicro_GPS_Board_Bottom.svg" alt="ProMicro_GPS_Board_Bottom" width="20%"/></a>
+
+
+### BoM
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_GPS/docs/bom/ibom.html)
+  * [kicost](docs/bom/ProMicro_GPS.xlsx)
+  * [csv](docs/bom/ProMicro_GPS.csv)
+
+
+## Gerbers
+can be found within the Github [repository](gerbers).
+
+
+## Code
+  * [Arduino Nano GPS](examples/Arduino_Nano_GPS/Arduino_Nano_GPS.ino)
+  * [Arduino Nano GYRO](examples/Arduino_Nano_GYRO/Arduino_Nano_GYRO.ino)
+  * [Sparkfun ProMicro3V3 GPS](examples/Sparkfun_ProMicro_GPS/Sparkfun_ProMicro_GPS.ino)
+  * Sparkfun ProMicro3V3 GYRO [ICM20948](examples/Sparkfun_ProMicro_ICM20948/Sparkfun_ProMicro_ICM20948.ino) [MPU9250](examples/Sparkfun_ProMicro_MPU9250/Sparkfun_ProMicro_MPU9250.ino)
+
+## Links
+  * [hackaday.io](https://hackaday.io/project/171898-promicro)
+
 
 ## License
 Copyright Stefan Herold 2020
