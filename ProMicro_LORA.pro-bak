@@ -1,4 +1,4 @@
-update=Sun May  3 17:54:16 2020
+update=Sun Jun  7 09:41:04 2020
 version=1
 last_client=eeschema
 [general]
@@ -282,7 +282,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=/home/user/Projects/Shields/ProMicro_/TEMP/ProMicro_TEMP.kicad_wks
-PlotDirectoryName=/output/docs/
+PlotDirectoryName=/tmp/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

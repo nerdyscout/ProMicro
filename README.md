@@ -1,19 +1,41 @@
-# ProMicro
-There are all kinds of extension shields for the Arduino Uno and hundreds of breakout boards for various sensors. All [ProMicro modules](https://github.com/nerdyscout?tab=repositories&q=ProMicro) are a redesign of such boards, which still could be used for tinkering on a breadboard, but they are also stackable onto the [ProMicro](https://github.com/sparkfun/Pro_Micro).
-
 # ProMicro_LORA
-Lora module with SX1276 using 868MHz for Europe
+This module can be mounted to an [Arduino Pro Mini](https://www.sparkfun.com/products/11113), [Arduino Nano](https://store.arduino.cc/arduino-nano), [Sparkfun Pro Micro](https://www.sparkfun.com/products/12587), or any other pincompatible MCU running with 3.3V. Manufacturing this PCB with 0.8mm thickness allows to mount a GPS module onto its back.
+
 
 ## Documentation
-tbd
+All files can be found on [Github](https://github.com/nerdyscout/ProMicro_LORA).
 
-more detailed description can be found [nerdyscout.github.io/ProMicro_LORA](https://nerdyscout.github.io/ProMicro_LORA)
 
 ### Schematic
-[![ProMicro_LORA_schematic](docs/ProMicro_LORA_schematic.svg)](docs/ProMicro_LORA_schematic.pdf)
+[![ProMicro_LORA_Schematic](docs/ProMicro_LORA_schematic.svg)](docs/ProMicro_LORA_schematic.pdf)
 
-### Layout & Assembly
-<img src="docs/img/ProMicro_LORA_layout_top.svg" width="200" alt="ProMicro_LORA_layout_top"> <img src="docs/img/ProMicro_LORA_assembly_top.svg" width="200" alt="ProMicro_LORA_assembly_top"> <img src="docs/img/ProMicro_LORA_layout_bottom.svg" width="200" alt="ProMicro_LORA_layout_bottom"> <img src="docs/img/ProMicro_LORA_assembly_bottom.svg" width="200" alt="ProMicro_LORA_assembly_bottom">
+
+### Layout
+<a href="docs/ProMicro_LORA_Board_Top.pdf"><img src="docs/img/ProMicro_LORA_Board_Top.svg" alt="ProMicro_LORA_Board_Top" width="20%"/></a>
+<a href="docs/ProMicro_LORA_Board_Bottom.pdf"><img src="docs/img/ProMicro_LORA_Board_Bottom.svg" alt="ProMicro_LORA_Board_Bottom" width="20%"/></a>
+
+
+### BoM
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_LORA/docs/bom/ibom.html)
+  * [kicost](docs/bom/ProMicro_LORA.xlsx)
+  * [csv](docs/bom/ProMicro_LORA.csv)
+
+
+## Gerbers
+can be found within the Github [repository](gerbers).
+
+
+
+## Code
+| | LORA | 
+| --- | --- | --- |
+| Arduino Nano | [LORA](examples/Arduino_Nano_LORA/Arduino_Nano_LORA.ino) |
+| Sparkfun ProMicro | [LORA](examples/Sparkfun_ProMicro_LORA/Sparkfun_ProMicro_LORA.ino) |
+
+
+## Links
+  * [hackaday.io](https://hackaday.io/project/171898-promicro)
+
 
 ## License
 Copyright Stefan Herold 2020
