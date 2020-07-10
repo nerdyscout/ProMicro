@@ -615,7 +615,7 @@ L power:+3V3 #PWR025
 U 1 1 5E126446
 P 9000 1900
 F 0 "#PWR025" H 9000 1750 50  0001 C CNN
-F 1 "+3V3" H 9000 2100 50  0000 C CNN
+F 1 "+3V3" H 9000 2075 50  0000 C CNN
 F 2 "" H 9000 1900 50  0001 C CNN
 F 3 "" H 9000 1900 50  0001 C CNN
 	1    9000 1900
@@ -765,7 +765,6 @@ Wire Wire Line
 Connection ~ 3200 1800
 Wire Wire Line
 	3200 1800 3200 2000
-NoConn ~ 8800 2000
 NoConn ~ 8800 4000
 $Comp
 L Sensor_Motion:MPU-9250 U2
@@ -1067,4 +1066,17 @@ Text Notes 1750 2750 0    50   ~ 0
 Alternativ:\nICM-20948 requires 1.8V @VDDIO
 Text Notes 3250 6750 0    50   ~ 0
 Alternativ:\nMAX-8
+$Comp
+L power:+5V #PWR?
+U 1 1 5F090F10
+P 8800 1900
+F 0 "#PWR?" H 8800 1750 50  0001 C CNN
+F 1 "+5V" H 8800 2075 50  0000 C CNN
+F 2 "" H 8800 1900 50  0001 C CNN
+F 3 "" H 8800 1900 50  0001 C CNN
+	1    8800 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2000 8800 1900
 $EndSCHEMATC
