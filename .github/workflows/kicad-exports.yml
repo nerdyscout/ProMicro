@@ -10,7 +10,7 @@ on:
       - '**.sch'
       - '**.kicad_pcb'
 
-#jobs:
+jobs:
 #  report:
 #    runs-on: ubuntu-latest
 #    continue-on-error: true
@@ -107,6 +107,7 @@ on:
       with:
         cmd: bom
         dir: docs/bom
+        parameters: "--board-rotation 90 --highlight-pin1 --no-blacklist-virtual --blacklist 'TP'" 
     - name: git commit && git push 
       uses: github-actions-x/commit@v2.6
       with:
