@@ -1,69 +1,41 @@
----
-layout: docu
-title: ProMicro_TEST
-subtitle: test
----
+# ProMicro_TEST
+This module can be mounted to an [Arduino Pro Mini](https://www.sparkfun.com/products/11113), [Arduino Nano](https://store.arduino.cc/arduino-nano), [Sparkfun Pro Micro](https://www.sparkfun.com/products/12587), or any other pincompatible MCU running with 3.3V.
 
-## Documents
+
+## Documentation
+All files can be found on [Github](https://github.com/nerdyscout/ProMicro_TEST).
+
 
 ### Schematic
-[![ProMicro__schematic](docs/ProMicro__schematic.svg)](docs/ProMicro__schematic.pdf)
+[![ProMicro_TEST_Schematic](docs/ProMicro_TEST_schematic.svg)](docs/ProMicro_TEST_schematic.pdf)
+
 
 ### Layout
-[![ProMicro__board](docs/ProMicro__board_.svg)](docs/ProMicro__board.pdf)
+<a href="docs/ProMicro_TEST_Board_Top.pdf"><img src="docs/img/ProMicro_TEST_Board_Top.svg" alt="ProMicro_TEST_Board_Top" width="20%"/></a>
+<a href="docs/ProMicro_TEST_Board_Bottom.pdf"><img src="docs/img/ProMicro_TEST_Board_Bottom.svg" alt="ProMicro_TEST_Board_Bottom" width="20%"/></a>
 
----
 
-## Layout & Assembly
-[![ProMicro_](docs/img/ProMicro__Bottom_Board.svg)](docs/img/ProMicro__Bottom_Board.svg)
-[![ProMicro_](docs/img/ProMicro__Top_Board.svg)](docs/img/ProMicro__Top_Board.svg)
-[![ProMicro_](docs/img/ProMicro__Bottom_Assembly.svg)](docs/img/ProMicro__Bottom_Assembly.svg)
-[![ProMicro_](docs/img/ProMicro__Top_Assembly.svg)](docs/img/ProMicro__Top_Assembly.svg)
+### BoM
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_TEST/docs/bom/ibom.html)
+  * [kicost](docs/bom/ProMicro_TEST.xlsx)
+  * [csv](docs/bom/ProMicro_TEST.csv)
 
----
 
-## Bill of Materials
-* [interactivBOM](docs/bom/ibom.html)
-* [csv](docs/bom/ProMicro_.csv)
-* [KiBoM](docs/bom/ProMicro_.csv)
+## Gerbers
+can be found within the Github [repository](gerbers).
 
----
 
-## Compatibility
 
-| Board | ModTEST | CanTEST | 
-| --- | --- | --- | 
-| [Arduino Pro Mini 328 - 5V/16MHz](https://www.sparkfun.com/products/11113) | yes | 
-| [Arduino Pro Mini 328 - 3.3V/8MHz](https://www.sparkfun.com/products/11114) | yes | 
-| [Sparkfun ProMicro 3.3V@8MHz](https://www.sparkfun.com/products/12587) | yes |
-| [Sparkfun ProMicro 5V@16MHz](https://www.sparkfun.com/products/12640) | yes |
-| [SparkFun Qwiic Pro Micro USB-C](https://www.sparkfun.com/products/15795) | yes |
+## Code
+| | TEST1 | TEST2 |
+| --- | --- | --- |
+| Arduino Nano | tbd | [TEST](examples/Arduino_Nano_TEST/Arduino_Nano_TEST.ino) |
+| Sparkfun ProMicro | [TEST](examples/Sparkfun_ProMicro_TEST/Sparkfun_ProMicro_TEST.ino) | [TEST](examples/Sparkfun_ProMicro_TEST/Sparkfun_ProMicro_TEST.ino) |
 
-**Warning:**
-As I am not able to test all boards this compatibility list is just an estimation.
-{: .alert .alert-danger}
 
----
+## Links
+  * [hackaday.io](https://hackaday.io/project/171898-promicro)
 
-## Code examples
-### Sparkfun_ProMicro_TEST_Test.ino
-~~~
-{% include_relative examples/Sparkfun_ProMicro_TEST_Test/Sparkfun_ProMicro_TEST_Test.ino %}
-~~~
-{: .language-c++}
-
-<!--
-
----
-
-## Purchase
-
-### Kitspace
-
-### Tindie
--->
-
----
 
 ## License
 Copyright Stefan Herold 2020

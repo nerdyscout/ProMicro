@@ -5,11 +5,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ProMicro_TEST"
-Date "2020-06-12"
+Date "2020-07-11"
 Rev "v1.0"
-Comp "https://twitter.com/nerdyscout84"
+Comp "https://github.com/nerdyscout/ProMicro_TEST"
 Comment1 "CERN Open Hardware Licence v1.2"
-Comment2 "https://github.com/nerdyscout/ProMicro"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr

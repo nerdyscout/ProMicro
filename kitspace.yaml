@@ -1,41 +1,10 @@
-multi:
-  GPS:
-    site: https://nerdyscout.github.io/ProMicro/pcbs/GPS
-    summary: 
-    readme: pcbs/GPS/README.md
-    bom: pcbs/GPS/ProMicro_GPS.csv
-    eda:
-      type: kicad
-      pcb: pcbs/GPS/ProMicro_GPS.kicad_pcb
-    gerbers: pcbs/GPS/gerber
-    color: green
-  CONN:
-    site: https://nerdyscout.github.io/ProMicro/pcbs/CONN
-    summary: 
-    readme: pcbs/CONN/README.md
-    bom: pcbs/CONN/ProMicro_CONN.csv
-    eda:
-      type: kicad
-      pcb: pcbs/CONN/ProMicro_CONN.kicad_pcb
-    gerbers: pcbs/CONN/gerber
-    color: green
-  LORA:
-    site: https://nerdyscout.github.io/ProMicro/pcbs/LORA
-    summary: 
-    readme: pcbs/LORA/README.md
-    bom: pcbs/LORA/ProMicro_LORA.csv
-    eda:
-      type: kicad
-      pcb: pcbs/LORA/ProMicro_LORA.kicad_pcb
-    gerbers: pcbs/LORA/gerber
-    color: green
-  UART:
-    site: https://nerdyscout.github.io/ProMicro/pcbs/UART
-    summary: 
-    readme: pcbs/UART/README.md
-    bom: pcbs/UART/ProMicro_UART.csv
-    eda:
-      type: kicad
-      pcb: pcbs/UART/ProMicro_UART.kicad_pcb
-    gerbers: pcbs/UART/gerber
-    color: green
+site: https://nerdyscout.github.io/ProMicro_TEST
+summary: testing test
+readme: README.md
+bom: docs/bom/ProMicro_TEST.csv
+eda:
+  type: kicad
+  pcb: ProMicro_TEST.kicad_pcb
+gerbers: gerbers
+color: green
+

@@ -281,7 +281,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [schematic_editor]
 version=1
-PageLayoutDescrFile=/home/user/Projects/Shields/ProMicro_/TEMP/ProMicro_TEMP.kicad_wks
+PageLayoutDescrFile=
 PlotDirectoryName=/output/schematic/pdf/
 SubpartIdSeparator=0
 SubpartFirstId=65
