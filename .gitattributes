@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+*.sch filter=kicad_sch
+*.pro filter=kicad_project
+=======
+*.pro filter=kicad_project
+*.sch filter=kicad_sch
+>>>>>>> master
+*.gbr filter=gerber
