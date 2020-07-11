@@ -1,0 +1,13 @@
+Reference, Quantity, Value, Footprint, Datasheet, LCSC#, manf#
+A1 ,1,"Sparkfun_Pro_Micro_3V3","Module:Sparkfun_Pro_Micro","https://www.sparkfun.com/products/12587"
+C2 C1 ,2,"1µ","Capacitor_SMD:C_0603_1608Metric","~","C15849","CL10A105KB8NNNC"
+C3 ,1,"100n","Capacitor_SMD:C_0603_1608Metric","~","C14663","CC0603KRX7R9BB104"
+D1 ,1,"LED","LED_SMD:LED_0603_1608Metric","~","C72043","19-217/GHC-YR1S2/3T"
+J1 ,1,"AVR-JTAG-10","Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"," ~"
+J2 ,1,"UEXT_Host","Connector_PCBEdge:UEXT","https://www.olimex.com/Products/Modules/UEXT/resources/UEXT_rev_B.pdf"
+J3 ,1,"Display","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+LOGO1 ,1,"Logo_Open_Hardware_Small","Symbol:OSHW-Logo2_7.3x6mm_SilkScreen","~"
+R1 R2 R5 R6 R7 R3 R4 R9 ,8,"4k7","Resistor_SMD:R_0603_1608Metric","~","C23162","0603WAF4701T5E"
+R8 ,1,"1k","Resistor_SMD:R_0603_1608Metric","~"
+SW1 ,1,"reset","Button_Switch_SMD:SW_SPST_B3U-1000P","~",""," B3U-1000P"
+SW2 ,1,"user","Button_Switch_SMD:SW_SPST_B3U-1000P","~",""," B3U-1000P"
