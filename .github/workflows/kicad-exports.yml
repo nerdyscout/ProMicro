@@ -11,32 +11,32 @@ on:
       - '**.kicad_pcb'
 
 jobs:
-  report:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-    - uses: actions/checkout@v2
-    - uses: nelonoel/branch-name@v1
-    - name: kicad-exports kicad-erc
-      uses: nerdyscout/kicad-exports@v1.0
-      with:
-        cmd: kicad-erc
-        dir: docs
-    - name: upload report
-      uses: actions/upload-artifact@v2
-      with:
-        name: erc
-        path: docs/*.erc
-    - name: kicad-exports kicad-drc
-      uses: nerdyscout/kicad-exports@v1.0
-      with:
-        cmd: kicad-drc
-        dir: docs
-    - name: upload report
-      uses: actions/upload-artifact@v2
-      with:
-        name: DRC
-        path: docs/*.rpt
+#  report:
+#    runs-on: ubuntu-latest
+#    continue-on-error: true
+#    steps:
+#    - uses: actions/checkout@v2
+#    - uses: nelonoel/branch-name@v1
+#    - name: kicad-exports kicad-erc
+#      uses: nerdyscout/kicad-exports@v1.0
+#      with:
+#        cmd: kicad-erc
+#        dir: docs
+#    - name: upload report
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: erc
+#        path: docs/*.erc
+#    - name: kicad-exports kicad-drc
+#      uses: nerdyscout/kicad-exports@v1.0
+#      with:
+#        cmd: kicad-drc
+#        dir: docs
+#    - name: upload report
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: DRC
+#        path: docs/*.rpt
 
   images:
     runs-on: ubuntu-latest
@@ -107,6 +107,7 @@ jobs:
       with:
         cmd: bom
         dir: docs/bom
+        parameters: "--board-rotation 90 --highlight-pin1 --no-blacklist-virtual --blacklist 'TP'" 
     - name: git commit && git push 
       uses: github-actions-x/commit@v2.6
       with:
