@@ -1,4 +1,4 @@
-::warning::
+:warning:
 PCB currently not working! most likely some issue in the HF circuit.
 
 # ProMicro_LORA
