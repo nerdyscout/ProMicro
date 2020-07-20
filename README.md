@@ -1,3 +1,5 @@
+:warning: **do not use this design** it does contain some bad footprints! 
+
 # ProMicro_UART
 USB to Serial, SPI, I2C or JTAG
 
