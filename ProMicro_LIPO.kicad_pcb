@@ -275,7 +275,7 @@
     (descr "Sparkfun Pro Micro, https://www.sparkfun.com/products/12587")
     (tags "Sparkfun Pro Micro")
     (path /5ED502C5)
-    (fp_text reference A1 (at 4.445 0 90) (layer B.SilkS)
+    (fp_text reference A1 (at 4.445 0 90) (layer B.SilkS) hide
       (effects (font (size 0.8 0.8) (thickness 0.2)) (justify mirror))
     )
     (fp_text value Sparkfun_Pro_Micro_3V3 (at 8.89 -13.97 -90) (layer B.Fab)

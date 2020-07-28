@@ -893,19 +893,19 @@ NoConn ~ 9275 1950
 NoConn ~ 2350 1975
 NoConn ~ 10275 1950
 Text Notes 8825 1975 2    50   ~ 0
-RxD
+RXD
 Text Notes 8825 2075 2    50   ~ 0
-TxD
+TXD
 Text Notes 8825 2175 2    50   ~ 0
 SDA
 Text Notes 8825 2275 2    50   ~ 0
 SCL
 Text Notes 8825 3275 2    50   ~ 0
-CLK
+SCK
 Text Notes 8825 3175 2    50   ~ 0
-MISO
+SDI
 Text Notes 8825 3075 2    50   ~ 0
-MOSI
+SDO
 Text Notes 8825 2975 2    50   ~ 0
 CS0
 $Comp
@@ -919,7 +919,7 @@ F 3 "https://www.sparkfun.com/products/12587" H 9775 1550 50  0001 C CNN
 	1    9775 2550
 	1    0    0    -1  
 $EndComp
-Text Notes 8825 2675 2    50   ~ 0
+Text Notes 8825 2775 2    50   ~ 0
 INT0
 Text Notes 10500 2575 0    50   ~ 0
 TDI
@@ -931,4 +931,8 @@ Text Notes 10500 2875 0    50   ~ 0
 TCK
 Text Notes 3750 7250 0    50   ~ 0
 close 1-2 read analog voltage\nclose 2-3 read LBO status\nopen 1 2 3 if no battery status required
+Text Notes 8825 2875 2    50   ~ 0
+CS1
+Text Notes 8825 2575 2    50   ~ 0
+BTN
 $EndSCHEMATC
