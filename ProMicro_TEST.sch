@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "ProMicro_TEST"
 Date "2020-07-11"
 Rev "v1.0"
@@ -296,4 +296,11 @@ F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
 	1    8900 3000
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8800 2000
+$Sheet
+S 3200 2750 1375 700 
+U 5F259C88
+F0 "Sheet5F259C87" 50
+F1 "file5F259C87.sch" 50
+$EndSheet
 $EndSCHEMATC
