@@ -285,22 +285,22 @@ Text Notes 7910 3330 2    50   ~ 0
 CS1
 Text Notes 7900 3025 2    50   ~ 0
 BTN
+NoConn ~ 8800 2000
+$Sheet
+S 3125 3300 1375 700 
+U 5F259C88
+F0 "Sheet5F259C87" 50
+F1 "file5F259C87.sch" 50
+$EndSheet
 $Comp
-L ProMicro_TEST-rescue:Sparkfun_Pro_Micro_3V3-MCU_Module A1
-U 1 1 5ED4BC58
+L MCU_Module:Sparkfun_Pro_Micro_3V3 A?
+U 1 1 5F266A14
 P 8900 3000
-F 0 "A1" H 8925 4200 50  0000 C CNN
+F 0 "A?" H 8925 4200 50  0000 C CNN
 F 1 "Sparkfun_Pro_Micro_3V3" H 8925 4100 50  0000 C CNN
 F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
 F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
 	1    8900 3000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8800 2000
-$Sheet
-S 3200 2750 1375 700 
-U 5F259C88
-F0 "Sheet5F259C87" 50
-F1 "file5F259C87.sch" 50
-$EndSheet
 $EndSCHEMATC
