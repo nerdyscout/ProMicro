@@ -10,7 +10,7 @@ on:
       - '**.sch'
       - '**.kicad_pcb'
 
-  jobs:
+jobs:
     docs:
       runs-on: ubuntu-latest
       steps:
@@ -18,10 +18,10 @@ on:
       - uses: nerdyscout/kicad-exports@v2
         with:
           config: docs.kiplot.yaml
-    - uses: actions/upload-artifact@v2
-      with:
-        name: docs
-        path: docs
+      - uses: actions/upload-artifact@v2
+        with:
+          name: docs
+          path: docs
         
     fabrications:
       runs-on: ubuntu-latest
@@ -30,10 +30,10 @@ on:
       - uses: nerdyscout/kicad-exports@v2
         with:
           config: fabrications.kiplot.yaml
-    - uses: actions/upload-artifact@v2
-      with:
-        name: fabrications
-        path: gerbers
+      - uses: actions/upload-artifact@v2
+        with:
+          name: fabrications
+          path: gerbers
 
     bom:
       runs-on: ubuntu-latest
