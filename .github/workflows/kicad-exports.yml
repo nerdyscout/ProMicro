@@ -15,7 +15,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@v2.0
+      - uses: nerdyscout/kicad-exports@develop
         with:
           config: docs.kiplot.yaml
       - uses: actions/upload-artifact@v2
@@ -27,7 +27,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@v2.0
+      - uses: nerdyscout/kicad-exports@develop
         with:
           config: fabrications.kiplot.yaml
       - uses: actions/upload-artifact@v2
@@ -39,7 +39,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@v2.0
+      - uses: nerdyscout/kicad-exports@develop
         with:
           config: bom.kiplot.yaml
       - uses: actions/upload-artifact@v2
@@ -51,7 +51,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@v2.0
+      - uses: nerdyscout/kicad-exports@develop
         with:
           config: plot.kiplot.yaml
       - uses: actions/upload-artifact@v2
