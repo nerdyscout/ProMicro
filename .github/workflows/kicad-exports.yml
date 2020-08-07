@@ -18,8 +18,8 @@ jobs:
       - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: docs.kiplot.yaml
-          board: ProMicro_Test.kicad_pcb
-          schema: ProMicro_Test.sch
+          board: ProMicro_TEST.kicad_pcb
+          schema: ProMicro_TEST.sch
       - uses: actions/upload-artifact@v2
         with:
           name: docs
@@ -32,8 +32,8 @@ jobs:
       - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: fabrications.kiplot.yaml
-          board: ProMicro_Test.kicad_pcb
-          schema: ProMicro_Test.sch
+          board: ProMicro_TEST.kicad_pcb
+          schema: ProMicro_TEST.sch
       - uses: actions/upload-artifact@v2
         with:
           name: fabrications
@@ -46,8 +46,8 @@ jobs:
       - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: bom.kiplot.yaml
-          board: ProMicro_Test.kicad_pcb
-          schema: ProMicro_Test.sch
+          board: ProMicro_TEST.kicad_pcb
+          schema: ProMicro_TEST.sch
       - uses: actions/upload-artifact@v2
         with:
           name: bom
@@ -60,8 +60,8 @@ jobs:
       - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: plot.kiplot.yaml
-          board: ProMicro_Test.kicad_pcb
-          schema: ProMicro_Test.sch
+          board: ProMicro_TEST.kicad_pcb
+          schema: ProMicro_TEST.sch
       - uses: actions/upload-artifact@v2
         with:
           name: plot
