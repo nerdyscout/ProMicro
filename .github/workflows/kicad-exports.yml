@@ -1,4 +1,4 @@
-name: kicad-exports
+name: kicad
 
 on:
   push:
@@ -11,80 +11,15 @@ on:
 #      - '**.kicad_pcb'
 
 jobs:
-    docs:
+    exports:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
       - uses: nerdyscout/kicad-exports@v2.0
         with:
-          config: docs.kiplot.yaml
+          config: config.kiplot.yaml
           board: ProMicro_TEST.kicad_pcb
           schema: ProMicro_TEST.sch
-      - uses: actions/upload-artifact@v2
-        with:
-          name: docs
-          path: docs
-        
-    fabrications:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@v2.0
-        with:
-          config: fabrications.kiplot.yaml
-          board: ProMicro_TEST.kicad_pcb
-          schema: ProMicro_TEST.sch
-      - uses: actions/upload-artifact@v2
-        with:
-          name: fabrications
-          path: gerbers
-
-    bom:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@v2.0
-        with:
-          config: bom.kiplot.yaml
-          board: ProMicro_TEST.kicad_pcb
-          schema: ProMicro_TEST.sch
-      - uses: actions/upload-artifact@v2
-        with:
-          name: bom
-          path: docs/bom
-        
-    plot:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@v2.0
-        with:
-          config: plot.kiplot.yaml
-          board: ProMicro_TEST.kicad_pcb
-          schema: ProMicro_TEST.sch
-      - uses: actions/upload-artifact@v2
-        with:
-          name: plot
-          path: docs/img
-
-    push:
-      runs-on: ubuntu-latest
-      needs: [docs, fabrications, bom, plot]
-      steps:
-      - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
-        with:
-          name: docs
-      - uses: actions/download-artifact@v2
-        with:
-          name: fabrications
-      - uses: actions/download-artifact@v2
-        with:
-          name: bom    
-      - uses: actions/download-artifact@v2
-        with:
-          name: plot
-
       - name: git commit && git push 
         uses: github-actions-x/commit@v2.6
         with:
