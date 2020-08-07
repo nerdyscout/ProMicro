@@ -40,98 +40,14 @@ Wire Wire Line
 	10000 5650 10000 5810
 Wire Wire Line
 	10500 5650 10500 5810
-Wire Wire Line
-	8200 2400 8400 2400
-Wire Wire Line
-	8200 2500 8400 2500
-Wire Wire Line
-	8200 2600 8400 2600
-Wire Wire Line
-	8200 2700 8400 2700
-Wire Wire Line
-	8200 2800 8400 2800
-Wire Wire Line
-	8200 2900 8400 2900
-Wire Wire Line
-	8200 3000 8400 3000
-Wire Wire Line
-	8200 3100 8400 3100
-Wire Wire Line
-	8200 3200 8400 3200
-Wire Wire Line
-	8200 3300 8400 3300
-Wire Wire Line
-	8200 3400 8400 3400
-Wire Wire Line
-	8200 3500 8400 3500
-Wire Wire Line
-	8200 3600 8400 3600
-Wire Wire Line
-	8200 3700 8400 3700
-Wire Wire Line
-	9400 2400 9600 2400
-Wire Wire Line
-	9400 3000 9600 3000
-Wire Wire Line
-	9400 3100 9600 3100
-Wire Wire Line
-	9400 3200 9600 3200
-Wire Wire Line
-	9400 3300 9600 3300
 Text Notes 7900 2830 2    50   ~ 0
 VBAT/2
 Text Notes 7900 3130 2    50   ~ 0
 INT
-Text Notes 9800 3030 0    50   ~ 0
-TDI
-Text Notes 9800 3130 0    50   ~ 0
-TDO
-Text Notes 9800 3230 0    50   ~ 0
-TMS
-Text Notes 9800 3330 0    50   ~ 0
-TCK
-Text GLabel 8200 2400 0    50   Input ~ 0
-RXD
-Text GLabel 8200 2500 0    50   Input ~ 0
-TXD
-Text GLabel 8200 2600 0    50   Input ~ 0
-SDA
-Text GLabel 8200 2700 0    50   Input ~ 0
-SCL
-Text GLabel 8200 2800 0    50   Input ~ 0
-D4
-Text GLabel 8200 2900 0    50   Input ~ 0
-D5
-Text GLabel 8200 3000 0    50   Input ~ 0
-D6
-Text GLabel 8200 3100 0    50   Input ~ 0
-D7
-Text GLabel 8200 3200 0    50   Input ~ 0
-D8
-Text GLabel 8200 3300 0    50   Input ~ 0
-D9
-Text GLabel 8200 3400 0    50   Input ~ 0
-D10
-Text GLabel 8200 3500 0    50   Input ~ 0
-MOSI
-Text GLabel 8200 3600 0    50   Input ~ 0
-MISO
-Text GLabel 8200 3700 0    50   Input ~ 0
-SCK
 Text GLabel 9000 5800 3    50   Input ~ 0
 SCL
 Text GLabel 9500 5800 3    50   Input ~ 0
 SDA
-Text GLabel 9600 2400 2    50   Input ~ 0
-Reset
-Text GLabel 9600 3000 2    50   Input ~ 0
-A0
-Text GLabel 9600 3100 2    50   Input ~ 0
-A1
-Text GLabel 9600 3200 2    50   Input ~ 0
-A2
-Text GLabel 9600 3300 2    50   Input ~ 0
-A3
 $Comp
 L power:+3V3 #PWR0102
 U 1 1 5E126446
@@ -293,14 +209,39 @@ F0 "Sheet5F259C87" 50
 F1 "file5F259C87.sch" 50
 $EndSheet
 $Comp
-L ProMicro_TEST-rescue:Sparkfun_Pro_Micro_3V3-MCU_Module A?
+L ProMicro_TEST-rescue:Sparkfun_Pro_Micro_3V3-MCU_Module A1
 U 1 1 5F266A14
 P 8900 3000
-F 0 "A?" H 8925 4200 50  0000 C CNN
+F 0 "A1" H 8925 4200 50  0000 C CNN
 F 1 "Sparkfun_Pro_Micro_3V3" H 8925 4100 50  0000 C CNN
 F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
 F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
 	1    8900 3000
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8400 3700
+NoConn ~ 8400 3600
+NoConn ~ 8400 3500
+NoConn ~ 8400 3400
+NoConn ~ 8400 3300
+NoConn ~ 8400 3200
+NoConn ~ 8400 3100
+NoConn ~ 8400 3000
+NoConn ~ 8400 2900
+NoConn ~ 8400 2800
+NoConn ~ 8400 2500
+NoConn ~ 8400 2400
+NoConn ~ 9400 3300
+NoConn ~ 9400 3200
+NoConn ~ 9400 3100
+NoConn ~ 9400 3000
+NoConn ~ 9400 2400
+Text GLabel 8200 2700 0    50   Input ~ 0
+SCL
+Text GLabel 8200 2600 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	8200 2700 8400 2700
+Wire Wire Line
+	8400 2600 8200 2600
 $EndSCHEMATC
