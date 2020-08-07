@@ -1,3 +1,5 @@
+[diff "kicad_pcb_diff"]
+	command=/usr/local/bin/kicad_pcb-git-diff.py -v
 [filter "bom_csv"]
 	clean = sed -E 's/^BoM Date:.*$/BoM Date:Date/'
 	smudge = sed -E \"s/BoM Date:Date/BoM Date:,`date +\\\"%a %d %b %Y %X %:::z\\\"`/\"

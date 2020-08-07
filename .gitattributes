@@ -1,3 +1,4 @@
+*.kicad_pcb diff=kicad_pcb_diff
 *.csv filter=bom_csv
 *.html filter=bom_html
 *.gbr filter=gerber
