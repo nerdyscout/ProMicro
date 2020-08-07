@@ -15,9 +15,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@develop
+      - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: docs.kiplot.yaml
+          board: ProMicro_Test.kicad_pcb
+          schema: ProMicro_Test.sch
       - uses: actions/upload-artifact@v2
         with:
           name: docs
@@ -27,9 +29,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@develop
+      - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: fabrications.kiplot.yaml
+          board: ProMicro_Test.kicad_pcb
+          schema: ProMicro_Test.sch
       - uses: actions/upload-artifact@v2
         with:
           name: fabrications
@@ -39,9 +43,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@develop
+      - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: bom.kiplot.yaml
+          board: ProMicro_Test.kicad_pcb
+          schema: ProMicro_Test.sch
       - uses: actions/upload-artifact@v2
         with:
           name: bom
@@ -51,9 +57,11 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@develop
+      - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: plot.kiplot.yaml
+          board: ProMicro_Test.kicad_pcb
+          schema: ProMicro_Test.sch
       - uses: actions/upload-artifact@v2
         with:
           name: plot
