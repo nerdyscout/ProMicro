@@ -48,11 +48,11 @@ P 277 0 1 0 132 -171 130 -170 125 -167 118 -162 109 -156 100 -150 93 -146 88 -14
 ENDDRAW
 ENDDEF
 #
-# MCU_Module_Sparkfun_Pro_Micro_3V3
+# ProMicro_TEST-rescue_Sparkfun_Pro_Micro_3V3-MCU_Module
 #
-DEF MCU_Module_Sparkfun_Pro_Micro_3V3 A 0 20 Y Y 1 F N
+DEF ProMicro_TEST-rescue_Sparkfun_Pro_Micro_3V3-MCU_Module A 0 20 Y Y 1 F N
 F0 "A" -400 950 50 H V L CNN
-F1 "MCU_Module_Sparkfun_Pro_Micro_3V3" 200 -970 50 H V L CNN
+F1 "ProMicro_TEST-rescue_Sparkfun_Pro_Micro_3V3-MCU_Module" 200 -970 50 H V L CNN
 F2 "Module:Sparkfun_Pro_Micro" 0 0 50 H I C CIN
 F3 "" 0 -1000 50 H I C CNN
 $FPLIST
