@@ -40,16 +40,8 @@ outputs:
       create_gerber_job_file: false
       use_gerber_x2_attributes: true
       use_gerber_net_attributes: false
-
     layers:
-      - 'copper'
-      - 'technical'
-
-#  - name: "docu files"
-#    type: "pdf"
-#    dir: 'gerbers'
-#    layers:
-#      - 'user'
+      - 'all'
 
   - name: "Gerber drills"
     comment: "Gerber drill files"
@@ -69,6 +61,7 @@ outputs:
       pth_and_npth_single_file: false
       minimal_header: true
       mirror_y_axis: false
+      output: '%f-%i.%x'
       
   - name: "position"
     comment: "position of the components for the pick & place machine"
@@ -103,7 +96,7 @@ outputs:
       # [boolean=false] do not make holes transparent
       no_drillholes: false
       # [string='%f-%i.%x'] name for the generated file . Affected by global options
-      output: '%f-%i_%r.%x'
+      output: '%f-%i.%x'
       # [boolean=false] show placeholder for missing components
       placeholder: false
       # [dict|None] replacements for PCB references using components (lib:component)
@@ -112,7 +105,7 @@ outputs:
       # The default is none
       show_components: none
       # [string|dict] PCB style (colors). An internal name, the name of a JSON file or the style options
-      style: '/opt/pcbdraw/styles/green.json'
+      style: '/opt/pcbdraw/pcbdraw/styles/jlcpcb-green-enig.json'
       # [boolean=false] render V-CUTS on the Cmts.User layer
       vcuts: false
       # [string='visible'] [visible,all,none] using visible only the warnings about components in the visible side are generated
@@ -138,7 +131,7 @@ outputs:
       # [boolean=false] do not make holes transparent
       no_drillholes: false
       # [string='%f-%i.%x'] name for the generated file . Affected by global options
-      output: '%f-%i_%r.%x'
+      output: '%f-%i.%x'
       # [boolean=false] show placeholder for missing components
       placeholder: false
       # [dict|None] replacements for PCB references using components (lib:component)
@@ -147,7 +140,7 @@ outputs:
       # The default is none
       show_components: none
       # [string|dict] PCB style (colors). An internal name, the name of a JSON file or the style options
-      style: '/opt/pcbdraw/styles/green.json'
+      style: '/opt/pcbdraw/pcbdraw/styles/jlcpcb-green-enig.json'
       # [boolean=false] render V-CUTS on the Cmts.User layer
       vcuts: false
       # [string='visible'] [visible,all,none] using visible only the warnings about components in the visible side are generated
@@ -158,34 +151,50 @@ outputs:
     type: pdf_sch_print
     dir: docs
     options:
-      output: '%p-Schematic_%r.%x'
+      output: '%p-Schematic.%x'
 
   - name: 'print schema'
     comment: "Print schematic (SVG)"
     type: svg_sch_print
     dir: docs
     options:
-      output: '%p-Schematic_%r.%x'
+      output: '%p-Schematic.%x'
             
   - name: 'print board'
-    comment: "Print board (PDF)"
+    comment: "Print board (PDF) front"
     type: pdf_pcb_print
-    layers: 'user'
+    layers:
+      - 'user'
+      - layer: F.SilkS
+      - layer: F.CrtYd
+      - layer: F.Fab
     dir: docs
     options:
-      output: '%p-Board_%r.%x'
+      output: '%p-Board_front.%x'
+
+  - name: 'print board'
+    comment: "Print board (PDF) bottom"
+    type: pdf_pcb_print
+    layers:
+      - layer: Edge.Cuts
+      - layer: B.SilkS
+      - layer: B.CrtYd
+      - layer: B.Fab
+    dir: docs
+    options:
+      output: '%p-Board_bottom.%x'
 
   - name: 'ibom'
     comment: "Interactive Bill of Materials (HTML)"
-    type: ibom
+    type: 'ibom'
     dir: docs/bom
     options:
       dark_mode: false
-      hide_pads: true
+      hide_pads: false
       show_fabrication: true
-      hide_silkscreen: true
+      hide_silkscreen: false    
       highlight_pin1: true
-      no_redraw_on_drag: true
+      no_redraw_on_drag: false
       board_rotation: 90
       checkboxes: 'Sourced,Placed'
       include_tracks: true
@@ -194,7 +203,7 @@ outputs:
       blacklist: 'DNF*'
       no_blacklist_virtual: true
       blacklist_empty_val: true
-      extra_fields: 'EF'
+#      extra_fields: 'EF'
       normalize_field_case: true
       dnp_field: 'DNP'
       name_format: ''
@@ -211,13 +220,13 @@ outputs:
       conf:
         exclude_any:
           - column: Value
-            regex: Sparkfun_Pro_Micro_3V3
+            regex: Sparkfun_Pro_Micro
       # [string='HTML'] [HTML,CSV,XML,XLSX] format for the BoM
       format: 'XLSX'
       # [number=1] Number of boards to build (components multiplier)
       number: 1
       # [string='%f-%i.%x'] filename for the output (%i=bom). Affected by global options
-      output: '%f_%r.%x'
+      output: '%f.%x'
 
   # KiBoM (KiCad Bill of Materials):
   # For more information: https://github.com/INTI-CMNB/KiBoM
@@ -228,16 +237,47 @@ outputs:
     dir: 'docs/bom'
     options:
       conf:
-        hide_pcb_info: true
+        hide_pcb_info: false
         exclude_any:
           - column: Value
-            regex: Sparkfun_Pro_Micro_3V3
+            regex: Sparkfun_Pro_Micro
       # [string='HTML'] [HTML,CSV,XML,XLSX] format for the BoM
       format: 'CSV'
       # [number=1] Number of boards to build (components multiplier)
       number: 1
       # [string='%f-%i.%x'] filename for the output (%i=bom). Affected by global options
-      output: '%f_%r.%x'
+      output: '%f.%x'
       # [string=','] CSV Separator
       separator: ';'
-    
+
+  # KiBoM (KiCad Bill of Materials):
+  # For more information: https://github.com/INTI-CMNB/KiBoM
+  # This output is what you get from the 'Tools/Generate Bill of Materials' menu in eeschema.
+  - name: 'kibom'
+    comment: 'kibom csv'
+    type: 'kibom'
+    dir: 'gerbers'
+    options:
+      conf:
+        hide_pcb_info: true
+        exclude_any:
+          - column: Value
+            regex: Sparkfun_Pro_Micro
+      # [string='HTML'] [HTML,CSV,XML,XLSX] format for the BoM
+      format: 'CSV'
+      # [number=1] Number of boards to build (components multiplier)
+      number: 1
+      # [string='%f-%i.%x'] filename for the output (%i=bom). Affected by global options
+      output: '%f_BOM.%x'
+      # [string=','] CSV Separator
+      separator: ';'
+
+  - name: Step
+    comment: "Generate 3D model (STEP)"
+    type: step
+    dir: CAD
+    options:
+      metric_units: true
+      origin: grid         # "grid" or "drill" o "X,Y" i.e. 3.2,-10
+      no_virtual: true     # exclude 3D models for components with 'virtual' attribute
+      output: '%f.%x'
