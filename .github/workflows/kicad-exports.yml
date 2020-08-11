@@ -1,0 +1,146 @@
+name: kicad-exports
+
+on:
+  push:
+    paths:
+      - '**.sch'
+      - '**.kicad_pcb'
+  pull_request:
+    paths:
+      - '**.sch'
+      - '**.kicad_pcb'
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nelonoel/branch-name@v1
+    - name: kicad-exports kicad-erc
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: kicad-erc
+        dir: docs
+    - name: upload report
+      uses: actions/upload-artifact@v2
+      with:
+        name: erc
+        path: docs/*.erc
+    - name: kicad-exports kicad-drc
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: kicad-drc
+        dir: docs
+    - name: upload report
+      uses: actions/upload-artifact@v2
+      with:
+        name: DRC
+        path: docs/*.rpt
+
+  images:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nelonoel/branch-name@v1
+    - name: kicad-exports tracespace-assembly
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: tracespace-assembly
+        dir: docs/img
+    - name: kicad-exports tracespace-board
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: tracespace-board
+        dir: docs/img
+    - name: git commit && git push 
+      uses: github-actions-x/commit@v2.6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: update tracespace
+        name: kicad-exports
+        rebase: 'true'
+        files: docs/img/*.svg
+        
+  fabrications:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nelonoel/branch-name@v1
+    - name: kicad-exports fabrication
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: fabrication
+        dir: gerbers
+        manufacturer: jlcpcb
+    - name: git commit && git push 
+      uses: github-actions-x/commit@v2.6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: fabrications
+        name: kicad-exports
+        rebase: 'true'
+        files: gerbers/*
+    - name: upload gerbers
+      uses: actions/upload-artifact@v2
+      with:
+        name: fabrications
+        path: gerbers/*
+
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nelonoel/branch-name@v1
+    - name: kicad-exports schematic
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: schematic
+        dir: docs
+    - name: kicad-exports kicad-board
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: kicad-board
+        dir: docs
+    - name: kicad-exports bom
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: bom
+        dir: docs/bom
+    - name: git commit && git push 
+      uses: github-actions-x/commit@v2.6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: docs
+        name: kicad-exports
+        rebase: 'true'
+        files: docs/*.pdf docs/*.svg docs/bom/*
+
+  panelize:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nelonoel/branch-name@v1
+    - name: kicad-exports panelize
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: kikit-panelize
+        dir: panel
+        parameters: "--space 2.54 --gridsize 3 5 --tabwidth 2.54 --tabheight 2.54 --htabs 1 --vtabs 1 --mousebites 0.25 0.5 -0.25 --radius 1"
+    - name: kicad-exports fabrication
+      uses: nerdyscout/kicad-exports@v1.1
+      with:
+        cmd: fabrication
+        dir: panel/gerbers
+        board: panel/*.kicad_pcb
+#    - name: kicad-exports bom
+#      uses: nerdyscout/kicad-exports@v1.1
+#      with:
+#        cmd: kicad-bom
+#        dir: panel/docs
+#        manufacturer: jlcpcb
+    - name: upload
+      uses: actions/upload-artifact@v2
+      with:
+        name: ProMicro_${{env.BRANCH_NAME}}_panel
+        path: panel/*
