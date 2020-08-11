@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "https://github.com/nerdyscout/ProMicro_LOG"
+Title "ProMicro_LOG"
 Date "2020-07-13"
 Rev "v1.0"
 Comp "https://twitter.com/nerdyscout84"
@@ -29,21 +29,11 @@ Wire Wire Line
 Wire Wire Line
 	10000 5650 10000 5810
 Wire Wire Line
-	8200 2400 8400 2400
-Wire Wire Line
-	8200 2500 8400 2500
-Wire Wire Line
 	8200 2600 8400 2600
 Wire Wire Line
 	8200 2700 8400 2700
 Wire Wire Line
-	8200 2800 8400 2800
-Wire Wire Line
-	8200 2900 8400 2900
-Wire Wire Line
 	8200 3000 8400 3000
-Wire Wire Line
-	8200 3100 8400 3100
 Wire Wire Line
 	8200 3200 8400 3200
 Wire Wire Line
@@ -58,14 +48,6 @@ Wire Wire Line
 	8200 3700 8400 3700
 Wire Wire Line
 	9400 2400 9600 2400
-Wire Wire Line
-	9400 3000 9600 3000
-Wire Wire Line
-	9400 3100 9600 3100
-Wire Wire Line
-	9400 3200 9600 3200
-Wire Wire Line
-	9400 3300 9600 3300
 Text Notes 7900 2830 2    50   ~ 0
 VBAT/2
 Text Notes 7900 3325 2    50   ~ 0
@@ -80,22 +62,12 @@ Text Notes 9800 3230 0    50   ~ 0
 TMS
 Text Notes 9800 3330 0    50   ~ 0
 TCK
-Text GLabel 8200 2400 0    50   Input ~ 0
-D0
-Text GLabel 8200 2500 0    50   Output ~ 0
-D1
 Text GLabel 8200 2600 0    50   BiDi ~ 0
 D2
 Text GLabel 8200 2700 0    50   Output ~ 0
 D3
-Text GLabel 8200 2800 0    50   Input ~ 0
-D4
-Text GLabel 8200 2900 0    50   BiDi ~ 0
-D5
 Text GLabel 8200 3000 0    50   BiDi ~ 0
 D6
-Text GLabel 8200 3100 0    50   BiDi ~ 0
-D7
 Text GLabel 8200 3200 0    50   BiDi ~ 0
 D8
 Text GLabel 8200 3300 0    50   Output ~ 0
@@ -110,14 +82,6 @@ Text GLabel 8200 3700 0    50   Input ~ 0
 D15
 Text GLabel 9600 2400 2    50   Input ~ 0
 Reset
-Text GLabel 9600 3000 2    50   Input ~ 0
-A0
-Text GLabel 9600 3100 2    50   Input ~ 0
-A1
-Text GLabel 9600 3200 2    50   Input ~ 0
-A2
-Text GLabel 9600 3300 2    50   Input ~ 0
-A3
 $Comp
 L power:+3V3 #PWR0102
 U 1 1 5E126446
@@ -193,9 +157,9 @@ SDA
 Text Notes 7900 2725 2    50   ~ 0
 SCL
 Text Notes 7900 3525 2    50   ~ 0
-MOSI
+SDO
 Text Notes 7900 3625 2    50   ~ 0
-MISO
+SDI
 Text Notes 7900 3725 2    50   ~ 0
 SCK
 $Comp
@@ -283,7 +247,7 @@ F 3 "~" H 6500 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6750 5100 2    50   BiDi ~ 0
-D6
+D8
 Wire Wire Line
 	6750 5100 6600 5100
 $Comp
@@ -576,17 +540,6 @@ $EndComp
 Text Notes 7900 3025 2    50   ~ 0
 BTN
 $Comp
-L Connector:TestPoint_Small TP2
-U 1 1 5EDCB516
-P 10500 6250
-F 0 "TP2" H 10550 6300 50  0001 L CNN
-F 1 "initials" H 10550 6250 50  0000 L CNN
-F 2 "Symbol:initials" H 10700 6250 50  0001 C CNN
-F 3 "~" H 10700 6250 50  0001 C CNN
-	1    10500 6250
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
 U 1 1 5EDCCCBD
 P 8900 3000
@@ -597,6 +550,31 @@ F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
 	1    8900 3000
 	1    0    0    -1  
 $EndComp
-Text Notes 6650 4850 0    50   ~ 0
-what the hell\nhappened here!!!
+Text Notes 7900 3225 2    50   ~ 0
+INT
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F1740AB
+P 6750 4800
+F 0 "TP2" V 6675 5000 50  0000 L CNN
+F 1 "TestPoint" V 6775 5000 50  0000 L CNN
+F 2 "" H 6950 4800 50  0001 C CNN
+F 3 "~" H 6950 4800 50  0001 C CNN
+	1    6750 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 4800 6750 4800
+NoConn ~ 8400 3100
+NoConn ~ 8400 2900
+NoConn ~ 8400 2800
+NoConn ~ 8400 2500
+NoConn ~ 8400 2400
+NoConn ~ 8800 2000
+NoConn ~ 9400 3300
+NoConn ~ 9400 3200
+NoConn ~ 9400 3100
+NoConn ~ 9400 3000
+NoConn ~ 3800 2800
+NoConn ~ 8800 4000
 $EndSCHEMATC
