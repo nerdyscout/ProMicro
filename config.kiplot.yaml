@@ -96,7 +96,7 @@ outputs:
       # [boolean=false] do not make holes transparent
       no_drillholes: false
       # [string='%f-%i.%x'] name for the generated file . Affected by global options
-      output: '%f-%i.%x'
+      output: '%f-Board_%i.%x'
       # [boolean=false] show placeholder for missing components
       placeholder: false
       # [dict|None] replacements for PCB references using components (lib:component)
@@ -131,7 +131,7 @@ outputs:
       # [boolean=false] do not make holes transparent
       no_drillholes: false
       # [string='%f-%i.%x'] name for the generated file . Affected by global options
-      output: '%f-%i.%x'
+      output: '%f-Board_%i.%x'
       # [boolean=false] show placeholder for missing components
       placeholder: false
       # [dict|None] replacements for PCB references using components (lib:component)
@@ -165,19 +165,17 @@ outputs:
     type: pdf_pcb_print
     layers:
       - 'user'
-      - layer: F.SilkS
       - layer: F.CrtYd
       - layer: F.Fab
     dir: docs
     options:
-      output: '%p-Board_front.%x'
+      output: '%p-Board_top.%x'
 
   - name: 'print board'
     comment: "Print board (PDF) bottom"
     type: pdf_pcb_print
     layers:
       - layer: Edge.Cuts
-      - layer: B.SilkS
       - layer: B.CrtYd
       - layer: B.Fab
     dir: docs
@@ -219,6 +217,12 @@ outputs:
     options:
       conf:
         exclude_any:
+          - column: Part
+            regex: TestPoint
+          - column: Part
+            regex: LOGO
+          - column: Part
+            regex: Jumper
           - column: Value
             regex: Sparkfun_Pro_Micro
       # [string='HTML'] [HTML,CSV,XML,XLSX] format for the BoM
@@ -239,6 +243,12 @@ outputs:
       conf:
         hide_pcb_info: false
         exclude_any:
+          - column: Part
+            regex: TestPoint
+          - column: Part
+            regex: LOGO
+          - column: Part
+            regex: Jumper
           - column: Value
             regex: Sparkfun_Pro_Micro
       # [string='HTML'] [HTML,CSV,XML,XLSX] format for the BoM
@@ -261,6 +271,12 @@ outputs:
       conf:
         hide_pcb_info: true
         exclude_any:
+          - column: Part
+            regex: TestPoint
+          - column: Part
+            regex: LOGO
+          - column: Part
+            regex: Jumper
           - column: Value
             regex: Sparkfun_Pro_Micro
       # [string='HTML'] [HTML,CSV,XML,XLSX] format for the BoM
@@ -275,7 +291,7 @@ outputs:
   - name: Step
     comment: "Generate 3D model (STEP)"
     type: step
-    dir: CAD
+    dir: docs/CAD
     options:
       metric_units: true
       origin: grid         # "grid" or "drill" o "X,Y" i.e. 3.2,-10

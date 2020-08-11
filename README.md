@@ -7,23 +7,22 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_TEST).
 
 
 ### Schematic
-[![ProMicro_TEST_Schematic](docs/ProMicro_TEST_schematic.svg)](docs/ProMicro_TEST_schematic.pdf)
+[![ProMicro_TEST_Schematic](docs/ProMicro_TEST-Schematic.svg)](docs/ProMicro_TEST-Schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_TEST_Board_Top.pdf"><img src="docs/img/ProMicro_TEST_Board_Top.svg" alt="ProMicro_TEST_Board_Top" width="20%"/></a>
-<a href="docs/ProMicro_TEST_Board_Bottom.pdf"><img src="docs/img/ProMicro_TEST_Board_Bottom.svg" alt="ProMicro_TEST_Board_Bottom" width="20%"/></a>
+<a href="docs/ProMicro_TEST-Board_top.pdf"><img src="docs/img/ProMicro_TEST-Board_top.svg" alt="ProMicro_TEST-Board_top" width="20%"/></a>
+<a href="docs/ProMicro_TEST-Board_bottom.pdf"><img src="docs/img/ProMicro_TEST-Board_bottom.svg" alt="ProMicro_TEST-Board_bottom" width="20%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_TEST/docs/bom/ibom.html)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_TEST/docs/bom/ProMicro_TEST.html))
   * [kicost](docs/bom/ProMicro_TEST.xlsx)
   * [csv](docs/bom/ProMicro_TEST.csv)
 
 
 ## Gerbers
-can be found within the Github [repository](gerbers).
-
+can be found within the Github [repository](https://github.com/nerdyscout/ProMicro_TEST/tree/master/gerbers).
 
 
 ## Code

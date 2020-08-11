@@ -1,4 +1,4 @@
-update=Sat Aug  8 16:56:07 2020
+update=Fri Aug 14 06:32:02 2020
 version=1
 last_client=eeschema
 [general]
@@ -14,7 +14,7 @@ LibDir=
 [eeschema/libraries]
 [pcbnew]
 version=1
-PageLayoutDescrFile=/home/user/Projects/Shields/ProMicro_/TEMP/ProMicro_TEMP.kicad_wks
+PageLayoutDescrFile=
 LastNetListRead=
 CopperLayerCount=2
 BoardThickness=0.8
@@ -281,11 +281,11 @@ dPairGap=0.25
 dPairViaGap=0.25
 [schematic_editor]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=/home/user/Projects/ProMicro/_template/ProMicro_template.kicad_wks
 PlotDirectoryName=/mnt/docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=Pcbnew
+NetFmtName=
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
