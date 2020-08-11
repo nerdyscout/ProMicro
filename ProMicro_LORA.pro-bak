@@ -1,4 +1,4 @@
-update=Sun Jun  7 09:41:04 2020
+update=Fri Aug 14 10:26:34 2020
 version=1
 last_client=eeschema
 [general]
@@ -14,19 +14,19 @@ LibDir=
 [eeschema/libraries]
 [pcbnew]
 version=1
-PageLayoutDescrFile=/home/user/Projects/Shields/ProMicro_/TEMP/ProMicro_TEMP.kicad_wks
+PageLayoutDescrFile=
 LastNetListRead=
 CopperLayerCount=2
 BoardThickness=0.8
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=1
-ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.09999999999999999
+ProhibitOverlappingCourtyards=0
+MinTrackWidth=0.1
 MinViaDiameter=0.45
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
-MinMicroViaDrill=0.09999999999999999
+MinMicroViaDrill=0.1
 MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.1
@@ -281,8 +281,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [schematic_editor]
 version=1
-PageLayoutDescrFile=/home/user/Projects/Shields/ProMicro_/TEMP/ProMicro_TEMP.kicad_wks
-PlotDirectoryName=/tmp/
+PageLayoutDescrFile=
+PlotDirectoryName=/mnt/docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

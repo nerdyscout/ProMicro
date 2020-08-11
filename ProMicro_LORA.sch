@@ -172,25 +172,11 @@ Wire Wire Line
 Wire Wire Line
 	4600 3250 4800 3250
 Wire Wire Line
-	7300 1900 7500 1900
-Wire Wire Line
-	7300 2000 7500 2000
-Wire Wire Line
-	7300 2100 7500 2100
-Wire Wire Line
-	7300 2200 7500 2200
-Wire Wire Line
-	7300 2300 7500 2300
-Wire Wire Line
 	7300 2400 7500 2400
-Wire Wire Line
-	7300 2500 7500 2500
 Wire Wire Line
 	7300 2600 7500 2600
 Wire Wire Line
 	7300 2700 7500 2700
-Wire Wire Line
-	7300 2800 7500 2800
 Wire Wire Line
 	7300 2900 7500 2900
 Wire Wire Line
@@ -199,16 +185,6 @@ Wire Wire Line
 	7300 3100 7500 3100
 Wire Wire Line
 	7300 3200 7500 3200
-Wire Wire Line
-	8500 1900 8700 1900
-Wire Wire Line
-	8500 2500 8700 2500
-Wire Wire Line
-	8500 2600 8700 2600
-Wire Wire Line
-	8500 2700 8700 2700
-Wire Wire Line
-	8500 2800 8700 2800
 Wire Wire Line
 	1475 5150 1250 5150
 Wire Wire Line
@@ -333,12 +309,12 @@ Wire Wire Line
 	2000 2650 3400 2650
 Wire Wire Line
 	4100 1875 5500 1875
-Text Notes 6950 2650 2    50   ~ 0
-D0
-Text Notes 6950 2750 2    50   ~ 0
+Text Notes 6625 2650 2    50   ~ 0
+DIO0
+Text Notes 6625 2750 2    50   ~ 0
 Reset
 Text Notes 6950 2950 2    50   ~ 0
-CS
+CS0
 Text Notes 8900 2550 0    50   ~ 0
 TDI
 Text Notes 8900 2650 0    50   ~ 0
@@ -360,11 +336,7 @@ RFO_HF
 Text GLabel 3000 3350 0    50   Input ~ 0
 RFI-HF
 Text GLabel 3000 3750 0    50   Input ~ 0
-SCK
-Text GLabel 3000 3850 0    50   Input ~ 0
-MISO
-Text GLabel 3000 3950 0    50   Input ~ 0
-MOSI
+D15
 Text GLabel 3000 4050 0    50   Input ~ 0
 D10
 Text GLabel 4750 3150 2    50   Input ~ 0
@@ -373,44 +345,20 @@ Text GLabel 5200 3250 2    50   Input ~ 0
 D5
 Text GLabel 6000 2950 2    50   Input ~ 0
 VR_PA
-Text GLabel 7300 1900 0    50   Input ~ 0
-RXD
-Text GLabel 7300 2000 0    50   Input ~ 0
-TXD
-Text GLabel 7300 2100 0    50   Input ~ 0
-SDA
-Text GLabel 7300 2200 0    50   Input ~ 0
-SCL
-Text GLabel 7300 2300 0    50   Input ~ 0
-D4
 Text GLabel 7300 2400 0    50   Input ~ 0
 D5
-Text GLabel 7300 2500 0    50   Input ~ 0
-D6
 Text GLabel 7300 2600 0    50   Input ~ 0
 D7
 Text GLabel 7300 2700 0    50   Input ~ 0
 D8
-Text GLabel 7300 2800 0    50   Input ~ 0
-D9
 Text GLabel 7300 2900 0    50   Input ~ 0
 D10
 Text GLabel 7300 3000 0    50   Input ~ 0
-MOSI
+D16
 Text GLabel 7300 3100 0    50   Input ~ 0
-MISO
+D14
 Text GLabel 7300 3200 0    50   Input ~ 0
-SCK
-Text GLabel 8700 1900 2    50   Input ~ 0
-Reset
-Text GLabel 8700 2500 2    50   Input ~ 0
-A0
-Text GLabel 8700 2600 2    50   Input ~ 0
-A1
-Text GLabel 8700 2700 2    50   Input ~ 0
-A2
-Text GLabel 8700 2800 2    50   Input ~ 0
-A3
+D15
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5E1AA0A9
@@ -1318,13 +1266,11 @@ Connection ~ 6500 5250
 Wire Wire Line
 	6500 5250 6500 5600
 Text Notes 6950 3050 2    50   ~ 0
-MOSI
+SDO
 Text Notes 6950 3150 2    50   ~ 0
-MISO
+SDI
 Text Notes 6950 3250 2    50   ~ 0
 SCK
-Text Notes 6950 2450 2    50   ~ 0
-D1
 NoConn ~ 7900 1500
 $Comp
 L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
@@ -1348,4 +1294,41 @@ F 3 "https://www.semtech.com/uploads/documents/DS_SX1276-7-8-9_W_APP_V6.pdf" H 4
 	1    4000 3250
 	1    0    0    -1  
 $EndComp
+Text Notes 6625 2450 2    50   ~ 0
+DIO1
+Text Notes 6950 1950 2    50   ~ 0
+RXD
+Text Notes 6950 2050 2    50   ~ 0
+TXD
+Text Notes 6950 2150 2    50   ~ 0
+SDA
+Text Notes 6950 2250 2    50   ~ 0
+SCL
+Text Notes 6950 2350 2    50   ~ 0
+VBAT/2
+Text Notes 6950 2525 2    50   ~ 0
+BTN
+Text Notes 6950 2850 2    50   ~ 0
+CS1
+Text GLabel 3000 3950 0    50   Input ~ 0
+D16
+Text GLabel 3000 3850 0    50   Input ~ 0
+D14
+Text Notes 6950 2750 2    50   ~ 0
+INT0
+NoConn ~ 8500 2800
+NoConn ~ 8500 2700
+NoConn ~ 8500 2600
+NoConn ~ 8500 2500
+NoConn ~ 7500 2200
+NoConn ~ 7500 2100
+NoConn ~ 7500 2000
+NoConn ~ 7500 1900
+NoConn ~ 7500 2500
+NoConn ~ 7500 2300
+NoConn ~ 8500 1900
+NoConn ~ 4600 2850
+NoConn ~ 7500 2800
+Text Notes 4200 1875 0    50   ~ 0
+TODO: hier muss wohl eine Spannung ran
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-Designator,Value,Package,Mid X,Mid Y,Rotation,Layer
+Ref,Val,Package,PosX,PosY,Rot,Side
 "C1","15p","C_0402_1005Metric","66.0400","-87.6300","180.0000","top"
 "C10","DNP","C_0402_1005Metric","73.8100","-67.9450","0.0000","top"
 "C11","DNP","C_0402_1005Metric","69.2150","-67.9450","180.0000","top"
