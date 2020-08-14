@@ -11,8 +11,8 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_TEST).
 
 
 ### Layout
-<a href="docs/ProMicro_TEST-Board_top.pdf"><img src="docs/img/ProMicro_TEST-Board_top.svg" alt="ProMicro_TEST-Board_top" width="20%"/></a>
-<a href="docs/ProMicro_TEST-Board_bottom.pdf"><img src="docs/img/ProMicro_TEST-Board_bottom.svg" alt="ProMicro_TEST-Board_bottom" width="20%"/></a>
+<a href="docs/ProMicro_TEST-Board_top.pdf"><img src="docs/img/ProMicro_TEST-Board_top.svg" alt="ProMicro_TEST-Board_top" width="33%"/></a>
+<a href="docs/ProMicro_TEST-Board_bottom.pdf"><img src="docs/img/ProMicro_TEST-Board_bottom.svg" alt="ProMicro_TEST-Board_bottom" width="33%"/></a>
 
 
 ### BoM

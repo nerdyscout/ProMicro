@@ -2,14 +2,17 @@ name: kicad
 
 on:
   push:
-#    paths:
-#    - '**.sch'
-#    - '**.kicad_pcb'
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
+    - README.md
+    - .github/workflows/**
   pull_request:
-#    paths:
-#      - '**.sch'
-#      - '**.kicad_pcb'
-
+    paths:
+      - '**.sch'
+      - '**.kicad_pcb'
+      - README.md
+      - .github/workflows/**
 jobs:
     exports:
       runs-on: ubuntu-latest
@@ -29,36 +32,3 @@ jobs:
           rebase: 'true'
           files: docs/* gerbers/*
           
-    test:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v2
-      - uses: nerdyscout/kicad-exports@v2.0
-        with:
-          config: plot.kiplot.yaml
-          board: ProMicro_TEST.kicad_pcb
-          schema: ProMicro_TEST.sch
-      - uses: nerdyscout/kicad-exports@v2.0
-        with:
-          config: fabrications.kiplot.yaml
-          board: ProMicro_TEST.kicad_pcb
-          schema: ProMicro_TEST.sch
-      - uses: nerdyscout/kicad-exports@v2.0
-        with:
-          config: model.kiplot.yaml
-          board: ProMicro_TEST.kicad_pcb
-          schema: ProMicro_TEST.sch
-      - uses: nerdyscout/kicad-exports@v2.0
-        with:
-          config: docs.kiplot.yaml
-          board: ProMicro_TEST.kicad_pcb
-          schema: ProMicro_TEST.sch
-      - uses: nerdyscout/kicad-exports@v2.0
-        with:
-          config: bom.kiplot.yaml
-          board: ProMicro_TEST.kicad_pcb
-          schema: ProMicro_TEST.sch
-      - uses: actions/upload-artifact@v2
-        with:
-          name: dump
-          path: .
