@@ -14,8 +14,8 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=/home/user/Projects/ProMicro/_template/ProMicro_template.kicad_wks
-PlotDirectoryName=/output/docs/
+PageLayoutDescrFile=
+PlotDirectoryName=docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
@@ -31,12 +31,12 @@ BoardThickness=0.8
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=1
-ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.09999999999999999
+ProhibitOverlappingCourtyards=0
+MinTrackWidth=0.1
 MinViaDiameter=0.45
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
-MinMicroViaDrill=0.09999999999999999
+MinMicroViaDrill=0.1
 MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.1
