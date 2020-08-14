@@ -2,29 +2,27 @@
 This module can be mounted to an [Arduino Pro Mini](https://www.sparkfun.com/products/11113), [Arduino Nano](https://store.arduino.cc/arduino-nano), [Sparkfun Pro Micro](https://www.sparkfun.com/products/12587), or any other pincompatible MCU running with 3.3V. Depending on assembly it provides GPS and/or GYRO data. Manufacturing this PCB with 0.8mm thickness allows to mount a LORA module onto its back.
 
 
-
 ## Documentation
 All files can be found on [Github](https://github.com/nerdyscout/ProMicro_GPS).
 
 
 ### Schematic
-[![ProMicro_GPS_Schematic](docs/ProMicro_GPS_schematic.svg)](docs/ProMicro_GPS_schematic.pdf)
+[![ProMicro_GPS_Schematic](docs/ProMicro_GPS-Schematic.svg)](docs/ProMicro_GPS-Schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_GPS_Board_Top.pdf"><img src="docs/img/ProMicro_GPS_Board_Top.svg" alt="ProMicro_GPS_Board_Top" width="20%"/></a>
-<a href="docs/ProMicro_GPS_Board_Bottom.pdf"><img src="docs/img/ProMicro_GPS_Board_Bottom.svg" alt="ProMicro_GPS_Board_Bottom" width="20%"/></a>
+<a href="docs/ProMicro_GPS-Board_top.pdf"><img src="docs/img/ProMicro_GPS-Board_top.svg" alt="ProMicro_GPS-Board_top" width="33%"/></a>
+<a href="docs/ProMicro_GPS-Board_bottom.pdf"><img src="docs/img/ProMicro_GPS-Board_bottom.svg" alt="ProMicro_GPS-Board_bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_GPS/docs/bom/ibom.html)
-  * [kicost](docs/bom/ProMicro_GPS.xlsx)
-  * [csv](docs/bom/ProMicro_GPS.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_GPS/docs/BOM/ProMicro_GPS.html)
+  * [kicost](docs/BOM/ProMicro_GPS.xlsx)
+  * [csv](docs/BOM/ProMicro_GPS.csv)
 
 
 ## Gerbers
-can be found within the Github [repository](gerbers).
-
+can be found within the Github [repository](https://github.com/nerdyscout/ProMicro_GPS/tree/master/gerbers).
 
 
 ## Code

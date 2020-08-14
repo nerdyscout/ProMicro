@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title " ProMicro_GPS"
+Title "ProMicro_GPS"
 Date "2020-05-30"
 Rev "v3"
 Comp "https://github.com/nerdyscout/ProMicro_GPS"
@@ -406,35 +406,11 @@ Wire Wire Line
 Wire Wire Line
 	8200 2700 8400 2700
 Wire Wire Line
-	8200 2800 8400 2800
-Wire Wire Line
 	8200 2900 8400 2900
-Wire Wire Line
-	8200 3000 8400 3000
 Wire Wire Line
 	8200 3100 8400 3100
 Wire Wire Line
-	8200 3200 8400 3200
-Wire Wire Line
-	8200 3300 8400 3300
-Wire Wire Line
-	8200 3400 8400 3400
-Wire Wire Line
-	8200 3500 8400 3500
-Wire Wire Line
-	8200 3600 8400 3600
-Wire Wire Line
-	8200 3700 8400 3700
-Wire Wire Line
 	9400 2400 9600 2400
-Wire Wire Line
-	9400 3000 9600 3000
-Wire Wire Line
-	9400 3100 9600 3100
-Wire Wire Line
-	9400 3200 9600 3200
-Wire Wire Line
-	9400 3300 9600 3300
 Wire Wire Line
 	8600 5450 8600 5200
 Wire Wire Line
@@ -477,40 +453,16 @@ Text GLabel 8200 2500 0    50   Output ~ 0
 D1
 Text GLabel 8200 2600 0    50   Input ~ 0
 D2
-Text GLabel 8200 2800 0    50   Input ~ 0
-D4
 Text GLabel 8200 2900 0    50   Input ~ 0
 D5
-Text GLabel 8200 3000 0    50   Input ~ 0
-D6
 Text GLabel 8200 3100 0    50   Input ~ 0
 D7
-Text GLabel 8200 3200 0    50   Input ~ 0
-D8
-Text GLabel 8200 3300 0    50   Input ~ 0
-D9
-Text GLabel 8200 3400 0    50   Input ~ 0
-D10
-Text GLabel 8200 3500 0    50   Input ~ 0
-D16
-Text GLabel 8200 3600 0    50   Input ~ 0
-D14
-Text GLabel 8200 3700 0    50   Input ~ 0
-D15
 Text GLabel 8600 5900 3    50   Input ~ 0
 D2
 Text GLabel 9200 5900 3    50   Input ~ 0
 D3
 Text GLabel 9600 2400 2    50   Input ~ 0
 Reset
-Text GLabel 9600 3000 2    50   Input ~ 0
-A0
-Text GLabel 9600 3100 2    50   Input ~ 0
-A1
-Text GLabel 9600 3200 2    50   Input ~ 0
-A2
-Text GLabel 9600 3300 2    50   Input ~ 0
-A3
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5E1646E7
@@ -753,9 +705,9 @@ RXD
 Text Notes 7900 3725 2    50   ~ 0
 SCK
 Text Notes 7900 3625 2    50   ~ 0
-MOSI
+SDO
 Text Notes 7900 3525 2    50   ~ 0
-MISO
+SDI
 Text Notes 7900 3425 2    50   ~ 0
 CS0
 Text Notes 7900 3325 2    50   ~ 0
@@ -1052,7 +1004,7 @@ F 6 "C15195" H 6500 1500 50  0001 C CNN "LCSC#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
+L ProMicro_GPS-rescue:Sparkfun_Pro_Micro_3V3-MCU_Module A1
 U 1 1 5ED4F2B4
 P 8900 3000
 F 0 "A1" H 8575 3950 50  0000 C CNN
@@ -1066,17 +1018,17 @@ Text Notes 1750 2750 0    50   ~ 0
 Alternativ:\nICM-20948 requires 1.8V @VDDIO
 Text Notes 3250 6750 0    50   ~ 0
 Alternativ:\nMAX-8
-$Comp
-L power:+5V #PWR?
-U 1 1 5F090F10
-P 8800 1900
-F 0 "#PWR?" H 8800 1750 50  0001 C CNN
-F 1 "+5V" H 8800 2075 50  0000 C CNN
-F 2 "" H 8800 1900 50  0001 C CNN
-F 3 "" H 8800 1900 50  0001 C CNN
-	1    8800 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 2000 8800 1900
+NoConn ~ 8400 2800
+NoConn ~ 8400 3000
+NoConn ~ 8400 3200
+NoConn ~ 8400 3300
+NoConn ~ 8400 3400
+NoConn ~ 8400 3500
+NoConn ~ 8400 3600
+NoConn ~ 8400 3700
+NoConn ~ 9400 3300
+NoConn ~ 9400 3200
+NoConn ~ 9400 3100
+NoConn ~ 9400 3000
+NoConn ~ 8800 2000
 $EndSCHEMATC

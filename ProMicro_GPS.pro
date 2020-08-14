@@ -1,4 +1,4 @@
-update=Mo 06 Jul 2020 17:56:30 UTC
+update=So 09 Aug 2020 10:18:59 UTC
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=/output/docs/
+PlotDirectoryName=docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
@@ -31,12 +31,12 @@ BoardThickness=0.8
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=1
-ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.09999999999999999
+ProhibitOverlappingCourtyards=0
+MinTrackWidth=0.1
 MinViaDiameter=0.45
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
-MinMicroViaDrill=0.09999999999999999
+MinMicroViaDrill=0.1
 MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.1
