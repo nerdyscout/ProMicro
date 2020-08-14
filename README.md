@@ -7,18 +7,18 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_LIPO).
 
 
 ### Schematic
-[![ProMicro_LIPO_Schematic](docs/ProMicro_LIPO_schematic.svg)](docs/ProMicro_LIPO_schematic.pdf)
+[![ProMicro_LIPO_Schematic](docs/ProMicro_LIPO-Schematic.svg)](docs/ProMicro_LIPO-Schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_LIPO_Board_Top.pdf"><img src="docs/img/ProMicro_LIPO_Board_Top.svg" alt="ProMicro_LIPO_Board_Top" width="20%"/></a>
-<a href="docs/ProMicro_LIPO_Board_Bottom.pdf"><img src="docs/img/ProMicro_LIPO_Board_Bottom.svg" alt="ProMicro_LIPO_Board_Bottom" width="20%"/></a>
+<a href="docs/ProMicro_LIPO-Board_top.pdf"><img src="docs/img/ProMicro_LIPO-Board_top.svg" alt="ProMicro_LIPO-Board_top" width="33%"/></a>
+<a href="docs/ProMicro_LIPO-Board_bottom.pdf"><img src="docs/img/ProMicro_LIPO-Board_bottom.svg" alt="ProMicro_LIPO-Board_bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_LIPO/docs/bom/ibom.html)
-  * [kicost](docs/bom/ProMicro_LIPO.xlsx)
-  * [csv](docs/bom/ProMicro_LIPO.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_LIPO/docs/BOM/ProMicro_LIPO.html)
+  * [kicost](docs/BOM/ProMicro_LIPO.xlsx)
+  * [csv](docs/BOM/ProMicro_LIPO.csv)
 
 
 ## Gerbers
@@ -26,7 +26,7 @@ can be found within the Github [repository](gerbers).
 
 
 ## Code
-  * [Arduino Pro Mini 3V3](examples/Arduino_Mini_LIPO/Arduino_Mini_LIPO.ino)
+  * [Arduino Micro 3V3](examples/Arduino_Micro_LIPO/Arduino_Micro_LIPO.ino)
   * [Arduino Nano 3V3](examples/Arduino_Nano_LIPO/Arduino_Nano_LIPO.ino)
   * [Sparkfun Pro Micro 3V3](examples/Sparkfun_ProMicro_LIPO/Sparkfun_ProMicro_LIPO.ino)
 
