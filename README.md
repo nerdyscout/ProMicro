@@ -16,7 +16,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_LOG).
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_LOG/docs/BOM/ProMicro_LOG.html))
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_LOG/docs/BOM/ProMicro_LOG.html)
   * [kicost](docs/BOM/ProMicro_LOG.xlsx)
   * [csv](docs/BOM/ProMicro_LOG.csv)
 
