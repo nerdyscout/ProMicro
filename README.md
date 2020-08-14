@@ -16,9 +16,9 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_TEST).
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_TEST/docs/bom/ProMicro_TEST.html))
-  * [kicost](docs/bom/ProMicro_TEST.xlsx)
-  * [csv](docs/bom/ProMicro_TEST.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_TEST/docs/BOM/ProMicro_TEST.html)
+  * [kicost](docs/BOM/ProMicro_TEST.xlsx)
+  * [csv](docs/BOM/ProMicro_TEST.csv)
 
 
 ## Gerbers

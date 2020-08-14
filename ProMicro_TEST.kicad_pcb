@@ -14,8 +14,9 @@
     (title ProMicro_TEST)
     (date 2020-07-12)
     (rev v1.0)
-    (company http://github.com/nerdyscout/ProMicro_TEST)
+    (company https://twitter.com/nerdyscout84)
     (comment 1 "CERN Open Hardware Licence v1.2 ")
+    (comment 2 http://github.com/nerdyscout/ProMicro)
   )
 
   (layers

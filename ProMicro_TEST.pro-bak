@@ -1,4 +1,4 @@
-update=Fri Aug 14 06:32:02 2020
+update=Fri Aug 14 10:29:18 2020
 version=1
 last_client=eeschema
 [general]
@@ -21,12 +21,12 @@ BoardThickness=0.8
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=1
-ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.09999999999999999
+ProhibitOverlappingCourtyards=0
+MinTrackWidth=0.1
 MinViaDiameter=0.45
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
-MinMicroViaDrill=0.09999999999999999
+MinMicroViaDrill=0.1
 MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.1
@@ -281,7 +281,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [schematic_editor]
 version=1
-PageLayoutDescrFile=/home/user/Projects/ProMicro/_template/ProMicro_template.kicad_wks
+PageLayoutDescrFile=
 PlotDirectoryName=/mnt/docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
