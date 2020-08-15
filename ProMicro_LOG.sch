@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ProMicro_LOG"
-Date "2020-07-13"
-Rev "v1.0"
+Date "2020-08-15"
+Rev "v1.1"
 Comp "https://twitter.com/nerdyscout84"
 Comment1 "CERN Open Hardware Licence v1.2"
 Comment2 ""
@@ -48,38 +48,24 @@ Wire Wire Line
 	8200 3700 8400 3700
 Wire Wire Line
 	9400 2400 9600 2400
-Text Notes 7900 2830 2    50   ~ 0
-VBAT/2
-Text Notes 7900 3325 2    50   ~ 0
-CS1
-Text Notes 7900 3425 2    50   ~ 0
-CS0
-Text Notes 9800 3030 0    50   ~ 0
-TDI
-Text Notes 9800 3130 0    50   ~ 0
-TDO
-Text Notes 9800 3230 0    50   ~ 0
-TMS
-Text Notes 9800 3330 0    50   ~ 0
-TCK
 Text GLabel 8200 2600 0    50   BiDi ~ 0
-D2
+SDA
 Text GLabel 8200 2700 0    50   Output ~ 0
-D3
-Text GLabel 8200 3000 0    50   BiDi ~ 0
-D6
-Text GLabel 8200 3200 0    50   BiDi ~ 0
-D8
+SCL
+Text GLabel 8200 3000 0    50   Input ~ 0
+BTN
+Text GLabel 8200 3200 0    50   Input ~ 0
+INT
 Text GLabel 8200 3300 0    50   Output ~ 0
-D9
+CS1
 Text GLabel 8200 3400 0    50   Output ~ 0
-D10
+CS0
 Text GLabel 8200 3500 0    50   Input ~ 0
-D16
+COPI
 Text GLabel 8200 3600 0    50   Input ~ 0
-D14
+CIPO
 Text GLabel 8200 3700 0    50   Input ~ 0
-D15
+SCK
 Text GLabel 9600 2400 2    50   Input ~ 0
 Reset
 $Comp
@@ -148,20 +134,6 @@ F 3 "" H 10800 6900 50  0001 C CNN
 	1    10800 6900
 	1    0    0    -1  
 $EndComp
-Text Notes 7900 2425 2    50   ~ 0
-RXD
-Text Notes 7900 2525 2    50   ~ 0
-TXD
-Text Notes 7900 2625 2    50   ~ 0
-SDA
-Text Notes 7900 2725 2    50   ~ 0
-SCL
-Text Notes 7900 3525 2    50   ~ 0
-SDO
-Text Notes 7900 3625 2    50   ~ 0
-SDI
-Text Notes 7900 3725 2    50   ~ 0
-SCK
 $Comp
 L Connector:Micro_SD_Card_Det J1
 U 1 1 5EB5DAF6
@@ -187,9 +159,9 @@ $EndComp
 Wire Wire Line
 	4400 4500 4400 4600
 Text GLabel 3750 4900 0    50   BiDi ~ 0
-D2
+SDA
 Text GLabel 3750 4800 0    50   Output ~ 0
-D3
+SCL
 Wire Wire Line
 	3750 4800 4000 4800
 Wire Wire Line
@@ -246,8 +218,8 @@ F 3 "~" H 6500 5100 50  0001 C CNN
 	1    6500 5100
 	1    0    0    -1  
 $EndComp
-Text GLabel 6750 5100 2    50   BiDi ~ 0
-D8
+Text GLabel 6750 5100 2    50   Output ~ 0
+INT
 Wire Wire Line
 	6750 5100 6600 5100
 $Comp
@@ -359,9 +331,9 @@ $EndComp
 Wire Wire Line
 	5750 3000 5500 3000
 Text GLabel 9000 5850 3    50   BiDi ~ 0
-D2
+SDA
 Text GLabel 9500 5850 3    50   Output ~ 0
-D3
+SCL
 Wire Wire Line
 	9000 5650 9000 5850
 Wire Wire Line
@@ -392,8 +364,6 @@ F 3 "" H 9500 5200 50  0001 C CNN
 	1    9500 5200
 	1    0    0    -1  
 $EndComp
-Text GLabel 3250 2300 0    50   Input ~ 0
-D16
 $Comp
 L power:GND #PWR0111
 U 1 1 5EB5B11C
@@ -423,9 +393,7 @@ Wire Wire Line
 Wire Wire Line
 	3625 2600 3625 2900
 Text GLabel 3250 2700 0    50   Input ~ 0
-D14
-Text GLabel 3250 2500 0    50   Input ~ 0
-D15
+CIPO
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP4
 U 1 1 5EB5C3ED
@@ -437,14 +405,6 @@ F 3 "~" H 8000 5500 50  0001 C CNN
 	1    8000 5500
 	0    1    1    0   
 $EndComp
-Text Label 3375 2500 0    50   ~ 0
-SCK
-Text Label 3375 2700 0    50   ~ 0
-MISO
-Text Label 3375 2300 0    50   ~ 0
-MOSI
-Text Label 3375 2200 0    50   ~ 0
-CS
 Text GLabel 3250 2200 0    50   Input ~ 0
 CS
 Wire Wire Line
@@ -503,11 +463,11 @@ Connection ~ 3625 2900
 Wire Wire Line
 	3625 2900 3625 3250
 Text GLabel 8500 5000 1    50   Input ~ 0
-D15
+SCK
 Text GLabel 7750 5250 0    50   Output ~ 0
-D9
+CS1
 Text GLabel 7750 5750 0    50   Output ~ 0
-D10
+CS0
 Wire Wire Line
 	7750 5750 8000 5750
 Wire Wire Line
@@ -520,8 +480,8 @@ Text GLabel 7750 5500 0    50   Input ~ 0
 CS
 Wire Wire Line
 	7750 5500 7850 5500
-Text GLabel 3000 3000 0    50   BiDi ~ 0
-D6
+Text GLabel 3000 3000 0    50   Output ~ 0
+BTN
 Wire Wire Line
 	3525 3000 3800 3000
 Wire Wire Line
@@ -537,8 +497,6 @@ F 3 "~" H 3375 3000 50  0001 C CNN
 	1    3375 3000
 	0    1    1    0   
 $EndComp
-Text Notes 7900 3025 2    50   ~ 0
-BTN
 $Comp
 L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
 U 1 1 5EDCCCBD
@@ -550,24 +508,10 @@ F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
 	1    8900 3000
 	1    0    0    -1  
 $EndComp
-Text Notes 7900 3225 2    50   ~ 0
-INT
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5F1740AB
-P 6750 4800
-F 0 "TP2" V 6675 5000 50  0000 L CNN
-F 1 "TestPoint" V 6775 5000 50  0000 L CNN
-F 2 "" H 6950 4800 50  0001 C CNN
-F 3 "~" H 6950 4800 50  0001 C CNN
-	1    6750 4800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6600 4800 6750 4800
 NoConn ~ 8400 3100
 NoConn ~ 8400 2900
-NoConn ~ 8400 2800
 NoConn ~ 8400 2500
 NoConn ~ 8400 2400
 NoConn ~ 8800 2000
@@ -577,4 +521,14 @@ NoConn ~ 9400 3100
 NoConn ~ 9400 3000
 NoConn ~ 3800 2800
 NoConn ~ 8800 4000
+Text GLabel 3250 2500 0    50   Input ~ 0
+SCK
+Text GLabel 3250 2300 0    50   Input ~ 0
+COPI
+Text GLabel 6750 4800 2    50   Output ~ 0
+TRG
+Text GLabel 8200 2800 0    50   Input ~ 0
+TRG
+Wire Wire Line
+	8200 2800 8400 2800
 $EndSCHEMATC
