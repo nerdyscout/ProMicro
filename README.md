@@ -1,9 +1,14 @@
 # ProMicro
 
 ## PCBs
-collection of various PCBs fitting the Sparkfun ProMicro and Arduino ProMini
+collection of various PCBs stackable onto various MCU modules like
+- [Sparkfun ProMicro](https://www.sparkfun.com/products/12587)
+- [Arduino ProMini](https://store.arduino.cc/arduino-pro-mini)
+- [Pro Mini nRF52](https://www.tindie.com/products/prominimicros/pro-mini-nrf52-nordic-nrf52832/)
 
-|Project |Build |Status |Description |
+:warning: whatever MCU module you use, it must run with 3.3V!
+
+|PCB |Build |Status |Description |
 | --- | --- | --- | --- |
 |[ANA](https://nerdyscout.github.io/ProMicro_ANA) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_ANA/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_ANA/actions?query=branch%3Amaster) | prototype | 2ch analog in/out|
 |[BUS](https://nerdyscout.github.io/ProMicro_BUS) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_BUS/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_BUS/actions?query=branch%3Amaster) | prototype | Modbus and Canbus module|
@@ -17,3 +22,11 @@ collection of various PCBs fitting the Sparkfun ProMicro and Arduino ProMini
 |[QWIIC](https://nerdyscout.github.io/ProMicro_QWIIC) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_QWIIC/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_QWIIC/actions?query=branch%3Amaster) | prototype | BME280 sensor and analog extension |
 |[WING](https://nerdyscout.github.io/ProMicro_WING) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_WING/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_WING/actions?query=branch%3Amaster) | prototype | Adafruit FeatherWing Breakout |
 |[ZPM](https://nerdyscout.github.io/ProMicro_ZPM) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_ZPM/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_ZPM/actions?query=branch%3Amaster) | prototype | energy harvesting module |
+
+
+## Projects
+
+|Project |Build |Status |Description |
+| --- | --- | --- | --- |
+|[TTNTracker](projects/TTNTracker/README.md)|[![arduino](https://github.com/nerdyscout/ProMicro/workflows/arduino/badge.svg?branch=master)]| wip | sending GPS position via LORA |
+
