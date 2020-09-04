@@ -1,6 +1,6 @@
-update=Fri Sep  4 18:26:55 2020
+update=Fr 04 Sep 2020 19:37:35 UTC
 version=1
-last_client=eeschema
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
+PlotDirectoryName=docs/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
@@ -279,13 +289,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
-PlotDirectoryName=/mnt/ESP12E/docs/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
