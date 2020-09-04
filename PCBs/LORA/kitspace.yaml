@@ -1,0 +1,10 @@
+site: https://nerdyscout.github.io/ProMicro_LORA
+summary: 868Mhz LoRa transmitter
+readme: README.md
+bom: ProMicro_LORA.csv
+eda:
+  type: kicad
+  pcb: ProMicro_LORA.kicad_pcb
+gerbers: gerbers
+color: green
+

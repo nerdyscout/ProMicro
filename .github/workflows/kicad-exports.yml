@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: kicad-exports
+=======
+name: kicad
+>>>>>>> LORA
 
 on:
   push:
@@ -21,8 +25,13 @@ jobs:
       - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: config.kiplot.yaml
+<<<<<<< HEAD
           schema: ProMicro_*.sch
           board: ProMicro_*.kicad_pcb
+=======
+          board: ProMicro_TEST.kicad_pcb
+          schema: ProMicro_TEST.sch
+>>>>>>> LORA
       - name: git commit && git push 
         uses: github-actions-x/commit@v2.6
         with:
