@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ProMicro_BUS-rescue)(type Legacy)(uri ${KIPRJMOD}/ProMicro_BUS-rescue.lib)(options "")(descr ""))
+)

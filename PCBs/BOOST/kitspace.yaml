@@ -1,9 +1,0 @@
-site: https://nerdyscout.github.io/ProMicro_LIPO
-summary: LiPo battery charger fitting onto a Sparkfun ProMicro 3V3
-readme: README.md
-bom: docs/bom/ProMicro_LIPO.csv
-eda:
-  type: kicad
-  pcb: ProMicro_LIPO.kicad_pcb
-gerbers: gerbers
-color: black

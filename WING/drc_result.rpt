@@ -1,0 +1,36 @@
+** Drc report for /mnt/WING/ProMicro_WING.kicad_pcb **
+** Created on 2020-09-04 18:30:12 **
+
+** Found 10 DRC errors **
+ErrType(19): Pad too close to pad
+    @(48.260 mm, 60.960 mm): Pad 1 of U1 on All copper layers
+    @(48.260 mm, 60.960 mm): Pad 1 of U2 on All copper layers
+ErrType(19): Pad too close to pad
+    @(68.580 mm, 66.040 mm): Pad 26 of U1 on All copper layers
+    @(68.580 mm, 66.040 mm): Pad 26 of U2 on All copper layers
+ErrType(19): Pad too close to pad
+    @(68.580 mm, 73.660 mm): Pad 23 of U1 on All copper layers
+    @(68.580 mm, 73.660 mm): Pad 23 of U2 on All copper layers
+ErrType(19): Pad too close to pad
+    @(68.580 mm, 76.200 mm): Pad 22 of U1 on All copper layers
+    @(68.580 mm, 76.200 mm): Pad 22 of U2 on All copper layers
+ErrType(19): Pad too close to pad
+    @(68.580 mm, 78.740 mm): Pad 21 of U1 on All copper layers
+    @(68.580 mm, 78.740 mm): Pad 21 of U2 on All copper layers
+ErrType(19): Pad too close to pad
+    @(68.580 mm, 81.280 mm): Pad 20 of U1 on All copper layers
+    @(68.580 mm, 81.280 mm): Pad 20 of U2 on All copper layers
+ErrType(19): Pad too close to pad
+    @(68.580 mm, 83.820 mm): Pad 19 of U1 on All copper layers
+    @(68.580 mm, 83.820 mm): Pad 19 of U2 on All copper layers
+ErrType(19): Pad too close to pad
+    @(68.580 mm, 99.060 mm): Pad 13 of U1 on All copper layers
+    @(68.580 mm, 99.060 mm): Pad 13 of U2 on All copper layers
+ErrType(46): Footprint has no courtyard defined
+    @(55.245 mm, 77.470 mm): Footprint TP3 on F.Cu
+ErrType(46): Footprint has no courtyard defined
+    @(56.515 mm, 87.630 mm): Footprint LOGO1 on F.Cu
+
+** Found 0 unconnected pads **
+
+** End of Report **

@@ -1,9 +1,0 @@
-site: https://nerdyscout.github.io/ProMicro_UART
-summary: USB to Serial, SPI, I2C or JTAG
-readme: README.md
-bom: docs/bom/ProMicro_UART.csv
-eda:
-  type: kicad
-  pcb: ProMicro_UART.kicad_pcb
-gerbers: gerbers
-color: green

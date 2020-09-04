@@ -1,0 +1,16 @@
+ERC report (Fri Sep  4 18:29:18 2020, Encoding UTF8 )
+
+***** Sheet /
+ErrType(4): Conflict problem between pins. Severity: warning
+    @(228.60 mm, 50.80 mm): Pin 21 (Power output) of component A1 is connected to 
+    @(83.82 mm, 45.72 mm): pin 9 (Bidirectional) of component U2 (net 8).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(104.14 mm, 172.72 mm): Pin 1 (Power input) of component #PWR010 is not driven (Net 9).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(58.42 mm, 157.48 mm): Pin 9 (Input) of component U1 is not driven (Net 26).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(73.66 mm, 129.54 mm): Pin 6 (Power input) of component U1 is not driven (Net 31).
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(58.42 mm, 154.94 mm): Pin 18 (Input) of component U1 is unconnected.
+
+ ** ERC messages: 5  Errors 0  Warnings 5

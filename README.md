@@ -10,23 +10,16 @@ collection of various PCBs stackable onto various MCU modules like
 
 |PCB |Build |Status |Description |
 | --- | --- | --- | --- |
-|[ANA](https://nerdyscout.github.io/ProMicro_ANA) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_ANA/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_ANA/actions?query=branch%3Amaster) | prototype | 2ch analog in/out|
-|[BUS](https://nerdyscout.github.io/ProMicro_BUS) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_BUS/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_BUS/actions?query=branch%3Amaster) | prototype | Modbus and Canbus module|
-|[CONN](https://nerdyscout.github.io/ProMicro_CONN) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_CONN/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_CONN/actions?query=branch%3Amaster) | prototype | CONN |
-|[ESP8266](https://nerdyscout.github.io/ProMicro_ESP8266) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_ESP8266/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_ESP8266/actions?query=branch%3Amaster) | prototype | ESP8266 |
-|[GPS](https://nerdyscout.github.io/ProMicro_GPS) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_GPS/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_GPS/actions?query=branch%3Amaster) | prototype | GPS receiver and Gyro |
-|[LIPO](https://nerdyscout.github.io/ProMicro_LIPO) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_LIPO/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_LIPO/actions?query=branch%3Amaster) | prototype | Lipo battery charger |
-|[LOG](https://nerdyscout.github.io/ProMicro_LOG) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_LOG/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_LOG/actions?query=branch%3Amaster) | prototype | micro SD card shield |
-|[LORA](https://nerdyscout.github.io/ProMicro_LORA) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_LORA/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_LORA/actions?query=branch%3Amaster) | prototype | Lora transceiver 868MHz |
-|[UART](https://nerdyscout.github.io/ProMicro_UART) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_UART/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_UART/actions?query=branch%3Amaster) | prototype | USB to RS232, RS485, SPI, I2C, JTAG |
-|[QWIIC](https://nerdyscout.github.io/ProMicro_QWIIC) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_QWIIC/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_QWIIC/actions?query=branch%3Amaster) | prototype | BME280 sensor and analog extension |
-|[WING](https://nerdyscout.github.io/ProMicro_WING) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_WING/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_WING/actions?query=branch%3Amaster) | prototype | Adafruit FeatherWing Breakout |
-|[ZPM](https://nerdyscout.github.io/ProMicro_ZPM) |[![kicad-exports](https://github.com/nerdyscout/ProMicro_ZPM/workflows/kicad-exports/badge.svg?branch=master)](https://github.com/nerdyscout/ProMicro_ZPM/actions?query=branch%3Amaster) | prototype | energy harvesting module |
-
-
-## Projects
-
-|Project |Build |Status |Description |
-| --- | --- | --- | --- |
-|[TTNTracker](projects/TTNTracker/README.md)|[![arduino](https://github.com/nerdyscout/ProMicro/workflows/arduino/badge.svg?branch=master)]| wip | sending GPS position via LORA |
+|[ANA](ANA) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=ANA)](ANA/actions?query=branch%3AANA) | prototype | 2ch analog in/out|
+|[BUS](BUS) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=BUS)](BUS/actions?query=branch%3ABUS) | prototype | Modbus and Canbus module|
+|[CONN](CONN) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=CONN)](CONN/actions?query=branch%3ACONN) | prototype | CONN |
+|[ESP12E](ESP12E) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=ESP12E)](ESP12E/actions?query=branch%3AESP12E) | prototype | ESP12E |
+|[GPS](GPS) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=GPS)](GPS/actions?query=branch%3AGPS) | prototype | GPS receiver and Gyro |
+|[BOOST](BOOST) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=BOOST)](LIPO/actions?query=branch%3ABOOST) | prototype | Lipo battery charger |
+|[LOG](LOG) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=LOG)](LOG/actions?query=branch%3ALOG) | prototype | micro SD card shield |
+|[LORA](LORA) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=LORA)](LORA/actions?query=branch%3ALORA) | prototype | Lora transceiver 868MHz |
+|[UART](UART) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=UART)](UART/actions?query=branch%3AUART) | prototype | USB to RS232, RS485, SPI, I2C, JTAG |
+|[QWIIC](QWIIC) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=QWIIC)](QWIIC/actions?query=branch%3AQWIIC) | prototype | BME280 sensor and analog extension |
+|[WING](WING) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=WING)](WING/actions?query=branch%3AWING) | prototype | Adafruit FeatherWing Breakout |
+|[ZPM](ZPM) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=ZPM)](ZPM/actions?query=branch%3AZPM) | prototype | energy harvesting module |
 

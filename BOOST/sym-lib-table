@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ProMicro_BOOST-rescue)(type Legacy)(uri ${KIPRJMOD}/ProMicro_BOOST-rescue.lib)(options "")(descr ""))
+)

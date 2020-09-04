@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Sparkfun_Pro_Micro_3V3
+D Sparkfun Pro Micro 3V3
+K Sparkfun Arduino microcontroller module usb
+F https://www.sparkfun.com/products/12587
+$ENDCMP
+#
+#End Doc Library

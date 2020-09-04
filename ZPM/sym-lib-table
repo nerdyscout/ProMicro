@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ProMicro_ZPM-rescue)(type Legacy)(uri ${KIPRJMOD}/ProMicro_ZPM-rescue.lib)(options "")(descr ""))
+)

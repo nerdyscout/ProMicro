@@ -1,0 +1,10 @@
+** Drc report for /mnt/QWIIC/ProMicro_GPS.kicad_pcb **
+** Created on 2020-09-04 18:29:21 **
+
+** Found 1 DRC errors **
+ErrType(46): Footprint has no courtyard defined
+    @(144.780 mm, 80.645 mm): Footprint LOGO1 on B.Cu
+
+** Found 0 unconnected pads **
+
+** End of Report **

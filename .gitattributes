@@ -1,3 +1,5 @@
+*.step filter=3D_step
+*.svg filter=schematic_svg
 *.csv filter=bom_csv
 *.html filter=bom_html
 *.gbr filter=gerber

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ProMicro_LOG-rescue)(type Legacy)(uri ${KIPRJMOD}/ProMicro_LOG-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,31 @@
+ERC report (Fri Sep  4 18:26:40 2020, Encoding UTF8 )
+
+***** Sheet /
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(203.20 mm, 135.89 mm): Pin 1 (Power input) of component #PWR0107 is not driven (Net 6).
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 73.66 mm): Global label D5 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 73.66 mm): Pin 8 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 76.20 mm): Global label D6 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 76.20 mm): Pin 9 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 78.74 mm): Pin 10 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 78.74 mm): Global label D7 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 81.28 mm): Pin 11 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 81.28 mm): Global label D8 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(223.52 mm, 50.80 mm): Pin 24 (Power input) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(223.52 mm, 101.60 mm): Pin 3 (Power input) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(48.26 mm, 63.50 mm): Pin 11 (Bidirectional) of component U2 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(48.26 mm, 66.04 mm): Pin 12 (Bidirectional) of component U2 is unconnected.
+
+ ** ERC messages: 13  Errors 0  Warnings 13

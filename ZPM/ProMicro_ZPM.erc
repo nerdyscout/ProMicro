@@ -1,0 +1,59 @@
+ERC report (Fri Sep  4 18:30:26 2020, Encoding UTF8 )
+
+***** Sheet /
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(120.65 mm, 181.61 mm): Pin 1 (Power input) of component #PWR0104 is not driven (Net 1).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(63.50 mm, 34.29 mm): Pin 1 (Power input) of component #PWR0116 is not driven (Net 2).
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(73.02 mm, 116.84 mm): Pin 1 (Passive) of component C2 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(73.66 mm, 50.80 mm): Pin 1 (Output) of component U2 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(50.80 mm, 124.46 mm): Pin 5 (Passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(50.80 mm, 127.00 mm): Pin 4 (Passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 81.28 mm): Pin 11 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 63.50 mm): Pin 1 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 78.74 mm): Pin 10 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 83.82 mm): Pin 12 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 86.36 mm): Pin 13 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 88.90 mm): Pin 14 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 91.44 mm): Pin 15 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 93.98 mm): Pin 16 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(238.76 mm, 76.20 mm): Pin 17 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(238.76 mm, 78.74 mm): Pin 18 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(238.76 mm, 81.28 mm): Pin 19 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 60.96 mm): Pin 2 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(238.76 mm, 83.82 mm): Pin 20 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(88.90 mm, 175.26 mm): Pin 2 (Input) of component JP2 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(114.30 mm, 175.26 mm): Pin 2 (Input) of component JP3 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(223.52 mm, 101.60 mm): Pin 3 (Power input) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 66.04 mm): Pin 5 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 68.58 mm): Pin 6 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 71.12 mm): Pin 7 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 73.66 mm): Pin 8 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 76.20 mm): Pin 9 (Tri-state) of component A1 is unconnected.
+
+ ** ERC messages: 27  Errors 0  Warnings 27

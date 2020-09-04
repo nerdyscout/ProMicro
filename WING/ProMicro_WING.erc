@@ -1,0 +1,29 @@
+ERC report (Fri Sep  4 18:30:09 2020, Encoding UTF8 )
+
+***** Sheet /
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(220.34 mm, 29.21 mm): Pin 1 (Power input) of component #PWR0108 is not driven (Net 6).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(82.55 mm, 175.26 mm): Pin 1 (Power input) of component #PWR0110 is not driven (Net 12).
+ErrType(5): Conflict problem between pins. Severity: error
+    @(225.42 mm, 31.75 mm): Pin 21 (Power output) of component A1 is connected to 
+    @(227.97 mm, 104.14 mm): pin 27 (Power output) of component A2 (net 13).
+ErrType(5): Conflict problem between pins. Severity: error
+    @(227.97 mm, 104.14 mm): Pin 27 (Power output) of component A2 is connected to 
+    @(225.42 mm, 104.14 mm): pin 17 (Power output) of component A2 (net 13).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(235.58 mm, 114.30 mm): Pin 28 (Input) of component A2 is not driven (Net 15).
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(29.84 mm, 78.11 mm): Pin 1 (Passive) of component TP2 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(28.57 mm, 63.50 mm): Pin 1 (Passive) of component TP1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(235.58 mm, 129.54 mm): Pin 19 (Bidirectional) of component A2 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(235.58 mm, 132.08 mm): Pin 20 (Bidirectional) of component A2 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(235.58 mm, 134.62 mm): Pin 21 (Bidirectional) of component A2 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(235.58 mm, 137.16 mm): Pin 22 (Bidirectional) of component A2 is unconnected.
+
+ ** ERC messages: 11  Errors 2  Warnings 9

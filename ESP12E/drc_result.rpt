@@ -1,0 +1,10 @@
+** Drc report for /mnt/ESP12E/ProMicro_ESP12E.kicad_pcb **
+** Created on 2020-09-04 18:26:44 **
+
+** Found 1 DRC errors **
+ErrType(46): Footprint has no courtyard defined
+    @(61.595 mm, 109.855 mm): Footprint LOGO1 on B.Cu
+
+** Found 0 unconnected pads **
+
+** End of Report **

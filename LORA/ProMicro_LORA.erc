@@ -1,0 +1,14 @@
+ERC report (Fri Sep  4 18:28:32 2020, Encoding UTF8 )
+
+***** Sheet /
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(127.00 mm, 53.34 mm): Pin 1 (Passive) of component C20 is not driven (Net 4).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(205.74 mm, 88.90 mm): Pin 23 (Power input) of component A1 is not driven (Net 7).
+ErrType(4): Conflict problem between pins. Severity: warning
+    @(190.50 mm, 78.74 mm): Pin 15 (Tri-state) of component A1 is connected to 
+    @(86.36 mm, 97.79 mm): pin 17 (Output) of component U1 (net 25).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(104.14 mm, 54.61 mm): Pin 2 (Power input) of component U1 is not driven (Net 43).
+
+ ** ERC messages: 4  Errors 0  Warnings 4
