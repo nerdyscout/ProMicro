@@ -1,0 +1,10 @@
+site: https://nerdyscout.github.io/ProMicro_GPS
+summary: GPS and GYRO module fitting onto a Sparkfun ProMicro 3V3 or any other pincompatible
+readme: README.md
+bom: docs/bom/ProMicro_GPS.csv
+eda:
+  type: kicad
+  pcb: ProMicro_GPS.kicad_pcb
+gerbers: gerbers
+color: green
+

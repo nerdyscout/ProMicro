@@ -1,0 +1,14 @@
+Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;lcsc#;manf#;variant
+1;Unpolarized capacitor;C;C6;10n;C_0402_1005Metric;1;~;C15195;CL05B103KB5NNNC;GYRO
+2;Unpolarized capacitor;C;C2 C4 C7 C8 C9;100n;C_0402_1005Metric;5;~;C1525 C15195;CL05B104KO5NNNC CL05B103KB5NNNC;GYRO
+3;Unpolarized capacitor;C;C1;4,7µ;C_0603_1608Metric;1;~;C19666;CL10A475KO8NNNC;
+4;Light emitting diode;LED;D1;LED;LED_0603_1608Metric;1;~;C72041;19-217/BHC-ZL1M2RY/3T;GPS
+5;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J2;Coax;SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount;1;~;;;DNP
+6;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J1;uFL;U.FL_Hirose_U.FL-R-SMT-1_Vertical;1;~;;;DNP
+7;Inductor;L;L1;27n;L_0402_1005Metric;1;~;;;DNP
+8;Resistor;R;R3;0;R_0402_1005Metric;1;~;C17168;0402WGF0000TCE;GPS
+9;Resistor;R;R2;10;R_0402_1005Metric;1;~;;;DNP
+10;Resistor;R;R1;1k;R_0402_1005Metric;1;~;C11702;0402WGF1001TCE;GPS
+11;Resistor;R;R4 R5;4k7;R_0402_1005Metric;2;~;C25900;0402WGF4701TCE;DNP
+12;InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI;MPU-9250;U2;MPU-9250;InvenSense_QFN-24_3x3mm_P0.4mm;1;https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf;C71459;MPU-9250;GYRO
+13;GNSS Module MAX M8, VCC 1.65V to 3.6V;MAX-8C;U1;SIM28ML;ublox_MAX;1;https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf;;MAX-8C-0-10;GPS
