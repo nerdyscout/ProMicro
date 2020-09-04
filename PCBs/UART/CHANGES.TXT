@@ -1,0 +1,5 @@
+# CHANGES
+## Schematic v1.1 / Layout v2
+
+ * complete redesign of schematic, first prototype now ready
+ 
