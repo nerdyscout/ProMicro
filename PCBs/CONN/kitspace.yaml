@@ -1,0 +1,10 @@
+site: https://nerdyscout.github.io/ProMicro_CONN
+summary: 
+readme: README.md
+bom: docs/bom/ProMicro_CONN.csv
+eda:
+  type: kicad
+  pcb: ProMicro_CONN.kicad_pcb
+gerbers: gerbers
+color: green
+
