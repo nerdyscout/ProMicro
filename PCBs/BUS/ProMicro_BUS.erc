@@ -1,0 +1,61 @@
+ERC report (Fri Aug 14 10:21:10 2020, Encoding UTF8 )
+
+***** Sheet /
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(60.32 mm, 59.69 mm): Pin 2 (Input) of component JP1 is not driven (Net 3).
+ErrType(8): Global label not connected to any other global label
+    @(243.84 mm, 83.82 mm): Global label A3 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(238.76 mm, 83.82 mm): Pin 20 (Tri-state) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(238.76 mm, 81.28 mm): Pin 19 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(243.84 mm, 81.28 mm): Global label A2 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(238.76 mm, 78.74 mm): Pin 18 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(243.84 mm, 78.74 mm): Global label A1 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(238.76 mm, 76.20 mm): Pin 17 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(243.84 mm, 76.20 mm): Global label A0 is not connected to any other global label.
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(95.25 mm, 152.40 mm): Pin 1 (Power input) of component #PWR0113 is not driven (Net 8).
+ErrType(4): Conflict problem between pins. Severity: warning
+    @(213.36 mm, 91.44 mm): Pin 15 (Tri-state) of component A1 is connected to 
+    @(80.01 mm, 114.30 mm): pin 15 (Output) of component U2 (net 21).
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 86.36 mm): Pin 13 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 86.36 mm): Global label D10 is not connected to any other global label.
+ErrType(4): Conflict problem between pins. Severity: warning
+    @(110.49 mm, 127.00 mm): Pin 12 (Output) of component U2 is connected to 
+    @(213.36 mm, 78.74 mm): pin 10 (Tri-state) of component A1 (net 24).
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 76.20 mm): Pin 9 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 76.20 mm): Global label D6 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(223.52 mm, 50.80 mm): Pin 24 (Power input) of component A1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 71.12 mm): Pin 7 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 71.12 mm): Global label D4 is not connected to any other global label.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 68.58 mm): Global label D3 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 68.58 mm): Pin 6 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 66.04 mm): Global label D2 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 66.04 mm): Pin 5 (Tri-state) of component A1 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(208.28 mm, 81.28 mm): Global label D8 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(213.36 mm, 81.28 mm): Pin 11 (Tri-state) of component A1 is unconnected.
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(110.49 mm, 142.24 mm): Pin 17 (Input) of component U2 is not driven (Net 31).
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(85.09 mm, 54.61 mm): Pin 2 (Input) of component U1 is not driven (Net 32).
+
+ ** ERC messages: 27  Errors 0  Warnings 27
