@@ -1,26 +1,39 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 name: kicad
 =======
 name: kicad-exports
 >>>>>>> WING
+=======
+name: kicad
+>>>>>>> ZPM
 
 on:
   push:
     paths:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ZPM
     - '**.sch'
     - '**.kicad_pcb'
     - README.md
     - .github/workflows/**
+<<<<<<< HEAD
 =======
       - '**.sch'
       - '**.kicad_pcb'
 >>>>>>> WING
+=======
+>>>>>>> ZPM
   pull_request:
     paths:
       - '**.sch'
       - '**.kicad_pcb'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ZPM
       - README.md
       - .github/workflows/**
 jobs:
@@ -41,6 +54,7 @@ jobs:
           name: kicad-exports
           rebase: 'true'
           files: docs/* gerbers/*
+<<<<<<< HEAD
           
 =======
 
@@ -179,3 +193,6 @@ jobs:
         name: ProMicro_${{env.BRANCH_NAME}}_panel
         path: panel/*
 >>>>>>> WING
+=======
+          
+>>>>>>> ZPM
