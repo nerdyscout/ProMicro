@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 name: kicad
 =======
 name: kicad-exports
@@ -7,18 +8,25 @@ name: kicad-exports
 =======
 name: kicad
 >>>>>>> ZPM
+=======
+name: kicad
+>>>>>>> ANA
 
 on:
   push:
     paths:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ZPM
+=======
+>>>>>>> ANA
     - '**.sch'
     - '**.kicad_pcb'
     - README.md
     - .github/workflows/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       - '**.sch'
@@ -26,14 +34,19 @@ on:
 >>>>>>> WING
 =======
 >>>>>>> ZPM
+=======
+>>>>>>> ANA
   pull_request:
     paths:
       - '**.sch'
       - '**.kicad_pcb'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ZPM
+=======
+>>>>>>> ANA
       - README.md
       - .github/workflows/**
 jobs:
@@ -54,6 +67,7 @@ jobs:
           name: kicad-exports
           rebase: 'true'
           files: docs/* gerbers/*
+<<<<<<< HEAD
 <<<<<<< HEAD
           
 =======
@@ -196,3 +210,6 @@ jobs:
 =======
           
 >>>>>>> ZPM
+=======
+          
+>>>>>>> ANA
