@@ -3,14 +3,14 @@ name: kicad-exports
 on:
   push:
     branches: [ANA, BOOST, BUS, CONN, GPS, LOG, LORA, QWIIC, SAMD, TEST, UART, WING, ZPM]
-    paths:
-    - '**.sch'
-    - '**.kicad_pcb'
+#    paths:
+#    - '**.sch'
+#    - '**.kicad_pcb'
   pull_request:
     branches: [ANA, BOOST, BUS, CONN, GPS, LOG, LORA, QWIIC, SAMD, TEST, UART, WING, ZPM]
-    paths:
-      - '**.sch'
-      - '**.kicad_pcb'
+#    paths:
+#      - '**.sch'
+#      - '**.kicad_pcb'
       
 jobs:
     exports:
@@ -18,9 +18,11 @@ jobs:
       steps:
       - uses: actions/checkout@v2
       - uses: nelonoel/branch-name@v1
+      - run: echo ${BRANCH_NAME}
+      - run: echo ${{BRANCH_NAME}}
       - uses: nerdyscout/kicad-exports@v2.0
         with:
-          config: ${BRANCH_NAME}/config.kiplot.yaml
+          config: ${{BRANCH_NAME}}/config.kiplot.yaml
           board: ${BRANCH_NAME}/ProMicro_TEST.kicad_pcb
           schema: ${BRANCH_NAME}/ProMicro_TEST.sch
           dir: ${BRANCH_NAME}
