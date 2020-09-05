@@ -3,14 +3,14 @@ name: kicad-exports
 on:
   push:
     branches: [ANA, BOOST, BUS, CONN, GPS, LOG, LORA, QWIIC, SAMD, TEST, UART, WING, ZPM]
-#    paths:
-#    - '**.sch'
-#    - '**.kicad_pcb'
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
   pull_request:
     branches: [ANA, BOOST, BUS, CONN, GPS, LOG, LORA, QWIIC, SAMD, TEST, UART, WING, ZPM]
-#    paths:
-#      - '**.sch'
-#      - '**.kicad_pcb'
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
       
 jobs:
     exports:
