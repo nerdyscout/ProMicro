@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ProMicro_GPS"
-Date "2020-05-30"
+Date "2020-09-05"
 Rev "v3.1"
 Comp ""
 Comment1 ""
@@ -1157,6 +1157,17 @@ F 1 "MountingHole" H 5850 4725 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.1mm" H 5750 4750 50  0001 C CNN
 F 3 "~" H 5750 4750 50  0001 C CNN
 	1    5750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F544468
+P 10500 5000
+F 0 "H2" H 10600 5075 50  0000 L CNN
+F 1 "MountingHole" H 10600 4975 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 10500 5000 50  0001 C CNN
+F 3 "~" H 10500 5000 50  0001 C CNN
+	1    10500 5000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

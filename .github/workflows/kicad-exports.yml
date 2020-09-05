@@ -23,8 +23,8 @@ jobs:
       - uses: nerdyscout/kicad-exports@v2.0
         with:
           config: ${{ steps.branch.outputs.current }}/config.kiplot.yaml
-          board: ${{ steps.branch.outputs.current }}/ProMicro_TEST.kicad_pcb
-          schema: ${{ steps.branch.outputs.current }}/ProMicro_TEST.sch
+          board: ${{ steps.branch.outputs.current }}/ProMicro_${{ steps.branch.outputs.current }}.kicad_pcb
+          schema: ${{ steps.branch.outputs.current }}/ProMicro_${{ steps.branch.outputs.current }}.sch
           dir: ${{ steps.branch.outputs.current }}
       - name: git commit && git push 
         uses: github-actions-x/commit@v2.7
