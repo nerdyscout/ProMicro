@@ -1,8 +1,0 @@
-# Pin connected to other pins, but not driven by any pin
-3,(Power input) of component
-# Conflict problem between pins. Severity: error
-5,Conflict problem between pins
-# Courtyards overlap
-45,Courtyards overlap
-# Footprint has no courtyard defined
-46,Footprint LOGO

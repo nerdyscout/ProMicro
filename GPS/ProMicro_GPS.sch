@@ -38,8 +38,6 @@ Wire Wire Line
 Wire Wire Line
 	5900 5350 5800 5350
 Wire Wire Line
-	1500 6000 1650 6000
-Wire Wire Line
 	3500 6100 3650 6100
 Wire Wire Line
 	4100 6100 3950 6100
@@ -68,8 +66,6 @@ Wire Wire Line
 Wire Wire Line
 	5300 5800 5050 5800
 Wire Wire Line
-	1950 6000 2300 6000
-Wire Wire Line
 	5300 5800 5700 5800
 Wire Wire Line
 	1400 4100 1900 4100
@@ -97,8 +93,6 @@ Wire Wire Line
 	2800 5100 2800 4100
 Wire Wire Line
 	3500 5800 4500 5800
-Text GLabel 1500 6000 0    50   Input ~ 0
-D5
 $Comp
 L power:+3V3 #PWR01
 U 1 1 5E2638EA
@@ -253,13 +247,13 @@ $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP3
 U 1 1 5E2697DC
-P 1800 6000
-F 0 "JP3" H 1800 6100 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1810 6150 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1800 6000 50  0001 C CNN
-F 3 "~" H 1800 6000 50  0001 C CNN
-F 4 "DNP" H 1800 6000 50  0001 C CNN "variant"
-	1    1800 6000
+P 1900 6000
+F 0 "JP3" H 1900 6100 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1910 6150 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1900 6000 50  0001 C CNN
+F 3 "~" H 1900 6000 50  0001 C CNN
+F 4 "DNP" H 1900 6000 50  0001 C CNN "variant"
+	1    1900 6000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -372,10 +366,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 2400 6000 2550
 Wire Wire Line
-	8600 5750 8600 5900
-Wire Wire Line
-	9200 5750 9200 5900
-Wire Wire Line
 	5500 2850 5500 3010
 Wire Wire Line
 	6000 2850 6000 3010
@@ -411,10 +401,6 @@ Text Notes 10500 3325 2    50   ~ 0
 TMS
 Text Notes 10500 3425 2    50   ~ 0
 TCK
-Text GLabel 8600 5900 3    50   Input ~ 0
-D2
-Text GLabel 9200 5900 3    50   Input ~ 0
-D3
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5E1646E7
@@ -1161,5 +1147,20 @@ INT
 Wire Wire Line
 	9000 3025 9250 3025
 Text Label 9000 3025 0    50   ~ 0
-PULSE
+PWM
+Text Label 1500 6000 0    50   ~ 0
+PWM
+Wire Wire Line
+	2050 6000 2300 6000
+Wire Wire Line
+	1500 6000 1750 6000
+NoConn ~ 2300 6100
+Text Label 8600 6000 1    50   ~ 0
+SDA
+Text Label 9200 6000 1    50   ~ 0
+SCL
+Wire Wire Line
+	9200 5750 9200 6000
+Wire Wire Line
+	8600 5750 8600 6000
 $EndSCHEMATC
