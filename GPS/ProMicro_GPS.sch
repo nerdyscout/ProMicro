@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title "ProMicro_GPS"
 Date "2020-09-05"
 Rev "v3.2"
@@ -528,12 +528,12 @@ F 6 "C15195" H 5500 2700 50  0001 C CNN "LCSC#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO1
+L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 5F5703CA
 P 10800 6900
-F 0 "#LOGO1" H 10800 7175 50  0001 C CNN
+F 0 "LOGO1" H 10800 7175 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 10800 6675 50  0001 C CNN
-F 2 "" H 10800 6900 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 10800 6900 50  0001 C CNN
 F 3 "~" H 10800 6900 50  0001 C CNN
 	1    10800 6900
 	1    0    0    -1  
@@ -982,76 +982,15 @@ Wire Wire Line
 Wire Wire Line
 	1500 6000 1750 6000
 NoConn ~ 2300 6100
-$Sheet
-S 9000 2225 750  1400
-U 5F5549BD
-F0 "Controller" 50
-F1 "../ProMicro.sch" 50
-F2 "BTN" I L 9000 3125 50 
-F3 "INT" I L 9000 3250 50 
-F4 "PWM" I L 9000 3000 50 
-F5 "SCL" I L 9000 2750 50 
-F6 "SDA" I L 9000 2625 50 
-F7 "RXD" I L 9000 2375 50 
-F8 "TXD" I L 9000 2500 50 
-F9 "CS0" I R 9750 2875 50 
-F10 "COPI" I R 9750 3125 50 
-F11 "CS1" I R 9750 3000 50 
-F12 "CIPO" I R 9750 3250 50 
-F13 "SCK" I R 9750 3375 50 
-F14 "TDI" I R 9750 2750 50 
-F15 "TDO" I R 9750 2625 50 
-F16 "TMS" I R 9750 2500 50 
-F17 "TCK" I R 9750 2375 50 
-F18 "~RST" I R 9750 3500 50 
-$EndSheet
-Wire Wire Line
-	9000 3000 8750 3000
-Wire Wire Line
-	9000 3250 8750 3250
-Wire Wire Line
-	9000 2625 8750 2625
-Wire Wire Line
-	9000 2750 8750 2750
-Text Label 8750 2625 0    50   ~ 0
-SDA
-Text Label 8750 2750 0    50   ~ 0
-SCL
-Text Label 8750 3000 0    50   ~ 0
-PWM
-Text Label 8750 3250 0    50   ~ 0
-INT
-Wire Wire Line
-	9000 2375 8750 2375
-Wire Wire Line
-	9000 2500 8750 2500
-Text Label 8750 2375 0    50   ~ 0
-RXD
-Text Label 8750 2500 0    50   ~ 0
-TXD
-NoConn ~ 9750 2375
-NoConn ~ 9750 2500
-NoConn ~ 9750 2625
-NoConn ~ 9750 2750
-NoConn ~ 9750 2875
-NoConn ~ 9750 3000
-NoConn ~ 9750 3125
-NoConn ~ 9750 3250
-NoConn ~ 9750 3375
-Wire Wire Line
-	9750 3500 10000 3500
-Text Label 10000 3500 2    50   ~ 0
-~RST
-NoConn ~ 9000 3125
 Wire Wire Line
 	8500 5350 8500 5100
 Wire Wire Line
 	9000 5350 9000 5100
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR035
 U 1 1 5F5502AC
 P 8500 5100
-F 0 "#PWR?" H 8500 4950 50  0001 C CNN
+F 0 "#PWR035" H 8500 4950 50  0001 C CNN
 F 1 "+3V3" H 8500 5250 50  0000 C CNN
 F 2 "" H 8500 5100 50  0001 C CNN
 F 3 "" H 8500 5100 50  0001 C CNN
@@ -1059,10 +998,10 @@ F 3 "" H 8500 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5F5502B5
 P 9000 5500
-F 0 "R?" H 9100 5550 50  0000 L CNN
+F 0 "R5" H 9100 5550 50  0000 L CNN
 F 1 "4k7" H 9100 5450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8930 5500 50  0001 C CNN
 F 3 "~" H 9000 5500 50  0001 C CNN
@@ -1073,10 +1012,10 @@ F 6 "C25900" H 9000 5500 50  0001 C CNN "LCSC#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR036
 U 1 1 5F5502BB
 P 9000 5100
-F 0 "#PWR?" H 9000 4950 50  0001 C CNN
+F 0 "#PWR036" H 9000 4950 50  0001 C CNN
 F 1 "+3V3" H 9000 5250 50  0000 C CNN
 F 2 "" H 9000 5100 50  0001 C CNN
 F 3 "" H 9000 5100 50  0001 C CNN
@@ -1084,10 +1023,10 @@ F 3 "" H 9000 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5F5502C4
 P 8500 5500
-F 0 "R?" H 8600 5550 50  0000 L CNN
+F 0 "R4" H 8600 5550 50  0000 L CNN
 F 1 "4k7" H 8600 5450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8430 5500 50  0001 C CNN
 F 3 "~" H 8500 5500 50  0001 C CNN
@@ -1105,4 +1044,134 @@ Wire Wire Line
 	9000 5650 9000 5900
 Wire Wire Line
 	8500 5650 8500 5900
+Connection ~ 9375 4200
+Wire Wire Line
+	9375 4100 9375 4200
+Wire Wire Line
+	9375 4200 9375 4300
+Wire Wire Line
+	9475 2000 9475 2100
+Wire Wire Line
+	9475 4100 9475 4200
+Wire Wire Line
+	9475 4200 9375 4200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F556538
+P 9475 2000
+AR Path="/5F5549BD/5F556538" Ref="#PWR?"  Part="1" 
+AR Path="/5F556538" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 9475 1850 50  0001 C CNN
+F 1 "+3V3" H 9475 2175 50  0000 C CNN
+F 2 "" H 9475 2000 50  0001 C CNN
+F 3 "" H 9475 2000 50  0001 C CNN
+	1    9475 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F55653E
+P 9375 4300
+AR Path="/5F5549BD/5F55653E" Ref="#PWR?"  Part="1" 
+AR Path="/5F55653E" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 9375 4050 50  0001 C CNN
+F 1 "GND" H 9375 4150 50  0000 C CNN
+F 2 "" H 9375 4300 50  0001 C CNN
+F 3 "" H 9375 4300 50  0001 C CNN
+	1    9375 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9275 4100
+$Comp
+L MCU_Module:Sparkfun_Pro_Micro_3V3 A?
+U 1 1 5F556545
+P 9375 3100
+AR Path="/5F5549BD/5F556545" Ref="A?"  Part="1" 
+AR Path="/5F556545" Ref="A1"  Part="1" 
+F 0 "A1" H 9025 4050 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro_3V3" H 9975 2150 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 9375 3100 50  0001 C CIN
+F 3 "https://www.sparkfun.com/products/12587" H 9375 2100 50  0001 C CNN
+	1    9375 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8625 2600 8875 2600
+Wire Wire Line
+	8625 2500 8875 2500
+Wire Wire Line
+	9875 2500 10125 2500
+Wire Wire Line
+	8625 2700 8875 2700
+Wire Wire Line
+	8625 2800 8875 2800
+Wire Wire Line
+	8625 3200 8875 3200
+Wire Wire Line
+	8625 3000 8875 3000
+$Comp
+L power:VBUS #PWR?
+U 1 1 5F55655D
+P 9275 2000
+AR Path="/5F5549BD/5F55655D" Ref="#PWR?"  Part="1" 
+AR Path="/5F55655D" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 9275 1850 50  0001 C CNN
+F 1 "VBUS" H 9275 2175 50  0000 C CNN
+F 2 "" H 9275 2000 50  0001 C CNN
+F 3 "" H 9275 2000 50  0001 C CNN
+	1    9275 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9275 2000 9275 2100
+Text Label 8625 2500 0    50   ~ 0
+TXD
+Text Label 8625 2600 0    50   ~ 0
+RXD
+Text Label 8625 2700 0    50   ~ 0
+SDA
+Text Label 8625 2800 0    50   ~ 0
+SCL
+Text Label 8625 3000 0    50   ~ 0
+PWM
+Text Label 8625 3200 0    50   ~ 0
+INT
+Text Label 10125 2500 2    50   ~ 0
+~RST
+Text Notes 10125 3100 2    50   ~ 0
+TDI
+Text Notes 10125 3200 2    50   ~ 0
+TDO
+Text Notes 10125 3300 2    50   ~ 0
+TMS
+Text Notes 10125 3400 2    50   ~ 0
+TCK
+Text Notes 8625 3800 0    50   ~ 0
+SCK
+Text Notes 8625 3700 0    50   ~ 0
+CIPO
+Text Notes 8625 3600 0    50   ~ 0
+COPI
+Text Notes 8625 3500 0    50   ~ 0
+CS0
+Text Notes 8625 3400 0    50   ~ 0
+CS1
+Text Notes 8625 3100 0    50   ~ 0
+BTN
+Text Notes 8625 2900 0    50   ~ 0
+STAT
+NoConn ~ 9875 3400
+NoConn ~ 9875 3300
+NoConn ~ 9875 3200
+NoConn ~ 9875 3100
+NoConn ~ 8875 3800
+NoConn ~ 8875 3700
+NoConn ~ 8875 3600
+NoConn ~ 8875 3500
+NoConn ~ 8875 3400
+NoConn ~ 8875 3300
+Text Notes 8625 3300 0    50   ~ 0
+D8
+NoConn ~ 8875 3100
+NoConn ~ 8875 2900
 $EndSCHEMATC

@@ -1,29 +1,29 @@
 Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;lcsc#;manf#;variant
 1;Unpolarized capacitor;C;C6;10n;C_0402_1005Metric;1;~;C15195;CL05B103KB5NNNC;GYRO
-2;Unpolarized capacitor;C;C2 C4 C7 C8 C9 C10 C11;100n;C_0402_1005Metric;7;~;C1525 C15195;CL05B104KO5NNNC CL05B103KB5NNNC;GYRO
-3;Unpolarized capacitor;C;C1;4,7µ;C_0603_1608Metric;1;~;C19666;CL10A475KO8NNNC;
+2;Unpolarized capacitor;C;C1 C2 C3 C4 C5 C7 C9;100n;C_0402_1005Metric;7;~;C15195 C1525;CL05B103KB5NNNC CL05B104KO5NNNC;GYRO
+3;Unpolarized capacitor;C;C8;4,7µ;C_0603_1608Metric;1;~;C19666;CL10A475KO8NNNC;
 4;Light emitting diode;LED;D1;LED;LED_0603_1608Metric;1;~;C72041;19-217/BHC-ZL1M2RY/3T;GPS
-5;Mounting Hole without connection;MountingHole;H1 H2;MountingHole;MountingHole_2.1mm;2;~;;;
+5;Mounting Hole without connection;MountingHole;H2;MountingHole;MountingHole_2.1mm;1;~;;;
 6;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J2;Coax;SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount;1;~;;;DNP
 7;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J1;uFL;U.FL_Hirose_U.FL-R-SMT-1_Vertical;1;~;;;DNP
 8;Inductor;L;L1;27n;L_0402_1005Metric;1;~;;;DNP
-9;Resistor;R;R3;0;R_0402_1005Metric;1;~;C17168;0402WGF0000TCE;GPS
-10;Resistor;R;R2;10;R_0402_1005Metric;1;~;;;DNP
-11;Resistor;R;R1;1k;R_0402_1005Metric;1;~;C11702;0402WGF1001TCE;GPS
+9;Resistor;R;R2;0;R_0402_1005Metric;1;~;C17168;0402WGF0000TCE;GPS
+10;Resistor;R;R1;10;R_0402_1005Metric;1;~;;;DNP
+11;Resistor;R;R3;1k;R_0402_1005Metric;1;~;C11702;0402WGF1001TCE;GPS
 12;Resistor;R;R4 R5;4k7;R_0402_1005Metric;2;~;C25900;0402WGF4701TCE;DNP
-13;600mA low dropout linear regulator, with enable pin, 2.5V-6V input voltage range, 1.8V fixed positive output, SOT-23-5 package;AP2112K-1.8;U3;AP2112K-1.8;SOT-23-5;1;https://www.diodes.com/assets/Datasheets/AP2112.pdf;;;
-14;InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI;MPU-9250;U2;MPU-9250;InvenSense_QFN-24_3x3mm_P0.4mm;1;https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf;C71459;MPU-9250;GYRO
-15;GNSS Module MAX M8, VCC 1.65V to 3.6V;MAX-8C;U1;SIM28ML;ublox_MAX;1;https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf;;MAX-8C-0-10;GPS
+13;600mA low dropout linear regulator, with enable pin, 2.5V-6V input voltage range, 1.8V fixed positive output, SOT-23-5 package;AP2112K-1.8;U2;AP2112K-1.8;SOT-23-5;1;https://www.diodes.com/assets/Datasheets/AP2112.pdf;;;
+14;InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI;MPU-9250;U1;MPU-9250;InvenSense_QFN-24_3x3mm_P0.4mm;1;https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf;C71459;MPU-9250;GYRO
+15;GNSS Module MAX M8, VCC 1.65V to 3.6V;MAX-8C;U3;SIM28ML;ublox_MAX;1;https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf;;MAX-8C-0-10;GPS
 
 
 
 
 
 Component Groups:;16
-Component Count:;25
-Fitted Components:;23
+Component Count:;24
+Fitted Components:;22
 Number of PCBs:;1
-Total components:;23
+Total components:;22
 Schematic Version:;v3.2
 Schematic Date:;2020-09-05
 PCB Variant:;default
