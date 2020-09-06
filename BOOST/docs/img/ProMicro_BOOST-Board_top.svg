@@ -871,11 +871,6 @@
 <path d="M29025 39175 L29025 38725 "/>
 <path d="M29389 39250 L29100 39250 "/>
 <path d="M29389 39250 L29389 40000 "/>
-<path d="M25700 41310 L26262 41310 "/>
-<path d="M25950 42001 L25950 42238 "/>
-<path d="M25950 41873 L25950 42001 "/>
-<path d="M25700 41310 L25700 41623 "/>
-<path d="M25700 41623 L25950 41873 "/>
 </g>
 <g style="fill-opacity:0.0; stroke-width:157.48; stroke-opacity:1; stroke-linecap:round; stroke-linejoin:round;">
 <path d="M29450 41310 L29089 41310 "/>
@@ -910,6 +905,11 @@
 <path d="M28260 39760 L28260 40000 "/>
 <path d="M28077 39577 L28260 39760 "/>
 <path d="M28077 39272 L28077 39577 "/>
+<path d="M25700 41310 L26262 41310 "/>
+<path d="M25950 42001 L25950 42238 "/>
+<path d="M25950 41873 L25950 42001 "/>
+<path d="M25700 41310 L25700 41623 "/>
+<path d="M25700 41623 L25950 41873 "/>
 </g>
 <g>
 </g>
@@ -2005,11 +2005,6 @@
 <path d="M29025 39175 L29025 38725 "/>
 <path d="M29389 39250 L29100 39250 "/>
 <path d="M29389 39250 L29389 40000 "/>
-<path d="M25700 41310 L26262 41310 "/>
-<path d="M25950 42001 L25950 42238 "/>
-<path d="M25950 41873 L25950 42001 "/>
-<path d="M25700 41310 L25700 41623 "/>
-<path d="M25700 41623 L25950 41873 "/>
 </g>
 <g style="fill-opacity:0.0; stroke-width:157.48; stroke-opacity:1; stroke-linecap:round; stroke-linejoin:round;">
 <path d="M29450 41310 L29089 41310 "/>
@@ -2044,6 +2039,11 @@
 <path d="M28260 39760 L28260 40000 "/>
 <path d="M28077 39577 L28260 39760 "/>
 <path d="M28077 39272 L28077 39577 "/>
+<path d="M25700 41310 L26262 41310 "/>
+<path d="M25950 42001 L25950 42238 "/>
+<path d="M25950 41873 L25950 42001 "/>
+<path d="M25700 41310 L25700 41623 "/>
+<path d="M25700 41623 L25950 41873 "/>
 </g>
 <g>
 </g>
@@ -3039,11 +3039,12 @@
 </g>
 <g style="fill-opacity:0.0; stroke-width:78.7402; stroke-opacity:1; stroke-linecap:round; stroke-linejoin:round;">
 <g transform="rotate(-90 25950 44250)">
-<text x="25950" y="44446.9" textLength="1068.62" font-size="524.934" lengthAdjust="spacingAndGlyphs" text-anchor="middle" opacity="0">JP2</text>
+<text x="25950" y="44446.9" textLength="1068.62" font-size="524.934" lengthAdjust="spacingAndGlyphs" text-anchor="middle" opacity="0">JP1</text>
 </g>
 <path d="M25734 44578 L26015 44578 L26071 44596 L26109 44634 L26128 44690 L26128 44728 "/>
 <path d="M26128 44390 L25734 44390 L25734 44240 L25753 44203 L25771 44184 L25809 44165 L25865 44165 L25903 44184 L25921 44203 L25940 44240 L25940 44390 "/>
-<path d="M25771 44015 L25753 43996 L25734 43959 L25734 43865 L25753 43828 L25771 43809 L25809 43790 L25846 43790 L25903 43809 L26128 44034 L26128 43790 "/>
+<path d="M26128 43790 L26128 44015 "/>
+<path d="M26128 43903 L25734 43903 L25790 43940 L25828 43978 L25846 44015 "/>
 <g>
 </g>
 </g> 
