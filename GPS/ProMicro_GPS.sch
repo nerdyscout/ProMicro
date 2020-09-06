@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "ProMicro_GPS"
 Date "2020-09-05"
-Rev "v3.1"
+Rev "v3.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -70,12 +70,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 6000 2300 6000
 Wire Wire Line
-	1900 5700 2300 5700
-Wire Wire Line
-	1900 5800 2300 5800
-Wire Wire Line
-	1900 6200 2300 6200
-Wire Wire Line
 	5300 5800 5700 5800
 Wire Wire Line
 	1400 4100 1900 4100
@@ -105,16 +99,6 @@ Wire Wire Line
 	3500 5800 4500 5800
 Text GLabel 1500 6000 0    50   Input ~ 0
 D5
-Text GLabel 1250 5400 0    50   Input ~ 0
-D1
-Text GLabel 1250 5500 0    50   Input ~ 0
-D0
-Text GLabel 1900 5700 0    50   Input ~ 0
-D2
-Text GLabel 1900 5800 0    50   Input ~ 0
-D3
-Text GLabel 1900 6200 0    50   Input ~ 0
-Reset
 $Comp
 L power:+3V3 #PWR01
 U 1 1 5E2638EA
@@ -366,7 +350,7 @@ F 5 "GPS" H 2900 5800 50  0001 C CNN "variant"
 	1    2900 5800
 	1    0    0    -1  
 $EndComp
-Connection ~ 8900 4100
+Connection ~ 9750 4225
 Wire Wire Line
 	3200 2000 3300 2000
 Wire Wire Line
@@ -374,15 +358,15 @@ Wire Wire Line
 Wire Wire Line
 	4100 1000 4100 1100
 Wire Wire Line
-	8900 4000 8900 4100
+	9750 4125 9750 4225
 Wire Wire Line
-	8900 4100 8900 4200
+	9750 4225 9750 4325
 Wire Wire Line
-	9000 1900 9000 2000
+	9850 2025 9850 2125
 Wire Wire Line
-	9000 4000 9000 4100
+	9850 4125 9850 4225
 Wire Wire Line
-	9000 4100 8900 4100
+	9850 4225 9750 4225
 Wire Wire Line
 	5500 2400 5500 2550
 Wire Wire Line
@@ -395,20 +379,6 @@ Wire Wire Line
 	5500 2850 5500 3010
 Wire Wire Line
 	6000 2850 6000 3010
-Wire Wire Line
-	8200 2400 8400 2400
-Wire Wire Line
-	8200 2500 8400 2500
-Wire Wire Line
-	8200 2600 8400 2600
-Wire Wire Line
-	8200 2700 8400 2700
-Wire Wire Line
-	8200 2900 8400 2900
-Wire Wire Line
-	8200 3100 8400 3100
-Wire Wire Line
-	9400 2400 9600 2400
 Wire Wire Line
 	8600 5450 8600 5200
 Wire Wire Line
@@ -433,34 +403,18 @@ Wire Notes Line
 	7000 1000 7000 6000
 Wire Notes Line
 	1000 3500 7000 3500
-Text Notes 9800 3030 0    50   ~ 0
+Text Notes 10500 3125 2    50   ~ 0
 TDI
-Text Notes 9800 3130 0    50   ~ 0
+Text Notes 10500 3225 2    50   ~ 0
 TDO
-Text Notes 9800 3230 0    50   ~ 0
+Text Notes 10500 3325 2    50   ~ 0
 TMS
-Text Notes 9800 3330 0    50   ~ 0
+Text Notes 10500 3425 2    50   ~ 0
 TCK
-Text GLabel 3000 1700 0    50   Input ~ 0
-D2
-Text GLabel 3000 1900 0    50   Input ~ 0
-D3
-Text GLabel 8200 2400 0    50   Input ~ 0
-D0
-Text GLabel 8200 2500 0    50   Output ~ 0
-D1
-Text GLabel 8200 2600 0    50   Input ~ 0
-D2
-Text GLabel 8200 2900 0    50   Input ~ 0
-D5
-Text GLabel 8200 3100 0    50   Input ~ 0
-D7
 Text GLabel 8600 5900 3    50   Input ~ 0
 D2
 Text GLabel 9200 5900 3    50   Input ~ 0
 D3
-Text GLabel 9600 2400 2    50   Input ~ 0
-Reset
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5E1646E7
@@ -552,12 +506,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR025
 U 1 1 5E126446
-P 9000 1900
-F 0 "#PWR025" H 9000 1750 50  0001 C CNN
-F 1 "+3V3" H 9000 2075 50  0000 C CNN
-F 2 "" H 9000 1900 50  0001 C CNN
-F 3 "" H 9000 1900 50  0001 C CNN
-	1    9000 1900
+P 9850 2025
+F 0 "#PWR025" H 9850 1875 50  0001 C CNN
+F 1 "+3V3" H 9850 2200 50  0000 C CNN
+F 2 "" H 9850 2025 50  0001 C CNN
+F 3 "" H 9850 2025 50  0001 C CNN
+	1    9850 2025
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -607,12 +561,12 @@ $EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 5E53883D
-P 8900 4200
-F 0 "#PWR024" H 8900 3950 50  0001 C CNN
-F 1 "GND" H 8900 4050 50  0000 C CNN
-F 2 "" H 8900 4200 50  0001 C CNN
-F 3 "" H 8900 4200 50  0001 C CNN
-	1    8900 4200
+P 9750 4325
+F 0 "#PWR024" H 9750 4075 50  0001 C CNN
+F 1 "GND" H 9750 4175 50  0000 C CNN
+F 2 "" H 9750 4325 50  0001 C CNN
+F 3 "" H 9750 4325 50  0001 C CNN
+	1    9750 4325
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -679,32 +633,22 @@ F 3 "" H 9200 5200 50  0001 C CNN
 	1    9200 5200
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 2700 0    50   Input ~ 0
-D3
-Text Notes 7900 2725 2    50   ~ 0
-SCL
-Text Notes 7900 2625 2    50   ~ 0
-SDA
-Text Notes 7900 2525 2    50   ~ 0
-TXD
-Text Notes 7900 2425 2    50   ~ 0
-RXD
-Text Notes 7900 3725 2    50   ~ 0
+Text Notes 9000 3825 0    50   ~ 0
 SCK
-Text Notes 7900 3625 2    50   ~ 0
-SDO
-Text Notes 7900 3525 2    50   ~ 0
-SDI
-Text Notes 7900 3425 2    50   ~ 0
+Text Notes 9000 3725 0    50   ~ 0
+CIPO
+Text Notes 9000 3625 0    50   ~ 0
+COPI
+Text Notes 9000 3525 0    50   ~ 0
 CS0
-Text Notes 7900 3325 2    50   ~ 0
+Text Notes 9000 3425 0    50   ~ 0
 CS1
 Wire Wire Line
 	3300 1800 3200 1800
 Connection ~ 3200 1800
 Wire Wire Line
 	3200 1800 3200 2000
-NoConn ~ 8800 4000
+NoConn ~ 9650 4125
 $Comp
 L Sensor_Motion:MPU-9250 U2
 U 1 1 5E0DC568
@@ -719,11 +663,9 @@ F 6 "C71459" H 4000 2000 50  0001 C CNN "LCSC#"
 	1    4000 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 5500 1700 2    50   Input ~ 0
-D7
 Wire Wire Line
 	4700 1700 5000 1700
-Text Notes 7900 3125 2    50   ~ 0
+Text Notes 8750 3225 2    50   ~ 0
 Gyro
 $Comp
 L Jumper:SolderJumper_2_Open JP4
@@ -752,7 +694,7 @@ F 3 "" H 6500 2375 50  0001 C CNN
 	1    6500 2375
 	1    0    0    -1  
 $EndComp
-Text Notes 7900 2925 2    50   ~ 0
+Text Notes 8750 3025 2    50   ~ 0
 GPS
 $Comp
 L power:+3V3 #PWR012
@@ -822,42 +764,38 @@ F 3 "" H 10500 5750 50  0001 C CNN
 	1    10500 5750
 	1    0    0    -1  
 $EndComp
-Text Notes 1500 1000 0    50   ~ 0
+Text Notes 1250 1250 0    200  ~ 0
 GYRO
-Text Notes 3500 4000 0    50   ~ 0
+Text Notes 6500 4000 2    200  ~ 0
 GPS
 $Comp
 L Device:Jumper_NO_Small JP2
 U 1 1 5E617C03
-P 1500 5400
-F 0 "JP2" H 1500 5325 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 1525 5500 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1500 5400 50  0001 C CNN
-F 3 "~" H 1500 5400 50  0001 C CNN
-F 4 "DNP" H 1500 5400 50  0001 C CNN "variant"
-	1    1500 5400
+P 1900 5400
+F 0 "JP2" H 1900 5325 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1925 5500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1900 5400 50  0001 C CNN
+F 3 "~" H 1900 5400 50  0001 C CNN
+F 4 "DNP" H 1900 5400 50  0001 C CNN "variant"
+	1    1900 5400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1600 5500 2300 5500
-Wire Wire Line
-	1250 5500 1400 5500
+	1650 5500 1800 5500
 $Comp
 L Device:Jumper_NC_Small JP1
 U 1 1 5E620A66
-P 1500 5500
-F 0 "JP1" H 1500 5600 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 1525 5625 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1500 5500 50  0001 C CNN
-F 3 "~" H 1500 5500 50  0001 C CNN
-F 4 "DNP" H 1500 5500 50  0001 C CNN "variant"
-	1    1500 5500
+P 1900 5500
+F 0 "JP1" H 1900 5600 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 1925 5625 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1900 5500 50  0001 C CNN
+F 3 "~" H 1900 5500 50  0001 C CNN
+F 4 "DNP" H 1900 5500 50  0001 C CNN "variant"
+	1    1900 5500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1250 5400 1400 5400
-Wire Wire Line
-	1600 5400 2300 5400
+	1650 5400 1800 5400
 Wire Notes Line
 	3750 5250 3750 4500
 Wire Notes Line
@@ -992,28 +930,28 @@ F 6 "C15195" H 6500 1500 50  0001 C CNN "LCSC#"
 $EndComp
 Text Notes 3250 6750 0    50   ~ 0
 Alternativ:\nMAX-8
-NoConn ~ 8400 2800
-NoConn ~ 8400 3000
-NoConn ~ 8400 3200
-NoConn ~ 8400 3300
-NoConn ~ 8400 3400
-NoConn ~ 8400 3500
-NoConn ~ 8400 3600
-NoConn ~ 8400 3700
-NoConn ~ 9400 3300
-NoConn ~ 9400 3200
-NoConn ~ 9400 3100
-NoConn ~ 9400 3000
-NoConn ~ 8800 2000
+NoConn ~ 9250 2925
+NoConn ~ 9250 3125
+NoConn ~ 9250 3325
+NoConn ~ 9250 3425
+NoConn ~ 9250 3525
+NoConn ~ 9250 3625
+NoConn ~ 9250 3725
+NoConn ~ 9250 3825
+NoConn ~ 10250 3425
+NoConn ~ 10250 3325
+NoConn ~ 10250 3225
+NoConn ~ 10250 3125
+NoConn ~ 9650 2125
 $Comp
 L ProMicro:Sparkfun_Pro_Micro_3V3 A1
 U 1 1 5F52CC97
-P 8900 3000
-F 0 "A1" H 8550 3950 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 9500 2050 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
-	1    8900 3000
+P 9750 3125
+F 0 "A1" H 9400 4075 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro_3V3" H 10350 2175 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 9750 3125 50  0001 C CIN
+F 3 "https://www.sparkfun.com/products/12587" H 9750 2125 50  0001 C CNN
+	1    9750 3125
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1170,4 +1108,58 @@ F 3 "~" H 10500 5000 50  0001 C CNN
 	1    10500 5000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9000 2625 9250 2625
+Wire Wire Line
+	9000 2525 9250 2525
+Text Label 9000 2525 0    50   ~ 0
+TXD
+Text Label 9000 2625 0    50   ~ 0
+RXD
+Wire Wire Line
+	10250 2525 10500 2525
+Text Label 10500 2525 2    50   ~ 0
+~Reset
+Wire Wire Line
+	9000 2725 9250 2725
+Wire Wire Line
+	9000 2825 9250 2825
+Text Label 9000 2725 0    50   ~ 0
+SDA
+Text Label 9000 2825 0    50   ~ 0
+SCL
+Text Label 3000 1700 0    50   ~ 0
+SDA
+Text Label 3000 1900 0    50   ~ 0
+SCL
+Wire Wire Line
+	2300 5700 2000 5700
+Wire Wire Line
+	2300 5800 2000 5800
+Text Label 2000 5700 0    50   ~ 0
+SDA
+Text Label 2000 5800 0    50   ~ 0
+SCL
+Wire Wire Line
+	2300 6200 2000 6200
+Text Label 2000 6200 0    50   ~ 0
+~Reset
+Wire Wire Line
+	2000 5500 2300 5500
+Wire Wire Line
+	2300 5400 2000 5400
+Text Label 1650 5400 0    50   ~ 0
+RXD
+Text Label 1650 5500 0    50   ~ 0
+TXD
+Wire Wire Line
+	9000 3225 9250 3225
+Text Label 9000 3225 0    50   ~ 0
+INT
+Text Label 5500 1700 2    50   ~ 0
+INT
+Wire Wire Line
+	9000 3025 9250 3025
+Text Label 9000 3025 0    50   ~ 0
+PULSE
 $EndSCHEMATC
