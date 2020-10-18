@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ProMicro_GPS"
+Title "ProMicro_POS"
 Date "2020-09-05"
 Rev "v3.2"
 Comp ""
@@ -13,149 +13,274 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 9750 4225
 Wire Wire Line
-	9750 4125 9750 4225
+	9950 1700 9950 1800
 Wire Wire Line
-	9750 4225 9750 4325
+	9000 5200 9000 5350
 Wire Wire Line
-	9850 2025 9850 2125
+	9000 5650 9000 5800
 Wire Wire Line
-	9850 4125 9850 4225
+	9500 5200 9500 5350
 Wire Wire Line
-	9850 4225 9750 4225
+	9500 5650 9500 5800
+Wire Wire Line
+	10000 5200 10000 5350
+Wire Wire Line
+	10500 5200 10500 5350
+Wire Wire Line
+	10000 5650 10000 5810
+Wire Wire Line
+	10500 5650 10500 5810
+Text GLabel 9000 5800 3    50   Input ~ 0
+SCL
+Text GLabel 9500 5800 3    50   Input ~ 0
+SDA
 $Comp
-L power:+3V3 #PWR016
-U 1 1 5F596CFD
-P 9850 2025
-F 0 "#PWR016" H 9850 1875 50  0001 C CNN
-F 1 "+3V3" H 9850 2200 50  0000 C CNN
-F 2 "" H 9850 2025 50  0001 C CNN
-F 3 "" H 9850 2025 50  0001 C CNN
-	1    9850 2025
+L power:+3V3 #PWR0102
+U 1 1 5E126446
+P 9950 1700
+F 0 "#PWR0102" H 9950 1550 50  0001 C CNN
+F 1 "+3V3" V 9950 1950 50  0000 C CNN
+F 2 "" H 9950 1700 50  0001 C CNN
+F 3 "" H 9950 1700 50  0001 C CNN
+	1    9950 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
-U 1 1 5E53883D
-P 9750 4325
-F 0 "#PWR017" H 9750 4075 50  0001 C CNN
-F 1 "GND" H 9750 4175 50  0000 C CNN
-F 2 "" H 9750 4325 50  0001 C CNN
-F 3 "" H 9750 4325 50  0001 C CNN
-	1    9750 4325
+L power:+3V3 #PWR0112
+U 1 1 5E1CDFD8
+P 9000 5200
+F 0 "#PWR0112" H 9000 5050 50  0001 C CNN
+F 1 "+3V3" H 9000 5350 50  0000 C CNN
+F 2 "" H 9000 5200 50  0001 C CNN
+F 3 "" H 9000 5200 50  0001 C CNN
+	1    9000 5200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9650 4125
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A2
-U 1 1 5F52CC97
-P 9750 3125
-F 0 "A2" H 9400 4075 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 10350 2175 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 9750 3125 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 9750 2125 50  0001 C CNN
-	1    9750 3125
+L power:+3V3 #PWR0111
+U 1 1 5E1CD81F
+P 9500 5200
+F 0 "#PWR0111" H 9500 5050 50  0001 C CNN
+F 1 "+3V3" H 9500 5350 50  0000 C CNN
+F 2 "" H 9500 5200 50  0001 C CNN
+F 3 "" H 9500 5200 50  0001 C CNN
+	1    9500 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9000 2625 9250 2625
-Wire Wire Line
-	9000 2525 9250 2525
-Wire Wire Line
-	10250 2525 10500 2525
-Wire Wire Line
-	9000 2725 9250 2725
-Wire Wire Line
-	9000 2825 9250 2825
-Wire Wire Line
-	9000 3225 9250 3225
-Wire Wire Line
-	9000 3025 9250 3025
-Wire Wire Line
-	9000 3125 9250 3125
-Wire Wire Line
-	9000 3625 9250 3625
-Wire Wire Line
-	9000 3425 9250 3425
-Wire Wire Line
-	9000 3525 9250 3525
-Wire Wire Line
-	9000 3825 9250 3825
-Wire Wire Line
-	9000 3725 9250 3725
-Wire Wire Line
-	10500 3325 10250 3325
-Wire Wire Line
-	10500 3425 10250 3425
-Wire Wire Line
-	10500 3225 10250 3225
-Wire Wire Line
-	10500 3125 10250 3125
 $Comp
-L Graphic:Logo_Open_Hardware_Small LOGO2
-U 1 1 5E26136E
+L power:+3V3 #PWR0103
+U 1 1 5E12E86E
+P 10000 5200
+F 0 "#PWR0103" H 10000 5050 50  0001 C CNN
+F 1 "+3V3" H 10000 5350 50  0000 C CNN
+F 2 "" H 10000 5200 50  0001 C CNN
+F 3 "" H 10000 5200 50  0001 C CNN
+	1    10000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0110
+U 1 1 5E1C214E
+P 10500 5200
+F 0 "#PWR0110" H 10500 5050 50  0001 C CNN
+F 1 "+3V3" H 10500 5350 50  0000 C CNN
+F 2 "" H 10500 5200 50  0001 C CNN
+F 3 "" H 10500 5200 50  0001 C CNN
+	1    10500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E0DE9AC
+P 9750 4400
+F 0 "#PWR0101" H 9750 4150 50  0001 C CNN
+F 1 "GND" H 9750 4250 50  0000 C CNN
+F 2 "" H 9750 4400 50  0001 C CNN
+F 3 "" H 9750 4400 50  0001 C CNN
+	1    9750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E130551
+P 10000 5810
+F 0 "#PWR0104" H 10000 5560 50  0001 C CNN
+F 1 "GND" H 10000 5660 50  0000 C CNN
+F 2 "" H 10000 5810 50  0001 C CNN
+F 3 "" H 10000 5810 50  0001 C CNN
+	1    10000 5810
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E1C213C
+P 10500 5810
+F 0 "#PWR0109" H 10500 5560 50  0001 C CNN
+F 1 "GND" H 10500 5660 50  0000 C CNN
+F 2 "" H 10500 5810 50  0001 C CNN
+F 3 "" H 10500 5810 50  0001 C CNN
+	1    10500 5810
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E1CDFEB
+P 9000 5500
+F 0 "R3" H 9100 5450 50  0000 L CNN
+F 1 "4k7" H 9100 5525 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8930 5500 50  0001 C CNN
+F 3 "~" H 9000 5500 50  0001 C CNN
+F 4 "RC0402FR-074K7L" H 9000 5500 50  0001 C CNN "manf#"
+	1    9000 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E1CCA3B
+P 9500 5500
+F 0 "R4" H 9600 5450 50  0000 L CNN
+F 1 "4k7" H 9600 5525 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9430 5500 50  0001 C CNN
+F 3 "~" H 9500 5500 50  0001 C CNN
+F 4 "RC0402FR-074K7L" H 9500 5500 50  0001 C CNN "manf#"
+F 5 "C105871" H 9500 5500 50  0001 C CNN "lcsc#"
+	1    9500 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E12F3AD
+P 10000 5500
+F 0 "C1" H 10125 5550 50  0000 L CNN
+F 1 "100n" H 10125 5475 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10038 5350 50  0001 C CNN
+F 3 "~" H 10000 5500 50  0001 C CNN
+	1    10000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5E1C212C
+P 10500 5500
+F 0 "C4" H 10625 5550 50  0000 L CNN
+F 1 "10µ" H 10625 5475 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10538 5350 50  0001 C CNN
+F 3 "~" H 10500 5500 50  0001 C CNN
+	1    10500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5E25FD05
 P 10800 6900
-F 0 "LOGO2" H 10800 7175 50  0001 C CNN
+F 0 "LOGO1" H 10800 7175 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 10800 6675 50  0001 C CNN
 F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 10800 6900 50  0001 C CNN
-F 3 "~" H 10800 6900 50  0001 C CNN
+F 3 "" H 10800 6900 50  0001 C CNN
 	1    10800 6900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9000 2925 9250 2925
+Text GLabel 9125 3900 0    50   Input ~ 0
+SCL
+Text GLabel 9125 3800 0    50   Input ~ 0
+SDA
 $Comp
-L power:VBUS #PWR015
-U 1 1 5F56E468
-P 9650 2025
-F 0 "#PWR015" H 9650 1875 50  0001 C CNN
-F 1 "VBUS" H 9650 2200 50  0000 C CNN
-F 2 "" H 9650 2025 50  0001 C CNN
-F 3 "" H 9650 2025 50  0001 C CNN
-	1    9650 2025
+L MCU_Module:Sparkfun_Pro_Micro A1
+U 1 1 5F84D072
+P 9750 3000
+F 0 "A1" H 9400 4150 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro" H 10150 1750 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 9850 1650 50  0001 L CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf" H 9750 2200 50  0001 C CNN
+	1    9750 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 2025 9650 2125
+	10050 1700 10050 1800
+$Comp
+L power:+5V #PWR01
+U 1 1 5F84FBAC
+P 10050 1700
+F 0 "#PWR01" H 10050 1550 50  0001 C CNN
+F 1 "+5V" V 10050 1950 50  0000 C CNN
+F 2 "" H 10050 1700 50  0001 C CNN
+F 3 "" H 10050 1700 50  0001 C CNN
+	1    10050 1700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9000 3325 9250 3325
-Text Label 9000 2525 0    50   ~ 0
+	9750 4400 9750 4300
+Text GLabel 9125 3500 0    50   Input ~ 0
 TXD
-Text Label 9000 2625 0    50   ~ 0
+Text GLabel 9125 3600 0    50   Input ~ 0
 RXD
-Text Label 9000 2725 0    50   ~ 0
-SDA
-Text Label 9000 2825 0    50   ~ 0
-SCL
-Text Label 9000 2925 0    50   ~ 0
-BAT
-Text Label 9000 3025 0    50   ~ 0
-PWM
-Text Label 9000 3125 0    50   ~ 0
-BTN
-Text Label 9000 3225 0    50   ~ 0
-INT
-Text Label 9000 3325 0    50   ~ 0
-D8
-Text Label 9000 3425 0    50   ~ 0
-CS1
-Text Label 9000 3525 0    50   ~ 0
-CS0
-Text Label 9000 3625 0    50   ~ 0
+Wire Wire Line
+	9125 3900 9250 3900
+Wire Wire Line
+	9250 3800 9125 3800
+Text GLabel 9125 3200 0    50   Input ~ 0
 COPI
-Text Label 9000 3725 0    50   ~ 0
+Text GLabel 9125 3300 0    50   Input ~ 0
 CIPO
-Text Label 9000 3825 0    50   ~ 0
+Text GLabel 9125 3000 0    50   Input ~ 0
+CS0
+Text GLabel 9125 3100 0    50   Input ~ 0
 SCK
-Text Label 10500 3125 2    50   ~ 0
-TDI
-Text Label 10500 3225 2    50   ~ 0
-TDO
-Text Label 10500 3325 2    50   ~ 0
-TMS
-Text Label 10500 3425 2    50   ~ 0
-TCK
-Text Label 10500 2525 2    50   ~ 0
+Wire Wire Line
+	9125 3600 9250 3600
+Wire Wire Line
+	9250 3500 9125 3500
+Wire Wire Line
+	9125 3300 9250 3300
+Wire Wire Line
+	9250 3200 9125 3200
+Wire Wire Line
+	9125 3100 9250 3100
+Wire Wire Line
+	9250 3000 9125 3000
+Text GLabel 10375 2200 2    50   Input ~ 0
 ~RST
+Wire Wire Line
+	10375 2200 10250 2200
+Text GLabel 9125 2400 0    50   Input ~ 0
+PWM
+Text GLabel 9125 2500 0    50   Input ~ 0
+BTN
+Text GLabel 9125 2600 0    50   Input ~ 0
+INT
+Text GLabel 9125 2700 0    50   Input ~ 0
+D8
+Text GLabel 9125 2800 0    50   Input ~ 0
+CS1
+Text GLabel 9125 2300 0    50   Input ~ 0
+STAT
+Wire Wire Line
+	9125 2800 9250 2800
+Wire Wire Line
+	9250 2700 9125 2700
+Wire Wire Line
+	9125 2600 9250 2600
+Wire Wire Line
+	9250 2500 9125 2500
+Wire Wire Line
+	9125 2400 9250 2400
+Wire Wire Line
+	9250 2300 9125 2300
+Text GLabel 10375 2900 2    50   Input ~ 0
+TDO
+Text GLabel 10375 2800 2    50   Input ~ 0
+TDI
+Text GLabel 10375 3100 2    50   Input ~ 0
+TCK
+Text GLabel 10375 3000 2    50   Input ~ 0
+TMS
+Wire Wire Line
+	10250 3100 10375 3100
+Wire Wire Line
+	10375 3000 10250 3000
+Wire Wire Line
+	10250 2900 10375 2900
+Wire Wire Line
+	10375 2800 10250 2800
 $EndSCHEMATC

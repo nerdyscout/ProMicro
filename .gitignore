@@ -30,3 +30,7 @@ fp-info-cache*
 *.erc
 *.rpt
 *.filter
+
+*.cache
+*.config
+*.local

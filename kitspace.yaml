@@ -1,41 +1,91 @@
 multi:
-  GPS:
-    site: GPS
+  ProMicro_GPS:
+    site: https://nerdyscout.github.io/ProMicro/POS
     summary: 
-    readme: pcbs/GPS/README.md
-    bom: pcbs/GPS/ProMicro_GPS.csv
+    readme: POS/README.md
+    bom: POS/gerbers/ProMicro_GPS.csv
     eda:
       type: kicad
-      pcb: pcbs/GPS/ProMicro_GPS.kicad_pcb
-    gerbers: pcbs/GPS/gerber
+      pcb: POS/ProMicro_POS.kicad_pcb
+    gerbers: POS/gerbers
     color: green
-  CONN:
-    site: CONN
+  ProMicro_GYRO:
+    site: https://nerdyscout.github.io/ProMicro/POS
     summary: 
-    readme: pcbs/CONN/README.md
-    bom: pcbs/CONN/ProMicro_CONN.csv
+    readme: POS/README.md
+    bom: POS/gerbers/ProMicro_GYRO.csv
     eda:
       type: kicad
-      pcb: pcbs/CONN/ProMicro_CONN.kicad_pcb
-    gerbers: pcbs/CONN/gerber
+      pcb: POS/ProMicro_POS.kicad_pcb
+    gerbers: POS/gerbers
     color: green
-  LORA:
-    site: LORA
+  ProMicro_CANBUS:
+    site: https://nerdyscout.github.io/ProMicro/BUS
     summary: 
-    readme: pcbs/LORA/README.md
-    bom: pcbs/LORA/ProMicro_LORA.csv
+    readme: BUS/README.md
+    bom: BUS/gerbers/ProMicro_CANBUS.csv
     eda:
       type: kicad
-      pcb: pcbs/LORA/ProMicro_LORA.kicad_pcb
-    gerbers: pcbs/LORA/gerber
+      pcb: BUS/ProMicro_BUS.kicad_pcb
+    gerbers: BUS/gerbers
     color: green
-  UART:
-    site: UART
+  ProMicro_MODBUS:
+    site: https://nerdyscout.github.io/ProMicro/BUS
     summary: 
-    readme: pcbs/UART/README.md
-    bom: pcbs/UART/ProMicro_UART.csv
+    readme: BUS/README.md
+    bom: BUS/gerbers/ProMicro_MODBUS.csv
     eda:
       type: kicad
-      pcb: pcbs/UART/ProMicro_UART.kicad_pcb
-    gerbers: pcbs/UART/gerber
+      pcb: BUS/ProMicro_BUS.kicad_pcb
+    gerbers: BUS/gerbers
+    color: green
+  ProMicro_CONN:
+    site: https://nerdyscout.github.io/ProMicro/CONN
+    summary: 
+    readme: CONN/README.md
+    bom: CONN/gerbers/ProMicro_CONN.csv
+    eda:
+      type: kicad
+      pcb: CONN/ProMicro_CONN.kicad_pcb
+    gerbers: CONN/gerbers
+    color: green
+  ProMicro_RTC:
+    site: https://nerdyscout.github.io/ProMicro/LOG
+    summary: 
+    readme: LOG/README.md
+    bom: LOG/gerbers/ProMicro_RTC.csv
+    eda:
+      type: kicad
+      pcb: LOG/ProMicro_LOG.kicad_pcb
+    gerbers: LOG/gerbers
+    color: green
+  ProMicro_LOG:
+    site: https://nerdyscout.github.io/ProMicro/LOG
+    summary: 
+    readme: LOG/README.md
+    bom: LOG/gerbers/ProMicro_LOG.csv
+    eda:
+      type: kicad
+      pcb: LOG/ProMicro_LOG.kicad_pcb
+    gerbers: LOG/gerbers
+    color: green
+  ProMicro_LORA:
+    site: https://nerdyscout.github.io/ProMicro/LORA
+    summary: 
+    readme: LORA/README.md
+    bom: LORA/gerbers/ProMicro_LORA.csv
+    eda:
+      type: kicad
+      pcb: LORA/ProMicro_LORA.kicad_pcb
+    gerbers: LORA/gerbers
+    color: green
+  ProMicro_UART:
+    site: https://nerdyscout.github.io/ProMicro/UART
+    summary: 
+    readme: UART/README.md
+    bom: UART/gerbers/ProMicro_UART.csv
+    eda:
+      type: kicad
+      pcb: UART/ProMicro_UART.kicad_pcb
+    gerbers: UART/gerbers
     color: green

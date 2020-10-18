@@ -18,8 +18,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/UART/docs/BOM/ProMicro_UART.html)
-  * [kicost](docs/BOM/ProMicro_UART.xlsx)
-  * [csv](docs/BOM/ProMicro_UART.csv)
+  * [csv](docs/gerbers/ProMicro_UART.csv)
 
 
 ## Gerbers

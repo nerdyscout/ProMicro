@@ -1,0 +1,12 @@
+Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;config;lcsc#;manf#
+1;Unpolarized capacitor;C;C9;100n;C_0402_1005Metric;1;~;+GPS,-GYRO;C1525;CL05B104KO5NNNC
+2;Unpolarized capacitor;C;C8;4,7µ;C_0603_1608Metric;1;~;+GPS,-GYRO;C19666;CL10A475KO8NNNC
+3;Light emitting diode;LED;D1;LED;LED_0603_1608Metric;1;~;+GPS,-GYRO;C72041;19-217/BHC-ZL1M2RY/3T
+4;Mounting Hole without connection;MountingHole;H2;MountingHole;MountingHole_2.1mm;1;~;;;
+5;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J2;Coax;SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount;1;~;+GPS,-GYRO;;
+6;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J1;uFL;U.FL_Hirose_U.FL-R-SMT-1_Vertical;1;~;+GPS,-GYRO;;
+7;Inductor;L;L1;27n;L_0402_1005Metric;1;~;+GPS,-GYRO;;
+8;Resistor;R;R2;0;R_0402_1005Metric;1;~;+GPS,-GYRO;C17168;0402WGF0000TCE
+9;Resistor;R;R1;10;R_0402_1005Metric;1;~;+GPS,-GYRO;;
+10;Resistor;R;R3;1k;R_0402_1005Metric;1;~;+GPS,-GYRO;C11702;0402WGF1001TCE
+11;GNSS Module MAX M8, VCC 1.65V to 3.6V;MAX-8C;U3;SIM28ML;ublox_MAX;1;https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf;+GPS,-GYRO,+FULL;;MAX-8C-0-10

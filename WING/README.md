@@ -16,8 +16,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/TEST/docs/BOM/ProMicro_WING.html)
-  * [kicost](docs/BOM/ProMicro_WING.xlsx)
-  * [csv](docs/BOM/ProMicro_WING.csv)
+  * [csv](docs/gerbers/ProMicro_WING.csv)
 
 
 ## Gerbers

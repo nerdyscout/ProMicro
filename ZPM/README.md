@@ -17,8 +17,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ZPM/docs/BOM/ProMicro_ZPM.html)
-  * [kicost](docs/BOM/ProMicro_ZPM.xlsx)
-  * [csv](docs/BOM/ProMicro_ZPM.csv)
+  * [csv](docs/gerbers/ProMicro_ZPM.csv)
 
 
 ## Gerbers

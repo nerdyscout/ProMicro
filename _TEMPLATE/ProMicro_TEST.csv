@@ -1,0 +1,6 @@
+Reference, Quantity, Value, Footprint, Datasheet, manf#, lcsc#
+A1 ,1,"Sparkfun_Pro_Micro","Module:Sparkfun_Pro_Micro","https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf"
+C1 ,1,"100n","Capacitor_SMD:C_0402_1005Metric","~"
+C4 ,1,"10µ","Capacitor_SMD:C_0603_1608Metric","~"
+LOGO1 ,1,"Logo_Open_Hardware_Small","Symbol:OSHW-Symbol_6.7x6mm_SilkScreen",""
+R3 R4 ,2,"4k7","Resistor_SMD:R_0402_1005Metric","~","RC0402FR-074K7L",""

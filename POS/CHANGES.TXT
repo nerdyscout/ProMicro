@@ -1,0 +1,5 @@
+# CHANGES
+## Schematic v3.2 / Layout v3.2
+
+* using unified MCU symbol
+* renamed module POS

@@ -17,8 +17,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_QWIIC)
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_QWIIC/docs/BOM/ProMicro_QWIIC.html)
-  * [kicost](docs/BOM/ProMicro_QWIIC.xlsx)
-  * [csv](docs/BOM/ProMicro_QWIIC.csv)
+  * [csv](docs/gerbers/ProMicro_QWIIC.csv)
 
 
 ## Gerbers

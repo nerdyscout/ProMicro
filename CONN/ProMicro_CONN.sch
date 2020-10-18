@@ -20,8 +20,6 @@ Connection ~ 4490 2000
 Connection ~ 4800 1900
 Connection ~ 6000 1700
 Connection ~ 6300 1700
-Connection ~ 8900 4100
-NoConn ~ 8800 4000
 Wire Wire Line
 	4800 2650 4800 2700
 Wire Wire Line
@@ -43,23 +41,9 @@ Wire Wire Line
 Wire Wire Line
 	6000 1700 6000 1800
 Wire Wire Line
-	7150 5350 7250 5350
-Wire Wire Line
-	7150 5450 7250 5450
-Wire Wire Line
 	7150 5550 7250 5550
 Wire Wire Line
 	7150 5650 7250 5650
-Wire Wire Line
-	8900 4000 8900 4100
-Wire Wire Line
-	8900 4100 8900 4200
-Wire Wire Line
-	9000 1900 9000 2000
-Wire Wire Line
-	9000 4000 9000 4100
-Wire Wire Line
-	9000 4100 8900 4100
 Wire Wire Line
 	3900 1200 3900 1350
 Wire Wire Line
@@ -69,69 +53,15 @@ Wire Wire Line
 Wire Wire Line
 	4800 1200 4800 1350
 Wire Wire Line
-	4800 1900 4950 1900
-Wire Wire Line
 	6300 1200 6300 1350
 Wire Wire Line
 	6300 1700 6300 1850
 Wire Wire Line
 	6440 5200 6440 5350
 Wire Wire Line
-	9000 5200 9000 5350
-Wire Wire Line
-	9000 5650 9000 5800
-Wire Wire Line
-	9500 5200 9500 5350
-Wire Wire Line
-	9500 5650 9500 5800
-Wire Wire Line
-	10000 5200 10000 5350
-Wire Wire Line
 	6440 5650 6440 5810
 Wire Wire Line
-	10000 5650 10000 5810
-Wire Wire Line
 	3000 2600 3000 2800
-Wire Wire Line
-	6300 1700 6500 1700
-Wire Wire Line
-	8200 2400 8400 2400
-Wire Wire Line
-	8200 2500 8400 2500
-Wire Wire Line
-	8200 2600 8400 2600
-Wire Wire Line
-	8200 2700 8400 2700
-Wire Wire Line
-	8200 2800 8400 2800
-Wire Wire Line
-	8200 2900 8400 2900
-Wire Wire Line
-	8200 3000 8400 3000
-Wire Wire Line
-	8200 3100 8400 3100
-Wire Wire Line
-	8200 3200 8400 3200
-Wire Wire Line
-	8200 3300 8400 3300
-Wire Wire Line
-	8200 3400 8400 3400
-Wire Wire Line
-	8200 3500 8400 3500
-Wire Wire Line
-	8200 3600 8400 3600
-Wire Wire Line
-	8200 3700 8400 3700
-Wire Wire Line
-	9400 2400 9600 2400
-Wire Wire Line
-	9400 3000 9600 3000
-Wire Wire Line
-	9400 3100 9600 3100
-Wire Wire Line
-	9400 3200 9600 3200
-Wire Wire Line
-	9400 3300 9600 3300
 Wire Wire Line
 	4800 1650 4800 1900
 Wire Wire Line
@@ -145,8 +75,6 @@ Wire Wire Line
 Wire Wire Line
 	4800 1900 4800 2350
 Wire Wire Line
-	4490 2000 4950 2000
-Wire Wire Line
 	3900 1650 3900 2200
 Wire Wire Line
 	6000 2200 6000 2800
@@ -155,93 +83,11 @@ Wire Wire Line
 Wire Wire Line
 	3500 2100 4200 2100
 Wire Wire Line
-	4200 2100 4950 2100
-Wire Wire Line
 	3500 2000 4490 2000
-Wire Wire Line
-	3900 2200 4950 2200
 Wire Wire Line
 	3500 1900 4800 1900
 Wire Wire Line
 	3500 1700 6000 1700
-Text Notes 5150 1930 0    50   ~ 0
-TCK
-Text Notes 5150 2030 0    50   ~ 0
-TMS
-Text Notes 5150 2130 0    50   ~ 0
-TDO
-Text Notes 5150 2230 0    50   ~ 0
-TDI
-Text Notes 9800 3030 0    50   ~ 0
-TDI
-Text Notes 9800 3130 0    50   ~ 0
-TDO
-Text Notes 9800 3230 0    50   ~ 0
-TMS
-Text Notes 9800 3330 0    50   ~ 0
-TCK
-Text GLabel 2500 4900 0    50   Input ~ 0
-D1
-Text GLabel 2500 5100 0    50   Input ~ 0
-D2
-Text GLabel 2500 5200 0    50   Input ~ 0
-D3
-Text GLabel 4950 1900 2    50   Input ~ 0
-A3
-Text GLabel 4950 2000 2    50   Input ~ 0
-A2
-Text GLabel 4950 2100 2    50   Input ~ 0
-A1
-Text GLabel 4950 2200 2    50   Input ~ 0
-A0
-Text GLabel 6500 1700 2    50   Input ~ 0
-Reset
-Text GLabel 7250 5350 2    50   Input ~ 0
-D2
-Text GLabel 7250 5450 2    50   Input ~ 0
-D3
-Text GLabel 8200 2400 0    50   Input ~ 0
-D0
-Text GLabel 8200 2500 0    50   Input ~ 0
-D1
-Text GLabel 8200 2600 0    50   Input ~ 0
-D2
-Text GLabel 8200 2700 0    50   Input ~ 0
-D3
-Text GLabel 8200 2800 0    50   Input ~ 0
-D4
-Text GLabel 8200 2900 0    50   Input ~ 0
-D5
-Text GLabel 8200 3000 0    50   Input ~ 0
-D6
-Text GLabel 8200 3100 0    50   Input ~ 0
-D7
-Text GLabel 8200 3200 0    50   Input ~ 0
-D8
-Text GLabel 8200 3300 0    50   Input ~ 0
-D9
-Text GLabel 8200 3400 0    50   Input ~ 0
-D10
-Text GLabel 8200 3500 0    50   Input ~ 0
-D16
-Text GLabel 8200 3600 0    50   Input ~ 0
-D14
-Text GLabel 8200 3700 0    50   Input ~ 0
-D15
-Text GLabel 9000 5800 3    50   Input ~ 0
-D3
-Text GLabel 9500 5800 3    50   Input ~ 0
-D2
-Text GLabel 9600 2400 2    50   Input ~ 0
-Reset
-Text GLabel 9600 3000 2    50   Input ~ 0
-A0
-Text GLabel 9600 3100 2    50   Input ~ 0
-A1
-Text GLabel 9600 3200 2    50   Input ~ 0
-A2
-Text GLabel 9600 3300 2    50   Input ~ 0
-A3
 $Comp
 L power:+3V3 #PWR0122
 U 1 1 5E2B1BD6
@@ -342,50 +188,6 @@ F 3 "" H 7250 5550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3V3 #PWR0102
-U 1 1 5E126446
-P 9000 1900
-F 0 "#PWR0102" H 9000 1750 50  0001 C CNN
-F 1 "+3V3" H 9020 2080 50  0000 C CNN
-F 2 "" H 9000 1900 50  0001 C CNN
-F 3 "" H 9000 1900 50  0001 C CNN
-	1    9000 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0112
-U 1 1 5E1CDFD8
-P 9000 5200
-F 0 "#PWR0112" H 9000 5050 50  0001 C CNN
-F 1 "+3V3" H 9000 5350 50  0000 C CNN
-F 2 "" H 9000 5200 50  0001 C CNN
-F 3 "" H 9000 5200 50  0001 C CNN
-	1    9000 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0111
-U 1 1 5E1CD81F
-P 9500 5200
-F 0 "#PWR0111" H 9500 5050 50  0001 C CNN
-F 1 "+3V3" H 9500 5350 50  0000 C CNN
-F 2 "" H 9500 5200 50  0001 C CNN
-F 3 "" H 9500 5200 50  0001 C CNN
-	1    9500 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0103
-U 1 1 5E12E86E
-P 10000 5200
-F 0 "#PWR0103" H 10000 5050 50  0001 C CNN
-F 1 "+3V3" H 10000 5350 50  0000 C CNN
-F 2 "" H 10000 5200 50  0001 C CNN
-F 3 "" H 10000 5200 50  0001 C CNN
-	1    10000 5200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0109
 U 1 1 5E296D84
 P 3000 2800
@@ -461,28 +263,6 @@ F 2 "" H 7250 5650 50  0001 C CNN
 F 3 "" H 7250 5650 50  0001 C CNN
 	1    7250 5650
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 5E0DE9AC
-P 8900 4200
-F 0 "#PWR0101" H 8900 3950 50  0001 C CNN
-F 1 "GND" H 8900 4050 50  0000 C CNN
-F 2 "" H 8900 4200 50  0001 C CNN
-F 3 "" H 8900 4200 50  0001 C CNN
-	1    8900 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5E130551
-P 10000 5810
-F 0 "#PWR0104" H 10000 5560 50  0001 C CNN
-F 1 "GND" H 10000 5660 50  0000 C CNN
-F 2 "" H 10000 5810 50  0001 C CNN
-F 3 "" H 10000 5810 50  0001 C CNN
-	1    10000 5810
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
@@ -575,7 +355,7 @@ F 5 "0603WAF4701T5E" H 9000 5500 50  0001 C CNN "manf#"
 $EndComp
 $Comp
 L Device:R R4
-U 1 1 5E1CCA3B
+U 1 1 5F850274
 P 9500 5500
 F 0 "R4" H 9600 5450 50  0000 L CNN
 F 1 "4k7" H 9600 5525 50  0000 L CNN
@@ -626,19 +406,6 @@ F 5 "C14663" H 6440 5500 50  0001 C CNN "LCSC#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
-U 1 1 5E12F3AD
-P 10000 5500
-F 0 "C1" H 10125 5550 50  0000 L CNN
-F 1 "1µ" H 10125 5475 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10038 5350 50  0001 C CNN
-F 3 "~" H 10000 5500 50  0001 C CNN
-F 4 "CL10A105KB8NNNC" H 10000 5500 50  0001 C CNN "manf#"
-F 5 "C15849" H 10000 5500 50  0001 C CNN "LCSC#"
-	1    10000 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW1
 U 1 1 5E1FC39A
 P 6000 2000
@@ -662,17 +429,6 @@ F 3 "~" H 6950 5550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Graphic:Logo_Open_Hardware_Small LOGO1
-U 1 1 5E260D93
-P 10800 6900
-F 0 "LOGO1" H 10800 7175 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 10800 6675 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 10800 6900 50  0001 C CNN
-F 3 "~" H 10800 6900 50  0001 C CNN
-	1    10800 6900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:UEXT_Host J2
 U 1 1 5E1FAEAC
 P 3000 5000
@@ -683,42 +439,9 @@ F 3 "https://www.olimex.com/Products/Modules/UEXT/resources/UEXT_rev_B.pdf" H 28
 	1    3000 5000
 	1    0    0    -1  
 $EndComp
-Text Notes 7950 2450 2    50   ~ 0
-RXD
-Text Notes 7950 2550 2    50   ~ 0
-TXD
-Text Notes 7950 2650 2    50   ~ 0
-SDA
-Text Notes 7950 2750 2    50   ~ 0
-SCL
-Text Notes 7950 3450 2    50   ~ 0
-CS0
-Text Notes 7950 3350 2    50   ~ 0
-CS1
-Text Notes 7950 3550 2    50   ~ 0
-MOSI
-Text Notes 7950 3650 2    50   ~ 0
-MISO
-Text Notes 7950 3750 2    50   ~ 0
-SCK
 NoConn ~ 3500 1800
-Text GLabel 2500 4800 0    50   Input ~ 0
-D0
 Text Notes 2500 4500 2    50   ~ 0
 Attention:\nRXD & TXD are swapped here!
-Text GLabel 3500 5100 2    50   Input ~ 0
-D9
-Text GLabel 3500 5000 2    50   Input ~ 0
-D15
-Text GLabel 3500 4900 2    50   Input ~ 0
-D16
-Text GLabel 3500 4800 2    50   Input ~ 0
-D14
-Text Notes 7700 3350 2    50   ~ 0
-UEXT
-Text Notes 7950 2850 2    50   ~ 0
-VBAT/2
-NoConn ~ 8800 2000
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5EB6A0B6
@@ -770,28 +493,11 @@ F 3 "" H 7250 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 1200 7250 1350
-Text Notes 7950 2950 2    50   ~ 0
-BTN
-Text GLabel 7500 1700 2    50   Input ~ 0
-D5
-Wire Wire Line
-	7500 1700 7250 1700
 Connection ~ 7250 1700
 Wire Wire Line
 	7250 1700 7250 1800
 Wire Wire Line
 	7250 2200 7250 2800
-$Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
-U 1 1 5ED4E076
-P 8900 3000
-F 0 "A1" H 8550 3950 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 9500 2025 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
-	1    8900 3000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:AVR-JTAG-10 J1
 U 1 1 5ED4FD9C
@@ -803,4 +509,224 @@ F 3 " ~" H 1725 1450 50  0001 C CNN
 	1    3000 2000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4800 1900 5125 1900
+Wire Wire Line
+	4490 2000 5125 2000
+Wire Wire Line
+	4200 2100 5125 2100
+Wire Wire Line
+	3900 2200 5125 2200
+Wire Wire Line
+	6300 1700 6625 1700
+Wire Wire Line
+	7250 1700 7625 1700
+Wire Wire Line
+	2250 4900 2500 4900
+Wire Wire Line
+	2250 4800 2500 4800
+Wire Wire Line
+	2250 5100 2500 5100
+Wire Wire Line
+	2250 5200 2500 5200
+Wire Wire Line
+	3750 4900 3500 4900
+Wire Wire Line
+	3750 5100 3500 5100
+Wire Wire Line
+	3750 5000 3500 5000
+Wire Wire Line
+	3750 4800 3500 4800
+Wire Wire Line
+	7150 5350 7500 5350
+Wire Wire Line
+	7150 5450 7500 5450
+Wire Wire Line
+	9950 1700 9950 1800
+Wire Wire Line
+	9000 5200 9000 5350
+Wire Wire Line
+	9000 5650 9000 5800
+Wire Wire Line
+	9500 5200 9500 5350
+Wire Wire Line
+	9500 5650 9500 5800
+Text GLabel 9000 5800 3    50   Input ~ 0
+SCL
+Text GLabel 9500 5800 3    50   Input ~ 0
+SDA
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5E126446
+P 9950 1700
+F 0 "#PWR0102" H 9950 1550 50  0001 C CNN
+F 1 "+3V3" V 9950 1950 50  0000 C CNN
+F 2 "" H 9950 1700 50  0001 C CNN
+F 3 "" H 9950 1700 50  0001 C CNN
+	1    9950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0112
+U 1 1 5E1CDFD8
+P 9000 5200
+F 0 "#PWR0112" H 9000 5050 50  0001 C CNN
+F 1 "+3V3" H 9000 5350 50  0000 C CNN
+F 2 "" H 9000 5200 50  0001 C CNN
+F 3 "" H 9000 5200 50  0001 C CNN
+	1    9000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5E1CD81F
+P 9500 5200
+F 0 "#PWR0111" H 9500 5050 50  0001 C CNN
+F 1 "+3V3" H 9500 5350 50  0000 C CNN
+F 2 "" H 9500 5200 50  0001 C CNN
+F 3 "" H 9500 5200 50  0001 C CNN
+	1    9500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E0DE9AC
+P 9750 4400
+F 0 "#PWR0101" H 9750 4150 50  0001 C CNN
+F 1 "GND" H 9750 4250 50  0000 C CNN
+F 2 "" H 9750 4400 50  0001 C CNN
+F 3 "" H 9750 4400 50  0001 C CNN
+	1    9750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5E25FD05
+P 10800 6900
+F 0 "LOGO1" H 10800 7175 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10800 6675 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 10800 6900 50  0001 C CNN
+F 3 "" H 10800 6900 50  0001 C CNN
+	1    10800 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9125 3900 0    50   Input ~ 0
+SCL
+Text GLabel 9125 3800 0    50   Input ~ 0
+SDA
+$Comp
+L MCU_Module:Sparkfun_Pro_Micro A1
+U 1 1 5F84D072
+P 9750 3000
+F 0 "A1" H 9400 4150 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro" H 10150 1750 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 9850 1650 50  0001 L CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf" H 9750 2200 50  0001 C CNN
+	1    9750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1700 10050 1800
+$Comp
+L power:+5V #PWR01
+U 1 1 5F84FBAC
+P 10050 1700
+F 0 "#PWR01" H 10050 1550 50  0001 C CNN
+F 1 "+5V" V 10050 1950 50  0000 C CNN
+F 2 "" H 10050 1700 50  0001 C CNN
+F 3 "" H 10050 1700 50  0001 C CNN
+	1    10050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4400 9750 4300
+Text GLabel 9125 3500 0    50   Input ~ 0
+TXD
+Text GLabel 9125 3600 0    50   Input ~ 0
+RXD
+Wire Wire Line
+	9125 3900 9250 3900
+Wire Wire Line
+	9250 3800 9125 3800
+Text GLabel 9125 3200 0    50   Input ~ 0
+COPI
+Text GLabel 9125 3300 0    50   Input ~ 0
+CIPO
+Text GLabel 9125 3100 0    50   Input ~ 0
+SCK
+Wire Wire Line
+	9125 3600 9250 3600
+Wire Wire Line
+	9250 3500 9125 3500
+Wire Wire Line
+	9125 3300 9250 3300
+Wire Wire Line
+	9250 3200 9125 3200
+Wire Wire Line
+	9125 3100 9250 3100
+Text GLabel 10375 2200 2    50   Input ~ 0
+~RST
+Wire Wire Line
+	10375 2200 10250 2200
+Text GLabel 9125 2500 0    50   Input ~ 0
+BTN
+Text GLabel 9125 2800 0    50   Input ~ 0
+CS1
+Wire Wire Line
+	9125 2800 9250 2800
+Wire Wire Line
+	9250 2500 9125 2500
+Text GLabel 10375 2900 2    50   Input ~ 0
+TDO
+Text GLabel 10375 2800 2    50   Input ~ 0
+TDI
+Text GLabel 10375 3100 2    50   Input ~ 0
+TCK
+Text GLabel 10375 3000 2    50   Input ~ 0
+TMS
+Wire Wire Line
+	10250 3100 10375 3100
+Wire Wire Line
+	10375 3000 10250 3000
+Wire Wire Line
+	10250 2900 10375 2900
+Wire Wire Line
+	10375 2800 10250 2800
+Text GLabel 3750 4900 2    50   Input ~ 0
+COPI
+Text GLabel 3750 4800 2    50   Input ~ 0
+CIPO
+Text GLabel 3750 5100 2    50   Input ~ 0
+CS1
+Text GLabel 3750 5000 2    50   Input ~ 0
+SCK
+Text GLabel 2250 5200 0    50   Input ~ 0
+SCL
+Text GLabel 2250 5100 0    50   Input ~ 0
+SDA
+Text GLabel 2250 4800 0    50   Input ~ 0
+TXD
+Text GLabel 2250 4900 0    50   Input ~ 0
+RXD
+Text GLabel 5125 2100 2    50   Input ~ 0
+TDO
+Text GLabel 5125 2200 2    50   Input ~ 0
+TDI
+Text GLabel 5125 1900 2    50   Input ~ 0
+TCK
+Text GLabel 5125 2000 2    50   Input ~ 0
+TMS
+Text GLabel 7500 5450 2    50   Input ~ 0
+SCL
+Text GLabel 7500 5350 2    50   Input ~ 0
+SDA
+Text GLabel 7625 1700 2    50   Input ~ 0
+BTN
+Text GLabel 6625 1700 2    50   Input ~ 0
+~RST
+NoConn ~ 9250 2700
+NoConn ~ 9250 2600
+NoConn ~ 9250 2400
+NoConn ~ 9250 3000
+NoConn ~ 9250 2300
 $EndSCHEMATC

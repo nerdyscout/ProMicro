@@ -1,0 +1,24 @@
+Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;lcsc#;manf#;config
+1;Unpolarized capacitor;C;C12;1.2pF;C_0402_1005Metric;1;~;C159809;CL05C1R2BB5NNNC;
+2;Unpolarized capacitor;C;C2;1.5pF;C_0402_1005Metric;1;~;C1552;0402CG1R5C500NT;
+3;Unpolarized capacitor;C;C8;1.8pF;C_0402_1005Metric;1;~;;;
+4;Unpolarized capacitor;C;C6;3.3pF;C_0402_1005Metric;1;~;C1565;0402CG3R3C500NT;
+5;Unpolarized capacitor;C;C5;4.7pF;C_0402_1005Metric;1;~;C1569;0402CG4R7C500NT;
+6;Unpolarized capacitor;C;C1 C4;15p;C_0402_1005Metric;2;~;C1548;0402CG150J500NT;
+7;Unpolarized capacitor;C;C3;33pF;C_0402_1005Metric;1;~;C1562;0402CG330J500NT;
+8;Unpolarized capacitor;C;C7 C9 C15 C18;47pF;C_0402_1005Metric;4;~;C1567;0402CG470J500NT;
+9;Unpolarized capacitor;C;C13 C14;1nF;C_0402_1005Metric;2;~;C1523;0402B102K500NT;
+10;Unpolarized capacitor;C;C16 C17 C19 C20 C21;100n;C_0402_1005Metric;5;~;C1525;CL05B104KO5NNNC;
+11;Unpolarized capacitor;C;C22;1µ;C_0402_1005Metric;1;~;C52923;CL05A105KA5NQNC;
+12;Unpolarized capacitor;C;C23;10µ;C_0603_1608Metric;1;~;C15525;CL05A106MQ5NUNC;
+13;Unpolarized capacitor;C;C25;F;C_0402_1005Metric;1;~;;;
+14;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J2;COAX;SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount;1;~;;;
+15;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J1;SMA;U.FL_Hirose_U.FL-R-SMT-1_Vertical;1;~;;;
+16;Inductor symbol for simulation only;INDUCTOR;L5;0R;L_0402_1005Metric;1;~;C17168;0402WGF0000TCE;
+17;Inductor symbol for simulation only;INDUCTOR;L4;6.2nH;L_0402_1005Metric;1;~;C87534;MLG1005S6N2ST000;
+18;Inductor symbol for simulation only;INDUCTOR;L2 L3;10nH;L_0402_1005Metric;2;~;C27147;SDCL1005C10NJTDF;
+19;Inductor symbol for simulation only;INDUCTOR;L1;33nH;L_0402_1005Metric;1;~;C87193;HK100533NJ-T;
+20;Resistor;R;R1;1k;R_0402_1005Metric;1;~;C11702;0402WGF1001TCE;
+21;20 MHz to 4.0 GHz GaAs SPDT Switch, SC-70;AS179-92LF;U2;AS179-92LF;SOT-363_SC-70-6;1;http://www.skyworksinc.com/uploads/documents/AS179_92LF_200176H.pdf;C83422;AS179-92LF;
+22;;SX1276-RF;U1;SX1276;QFN-28-1EP_6x6mm_P0.65mm_EP4.8x4.8mm;1;https://www.semtech.com/uploads/documents/DS_SX1276-7-8-9_W_APP_V6.pdf;;;
+23;Four pin crystal, GND on pins 2 and 4;Crystal_GND24;Y1;32Mhz;Crystal_SMD_SeikoEpson_FA238V-4Pin_3.2x2.5mm;1;~;C91742;X1E000021016300;

@@ -17,8 +17,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ANA/docs/BOM/ProMicro_ANA.html)
-  * [kicost](docs/BOM/ProMicro_ANA.xlsx)
-  * [csv](docs/BOM/ProMicro_ANA.csv)
+  * [csv](docs/gerbers/ProMicro_ANA.csv)
 
 
 ## Gerbers

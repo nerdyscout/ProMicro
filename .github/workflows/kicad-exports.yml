@@ -2,12 +2,12 @@ name: kicad-exports
 
 on:
   push:
-    branches: [ANA, BOOST, BUS, CONN, GPS, LOG, LORA, QWIIC, SAMD, TEST, UART, WING, ZPM]
+    branches: [ANA, BOOST, BUS, CONN, POS, LOG, LORA, QWIIC, SAMD, TEST, UART, WING, ZPM]
     paths:
     - '**.sch'
     - '**.kicad_pcb'
   pull_request:
-    branches: [ANA, BOOST, BUS, CONN, GPS, LOG, LORA, QWIIC, SAMD, TEST, UART, WING, ZPM]
+    branches: [ANA, BOOST, BUS, CONN, POS, LOG, LORA, QWIIC, SAMD, TEST, UART, WING, ZPM]
     paths:
     - '**.sch'
     - '**.kicad_pcb'
@@ -20,7 +20,7 @@ jobs:
       - uses: nelonoel/branch-name@v1
       - run: echo ::set-output name=current::${BRANCH_NAME}
         id: branch
-      - uses: nerdyscout/kicad-exports@v2.0
+      - uses: nerdyscout/kicad-exports@v2.1
         with:
           config: ${{ steps.branch.outputs.current }}/config.kiplot.yaml
           board: ${{ steps.branch.outputs.current }}/ProMicro_${{ steps.branch.outputs.current }}.kicad_pcb

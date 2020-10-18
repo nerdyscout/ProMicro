@@ -1,9 +1,0 @@
-Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet
-1;Unpolarized capacitor;C;C11;1µF;C_0603_1608Metric;1;~
-2;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J2;Conn_01x02;PinHeader_1x02_P2.54mm_Vertical;1;~
-3;Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/);Conn_02x04_Odd_Even;J1;ESP01(Prog);PinHeader_2x04_P2.54mm_Vertical;1;~
-4;Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x04;J3;LCD;PinSocket_1x04_P2.54mm_Vertical;1;~
-5;Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x06;J4;UART;PinSocket_1x06_P2.54mm_Vertical;1;~
-6;NPN transistor, base/emitter/collector;Q_NPN_BEC;Q1 Q2;mmbt2222;SOT-23;2;~
-7;Resistor;R;R4 R5 R6 R7 R8;12k;R_0603_1608Metric;5;~
-8;802.11 b/g/n Wi-Fi Module;ESP-12E;U2;ESP-12E;ESP-12E;1;http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf

@@ -20,8 +20,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LORA/docs/BOM/ProMicro_LORA.html)
-  * [kicost](docs/BOM/ProMicro_LORA.xlsx)
-  * [csv](docs/BOM/ProMicro_LORA.csv)
+  * [csv](docs/gerbers/ProMicro_LORA.csv)
 
 
 ## Gerbers

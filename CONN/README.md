@@ -17,8 +17,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/CONN/docs/BOM/ProMicro_CONN.html)
-  * [kicost](CONN/docs/BOM/ProMicro_CONN.xlsx)
-  * [csv](docs/BOM/ProMicro_CONN.csv)
+  * [csv](docs/gerbers/ProMicro_CONN.csv)
 
 
 ## Gerbers

@@ -32,11 +32,9 @@ Connection ~ 6000 5550
 Connection ~ 7250 5250
 Connection ~ 7825 5250
 Connection ~ 7900 5350
-Connection ~ 8000 3600
 NoConn ~ 3400 3050
 NoConn ~ 3400 3150
 NoConn ~ 4600 3550
-NoConn ~ 7900 3500
 Wire Wire Line
 	6000 5550 6000 5600
 Wire Wire Line
@@ -86,8 +84,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 2400 5000 2500
 Wire Wire Line
-	5100 3250 5200 3250
-Wire Wire Line
 	5500 2500 5500 2400
 Wire Wire Line
 	5500 6000 5500 5900
@@ -102,21 +98,11 @@ Wire Wire Line
 Wire Wire Line
 	7900 5350 8000 5350
 Wire Wire Line
-	8000 3500 8000 3600
-Wire Wire Line
-	8000 3600 8000 3700
-Wire Wire Line
 	8000 4800 7900 4800
 Wire Wire Line
-	8100 1400 8100 1500
+	8745 5700 8745 5800
 Wire Wire Line
-	8100 3500 8100 3600
-Wire Wire Line
-	8100 3600 8000 3600
-Wire Wire Line
-	9995 5900 9995 6000
-Wire Wire Line
-	10595 5900 10595 6000
+	9245 5700 9245 5800
 Wire Wire Line
 	2750 5150 2875 5150
 Wire Wire Line
@@ -140,19 +126,9 @@ Wire Wire Line
 Wire Wire Line
 	4200 2150 4200 2000
 Wire Wire Line
-	4600 3150 4750 3150
-Wire Wire Line
 	5500 5450 5500 5600
 Wire Wire Line
 	5750 2950 5750 3100
-Wire Wire Line
-	9500 2200 9500 2350
-Wire Wire Line
-	10200 2200 10200 2350
-Wire Wire Line
-	9500 2650 9500 2810
-Wire Wire Line
-	10200 2650 10200 2810
 Wire Wire Line
 	7825 5250 8000 5250
 Wire Wire Line
@@ -171,20 +147,6 @@ Wire Wire Line
 	3500 5150 3500 5350
 Wire Wire Line
 	4600 3250 4800 3250
-Wire Wire Line
-	7300 2400 7500 2400
-Wire Wire Line
-	7300 2600 7500 2600
-Wire Wire Line
-	7300 2700 7500 2700
-Wire Wire Line
-	7300 2900 7500 2900
-Wire Wire Line
-	7300 3000 7500 3000
-Wire Wire Line
-	7300 3100 7500 3100
-Wire Wire Line
-	7300 3200 7500 3200
 Wire Wire Line
 	1475 5150 1250 5150
 Wire Wire Line
@@ -309,19 +271,13 @@ Wire Wire Line
 	2000 2650 3400 2650
 Wire Wire Line
 	4100 1875 5500 1875
-Text Notes 6625 2650 2    50   ~ 0
-DIO0
-Text Notes 6625 2750 2    50   ~ 0
-Reset
-Text Notes 6950 2950 2    50   ~ 0
-CS0
-Text Notes 8900 2550 0    50   ~ 0
+Text Notes 10350 2825 0    50   ~ 0
 TDI
-Text Notes 8900 2650 0    50   ~ 0
+Text Notes 10350 2925 0    50   ~ 0
 TDO
-Text Notes 8900 2750 0    50   ~ 0
+Text Notes 10350 3025 0    50   ~ 0
 TMS
-Text Notes 8900 2850 0    50   ~ 0
+Text Notes 10350 3125 0    50   ~ 0
 TCK
 Text GLabel 1000 4250 0    50   Input ~ 0
 VR_PA
@@ -329,36 +285,12 @@ Text GLabel 1000 5150 0    50   Input ~ 0
 RFO_HF
 Text GLabel 1000 6250 0    50   Input ~ 0
 RFI-HF
-Text GLabel 3000 2850 0    50   Input ~ 0
-D8
 Text GLabel 3000 3250 0    50   Input ~ 0
 RFO_HF
 Text GLabel 3000 3350 0    50   Input ~ 0
 RFI-HF
-Text GLabel 3000 3750 0    50   Input ~ 0
-D15
-Text GLabel 3000 4050 0    50   Input ~ 0
-D10
-Text GLabel 4750 3150 2    50   Input ~ 0
-D7
-Text GLabel 5200 3250 2    50   Input ~ 0
-D5
 Text GLabel 6000 2950 2    50   Input ~ 0
 VR_PA
-Text GLabel 7300 2400 0    50   Input ~ 0
-D5
-Text GLabel 7300 2600 0    50   Input ~ 0
-D7
-Text GLabel 7300 2700 0    50   Input ~ 0
-D8
-Text GLabel 7300 2900 0    50   Input ~ 0
-D10
-Text GLabel 7300 3000 0    50   Input ~ 0
-D16
-Text GLabel 7300 3100 0    50   Input ~ 0
-D14
-Text GLabel 7300 3200 0    50   Input ~ 0
-D15
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5E1AA0A9
@@ -395,23 +327,23 @@ $EndComp
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5E2F6729
-P 9995 5900
-F 0 "TP5" H 10095 6050 50  0000 L CNN
-F 1 "TestPoint" H 10095 5950 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 10195 5900 50  0001 C CNN
-F 3 "~" H 10195 5900 50  0001 C CNN
-	1    9995 5900
+P 8745 5700
+F 0 "TP5" H 8845 5850 50  0000 L CNN
+F 1 "TestPoint" H 8845 5750 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8945 5700 50  0001 C CNN
+F 3 "~" H 8945 5700 50  0001 C CNN
+	1    8745 5700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP6
 U 1 1 5E2F5345
-P 10595 5900
-F 0 "TP6" H 10695 6050 50  0000 L CNN
-F 1 "TestPoint" H 10695 5950 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 10795 5900 50  0001 C CNN
-F 3 "~" H 10795 5900 50  0001 C CNN
-	1    10595 5900
+P 9245 5700
+F 0 "TP6" H 9345 5850 50  0000 L CNN
+F 1 "TestPoint" H 9345 5750 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9445 5700 50  0001 C CNN
+F 3 "~" H 9445 5700 50  0001 C CNN
+	1    9245 5700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -434,39 +366,6 @@ F 1 "+3V3" H 6015 4923 50  0000 C CNN
 F 2 "" H 6000 4750 50  0001 C CNN
 F 3 "" H 6000 4750 50  0001 C CNN
 	1    6000 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0124
-U 1 1 5E126446
-P 8100 1400
-F 0 "#PWR0124" H 8100 1250 50  0001 C CNN
-F 1 "+3V3" H 8100 1600 50  0000 C CNN
-F 2 "" H 8100 1400 50  0001 C CNN
-F 3 "" H 8100 1400 50  0001 C CNN
-	1    8100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0126
-U 1 1 5E12E86E
-P 9500 2200
-F 0 "#PWR0126" H 9500 2050 50  0001 C CNN
-F 1 "+3V3" H 9500 2350 50  0000 C CNN
-F 2 "" H 9500 2200 50  0001 C CNN
-F 3 "" H 9500 2200 50  0001 C CNN
-	1    9500 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0129
-U 1 1 5E1A4B37
-P 10200 2200
-F 0 "#PWR0129" H 10200 2050 50  0001 C CNN
-F 1 "+3V3" H 10200 2350 50  0000 C CNN
-F 2 "" H 10200 2200 50  0001 C CNN
-F 3 "" H 10200 2200 50  0001 C CNN
-	1    10200 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -734,58 +633,25 @@ F 3 "" H 7900 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0125
-U 1 1 5E0DE9AC
-P 8000 3700
-F 0 "#PWR0125" H 8000 3450 50  0001 C CNN
-F 1 "GND" H 8000 3550 50  0000 C CNN
-F 2 "" H 8000 3700 50  0001 C CNN
-F 3 "" H 8000 3700 50  0001 C CNN
-	1    8000 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0127
-U 1 1 5E130551
-P 9500 2810
-F 0 "#PWR0127" H 9500 2560 50  0001 C CNN
-F 1 "GND" H 9500 2660 50  0000 C CNN
-F 2 "" H 9500 2810 50  0001 C CNN
-F 3 "" H 9500 2810 50  0001 C CNN
-	1    9500 2810
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0131
 U 1 1 5E2F6717
-P 9995 6000
-F 0 "#PWR0131" H 9995 5750 50  0001 C CNN
-F 1 "GND" H 10045 5800 50  0000 C CNN
-F 2 "" H 9995 6000 50  0001 C CNN
-F 3 "" H 9995 6000 50  0001 C CNN
-	1    9995 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0130
-U 1 1 5E1A4B5B
-P 10200 2810
-F 0 "#PWR0130" H 10200 2560 50  0001 C CNN
-F 1 "GND" H 10200 2660 50  0000 C CNN
-F 2 "" H 10200 2810 50  0001 C CNN
-F 3 "" H 10200 2810 50  0001 C CNN
-	1    10200 2810
+P 8745 5800
+F 0 "#PWR0131" H 8745 5550 50  0001 C CNN
+F 1 "GND" H 8750 5650 50  0000 C CNN
+F 2 "" H 8745 5800 50  0001 C CNN
+F 3 "" H 8745 5800 50  0001 C CNN
+	1    8745 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0132
 U 1 1 5E2F602B
-P 10595 6000
-F 0 "#PWR0132" H 10595 5750 50  0001 C CNN
-F 1 "GND" H 10645 5800 50  0000 C CNN
-F 2 "" H 10595 6000 50  0001 C CNN
-F 3 "" H 10595 6000 50  0001 C CNN
-	1    10595 6000
+P 9245 5800
+F 0 "#PWR0132" H 9245 5550 50  0001 C CNN
+F 1 "GND" H 9250 5650 50  0000 C CNN
+F 2 "" H 9245 5800 50  0001 C CNN
+F 3 "" H 9245 5800 50  0001 C CNN
+	1    9245 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -805,7 +671,7 @@ $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5E32FE28
 P 4950 3250
-F 0 "JP1" H 5000 3350 50  0000 C CNN
+F 0 "JP1" H 5100 3325 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 4985 3410 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4950 3250 50  0001 C CNN
 F 3 "~" H 4950 3250 50  0001 C CNN
@@ -1174,6 +1040,7 @@ F 0 "C10" H 6615 5796 50  0000 L CNN
 F 1 "DNP" H 6615 5705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6538 5600 50  0001 C CNN
 F 3 "~" H 6500 5750 50  0001 C CNN
+F 4 "DNP" H 6500 5750 50  0001 C CNN "Config"
 	1    6500 5750
 	1    0    0    -1  
 $EndComp
@@ -1185,33 +1052,34 @@ F 0 "C11" H 7365 5771 50  0000 L CNN
 F 1 "DNP" H 7365 5680 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7288 5575 50  0001 C CNN
 F 3 "~" H 7250 5725 50  0001 C CNN
+F 4 "DNP" H 7250 5725 50  0001 C CNN "Config"
 	1    7250 5725
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C22
 U 1 1 5E12F3AD
-P 9500 2500
-F 0 "C22" H 9630 2550 50  0000 L CNN
-F 1 "1µ" H 9630 2450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 9538 2350 50  0001 C CNN
-F 3 "~" H 9500 2500 50  0001 C CNN
-F 4 "C52923" H 9500 2500 50  0001 C CNN "LCSC#"
-F 5 "CL05A105KA5NQNC" H 9500 2500 50  0001 C CNN "manf#"
-	1    9500 2500
+P 10000 5500
+F 0 "C22" H 10130 5550 50  0000 L CNN
+F 1 "1µ" H 10130 5450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10038 5350 50  0001 C CNN
+F 3 "~" H 10000 5500 50  0001 C CNN
+F 4 "C52923" H 10000 5500 50  0001 C CNN "LCSC#"
+F 5 "CL05A105KA5NQNC" H 10000 5500 50  0001 C CNN "manf#"
+	1    10000 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C23
 U 1 1 5E1A4B4B
-P 10200 2500
-F 0 "C23" H 10330 2550 50  0000 L CNN
-F 1 "10µ" H 10330 2450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10238 2350 50  0001 C CNN
-F 3 "~" H 10200 2500 50  0001 C CNN
-F 4 "C15525" H 10200 2500 50  0001 C CNN "LCSC#"
-F 5 "CL05A106MQ5NUNC" H 10200 2500 50  0001 C CNN "manf#"
-	1    10200 2500
+P 10500 5500
+F 0 "C23" H 10630 5550 50  0000 L CNN
+F 1 "10µ" H 10630 5450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10538 5350 50  0001 C CNN
+F 3 "~" H 10500 5500 50  0001 C CNN
+F 4 "C15525" H 10500 5500 50  0001 C CNN "LCSC#"
+F 5 "CL05A106MQ5NUNC" H 10500 5500 50  0001 C CNN "manf#"
+	1    10500 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1230,23 +1098,23 @@ $EndComp
 $Comp
 L Graphic:SYM_Radio_Waves_Large #SYM1
 U 1 1 5E1A133B
-P 9000 5250
-F 0 "#SYM1" H 9000 5450 50  0001 C CNN
-F 1 "868-915-Mhz" H 9000 5000 50  0000 C CNN
-F 2 "" H 9000 5050 50  0001 C CNN
-F 3 "~" H 9030 5050 50  0001 C CNN
-	1    9000 5250
+P 8750 4925
+F 0 "#SYM1" H 8750 5125 50  0001 C CNN
+F 1 "868-915-Mhz" H 8750 4675 50  0000 C CNN
+F 2 "" H 8750 4725 50  0001 C CNN
+F 3 "~" H 8780 4725 50  0001 C CNN
+	1    8750 4925
 	1    0    0    -1  
 $EndComp
 $Comp
 L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 5E262F6B
-P 10800 6900
-F 0 "LOGO1" H 10800 7175 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 10800 6675 50  0001 C CNN
-F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 10800 6900 50  0001 C CNN
-F 3 "~" H 10800 6900 50  0001 C CNN
-	1    10800 6900
+P 10750 6875
+F 0 "LOGO1" H 10750 7150 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10750 6650 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 10750 6875 50  0001 C CNN
+F 3 "~" H 10750 6875 50  0001 C CNN
+	1    10750 6875
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1265,26 +1133,8 @@ $EndComp
 Connection ~ 6500 5250
 Wire Wire Line
 	6500 5250 6500 5600
-Text Notes 6950 3050 2    50   ~ 0
-SDO
-Text Notes 6950 3150 2    50   ~ 0
-SDI
-Text Notes 6950 3250 2    50   ~ 0
-SCK
-NoConn ~ 7900 1500
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
-U 1 1 5EDDB5AB
-P 8000 2500
-F 0 "A1" H 7675 3450 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 8625 1525 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 8000 2500 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 8000 1500 50  0001 C CNN
-	1    8000 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L RF:SX1276 U1
+L ProMicro_LORA-rescue:SX1276-RF U1
 U 1 1 5EDDF92E
 P 4000 3250
 F 0 "U1" H 3575 4300 50  0000 C CNN
@@ -1294,41 +1144,162 @@ F 3 "https://www.semtech.com/uploads/documents/DS_SX1276-7-8-9_W_APP_V6.pdf" H 4
 	1    4000 3250
 	1    0    0    -1  
 $EndComp
-Text Notes 6625 2450 2    50   ~ 0
-DIO1
-Text Notes 6950 1950 2    50   ~ 0
+Text Notes 9000 3625 2    50   ~ 0
 RXD
-Text Notes 6950 2050 2    50   ~ 0
+Text Notes 9000 3525 2    50   ~ 0
 TXD
-Text Notes 6950 2150 2    50   ~ 0
+Text Notes 9000 3825 2    50   ~ 0
 SDA
-Text Notes 6950 2250 2    50   ~ 0
+Text Notes 9000 3925 2    50   ~ 0
 SCL
-Text Notes 6950 2350 2    50   ~ 0
-VBAT/2
-Text Notes 6950 2525 2    50   ~ 0
-BTN
-Text Notes 6950 2850 2    50   ~ 0
-CS1
-Text GLabel 3000 3950 0    50   Input ~ 0
-D16
-Text GLabel 3000 3850 0    50   Input ~ 0
-D14
-Text Notes 6950 2750 2    50   ~ 0
-INT0
-NoConn ~ 8500 2800
-NoConn ~ 8500 2700
-NoConn ~ 8500 2600
-NoConn ~ 8500 2500
-NoConn ~ 7500 2200
-NoConn ~ 7500 2100
-NoConn ~ 7500 2000
-NoConn ~ 7500 1900
-NoConn ~ 7500 2500
-NoConn ~ 7500 2300
-NoConn ~ 8500 1900
 NoConn ~ 4600 2850
-NoConn ~ 7500 2800
-Text Notes 4200 1875 0    50   ~ 0
-TODO: hier muss wohl eine Spannung ran
+Wire Wire Line
+	9950 1700 9950 1800
+Wire Wire Line
+	10000 5200 10000 5350
+Wire Wire Line
+	10500 5200 10500 5350
+Wire Wire Line
+	10000 5650 10000 5810
+Wire Wire Line
+	10500 5650 10500 5810
+$Comp
+L power:+3V3 #PWR0124
+U 1 1 5E126446
+P 9950 1700
+F 0 "#PWR0124" H 9950 1550 50  0001 C CNN
+F 1 "+3V3" V 9950 1950 50  0000 C CNN
+F 2 "" H 9950 1700 50  0001 C CNN
+F 3 "" H 9950 1700 50  0001 C CNN
+	1    9950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0125
+U 1 1 5E12E86E
+P 10000 5200
+F 0 "#PWR0125" H 10000 5050 50  0001 C CNN
+F 1 "+3V3" H 10000 5350 50  0000 C CNN
+F 2 "" H 10000 5200 50  0001 C CNN
+F 3 "" H 10000 5200 50  0001 C CNN
+	1    10000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0126
+U 1 1 5E1C214E
+P 10500 5200
+F 0 "#PWR0126" H 10500 5050 50  0001 C CNN
+F 1 "+3V3" H 10500 5350 50  0000 C CNN
+F 2 "" H 10500 5200 50  0001 C CNN
+F 3 "" H 10500 5200 50  0001 C CNN
+	1    10500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5E0DE9AC
+P 9750 4400
+F 0 "#PWR0127" H 9750 4150 50  0001 C CNN
+F 1 "GND" H 9750 4250 50  0000 C CNN
+F 2 "" H 9750 4400 50  0001 C CNN
+F 3 "" H 9750 4400 50  0001 C CNN
+	1    9750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5F891D20
+P 10000 5810
+F 0 "#PWR0129" H 10000 5560 50  0001 C CNN
+F 1 "GND" H 10000 5660 50  0000 C CNN
+F 2 "" H 10000 5810 50  0001 C CNN
+F 3 "" H 10000 5810 50  0001 C CNN
+	1    10000 5810
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 5E1C213C
+P 10500 5810
+F 0 "#PWR0130" H 10500 5560 50  0001 C CNN
+F 1 "GND" H 10500 5660 50  0000 C CNN
+F 2 "" H 10500 5810 50  0001 C CNN
+F 3 "" H 10500 5810 50  0001 C CNN
+	1    10500 5810
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Sparkfun_Pro_Micro A1
+U 1 1 5F84D072
+P 9750 3000
+F 0 "A1" H 9400 4150 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro" H 10150 1750 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 9850 1650 50  0001 L CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf" H 9750 2200 50  0001 C CNN
+F 4 "DNP" H 9750 3000 50  0001 C CNN "Config"
+	1    9750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4400 9750 4300
+Text GLabel 9125 3200 0    50   Input ~ 0
+COPI
+Text GLabel 9125 3300 0    50   Input ~ 0
+CIPO
+Text GLabel 9125 3000 0    50   Input ~ 0
+CS0
+Text GLabel 9125 3100 0    50   Input ~ 0
+SCK
+Wire Wire Line
+	9125 3300 9250 3300
+Wire Wire Line
+	9250 3200 9125 3200
+Wire Wire Line
+	9125 3100 9250 3100
+Wire Wire Line
+	9250 3000 9125 3000
+Text GLabel 9125 2400 0    50   Input ~ 0
+DIO1
+Text GLabel 9125 2600 0    50   Input ~ 0
+DIO0
+Text GLabel 9125 2700 0    50   Input ~ 0
+RFRST
+Wire Wire Line
+	9250 2700 9125 2700
+Wire Wire Line
+	9125 2600 9250 2600
+Wire Wire Line
+	9125 2400 9250 2400
+NoConn ~ 10250 3100
+NoConn ~ 10250 3000
+NoConn ~ 10250 2900
+NoConn ~ 10250 2800
+NoConn ~ 9250 3900
+NoConn ~ 9250 3800
+NoConn ~ 9250 3600
+NoConn ~ 9250 3500
+Text GLabel 3000 3950 0    50   Input ~ 0
+COPI
+Text GLabel 3000 3850 0    50   Input ~ 0
+CIPO
+Text GLabel 3000 4050 0    50   Input ~ 0
+CS0
+Text GLabel 3000 3750 0    50   Input ~ 0
+SCK
+Text GLabel 5250 3150 2    50   Input ~ 0
+DIO0
+Text GLabel 5325 3250 2    50   Input ~ 0
+DIO1
+Wire Wire Line
+	5325 3250 5100 3250
+Wire Wire Line
+	4600 3150 5250 3150
+Text GLabel 3000 2850 0    50   Input ~ 0
+RFRST
+NoConn ~ 9250 2800
+NoConn ~ 9250 2500
+NoConn ~ 9250 2300
+NoConn ~ 10050 1800
+NoConn ~ 10250 2200
 $EndSCHEMATC

@@ -17,8 +17,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BOOST/docs/BOM/ProMicro_BOOST.html)
-  * [kicost](docs/BOM/ProMicro_BOOST.xlsx)
-  * [csv](docs/BOM/ProMicro_BOOST.csv)
+  * [csv](docs/gerbers/ProMicro_BOOST.csv)
 
 
 ## Gerbers

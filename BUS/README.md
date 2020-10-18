@@ -17,8 +17,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BUS/docs/BOM/ProMicro_BUS.html)
-  * [kicost](docs/BOM/ProMicro_BUS.xlsx)
-  * [csv](docs/BOM/ProMicro_BUS.csv)
+  * [csv](docs/gerbers/ProMicro_BUS.csv)
 
 
 ## Gerbers

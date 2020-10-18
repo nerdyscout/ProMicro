@@ -17,8 +17,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ESP12E/docs/BOM/ProMicro_ESP12E.html)
-  * [kicost](docs/BOM/ProMicro_ESP12E.xlsx)
-  * [csv](docs/BOM/ProMicro_ESP12E.csv)
+  * [csv](docs/gerbers/ProMicro_ESP12E.csv)
 
 
 ## Gerbers

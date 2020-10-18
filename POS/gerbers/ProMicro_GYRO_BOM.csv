@@ -1,0 +1,6 @@
+Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;config;lcsc#;manf#
+1;Unpolarized capacitor;C;C6;10n;C_0402_1005Metric;1;~;-GPS,+GYRO;C15195;CL05B103KB5NNNC
+2;Unpolarized capacitor;C;C1 C2 C3 C4 C5 C7;100n;C_0402_1005Metric;6;~;-GPS,+GYRO;C15195 C1525;CL05B103KB5NNNC CL05B104KO5NNNC
+3;Mounting Hole without connection;MountingHole;H2;MountingHole;MountingHole_2.1mm;1;~;;;
+4;600mA low dropout linear regulator, with enable pin, 2.5V-6V input voltage range, 1.8V fixed positive output, SOT-23-5;AP2112K-1.8;U2;AP2112K-1.8;SOT-23-5;1;https://www.diodes.com/assets/Datasheets/AP2112.pdf;-GPS,+GYRO;;
+5;InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI;MPU-9250;U1;MPU-9250;InvenSense_QFN-24_3x3mm_P0.4mm;1;https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf;-GPS,+GYRO,+FULL;C71459;MPU-9250

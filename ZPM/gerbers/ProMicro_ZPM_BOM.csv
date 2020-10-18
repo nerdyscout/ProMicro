@@ -1,7 +1,7 @@
 Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet
 1;Unpolarized capacitor;C;C2;1µ;C_0603_1608Metric;1;~
-2;Polarized capacitor;CP;C1;10µF;CP_Elec_4x3;1;~
-3;Unpolarized capacitor;C;C3 C4;4.7µ;C_0603_1608Metric;2;~
+2;Unpolarized capacitor;C;C3 C4;4.7µ;C_0603_1608Metric;2;~
+3;Polarized capacitor;CP;C1;10µF;CP_Elec_4x3;1;~
 4;Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x02;J3;JST;JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal;1;~
 5;Generic screw terminal, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/);Screw_Terminal_01x05;J1;Screw_Terminal_01x05;TerminalBlock_TE_282834-5_1x05_P2.54mm_Horizontal;1;~
 6;0.1A Ic, 45V Vce, NPN Transistor, SOT-23;BC847;Q1;BC847;SOT-23;1;http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
