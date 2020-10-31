@@ -57,7 +57,7 @@ jobs:
           # See the `pathspec`-documentation for git
           # - https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203
           # - https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
-          file_pattern: ${{ steps.branch.outputs.current }}/docs/* ${{ steps.currenttag.outputs.tag }}/gerbers/*
+          file_pattern: ${{ steps.branch.outputs.current }}/docs/* ${{ steps.branch.outputs.current }}/gerbers/*
           # Optional local file path to the repository
           # repository: .
           # Optional commit user and author settings
@@ -66,7 +66,7 @@ jobs:
           commit_author: kicad-exports
           # Optional tag message 
           # Action will create and push a new tag to the remote repository and the defined branch
-          tagging_message: ${{ steps.branch.outputs.current }}_${{ steps.branch.outputs.current }}
+          tagging_message: ${{ steps.branch.outputs.current }}_${{ steps.currenttag.outputs.tag }}
           # Optional options appended to `git-push`
           # See git-push documentation for details: https://git-scm.com/docs/git-push#_options
           push_options: '--tags --force'
