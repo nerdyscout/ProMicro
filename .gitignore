@@ -31,6 +31,12 @@ fp-info-cache*
 *.rpt
 *.filter
 
+*.ogv
+
 *.cache
 *.config
 *.local
+
+# kicad-exports output
+**/docs
+**/gerbers

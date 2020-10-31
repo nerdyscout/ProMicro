@@ -19,7 +19,7 @@ collection of various PCBs stackable onto various MCU modules like
 |[GYRO](POS/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=POS)](POS/actions?query=branch%3APOS) | prototype | Gyro module|
 |[BOOST](BOOST) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=BOOST)](LIPO/actions?query=branch%3ABOOST) | prototype | Lipo battery charger |
 |[LOG](LOG/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=LOG)](LOG/actions?query=branch%3ALOG) | prototype | micro SD card shield |
-|[RTC](RTC/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=LOG)](LOG/actions?query=branch%3ALOG) | prototype | real time clock |
+|[RTC](LOG/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=LOG)](LOG/actions?query=branch%3ALOG) | prototype | real time clock |
 |[LORA](LORA/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=LORA)](LORA/actions?query=branch%3ALORA) | prototype | Lora transceiver 868MHz |
 |[UART](UART/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=UART)](UART/actions?query=branch%3AUART) | prototype | USB to RS232, RS485, SPI, I2C, JTAG |
 |[QWIIC](QWIIC/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=QWIIC)](QWIIC/actions?query=branch%3AQWIIC) | prototype | BME280 sensor and analog extension |

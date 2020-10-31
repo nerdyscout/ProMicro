@@ -803,7 +803,7 @@ F 3 "" H 3700 4575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro A1
+L ProMicro_BOOST-rescue:Sparkfun_Pro_Micro-MCU_Module A1
 U 1 1 5F84D072
 P 3500 5875
 F 0 "A1" H 3150 7025 50  0000 C CNN
@@ -815,17 +815,6 @@ F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf" 
 $EndComp
 Wire Wire Line
 	3800 4575 3800 4675
-$Comp
-L power:+5V #PWR01
-U 1 1 5F84FBAC
-P 3800 4575
-F 0 "#PWR01" H 3800 4425 50  0001 C CNN
-F 1 "+5V" V 3800 4825 50  0000 C CNN
-F 2 "" H 3800 4575 50  0001 C CNN
-F 3 "" H 3800 4575 50  0001 C CNN
-	1    3800 4575
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3500 7275 3500 7175
 Text GLabel 2875 5175 0    50   Input ~ 0
@@ -867,4 +856,15 @@ NoConn ~ 3000 5575
 NoConn ~ 3000 5475
 NoConn ~ 3000 5375
 NoConn ~ 3000 5275
+$Comp
+L power:VBUS #PWR?
+U 1 1 5F9D96E1
+P 3800 4575
+F 0 "#PWR?" H 3800 4425 50  0001 C CNN
+F 1 "VBUS" V 3800 4850 50  0000 C CNN
+F 2 "" H 3800 4575 50  0001 C CNN
+F 3 "" H 3800 4575 50  0001 C CNN
+	1    3800 4575
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

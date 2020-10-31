@@ -451,7 +451,7 @@ SCL
 Text GLabel 9125 3800 0    50   Input ~ 0
 SDA
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro A1
+L ProMicro_LOG-rescue:Sparkfun_Pro_Micro-MCU_Module A1
 U 1 1 5F84D072
 P 9750 3000
 F 0 "A1" H 9400 4150 50  0000 C CNN

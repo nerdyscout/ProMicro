@@ -41,14 +41,14 @@ Wire Wire Line
 Text GLabel 8200 3300 0    50   Input ~ 0
 D9
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5E0DC4DC
-P 8900 3000
-F 0 "A1" H 8550 3950 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 9500 2050 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
-	1    8900 3000
+P 12700 2650
+F 0 "A1" H 12350 3600 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro_3V3" H 13300 1700 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 12700 2650 50  0001 C CIN
+F 3 "https://www.sparkfun.com/products/12587" H 12700 1650 50  0001 C CNN
+	1    12700 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line

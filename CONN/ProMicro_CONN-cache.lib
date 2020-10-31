@@ -154,11 +154,11 @@ P 277 0 1 0 132 -171 130 -170 125 -167 118 -162 109 -156 100 -150 93 -146 88 -14
 ENDDRAW
 ENDDEF
 #
-# MCU_Module_Sparkfun_Pro_Micro
+# ProMicro_CONN-rescue_Sparkfun_Pro_Micro-MCU_Module
 #
-DEF MCU_Module_Sparkfun_Pro_Micro A 0 20 Y Y 1 F N
+DEF ProMicro_CONN-rescue_Sparkfun_Pro_Micro-MCU_Module A 0 20 Y Y 1 F N
 F0 "A" -400 1150 50 H V L CNN
-F1 "MCU_Module_Sparkfun_Pro_Micro" 100 -1250 50 H V L CNN
+F1 "ProMicro_CONN-rescue_Sparkfun_Pro_Micro-MCU_Module" 100 -1250 50 H V L CNN
 F2 "Module:Sparkfun_Pro_Micro" 100 -1350 50 H I L CNN
 F3 "" 0 -800 50 H I C CNN
 DRAW

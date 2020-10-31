@@ -214,7 +214,6 @@ outputs:
       # [string=','] CSV Separator
       separator: ';'
       # Board variant(s), used to determine which components are output to the BoM
-      variant: GPS
 
 #  - name: Step
 #    comment: "Generate 3D model (STEP)"

@@ -13,7 +13,5 @@ for dir in *; do
         fi
 
         kicad-exports -c ${dir}/config.kibot.yaml -b ${dir}/ProMicro_${dir}.kicad_pcb -e ${dir}/ProMicro_${dir}.sch -d ${dir}/
-        rm -r ${dir}/.cache/ ${dir}/.local/ ${dir}/.config/
     fi
 done
-rm -r .cache/ .local/ .config/

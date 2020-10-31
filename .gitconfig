@@ -18,3 +18,4 @@
 [filter "net_filter"]
 	clean = sed -E -e 's/\\(date \\\".*\\\"\\)/\\(date \\\"Date\\\"\\)/'
 	smudge = sed -E -e \"s/\\(date \\\"Date\\\"\\)/\\(date \\\"`date +\\\"%a %d %b %Y %X %:::z\\\"`\\\"\\)/\"
+
