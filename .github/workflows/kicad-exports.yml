@@ -22,7 +22,7 @@ jobs:
         id: branch
       - uses: nerdyscout/kicad-exports@v2.1
         with:
-          config: ${{ steps.branch.outputs.current }}/config.kiplot.yaml
+          config: ${{ steps.branch.outputs.current }}/config.kibot.yaml
           board: ${{ steps.branch.outputs.current }}/ProMicro_${{ steps.branch.outputs.current }}.kicad_pcb
           schema: ${{ steps.branch.outputs.current }}/ProMicro_${{ steps.branch.outputs.current }}.sch
           dir: ${{ steps.branch.outputs.current }}
