@@ -2,12 +2,12 @@ name: kicad-exports
 
 on:
   push:
-    branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM]
+    branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM, TEST]
     paths:
     - '**.sch'
     - '**.kicad_pcb'
   pull_request:
-    branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM]
+    branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM, TEST]
     paths:
     - '**.sch'
     - '**.kicad_pcb'
@@ -38,10 +38,11 @@ jobs:
 
       - name: regex tag
         uses: christophebedard/tag-version-commit@v1
+        id: tag
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 #          version_assertion_command: 'grep -E '^(Rev \"v)([0-9]\.[0-9])\"$' ProMicro_${{ steps.branch.outputs.current }}.sch'
-          version_assertion_command: 'grep -E '([0-9]\.[0-9])' ProMicro_${{ steps.branch.outputs.current }}.sch'
+          version_assertion_command: 'grep -E '(rev v[0-9]\.[0-9])' ProMicro_${{ steps.branch.outputs.current }}.kicad_pcb'
 
       - name: git commit && git push
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -57,7 +58,7 @@ jobs:
           # See the `pathspec`-documentation for git
           # - https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203
           # - https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
-          file_pattern: ${{ steps.branch.outputs.current }}/docs/* ${{ steps.branch.outputs.current }}/gerbers/*
+          file_pattern: ${{ steps.branch.outputs.current }}/docs/* ${{ steps.tag.outputs.tag }}/gerbers/*
           # Optional local file path to the repository
           # repository: .
           # Optional commit user and author settings
@@ -66,7 +67,7 @@ jobs:
           commit_author: kicad-exports
           # Optional tag message 
           # Action will create and push a new tag to the remote repository and the defined branch
-          tagging_message: ${{ steps.branch.outputs.current }}_
+          tagging_message: ${{ steps.branch.outputs.current }}_${{ steps.branch.outputs.current }}
           # Optional options appended to `git-push`
           # See git-push documentation for details: https://git-scm.com/docs/git-push#_options
           push_options: '--tags --force'
