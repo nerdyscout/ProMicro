@@ -1,26 +1,13 @@
 kibot:
   version: 1
-
+  
 preflight:
   update_xml: true
-  run_erc: true
   run_drc: true
+  run_erc: true
   check_zone_fills: true
-  filters:
-    - filter_msg: 'Pin connected to other pins, but not driven by any pin'
-      error_number: 3
-      regexp:  '(Power input) of component'
-    - filter_msg: 'Conflict problem between pins. Severity: error'
-      error_number: 5
-      regexp:  'Conflict problem between pins'
-    - filter_msg: 'Courtyards overlap'
-      error_number: 45
-      regexp:  'Courtyards overlap'
-    - filter_msg: 'Footprint has no courtyard defined'
-      error_number: 46
-      regexp:  'Footprint LOGO'
-  ignore_unconnected: false
-
+  ignore_unconnected: true
+ 
 outputs:
 
   # BOM
