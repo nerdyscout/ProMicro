@@ -50,7 +50,7 @@ F 0 "Y1" V 2545 5369 50  0000 R CNN
 F 1 "Crystal" V 2455 5369 50  0000 R CNN
 F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 2500 5500 50  0001 C CNN
 F 3 "~" H 2500 5500 50  0001 C CNN
-F 4 "+canbus,-modbus" H 2500 5500 50  0001 C CNN "Config"
+F 4 "+canbus,-modbus" H 2500 5500 50  0001 C CNN "Variant"
 	1    2500 5500
 	0    -1   -1   0   
 $EndComp
@@ -62,7 +62,7 @@ F 0 "C1" V 2376 5350 50  0000 C CNN
 F 1 "C" V 2285 5350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2163 5200 50  0001 C CNN
 F 3 "~" H 2125 5350 50  0001 C CNN
-F 4 "+canbus,-modbus" H 2125 5350 50  0001 C CNN "Config"
+F 4 "+canbus,-modbus" H 2125 5350 50  0001 C CNN "Variant"
 	1    2125 5350
 	0    -1   -1   0   
 $EndComp
@@ -94,7 +94,7 @@ F 0 "C4" V 2350 5650 50  0000 C CNN
 F 1 "C" V 2275 5650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2163 5500 50  0001 C CNN
 F 3 "~" H 2125 5650 50  0001 C CNN
-F 4 "+canbus,-modbus" H 2125 5650 50  0001 C CNN "Config"
+F 4 "+canbus,-modbus" H 2125 5650 50  0001 C CNN "Variant"
 	1    2125 5650
 	0    1    1    0   
 $EndComp
@@ -145,9 +145,9 @@ F 0 "U1" H 3500 2900 50  0000 C CNN
 F 1 "MAX3483" H 4000 1825 50  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3750 1700 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf" H 3750 2450 50  0001 C CNN
-F 4 "MAX3483ECSA+T" H 3750 2400 50  0001 C CNN "manf#"
+F 4 "MAX3483ECSA+T" H 3750 2400 50  0001 C CNN "MPN"
 F 5 "C57664" H 3750 2400 50  0001 C CNN "LCSC#"
-F 6 "-canbus,+modbus" H 3750 2400 50  0001 C CNN "Config"
+F 6 "-canbus,+modbus" H 3750 2400 50  0001 C CNN "Variant"
 	1    3750 2400
 	1    0    0    -1  
 $EndComp
@@ -165,7 +165,7 @@ F 0 "R1" H 4570 2495 50  0000 L CNN
 F 1 "120" H 4570 2405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 2450 50  0001 C CNN
 F 3 "~" H 4500 2450 50  0001 C CNN
-F 4 "-canbus,+modbus" H 4500 2450 50  0001 C CNN "Config"
+F 4 "-canbus,+modbus" H 4500 2450 50  0001 C CNN "Variant"
 	1    4500 2450
 	1    0    0    -1  
 $EndComp
@@ -200,8 +200,8 @@ F 0 "U3" H 3350 6025 50  0000 C CNN
 F 1 "MCP2515-xSO" H 4125 4475 50  0000 C CNN
 F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 3750 4350 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 3850 4450 50  0001 C CNN
-F 4 "MCP2515-I/SO" H 3750 5250 50  0001 C CNN "manf#"
-F 5 "+canbus,-modbus" H 3750 5250 50  0001 C CNN "Config"
+F 4 "MCP2515-I/SO" H 3750 5250 50  0001 C CNN "MPN"
+F 5 "+canbus,-modbus" H 3750 5250 50  0001 C CNN "Variant"
 F 6 "C12368" H 3750 5250 50  0001 C CNN "LCSC#"
 	1    3750 5250
 	1    0    0    -1  
@@ -242,8 +242,8 @@ F 0 "U2" H 5925 5200 50  0000 C CNN
 F 1 "MAX3051" H 6575 4500 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-8" H 6250 4850 50  0001 C CIN
 F 3 "http://datasheets.maximintegrated.com/en/ds/MAX3051.pdf" H 6250 4850 50  0001 C CNN
-F 4 "+canbus,-modbus" H 6250 4850 50  0001 C CNN "Config"
-F 5 "MAX3051EKA+T" H 6250 4850 50  0001 C CNN "manf#"
+F 4 "+canbus,-modbus" H 6250 4850 50  0001 C CNN "Variant"
+F 5 "MAX3051EKA+T" H 6250 4850 50  0001 C CNN "MPN"
 F 6 "C112005" H 6250 4850 50  0001 C CNN "LCSC#"
 	1    6250 4850
 	1    0    0    -1  
@@ -271,7 +271,7 @@ F 0 "J1" H 5280 2442 50  0000 L CNN
 F 1 "Conn_01x03" H 5280 2351 50  0000 L CNN
 F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal" H 5200 2400 50  0001 C CNN
 F 3 "~" H 5200 2400 50  0001 C CNN
-F 4 "modbus, canbus" H 5200 2400 50  0001 C CNN "Config"
+F 4 "modbus, canbus" H 5200 2400 50  0001 C CNN "Variant"
 	1    5200 2400
 	1    0    0    -1  
 $EndComp
@@ -516,7 +516,7 @@ F 0 "A1" H 9400 4150 50  0000 C CNN
 F 1 "Sparkfun_Pro_Micro" H 10150 1750 50  0000 C CNN
 F 2 "Module:Sparkfun_Pro_Micro" H 9850 1650 50  0001 L CNN
 F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf" H 9750 2200 50  0001 C CNN
-F 4 "dnp" H 9750 3000 50  0001 C CNN "Config"
+F 4 "dnp" H 9750 3000 50  0001 C CNN "Variant"
 	1    9750 3000
 	1    0    0    -1  
 $EndComp

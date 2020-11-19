@@ -32,7 +32,7 @@ F 0 "J1" H 3400 3550 50  0000 C CNN
 F 1 "Micro_SD_Card_Det" H 3400 3450 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Molex_104031-0811" H 5500 3400 50  0001 C CNN
 F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 3450 2800 50  0001 C CNN
-F 4 "-RTC,+LOG" H 3450 2700 50  0001 C CNN "Config"
+F 4 "-RTC,+LOG" H 3450 2700 50  0001 C CNN "Variant"
 	1    3450 2700
 	1    0    0    -1  
 $EndComp
@@ -61,7 +61,7 @@ F 0 "U1" H 2900 5550 50  0000 C CNN
 F 1 "DS3231MZ" H 3500 4850 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3250 4700 50  0001 C CNN
 F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf" H 3250 4600 50  0001 C CNN
-F 4 "+RTC,-LOG" H 3250 5200 50  0001 C CNN "Config"
+F 4 "+RTC,-LOG" H 3250 5200 50  0001 C CNN "Variant"
 	1    3250 5200
 	1    0    0    -1  
 $EndComp
@@ -112,7 +112,7 @@ F 0 "R5" H 9100 5550 50  0000 L CNN
 F 1 "4k7" H 9100 5450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 5500 50  0001 C CNN
 F 3 "~" H 9000 5500 50  0001 C CNN
-F 4 "+RTC,-LOG" H 9000 5500 50  0001 C CNN "Config"
+F 4 "+RTC,-LOG" H 9000 5500 50  0001 C CNN "Variant"
 	1    9000 5500
 	1    0    0    -1  
 $EndComp
@@ -124,7 +124,7 @@ F 0 "R6" H 9600 5550 50  0000 L CNN
 F 1 "4k7" H 9600 5450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9430 5500 50  0001 C CNN
 F 3 "~" H 9500 5500 50  0001 C CNN
-F 4 "+RTC,-LOG" H 9500 5500 50  0001 C CNN "Config"
+F 4 "+RTC,-LOG" H 9500 5500 50  0001 C CNN "Variant"
 	1    9500 5500
 	1    0    0    -1  
 $EndComp
@@ -162,7 +162,7 @@ F 0 "R2" H 4100 4750 50  0000 L CNN
 F 1 "4k7" H 4100 4650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 4700 50  0001 C CNN
 F 3 "~" H 4000 4700 50  0001 C CNN
-F 4 "+RTC,-LOG" H 4000 4700 50  0001 C CNN "Config"
+F 4 "+RTC,-LOG" H 4000 4700 50  0001 C CNN "Variant"
 	1    4000 4700
 	1    0    0    -1  
 $EndComp
@@ -174,7 +174,7 @@ F 0 "R3" H 4475 4750 50  0000 L CNN
 F 1 "4k7" H 4475 4650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4305 4700 50  0001 C CNN
 F 3 "~" H 4375 4700 50  0001 C CNN
-F 4 "+RTC,-LOG" H 4375 4700 50  0001 C CNN "Config"
+F 4 "+RTC,-LOG" H 4375 4700 50  0001 C CNN "Variant"
 	1    4375 4700
 	1    0    0    -1  
 $EndComp
@@ -265,7 +265,7 @@ F 0 "R4" H 8600 5350 50  0000 L CNN
 F 1 "1k" H 8600 5250 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 5300 50  0001 C CNN
 F 3 "~" H 8500 5300 50  0001 C CNN
-F 4 "-RTC,+LOG" H 8500 5300 50  0001 C CNN "Config"
+F 4 "-RTC,+LOG" H 8500 5300 50  0001 C CNN "Variant"
 	1    8500 5300
 	1    0    0    -1  
 $EndComp
@@ -277,7 +277,7 @@ F 0 "D1" V 8575 5525 50  0000 R CNN
 F 1 "LED" V 8475 5525 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 8500 5675 50  0001 C CNN
 F 3 "~" H 8500 5675 50  0001 C CNN
-F 4 "-RTC,+LOG" H 8500 5675 50  0001 C CNN "Config"
+F 4 "-RTC,+LOG" H 8500 5675 50  0001 C CNN "Variant"
 	1    8500 5675
 	0    -1   -1   0   
 $EndComp
@@ -326,7 +326,7 @@ F 0 "R1" V 2050 3150 50  0000 L CNN
 F 1 "4k7" V 2225 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2055 3200 50  0001 C CNN
 F 3 "~" H 2125 3200 50  0001 C CNN
-F 4 "-RTC,+LOG" H 2125 3200 50  0001 C CNN "Config"
+F 4 "-RTC,+LOG" H 2125 3200 50  0001 C CNN "Variant"
 	1    2125 3200
 	0    1    1    0   
 $EndComp
@@ -458,7 +458,7 @@ F 0 "A1" H 9400 4150 50  0000 C CNN
 F 1 "Sparkfun_Pro_Micro" H 10150 1750 50  0000 C CNN
 F 2 "Module:Sparkfun_Pro_Micro" H 9850 1650 50  0001 L CNN
 F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf" H 9750 2200 50  0001 C CNN
-F 4 "dnp" H 9750 3000 50  0001 C CNN "Config"
+F 4 "dnp" H 9750 3000 50  0001 C CNN "Variant"
 	1    9750 3000
 	1    0    0    -1  
 $EndComp
