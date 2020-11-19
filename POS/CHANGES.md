@@ -9,3 +9,8 @@
 
  * add 1.8V for GYRO
  * renamed PCB from GPS to POS
+
+## Schematic v3.3 / Layout v3.3
+
+ * fix ERC and DRC errors
+ * add optional power planes

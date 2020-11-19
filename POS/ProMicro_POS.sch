@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ProMicro_POS"
-Date "2020-10-12"
-Rev "v3.2"
+Date "2020-11-19"
+Rev "v3.3"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1125,9 +1125,6 @@ NoConn ~ 9250 2700
 NoConn ~ 9250 2300
 Text Notes 9125 2525 2    50   ~ 0
 BTN
-Text Notes 9125 2625 2    50   ~ 0
-INT
-NoConn ~ 9250 2600
 NoConn ~ 9250 2500
 $Comp
 L Device:R R5
@@ -1157,4 +1154,8 @@ F 6 "DNP" H 9000 5500 50  0001 C CNN "Variant"
 	1    9000 5500
 	1    0    0    -1  
 $EndComp
+Text GLabel 9100 2600 0    50   Input ~ 0
+INT
+Wire Wire Line
+	9100 2600 9250 2600
 $EndSCHEMATC
