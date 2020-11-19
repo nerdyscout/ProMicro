@@ -4,13 +4,13 @@ on:
   push:
     branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM]
     paths:
-    - '**.sch'
-    - '**.kicad_pcb'
+#    - '**.sch'
+#    - '**.kicad_pcb'
   pull_request:
     branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM]
     paths:
-    - '**.sch'
-    - '**.kicad_pcb'
+#    - '**.sch'
+#    - '**.kicad_pcb'
       
 jobs:
     exports:
