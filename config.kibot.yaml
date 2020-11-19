@@ -7,7 +7,29 @@ preflight:
   run_erc: true
   check_zone_fills: true
   ignore_unconnected: true
- 
+  filters:
+    - filter_msg: 'Footprint has no courtyard defined'
+      error_number: 46
+      regexp:  'Footprint LOGO'
+
+variants:
+  - name: 'GPS'
+    type: kibom
+    file_id: _GPS
+    variant: GPS
+  - name: 'GYRO'
+    type: kibom
+    file_id: _GYRO
+    variant: GYRO
+  - name: 'LOG'
+    type: kibom
+    file_id: _LOG
+    variant: LOG
+  - name: 'RTC'
+    type: kibom
+    file_id: _RTC
+    variant: RTC
+
 outputs:
 
   # BOM

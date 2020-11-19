@@ -8,25 +8,19 @@ preflight:
   check_zone_fills: true
   ignore_unconnected: false
   filters:
-    - filter_msg: 'Pad too close to pad'
-      error_number: 19
-      regexp:  'Pad of H1 on All copper layers'
     - filter_msg: 'Footprint has no courtyard defined'
       error_number: 46
       regexp:  'Footprint LOGO'
-    - filter_msg: 'Track too close to pad'
-      error_number: 4
-      regexp:  'Pad'
 
-variants:
-  - name: 'GPS'
-    type: kibom
-    file_id: _GPS
-    variant: GPS
-  - name: 'GYRO'
-    type: kibom
-    file_id: _GYRO
-    variant: GYRO
+#variants:
+#  - name: 'GPS'
+#    type: kibom
+#    file_id: _GPS
+#    variant: GPS
+#  - name: 'GYRO'
+#    type: kibom
+#    file_id: _GYRO
+#    variant: GYRO
 
 outputs:
 
