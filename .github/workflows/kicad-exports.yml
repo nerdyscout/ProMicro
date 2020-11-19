@@ -2,15 +2,15 @@ name: kicad-exports
 
 on:
   push:
-#    branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM]
-#    paths:
-#    - '**.sch'
-#    - '**.kicad_pcb'
+    branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM]
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
   pull_request:
-#    branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM]
-#    paths:
-#    - '**.sch'
-#    - '**.kicad_pcb'
+    branches: [ANA, BOOST, BUS, CONN, ESP32, POS, LOG, LORA, QWIIC, SAMD, UART, WING, ZPM]
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
       
 jobs:
     exports:
@@ -60,7 +60,3 @@ jobs:
           skip_dirty_check: true
           # Optional: Allows you to update how the repo is checked out
           # checkout_options: '-q --force -b'
-        env:
-          BRANCH: ${{ env.BRANCH }}
-          VERSION: ${{ env.VERSION }}
-  

@@ -15,7 +15,7 @@ if [ $1 = "build" ]; then
                 if [ -d ${dir}/.config/ ]; then
                     rm -r ${dir}/.config
                 fi
-                kicad-exports -c ${dir}/config.kibot.yaml -b ${dir}/ProMicro_${dir}.kicad_pcb -e ${dir}/ProMicro_${dir}.sch -d ${dir}/ >> ${dir}/kicad-exports.log
+                kicad-exports -c ${dir}/config.kibot.yaml -b ${dir}/ProMicro_${dir}.kicad_pcb -e ${dir}/ProMicro_${dir}.sch -d ${dir}/
             fi
         fi
     done
