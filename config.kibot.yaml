@@ -8,6 +8,9 @@ preflight:
   check_zone_fills: true
   ignore_unconnected: false
   filters:
+    - filter_msg: 'Courtyards overlap'
+      error_number: 45
+      regexp:  'Courtyards overlap'
     - filter_msg: 'Footprint has no courtyard defined'
       error_number: 46
       regexp:  'Footprint LOGO'
@@ -40,7 +43,7 @@ outputs:
     options:
 #      blacklist: ''
       blacklist_empty_val: false
-      board_rotation: 90
+      rotation: 90
       bom_view: 'left-right'
       checkboxes: 'Sourced,Placed'
       dark_mode: false
