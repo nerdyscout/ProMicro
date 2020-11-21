@@ -25,7 +25,7 @@ jobs:
           echo "VERSION=${VERSION:9:-1}" >> $GITHUB_ENV
       - uses: nerdyscout/kicad-exports@v2.2
         with:
-          config: ${{ env.BRANCH }}/config.kibot.yaml
+          config: config.kibot.yaml
           board: ${{ env.BRANCH }}/ProMicro_${{ env.BRANCH }}.kicad_pcb
           schema: ${{ env.BRANCH }}/ProMicro_${{ env.BRANCH }}.sch
           dir: ${{ env.BRANCH }}

@@ -6,7 +6,7 @@ preflight:
   run_drc: true
   run_erc: true
   check_zone_fills: true
-  ignore_unconnected: true
+  ignore_unconnected: false
   filters:
     - filter_msg: 'Footprint has no courtyard defined'
       error_number: 46
@@ -32,7 +32,7 @@ variants:
 
 outputs:
 
-  # BOM
+# BOM
   - name: 'https://github.com/openscopeproject/InteractiveHtmlBom'
     comment: 'ibom.html'
     type: 'ibom'
@@ -156,7 +156,7 @@ outputs:
 #      separator: ';'
 #      variant: ''
 
-  # DOCS
+# DOCS
   - name: 'print schema'
     comment: "Print schematic (PDF)"
     type: pdf_sch_print
@@ -215,7 +215,7 @@ outputs:
 #      separated: [boolean=false] print layers in separated pages.
 #      variant: [string=''] Board variant to apply.
 
-  # GERBERS
+# GERBERS
   - name: "https://en.wikipedia.org/wiki/Gerber_format"
     comment: 'gerbers'
     type: 'gerber'
@@ -272,7 +272,7 @@ outputs:
 #        filename: '%i.%x'
       use_aux_axis_as_origin: true
 
-  # PLOT
+# PLOT
   - name: 'https://github.com/yaqwsx/PcbDraw'
     comment: 'default green svg top'
     type: 'pcbdraw'
@@ -332,7 +332,7 @@ outputs:
       output: '%f.%x'
 #      variant: ''
 
-  # BOM 
+# BOM 
   - name: 'https://lcsc.com/'
     comment: 'bom.csv - lcsc'
     type: 'kibom'
