@@ -144,14 +144,14 @@ Wire Wire Line
 Text Notes 3750 7500 0    50   ~ 0
 default Vout = 3.3V
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5EBAAFA7
-P 8900 3000
-F 0 "A1" H 8600 3950 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 9500 2025 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
-	1    8900 3000
+P 7600 2200
+F 0 "A1" H 7300 3150 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro_3V3" H 8200 1225 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 7600 2200 50  0001 C CIN
+F 3 "https://www.sparkfun.com/products/12587" H 7600 1200 50  0001 C CNN
+	1    7600 2200
 	1    0    0    -1  
 $EndComp
 $Comp

@@ -213,14 +213,14 @@ CS1
 Text Notes 7900 3025 2    50   ~ 0
 BTN
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5ED4BC58
-P 8900 3000
-F 0 "A1" H 8550 3975 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 9500 2025 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 8900 3000 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 8900 2000 50  0001 C CNN
-	1    8900 3000
+P 10650 3000
+F 0 "A1" H 10300 3975 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro_3V3" H 11250 2025 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 10650 3000 50  0001 C CIN
+F 3 "https://www.sparkfun.com/products/12587" H 10650 2000 50  0001 C CNN
+	1    10650 3000
 	1    0    0    -1  
 $EndComp
 $Comp

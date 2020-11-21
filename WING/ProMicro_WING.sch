@@ -130,17 +130,6 @@ CS1
 Text Notes 7775 2375 2    50   ~ 0
 INT
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro_3V3 A1
-U 1 1 5EC0E43A
-P 8775 2250
-F 0 "A1" H 8450 3225 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 9400 1275 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 8775 2250 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 8775 1250 50  0001 C CNN
-	1    8775 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L ProMicro_WING-rescue:Adafruit_HUZZAH32_ESP32_Feather-MCU_Module U1
 U 1 1 5EC0FD05
 P 3250 2800
@@ -655,6 +644,17 @@ F 1 "TestPoint" H 1200 2525 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm" H 1325 2500 50  0001 C CNN
 F 3 "~" H 1325 2500 50  0001 C CNN
 	1    1125 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ProMicro:Sparkfun_Pro_Micro A?
+U 1 1 5FB9AE9F
+P 10700 2100
+F 0 "A?" H 10700 711 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro" H 10700 620 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 10800 750 50  0001 L CNN
+F 3 "" H 10700 1300 50  0001 C CNN
+	1    10700 2100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

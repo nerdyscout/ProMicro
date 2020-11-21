@@ -1,4 +1,5 @@
 # CHANGES
+
 ## Schematic v1.2 / Layout v1.3
 
  * moved CS signal from D5 to D9
@@ -6,3 +7,5 @@
 ## Schematic v1.3 / Layout v1.4
  
  * using unified MCU symbol
+ * make pins wide enough to be stackable
+

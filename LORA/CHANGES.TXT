@@ -1,2 +1,14 @@
-v1.1
+# CHANGES
+
+:warning: schematic still not verified!
+
+## Schematic v1.1 / Layout v1.1
+
 major update but design is not working!
+
+## Schematic v1.2 / Layout v1.2
+
+ * using unified MCU symbol
+ * add optional power planes
+ * make pins wide enough to be stackable
+

@@ -185,17 +185,6 @@ Text GLabel 9125 3900 0    50   Input ~ 0
 SCL
 Text GLabel 9125 3800 0    50   Input ~ 0
 SDA
-$Comp
-L MCU_Module:Sparkfun_Pro_Micro A1
-U 1 1 5F84D072
-P 9750 3000
-F 0 "A1" H 9400 4150 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro" H 10150 1750 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 9850 1650 50  0001 L CNN
-F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf" H 9750 2200 50  0001 C CNN
-	1    9750 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10050 1700 10050 1800
 $Comp
@@ -283,4 +272,15 @@ Wire Wire Line
 	10250 2900 10375 2900
 Wire Wire Line
 	10375 2800 10250 2800
+$Comp
+L ProMicro:Sparkfun_Pro_Micro A?
+U 1 1 5FB97DAC
+P 9750 3000
+F 0 "A?" H 9750 1611 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro" H 9750 1520 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 9850 1650 50  0001 L CNN
+F 3 "" H 9750 2200 50  0001 C CNN
+	1    9750 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

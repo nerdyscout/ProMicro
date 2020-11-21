@@ -1,0 +1,6 @@
+# CHANGES
+
+## Schematic v1.0 / Layout v1.1
+
+ * :warning: schematic is broken!
+ * make pins wide enough to be stackable 
