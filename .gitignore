@@ -38,6 +38,4 @@ fp-info-cache*
 *.local
 
 # kicad-exports
-**/docs
-**/gerbers
 config.kibom.ini
