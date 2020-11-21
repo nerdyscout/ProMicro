@@ -10,17 +10,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_LORA-Schematic](docs/ProMicro_LORA-Schematic.svg)](docs/ProMicro_LORA-Schematic.pdf)
+[![ProMicro_LORA-Schematic](docs/img/ProMicro_LORA-schematic.svg)](docs/ProMicro_LORA-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_LORA-Board_top.pdf"><img src="docs/img/ProMicro_LORA-Board_top.svg" alt="ProMicro_LORA-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_LORA-Board_bottom.pdf"><img src="docs/img/ProMicro_LORA-Board_bottom.svg" alt="ProMicro_LORA-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_LORA-top.pdf"><img src="docs/img/ProMicro_LORA-top.svg" alt="ProMicro_LORA-top" width="33%"/></a>
+<a href="docs/ProMicro_LORA-bottom.pdf"><img src="docs/img/ProMicro_LORA-bottom.svg" alt="ProMicro_LORA-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LORA/docs/BOM/ProMicro_LORA.html)
-  * [csv](docs/gerbers/ProMicro_LORA.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LORA/docs/bom/ProMicro_LORA-ibom.html)
+  * [csv](docs/bom/ProMicro_LORA-bom_octopart.csv
 
 
 ## Gerbers

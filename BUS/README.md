@@ -7,17 +7,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_BUS-Schematic](docs/ProMicro_BUS-Schematic.svg)](docs/ProMicro_BUS-Schematic.pdf)
+[![ProMicro_BUS-Schematic](docs/img/ProMicro_BUS-schematic.svg)](docs/ProMicro_BUS-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_BUS-Board_top.pdf"><img src="docs/img/ProMicro_BUS-Board_top.svg" alt="ProMicro_BUS-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_BUS-Board_bottom.pdf"><img src="docs/img/ProMicro_BUS-Board_bottom.svg" alt="ProMicro_BUS-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_BUS-top.pdf"><img src="docs/img/ProMicro_BUS-top.svg" alt="ProMicro_BUS-top" width="33%"/></a>
+<a href="docs/ProMicro_BUS-bottom.pdf"><img src="docs/img/ProMicro_BUS-bottom.svg" alt="ProMicro_BUS-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BUS/docs/BOM/ProMicro_BUS.html)
-  * [csv](docs/gerbers/ProMicro_BUS.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BUS/docs/bom/ProMicro_BUS-ibom.html)
+  * [csv](docs/bom/ProMicro_BUS-bom_octopart.csv
 
 
 ## Gerbers

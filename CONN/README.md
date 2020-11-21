@@ -7,17 +7,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_CONN-Schematic](docs/ProMicro_CONN-Schematic.svg)](docs/ProMicro_CONN-Schematic.pdf)
+[![ProMicro_CONN-Schematic](docs/img/ProMicro_CONN-schematic.svg)](docs/ProMicro_CONN-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_CONN_Board_Top.pdf"><img src="docs/img/ProMicro_CONN_Board_Top.svg" alt="ProMicro_CONN_Board_Top" width="20%"/></a>
-<a href="docs/ProMicro_CONN_Board_Bottom.pdf"><img src="docs/img/ProMicro_CONN_Board_Bottom.svg" alt="ProMicro_CONN_Board_Bottom" width="20%"/></a>
+<a href="docs/ProMicro_CONN_Top.pdf"><img src="docs/img/ProMicro_CONN_Top.svg" alt="ProMicro_CONN_Top" width="20%"/></a>
+<a href="docs/ProMicro_CONN_Bottom.pdf"><img src="docs/img/ProMicro_CONN_Bottom.svg" alt="ProMicro_CONN_Bottom" width="20%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/CONN/docs/BOM/ProMicro_CONN.html)
-  * [csv](docs/gerbers/ProMicro_CONN.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/CONN/docs/bom/ProMicro_CONN-ibom.html)
+  * [csv](docs/bom/ProMicro_CONN-bom_octopart.csv
 
 
 ## Gerbers

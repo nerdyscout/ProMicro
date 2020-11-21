@@ -7,17 +7,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_ESP12E-Schematic](docs/ProMicro_ESP12E-Schematic.svg)](docs/ProMicro_ESP12E-Schematic.pdf)
+[![ProMicro_ESP12E-Schematic](docs/img/ProMicro_ESP12E-schematic.svg)](docs/ProMicro_ESP12E-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_ESP12E-Board_top.pdf"><img src="docs/img/ProMicro_ESP12E-Board_top.svg" alt="ProMicro_ESP12E-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_ESP12E-Board_bottom.pdf"><img src="docs/img/ProMicro_ESP12E-Board_bottom.svg" alt="ProMicro_ESP12E-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_ESP12E-top.pdf"><img src="docs/img/ProMicro_ESP12E-top.svg" alt="ProMicro_ESP12E-top" width="33%"/></a>
+<a href="docs/ProMicro_ESP12E-bottom.pdf"><img src="docs/img/ProMicro_ESP12E-bottom.svg" alt="ProMicro_ESP12E-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ESP12E/docs/BOM/ProMicro_ESP12E.html)
-  * [csv](docs/gerbers/ProMicro_ESP12E.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ESP12E/docs/bom/ProMicro_ESP12E-ibom.html)
+  * [csv](docs/bom/ProMicro_ESP12E-bom_octopart.csv
 
 
 ## Gerbers

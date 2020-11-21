@@ -8,17 +8,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_UART-Schematic](docs/ProMicro_UART-Schematic.svg)](docs/ProMicro_UART-Schematic.pdf)
+[![ProMicro_UART-Schematic](docs/img/ProMicro_UART-schematic.svg)](docs/ProMicro_UART-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_UART_Board_Top.pdf"><img src="docs/img/ProMicro_UART_Board_Top.svg" alt="ProMicro_UART_Board_Top" width="20%"/></a>
-<a href="docs/ProMicro_UART_Board_Bottom.pdf"><img src="docs/img/ProMicro_UART_Board_Bottom.svg" alt="ProMicro_UART_Board_Bottom" width="20%"/></a>
+<a href="docs/ProMicro_UART_Top.pdf"><img src="docs/img/ProMicro_UART_Top.svg" alt="ProMicro_UART_Top" width="20%"/></a>
+<a href="docs/ProMicro_UART_Bottom.pdf"><img src="docs/img/ProMicro_UART_Bottom.svg" alt="ProMicro_UART_Bottom" width="20%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/UART/docs/BOM/ProMicro_UART.html)
-  * [csv](docs/gerbers/ProMicro_UART.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/UART/docs/bom/ProMicro_UART.ibom.html)
+  * [csv](docs/bom/ProMicro_UART-bom_octopart.csv
 
 
 ## Gerbers

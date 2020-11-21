@@ -7,17 +7,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_BOOST-Schematic](docs/ProMicro_BOOST-Schematic.svg)](docs/ProMicro_BOOST-Schematic.pdf)
+[![ProMicro_BOOST-Schematic](docs/img/ProMicro_BOOST-schematic.svg)](docs/ProMicro_BOOST-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_BOOST-Board_top.pdf"><img src="docs/img/ProMicro_BOOST-Board_top.svg" alt="ProMicro_BOOST-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_BOOST-Board_bottom.pdf"><img src="docs/img/ProMicro_BOOST-Board_bottom.svg" alt="ProMicro_BOOST-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_BOOST-top.pdf"><img src="docs/img/ProMicro_BOOST-top.svg" alt="ProMicro_BOOST-top" width="33%"/></a>
+<a href="docs/ProMicro_BOOST-bottom.pdf"><img src="docs/img/ProMicro_BOOST-bottom.svg" alt="ProMicro_BOOST-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BOOST/docs/BOM/ProMicro_BOOST.html)
-  * [csv](docs/gerbers/ProMicro_BOOST.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BOOST/docs/bom/ProMicro_BOOST-ibom.html)
+  * [csv](docs/bom/ProMicro_BOOST-bom_octopart.csv
 
 
 ## Gerbers

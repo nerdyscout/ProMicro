@@ -7,17 +7,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_ANA-Schematic](docs/ProMicro_ANA-Schematic.svg)](docs/ProMicro_ANA-Schematic.pdf)
+[![ProMicro_ANA-Schematic](docs/img/ProMicro_ANA-schematic.svg)](docs/ProMicro_ANA-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_ANA-Board_top.pdf"><img src="docs/img/ProMicro_ANA-Board_top.svg" alt="ProMicro_ANA-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_ANA-Board_bottom.pdf"><img src="docs/img/ProMicro_ANA-Board_bottom.svg" alt="ProMicro_ANA-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_ANA-top.pdf"><img src="docs/img/ProMicro_ANA-top.svg" alt="ProMicro_ANA-top" width="33%"/></a>
+<a href="docs/ProMicro_ANA-bottom.pdf"><img src="docs/img/ProMicro_ANA-bottom.svg" alt="ProMicro_ANA-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ANA/docs/BOM/ProMicro_ANA.html)
-  * [csv](docs/gerbers/ProMicro_ANA.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ANA/docs/bom/ProMicro_ANA-ibom.html)
+  * [csv](docs/bom/ProMicro_ANA-bom_octopart.csv
 
 
 ## Gerbers

@@ -7,17 +7,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_LOG-Schematic](docs/ProMicro_LOG-Schematic.svg)](docs/ProMicro_LOG-Schematic.pdf)
+[![ProMicro_LOG-Schematic](docs/img/ProMicro_LOG-schematic.svg)](docs/ProMicro_LOG-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_LOG-Board_top.pdf"><img src="docs/img/ProMicro_LOG-Board_top.svg" alt="ProMicro_LOG-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_LOG-Board_bottom.pdf"><img src="docs/img/ProMicro_LOG-Board_bottom.svg" alt="ProMicro_LOG-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_LOG-top.pdf"><img src="docs/img/ProMicro_LOG-top.svg" alt="ProMicro_LOG-top" width="33%"/></a>
+<a href="docs/ProMicro_LOG-bottom.pdf"><img src="docs/img/ProMicro_LOG-bottom.svg" alt="ProMicro_LOG-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LOG/docs/BOM/ProMicro_LOG.html)
-  * [csv](docs/gerbers/ProMicro_LOG.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LOG/docs/bom/ProMicro_LOG-ibom.html)
+  * [csv](docs/bom/ProMicro_LOG-bom_octopart.csv
 
 
 ## Gerbers

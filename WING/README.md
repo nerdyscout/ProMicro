@@ -6,17 +6,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_WING-Schematic](docs/ProMicro_WING-Schematic.svg)](docs/ProMicro_WING-Schematic.pdf)
+[![ProMicro_WING-Schematic](docs/img/ProMicro_WING-schematic.svg)](docs/ProMicro_WING-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_WING-Board_top.pdf"><img src="docs/img/ProMicro_WING-Board_top.svg" alt="ProMicro_WING-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_WING-Board_bottom.pdf"><img src="docs/img/ProMicro_WING-Board_bottom.svg" alt="ProMicro_WING-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_WING-top.pdf"><img src="docs/img/ProMicro_WING-top.svg" alt="ProMicro_WING-top" width="33%"/></a>
+<a href="docs/ProMicro_WING-bottom.pdf"><img src="docs/img/ProMicro_WING-bottom.svg" alt="ProMicro_WING-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/TEST/docs/BOM/ProMicro_WING.html)
-  * [csv](docs/gerbers/ProMicro_WING.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/TEST/docs/bom/ProMicro_WING-ibom.html)
+  * [csv](docs/bom/ProMicro_WING-bom_octopart.csv
 
 
 ## Gerbers

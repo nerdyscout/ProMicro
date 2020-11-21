@@ -9,18 +9,18 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 ### Schematic
 | GYRO | GPS |
 | ---  | --- |
-| [![ProMicro_GYRO-Schematic](docs/ProMicro_GYRO-Schematic.svg)](docs/ProMicro_GYRO-Schematic.pdf) | [![ProMicro_GPS-Schematic](docs/ProMicro_GPS-Schematic.svg)](docs/ProMicro_GPS-Schematic.pdf) |
+| [![ProMicro_GYRO-Schematic](docs/img/ProMicro_GYRO-schematic.svg)](docs/ProMicro_GYRO-schematic.pdf) | [![ProMicro_GPS-Schematic](docs/img/ProMicro_GPS-schematic.svg)](docs/ProMicro_GPS-schematic.pdf) |
 
 
 ### Layout
-<a href="docs/ProMicro_POS-Board_top.pdf"><img src="docs/img/ProMicro_POS-Board_top.svg" alt="ProMicro_GPS-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_POS-Board_bottom.pdf"><img src="docs/img/ProMicro_POS-Board_bottom.svg" alt="ProMicro_GPS-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_POS-top.pdf"><img src="docs/img/ProMicro_POS-top.svg" alt="ProMicro_GPS-top" width="33%"/></a>
+<a href="docs/ProMicro_POS-bottom.pdf"><img src="docs/img/ProMicro_POS-bottom.svg" alt="ProMicro_GPS-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/POS/docs/bom/ProMicro_POS.html)
-  * [GPS.csv](docs/gerbers/ProMicro_GPS_BOM.csv)
-  * [GYRO.csv](docs/gerbers/ProMicro_GYRO.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/POS/docs/bom/ProMicro_POS-ibom.html)
+  * [GPS.csv](docs/gerbers/ProMicro_GPS_BOM-bom_octopart.csv
+  * [GYRO.csv](docs/gerbers/ProMicro_GYRO-bom_octopart.csv
 
 
 ## Gerbers

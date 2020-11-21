@@ -7,17 +7,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Schematic
-[![ProMicro_ZPM-Schematic](docs/ProMicro_ZPM-Schematic.svg)](docs/ProMicro_ZPM-Schematic.pdf)
+[![ProMicro_ZPM-Schematic](docs/img/ProMicro_ZPM-schematic.svg)](docs/ProMicro_ZPM-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_ZPM-Board_top.pdf"><img src="docs/img/ProMicro_ZPM-Board_top.svg" alt="ProMicro_ZPM-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_ZPM-Board_bottom.pdf"><img src="docs/img/ProMicro_ZPM-Board_bottom.svg" alt="ProMicro_ZPM-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_ZPM-top.pdf"><img src="docs/img/ProMicro_ZPM-top.svg" alt="ProMicro_ZPM-top" width="33%"/></a>
+<a href="docs/ProMicro_ZPM-bottom.pdf"><img src="docs/img/ProMicro_ZPM-bottom.svg" alt="ProMicro_ZPM-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ZPM/docs/BOM/ProMicro_ZPM.html)
-  * [csv](docs/gerbers/ProMicro_ZPM.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ZPM/docs/bom/ProMicro_ZPM-ibom.html)
+  * [csv](docs/bom/ProMicro_ZPM-bom_octopart.csv
 
 
 ## Gerbers

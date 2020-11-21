@@ -7,17 +7,17 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_QWIIC)
 
 
 ### Schematic
-[![ProMicro_QWIIC_Schematic](docs/ProMicro_QWIIC-Schematic.svg)](docs/ProMicro_QWIIC-Schematic.pdf)
+[![ProMicro_QWIIC_Schematic](docs/ProMicro_QWIIC-schematic.svg)](docs/ProMicro_QWIIC-schematic.pdf)
 
 
 ### Layout
-<a href="docs/ProMicro_QWIIC-Board_top.pdf"><img src="docs/img/ProMicro_QWIIC-Board_top.svg" alt="ProMicro_QWIIC-Board_top" width="33%"/></a>
-<a href="docs/ProMicro_QWIIC-Board_bottom.pdf"><img src="docs/img/ProMicro_QWIIC-Board_bottom.svg" alt="ProMicro_QWIIC-Board_bottom" width="33%"/></a>
+<a href="docs/ProMicro_QWIIC-top.pdf"><img src="docs/img/ProMicro_QWIIC-top.svg" alt="ProMicro_QWIIC-top" width="33%"/></a>
+<a href="docs/ProMicro_QWIIC-bottom.pdf"><img src="docs/img/ProMicro_QWIIC-bottom.svg" alt="ProMicro_QWIIC-bottom" width="33%"/></a>
 
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_QWIIC/docs/BOM/ProMicro_QWIIC.html)
-  * [csv](docs/gerbers/ProMicro_QWIIC.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_QWIIC/docs/bom/ProMicro_QWIIC-ibom.html)
+  * [csv](docs/bom/ProMicro_QWIIC-bom_octopart.csv
 
 
 ## Gerbers
