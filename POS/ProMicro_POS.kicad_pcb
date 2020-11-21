@@ -331,7 +331,7 @@
     (descr "Sparkfun Pro Micro, https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf")
     (tags "Sparkfun Pro Micro")
     (path /5F84D072)
-    (fp_text reference "#A1" (at 2.54 0 90) (layer F.SilkS) hide
+    (fp_text reference A1 (at 2.54 0 90) (layer F.SilkS) hide
       (effects (font (size 0.8 0.8) (thickness 0.2)))
     )
     (fp_text value Sparkfun_Pro_Micro (at 8.89 13.97 90) (layer F.Fab)
