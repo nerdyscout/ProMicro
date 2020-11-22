@@ -1,5 +1,2 @@
 (sym_lib_table
-  (lib (name Memory_Flash_NAND)(type Legacy)(uri /home/user/Projects/kicad-library-utils/schlib/autogen/onfi/Memory_Flash_NAND.lib)(options "")(descr ""))
-  (lib (name Memory_Flash_NANDdev)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Memory_Flash_NAND.lib)(options "")(descr ""))
-  (lib (name ProMicro_BOOST-rescue)(type Legacy)(uri ${KIPRJMOD}/ProMicro_BOOST-rescue.lib)(options "")(descr ""))
-)
+  (lib (name ProMicro)(type Legacy)(uri ${KIPRJMOD}/../lib/ProMicro.lib)(options "")(descr "")))
