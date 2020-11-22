@@ -1,5 +1,5 @@
 Description;Part;References;Value;Qty;lcsc#;mpn;variant
-;Sparkfun_Pro_Micro-MCU_Module;A1;Sparkfun_Pro_Micro;1;;;
+;Sparkfun_Pro_Micro;A1;Sparkfun_Pro_Micro;1;;;
 Unpolarized capacitor;C;C2;100n;1;C14663;C0603C104M4RACTU;3V3, 5V
 Unpolarized capacitor;C;C5;100n;1;C14663;C0603C104M4RACTU;
 Unpolarized capacitor;C;C6;1µ;1;C15849;C0603X105K9RACAUTO;
