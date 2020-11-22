@@ -13,14 +13,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_POS-top.pdf"><img src="docs/img/ProMicro_POS-top.svg" alt="ProMicro_GPS-top" width="33%"/></a>
-<a href="docs/ProMicro_POS-bottom.pdf"><img src="docs/img/ProMicro_POS-bottom.svg" alt="ProMicro_GPS-bottom" width="33%"/></a>
+<a href="docs/ProMicro_POS-top.pdf"><img src="docs/img/ProMicro_POS-top.svg" alt="ProMicro_GPS-top" width="20%"/></a>
+<a href="docs/ProMicro_POS-bottom.pdf"><img src="docs/img/ProMicro_POS-bottom.svg" alt="ProMicro_GPS-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/POS/docs/bom/ProMicro_POS-ibom.html)
-  * [GPS.csv](docs/gerbers/ProMicro_GPS_BOM-bom_octopart.csv
-  * [GYRO.csv](docs/gerbers/ProMicro_GYRO-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_POS_BOM-bom_octopart.csv)
+  * [jlcpbc.csv](gerbers/ProMicro_POS-bom_jlcpcb.csv)
 
 
 ## Gerbers

@@ -14,13 +14,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_LORA-top.pdf"><img src="docs/img/ProMicro_LORA-top.svg" alt="ProMicro_LORA-top" width="33%"/></a>
-<a href="docs/ProMicro_LORA-bottom.pdf"><img src="docs/img/ProMicro_LORA-bottom.svg" alt="ProMicro_LORA-bottom" width="33%"/></a>
+<a href="docs/ProMicro_LORA-top.pdf"><img src="docs/img/ProMicro_LORA-top.svg" alt="ProMicro_LORA-top" width="20%"/></a>
+<a href="docs/ProMicro_LORA-bottom.pdf"><img src="docs/img/ProMicro_LORA-bottom.svg" alt="ProMicro_LORA-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LORA/docs/bom/ProMicro_LORA-ibom.html)
-  * [csv](docs/bom/ProMicro_LORA-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_LORA-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_LORA-bom_jlcpcb.csv)
 
 
 ## Gerbers

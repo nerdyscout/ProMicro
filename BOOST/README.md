@@ -11,13 +11,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_BOOST-top.pdf"><img src="docs/img/ProMicro_BOOST-top.svg" alt="ProMicro_BOOST-top" width="33%"/></a>
-<a href="docs/ProMicro_BOOST-bottom.pdf"><img src="docs/img/ProMicro_BOOST-bottom.svg" alt="ProMicro_BOOST-bottom" width="33%"/></a>
+<a href="docs/ProMicro_BOOST-top.pdf"><img src="docs/img/ProMicro_BOOST-top.svg" alt="ProMicro_BOOST-top" width="20%"/></a>
+<a href="docs/ProMicro_BOOST-bottom.pdf"><img src="docs/img/ProMicro_BOOST-bottom.svg" alt="ProMicro_BOOST-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BOOST/docs/bom/ProMicro_BOOST-ibom.html)
-  * [csv](docs/bom/ProMicro_BOOST-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_BOOST-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_BOOST-bom_jlcpcb.csv)
 
 
 ## Gerbers

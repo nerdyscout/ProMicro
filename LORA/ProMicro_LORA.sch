@@ -131,8 +131,6 @@ Wire Wire Line
 Wire Wire Line
 	3500 5150 3500 5350
 Wire Wire Line
-	3400 3150 3200 3150
-Wire Wire Line
 	1475 5150 1250 5150
 Wire Wire Line
 	2975 4750 2750 4750
@@ -183,9 +181,9 @@ Wire Wire Line
 Wire Wire Line
 	3000 2850 3400 2850
 Wire Wire Line
-	5000 3450 4600 3450
+	3000 3250 3400 3250
 Wire Wire Line
-	5000 3550 4600 3550
+	3000 3350 3400 3350
 Wire Wire Line
 	3000 3850 3400 3850
 Wire Wire Line
@@ -197,11 +195,11 @@ Wire Wire Line
 Wire Wire Line
 	3500 4750 3500 5150
 Wire Wire Line
-	3400 3250 3000 3250
+	4600 3350 5000 3350
 Wire Wire Line
-	3400 3350 3000 3350
+	4600 3450 5000 3450
 Wire Wire Line
-	3400 3550 3000 3550
+	4600 3650 5000 3650
 Wire Wire Line
 	3250 2000 3800 2000
 Wire Wire Line
@@ -258,44 +256,44 @@ Text GLabel 1000 5150 0    50   Input ~ 0
 RFO_HF
 Text GLabel 1000 6250 0    50   Input ~ 0
 RFI-HF
-Text GLabel 5000 3450 2    50   Input ~ 0
+Text GLabel 3000 3250 0    50   Input ~ 0
 RFO_HF
-Text GLabel 5000 3550 2    50   Input ~ 0
+Text GLabel 3000 3350 0    50   Input ~ 0
 RFI-HF
 Text GLabel 6000 2950 2    50   Input ~ 0
 VR_PA
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5E1AA0A9
-P 3000 3250
-F 0 "TP2" V 3000 3450 50  0000 L CNN
-F 1 "DIO2" V 3000 3450 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 3250 50  0001 C CNN
-F 3 "~" H 3200 3250 50  0001 C CNN
-	1    3000 3250
-	0    -1   -1   0   
+P 5000 3350
+F 0 "TP2" V 5000 3550 50  0000 L CNN
+F 1 "DIO2" V 5000 3550 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5200 3350 50  0001 C CNN
+F 3 "~" H 5200 3350 50  0001 C CNN
+	1    5000 3350
+	0    1    -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5E1AA436
-P 3000 3350
-F 0 "TP3" V 3000 3550 50  0000 L CNN
-F 1 "DIO3" V 3000 3550 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 3350 50  0001 C CNN
-F 3 "~" H 3200 3350 50  0001 C CNN
-	1    3000 3350
-	0    -1   -1   0   
+P 5000 3450
+F 0 "TP3" V 5000 3650 50  0000 L CNN
+F 1 "DIO3" V 5000 3650 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5200 3450 50  0001 C CNN
+F 3 "~" H 5200 3450 50  0001 C CNN
+	1    5000 3450
+	0    1    -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5E1AA6B5
-P 3000 3550
-F 0 "TP4" V 3000 3750 50  0000 L CNN
-F 1 "DIO5" V 3000 3750 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 3550 50  0001 C CNN
-F 3 "~" H 3200 3550 50  0001 C CNN
-	1    3000 3550
-	0    -1   -1   0   
+P 5000 3650
+F 0 "TP4" V 5000 3850 50  0000 L CNN
+F 1 "DIO5" V 5000 3850 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5200 3650 50  0001 C CNN
+F 3 "~" H 5200 3650 50  0001 C CNN
+	1    5000 3650
+	0    1    -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint TP5
@@ -643,13 +641,13 @@ $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5E32FE28
-P 3050 3150
-F 0 "JP1" H 3200 3225 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 3085 3310 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3050 3150 50  0001 C CNN
-F 3 "~" H 3050 3150 50  0001 C CNN
-	1    3050 3150
-	-1   0    0    1   
+P 4900 3250
+F 0 "JP1" H 5050 3325 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4935 3410 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4900 3250 50  0001 C CNN
+F 3 "~" H 4900 3250 50  0001 C CNN
+	1    4900 3250
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:L L1
@@ -1107,7 +1105,7 @@ Connection ~ 6500 5250
 Wire Wire Line
 	6500 5250 6500 5600
 $Comp
-L RF:SX1276 U1
+L ProMicro:SX1276 U1
 U 1 1 5EDDF92E
 P 4000 3250
 F 0 "U1" H 3575 4300 50  0000 C CNN
@@ -1203,7 +1201,7 @@ F 3 "" H 10500 5810 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_LORA-rescue:Sparkfun_Pro_Micro-MCU_Module A1
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5F84D072
 P 9750 3000
 F 0 "A1" H 9400 4150 50  0000 C CNN
@@ -1260,14 +1258,12 @@ Text GLabel 3000 4050 0    50   Input ~ 0
 CS0
 Text GLabel 3000 3750 0    50   Input ~ 0
 SCK
-Text GLabel 2750 3050 0    50   Input ~ 0
+Text GLabel 4700 3150 2    50   Input ~ 0
 DIO0
-Text GLabel 2675 3150 0    50   Input ~ 0
+Text GLabel 5275 3250 2    50   Input ~ 0
 DIO1
 Wire Wire Line
-	2675 3150 2900 3150
-Wire Wire Line
-	3400 3050 2750 3050
+	5275 3250 5050 3250
 Text GLabel 3000 2850 0    50   Input ~ 0
 RFRST
 NoConn ~ 9250 2800
@@ -1295,11 +1291,15 @@ Wire Wire Line
 	1800 6250 2100 6250
 Wire Wire Line
 	2400 6250 2750 6250
-NoConn ~ 3400 3450
-NoConn ~ 4600 3350
-NoConn ~ 4600 3250
 Wire Wire Line
-	4600 3850 5500 3850
+	4600 3950 5500 3950
 Wire Wire Line
-	5500 3850 5500 4850
+	5500 3950 5500 4850
+Wire Wire Line
+	4700 3150 4600 3150
+Wire Wire Line
+	4600 3250 4750 3250
+NoConn ~ 4600 3550
+NoConn ~ 3400 3150
+NoConn ~ 3400 3050
 $EndSCHEMATC

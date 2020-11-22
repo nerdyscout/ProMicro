@@ -17,7 +17,8 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/CONN/docs/bom/ProMicro_CONN-ibom.html)
-  * [csv](docs/bom/ProMicro_CONN-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_CONN-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_CONN-bom_jlcpcb.csv)
 
 
 ## Gerbers

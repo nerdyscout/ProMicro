@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Jumper_NO_Small
+D Jumper, normally open, small symbol
+K jumper link bridge NO
+F ~
+$ENDCMP
+#
+$CMP MCP4725xxx-xCH
+D 12-bit Digital-to-Analog Converter, integrated EEPROM, I2C interface, SOT-23-6
+K dac twi
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf
+$ENDCMP
+#
+$CMP SX1276
+D 137 MHz to 1020 MHz Low Power Long Range Transceiver, spreading factor from 6 to 12, LoRA, QFN-28
+K low-power lora transceiver
+F https://www.semtech.com/uploads/documents/DS_SX1276-7-8-9_W_APP_V6.pdf
+$ENDCMP
+#
+$CMP SX1277
+D 137 MHz to 525 MHz Low Power Long Range Transceiver, spreading factor from 6 to 12, LoRA, QFN-28
+K low-power lora transceiver
+F https://www.semtech.com/uploads/documents/DS_SX1276-7-8-9_W_APP_V6.pdf
+$ENDCMP
+#
+$CMP SX1279
+D 137 MHz to 960 MHz Low Power Long Range Transceiver, spreading factor from 6 to 12, LoRA, QFN-28
+K low-power lora transceiver
+F https://www.semtech.com/uploads/documents/DS_SX1276-7-8-9_W_APP_V6.pdf
+$ENDCMP
+#
+#End Doc Library
