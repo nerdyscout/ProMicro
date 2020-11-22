@@ -15,9 +15,9 @@ if [ $1 = "clean" ]; then
                 if [ -d ${dir}/cad/ ]; then
                     rm -r ${dir}/cad/ 
                 fi
-                if [ -d ${dir}/.config/ ]; then
-                    rm -r ${dir}/.config
-                fi
+#                if [ -d ${dir}/.config/ ]; then
+#                    rm -r ${dir}/.config
+#                fi
                 rm -f ${dir}/ProMicro_rescue*
                 rm -f ${dir}/ProMicro-cache.lib
                 rm -f ${dir}/ProMicro_*-bak
@@ -45,9 +45,9 @@ if [ $1 = "build" ]; then
                 if [ -d ${dir}/gerbers/ ]; then
                     rm -r ${dir}/gerbers/ 
                 fi
-                if [ -d ${dir}/.config/ ]; then
-                    rm -r ${dir}/.config
-                fi
+#                if [ -d ${dir}/.config/ ]; then
+#                    rm -r ${dir}/.config
+#                fi
                 kicad-exports -c config.kibot.yaml -b ${dir}/ProMicro_${dir}.kicad_pcb -e ${dir}/ProMicro_${dir}.sch -d ${dir}/
             fi
         fi
