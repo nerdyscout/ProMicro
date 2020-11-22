@@ -13,8 +13,8 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_POS-top.pdf"><img src="docs/img/ProMicro_POS-top.svg" alt="ProMicro_GPS-top" width="33%"/></a>
-<a href="docs/ProMicro_POS-bottom.pdf"><img src="docs/img/ProMicro_POS-bottom.svg" alt="ProMicro_GPS-bottom" width="33%"/></a>
+<a href="docs/ProMicro_POS-top.pdf"><img src="docs/img/ProMicro_POS-top.svg" alt="ProMicro_GPS-top" width="20%"/></a>
+<a href="docs/ProMicro_POS-bottom.pdf"><img src="docs/img/ProMicro_POS-bottom.svg" alt="ProMicro_GPS-bottom" width="20%"/></a>
 
 
 ### BoM

@@ -11,13 +11,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_TEST-top.pdf"><img src="docs/img/ProMicro_TEST-top.svg" alt="ProMicro_TEST-top" width="33%"/></a>
-<a href="docs/ProMicro_TEST-bottom.pdf"><img src="docs/img/ProMicro_TEST-bottom.svg" alt="ProMicro_TEST-bottom" width="33%"/></a>
+<a href="docs/ProMicro_TEST-top.pdf"><img src="docs/img/ProMicro_TEST-top.svg" alt="ProMicro_TEST-top" width="20%"/></a>
+<a href="docs/ProMicro_TEST-bottom.pdf"><img src="docs/img/ProMicro_TEST-bottom.svg" alt="ProMicro_TEST-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/TEST/docs/bom/ProMicro_TEST.html)
-  * [csv](docs/bom/ProMicro_TEST-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_TEST-bom_octopart.csv)
+  * [jlcpcb.csv](docs/bom/ProMicro_TEST-bom_jlcpcb.csv)
 
 
 ## Gerbers

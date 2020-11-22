@@ -18,7 +18,8 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/UART/docs/bom/ProMicro_UART.ibom.html)
-  * [csv](docs/bom/ProMicro_UART-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_UART-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_UART-bom_jlcpcb.csv)
 
 
 ## Gerbers
