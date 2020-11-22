@@ -647,10 +647,10 @@ F 3 "~" H 1325 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro:Sparkfun_Pro_Micro A?
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5FB9AE9F
 P 10700 2100
-F 0 "A?" H 10700 711 50  0000 C CNN
+F 0 "A1" H 10700 711 50  0000 C CNN
 F 1 "Sparkfun_Pro_Micro" H 10700 620 50  0000 C CNN
 F 2 "Module:Sparkfun_Pro_Micro" H 10800 750 50  0001 L CNN
 F 3 "" H 10700 1300 50  0001 C CNN
