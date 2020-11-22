@@ -11,3 +11,4 @@
 ## Schematic v1.2 / Layout v1.3
 
  * make pins wide enough to be stackable
+ * resolve DRC
