@@ -19,8 +19,8 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/POS/docs/bom/ProMicro_POS-ibom.html)
-  * [GPS.csv](docs/gerbers/ProMicro_GPS_BOM-bom_octopart.csv
-  * [GYRO.csv](docs/gerbers/ProMicro_GYRO-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_POS_BOM-bom_octopart.csv)
+  * [jlcpbc.csv](gerbers/ProMicro_POS-bom_jlcpcb.csv)
 
 
 ## Gerbers

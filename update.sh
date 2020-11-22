@@ -27,6 +27,7 @@ if [ $1 = "clean" ]; then
                 rm -f ${dir}/drc_result.rpt
                 rm -f ${dir}/ProMicro_*.csv
                 rm -f ${dir}/config.kibom.ini
+                rm -f ${dir}/*.ogv
             fi
         fi
     done
