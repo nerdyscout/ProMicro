@@ -8,12 +8,15 @@ preflight:
   check_zone_fills: true
   ignore_unconnected: false
   filters:
-    - filter_msg: 'Courtyards overlap'
-      error_number: 45
-      regexp:  'Courtyards overlap'
-    - filter_msg: 'Footprint has no courtyard defined'
-      error_number: 46
-      regexp:  'Footprint LOGO'
+    - filter: 'Courtyards overlap'
+      error: '45'
+      regex: 'Courtyards overlap'
+    - filter: 'Footprint has no courtyard defined'
+      error: '46'
+      regex: 'Footprint LOGO'
+
+#global:
+#  output: '%f-%i.%x'
 
 variants:
   - name: 'GPS'
@@ -41,27 +44,27 @@ outputs:
     type: 'ibom'
     dir: 'docs/bom'
     options:
-#      blacklist: ''
+      blacklist: ''
       blacklist_empty_val: false
-      rotation: 90
+      board_rotation: 90
       bom_view: 'left-right'
-      checkboxes: 'Sourced,Placed'
+#      checkboxes: 'Sourced,Placed'
       dark_mode: false
-      dnf_filter: ''
-      dnp_field: ''
-      extra_fields: 'MPN'
+#      dnf_filter: ''
+#      dnp_field: ''
+      extra_fields: 'MPN,variant'
       hide_pads: false
       hide_silkscreen: false
       highlight_pin1: true
       include_nets: true
       include_tracks: true
       layer_view: 'FB'
-      name_format: 'ibom'
-      netlist_file: ''
+#      name_format: 'ibom'
+#      netlist_file: ''
       no_blacklist_virtual: false
       no_redraw_on_drag: false
       normalize_field_case: true
-      output: '%f-%i%v.%x'
+#      output: '%f-%i%v.%x'
       show_fabrication: false
       sort_order: 'C,R,L,D,U,Y,X,F,SW,A,~,HS,CNN,J,P,NT,MH'
 #      variant: ''
@@ -287,14 +290,14 @@ outputs:
       dpi: 300
       format: 'svg'
 #      highlight: []
-      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
+#      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
       mirror: false
       no_drillholes: false
 #      output: '%f-%i%v.%x'
-      placeholder: false
+#      placeholder: false
 #      remap:
-      show_components: none
-      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
+#      show_components: none
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
 #      variant: ''
 #      vcuts: false
 #      warnings: 'none'
@@ -310,13 +313,13 @@ outputs:
       dpi: 300
       format: 'svg'
 #      highlight: []
-      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
+#      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
       no_drillholes: false
 #      output: '%f-%i%v.%x'
-      placeholder: false
+#      placeholder: false
 #      remap:
-      show_components: none
-      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
+#      show_components: none
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
 #      variant: ''
 #      vcuts: false
 #      warnings: 'none'

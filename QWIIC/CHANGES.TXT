@@ -4,3 +4,4 @@
 
  * :warning: schematic is broken!
  * make pins wide enough to be stackable 
+ * resolve DRC

@@ -11,13 +11,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_ANA-top.pdf"><img src="docs/img/ProMicro_ANA-top.svg" alt="ProMicro_ANA-top" width="33%"/></a>
-<a href="docs/ProMicro_ANA-bottom.pdf"><img src="docs/img/ProMicro_ANA-bottom.svg" alt="ProMicro_ANA-bottom" width="33%"/></a>
+<a href="docs/ProMicro_ANA-top.pdf"><img src="docs/img/ProMicro_ANA-top.svg" alt="ProMicro_ANA-top" width="20%"/></a>
+<a href="docs/ProMicro_ANA-bottom.pdf"><img src="docs/img/ProMicro_ANA-bottom.svg" alt="ProMicro_ANA-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ANA/docs/bom/ProMicro_ANA-ibom.html)
-  * [csv](docs/bom/ProMicro_ANA-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_ANA-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_ANA-bom_jlcpcb.csv)
 
 
 ## Gerbers

@@ -11,13 +11,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro_QWIIC)
 
 
 ### Layout
-<a href="docs/ProMicro_QWIIC-top.pdf"><img src="docs/img/ProMicro_QWIIC-top.svg" alt="ProMicro_QWIIC-top" width="33%"/></a>
-<a href="docs/ProMicro_QWIIC-bottom.pdf"><img src="docs/img/ProMicro_QWIIC-bottom.svg" alt="ProMicro_QWIIC-bottom" width="33%"/></a>
+<a href="docs/ProMicro_QWIIC-top.pdf"><img src="docs/img/ProMicro_QWIIC-top.svg" alt="ProMicro_QWIIC-top" width="20%"/></a>
+<a href="docs/ProMicro_QWIIC-bottom.pdf"><img src="docs/img/ProMicro_QWIIC-bottom.svg" alt="ProMicro_QWIIC-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro_QWIIC/docs/bom/ProMicro_QWIIC-ibom.html)
-  * [csv](docs/bom/ProMicro_QWIIC-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_QWIIC-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_QWIIC-bom_jlcpcb.csv)
 
 
 ## Gerbers

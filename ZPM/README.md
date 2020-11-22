@@ -11,13 +11,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_ZPM-top.pdf"><img src="docs/img/ProMicro_ZPM-top.svg" alt="ProMicro_ZPM-top" width="33%"/></a>
-<a href="docs/ProMicro_ZPM-bottom.pdf"><img src="docs/img/ProMicro_ZPM-bottom.svg" alt="ProMicro_ZPM-bottom" width="33%"/></a>
+<a href="docs/ProMicro_ZPM-top.pdf"><img src="docs/img/ProMicro_ZPM-top.svg" alt="ProMicro_ZPM-top" width="20%"/></a>
+<a href="docs/ProMicro_ZPM-bottom.pdf"><img src="docs/img/ProMicro_ZPM-bottom.svg" alt="ProMicro_ZPM-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ZPM/docs/bom/ProMicro_ZPM-ibom.html)
-  * [csv](docs/bom/ProMicro_ZPM-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_ZPM-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_ZPM-bom_jlcpcb.csv)
 
 
 ## Gerbers

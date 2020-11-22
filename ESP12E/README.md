@@ -11,13 +11,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_ESP12E-top.pdf"><img src="docs/img/ProMicro_ESP12E-top.svg" alt="ProMicro_ESP12E-top" width="33%"/></a>
-<a href="docs/ProMicro_ESP12E-bottom.pdf"><img src="docs/img/ProMicro_ESP12E-bottom.svg" alt="ProMicro_ESP12E-bottom" width="33%"/></a>
+<a href="docs/ProMicro_ESP12E-top.pdf"><img src="docs/img/ProMicro_ESP12E-top.svg" alt="ProMicro_ESP12E-top" width="20%"/></a>
+<a href="docs/ProMicro_ESP12E-bottom.pdf"><img src="docs/img/ProMicro_ESP12E-bottom.svg" alt="ProMicro_ESP12E-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ESP12E/docs/bom/ProMicro_ESP12E-ibom.html)
-  * [csv](docs/bom/ProMicro_ESP12E-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_ESP12E-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_ESP12E-bom_jlcpcb.csv)
 
 
 ## Gerbers

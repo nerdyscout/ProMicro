@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name SAMD-rescue)(type Legacy)(uri ${KIPRJMOD}/SAMD-rescue.lib)(options "")(descr ""))
+  (lib (name ProMicro)(type Legacy)(uri ${KIPRJMOD}/../lib/ProMicro.lib)(options "")(descr ""))
 )

@@ -10,13 +10,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 
 ### Layout
-<a href="docs/ProMicro_WING-top.pdf"><img src="docs/img/ProMicro_WING-top.svg" alt="ProMicro_WING-top" width="33%"/></a>
-<a href="docs/ProMicro_WING-bottom.pdf"><img src="docs/img/ProMicro_WING-bottom.svg" alt="ProMicro_WING-bottom" width="33%"/></a>
+<a href="docs/ProMicro_WING-top.pdf"><img src="docs/img/ProMicro_WING-top.svg" alt="ProMicro_WING-top" width="20%"/></a>
+<a href="docs/ProMicro_WING-bottom.pdf"><img src="docs/img/ProMicro_WING-bottom.svg" alt="ProMicro_WING-bottom" width="20%"/></a>
 
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/TEST/docs/bom/ProMicro_WING-ibom.html)
-  * [csv](docs/bom/ProMicro_WING-bom_octopart.csv
+  * [octopart.csv](docs/bom/ProMicro_WING-bom_octopart.csv)
+  * [jlcpcb.csv](gerbers/ProMicro_WING-bom_jlcpcb.csv)
 
 
 ## Gerbers

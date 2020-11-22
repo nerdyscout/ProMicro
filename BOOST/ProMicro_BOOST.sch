@@ -803,7 +803,7 @@ F 3 "" H 3700 4575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_BOOST-rescue:Sparkfun_Pro_Micro-MCU_Module A1
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5F84D072
 P 3500 5875
 F 0 "A1" H 3150 7025 50  0000 C CNN

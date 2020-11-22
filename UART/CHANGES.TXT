@@ -3,3 +3,5 @@
 
  * complete redesign of schematic, first prototype now ready
  
+ 
+:warning: needs complete redesign!
