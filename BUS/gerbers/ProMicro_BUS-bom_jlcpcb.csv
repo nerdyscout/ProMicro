@@ -1,0 +1,5 @@
+Comment,Designator,Package,variant,lcsc#,mpn
+100n,C2,C_0402_1005Metric,,,
+10µ,C3,C_0603_1608Metric,,,
+Conn_01x03,J1,TerminalBlock_TE_282834-3_1x03_P2.54mm_Horizontal,"modbus, canbus",,
+Logo_Open_Hardware_Small,LOGO1,OSHW-Symbol_6.7x6mm_SilkScreen,,,
