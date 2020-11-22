@@ -290,14 +290,14 @@ outputs:
       dpi: 300
       format: 'svg'
 #      highlight: []
-      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
+#      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
       mirror: false
       no_drillholes: false
 #      output: '%f-%i%v.%x'
-      placeholder: false
+#      placeholder: false
 #      remap:
-      show_components: none
-      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
+#      show_components: none
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
 #      variant: ''
 #      vcuts: false
 #      warnings: 'none'
@@ -313,13 +313,13 @@ outputs:
       dpi: 300
       format: 'svg'
 #      highlight: []
-      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
+#      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
       no_drillholes: false
 #      output: '%f-%i%v.%x'
-      placeholder: false
+#      placeholder: false
 #      remap:
-      show_components: none
-      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
+#      show_components: none
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
 #      variant: ''
 #      vcuts: false
 #      warnings: 'none'
