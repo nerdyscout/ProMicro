@@ -449,7 +449,7 @@ Wire Wire Line
 Wire Wire Line
 	7125 2500 7125 2875
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP1
+L Device:Jumper_NO_Small JP1
 U 1 1 5E805612
 P 7500 2625
 F 0 "JP1" H 7500 2675 50  0000 C CNN
@@ -460,7 +460,7 @@ F 3 "~" H 7500 2625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP2
+L Device:Jumper_NO_Small JP2
 U 1 1 5E80561C
 P 7500 2750
 F 0 "JP2" H 7500 2800 50  0000 C CNN
@@ -471,7 +471,7 @@ F 3 "~" H 7500 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP3
+L Device:Jumper_NO_Small JP3
 U 1 1 5E805626
 P 7500 2875
 F 0 "JP3" H 7500 2925 50  0000 C CNN
@@ -482,7 +482,7 @@ F 3 "~" H 7500 2875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP4
+L Device:Jumper_NO_Small JP4
 U 1 1 5E805630
 P 7500 3000
 F 0 "JP4" H 7500 3050 50  0000 C CNN
@@ -503,7 +503,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 2500 7250 3000
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP6
+L Device:Jumper_NO_Small JP6
 U 1 1 5E8A6017
 P 7500 3375
 F 0 "JP6" H 7500 3425 50  0000 C CNN
@@ -514,7 +514,7 @@ F 3 "~" H 7500 3375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP7
+L Device:Jumper_NO_Small JP7
 U 1 1 5E8A6021
 P 7500 3500
 F 0 "JP7" H 7500 3550 50  0000 C CNN
@@ -525,7 +525,7 @@ F 3 "~" H 7500 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP8
+L Device:Jumper_NO_Small JP8
 U 1 1 5E8A602B
 P 7500 3625
 F 0 "JP8" H 7500 3675 50  0000 C CNN
@@ -536,7 +536,7 @@ F 3 "~" H 7500 3625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP9
+L Device:Jumper_NO_Small JP9
 U 1 1 5E8A6035
 P 7500 3750
 F 0 "JP9" H 7500 3800 50  0000 C CNN
@@ -551,7 +551,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 3750 7250 3750
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP12
+L Device:Jumper_NO_Small JP12
 U 1 1 5E961A82
 P 7500 4625
 F 0 "JP12" H 7500 4675 50  0000 C CNN
@@ -564,7 +564,7 @@ $EndComp
 Wire Wire Line
 	7400 4625 6750 4625
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP13
+L Device:Jumper_NO_Small JP13
 U 1 1 5E9C0319
 P 7500 4125
 F 0 "JP13" H 7500 4175 50  0000 C CNN
@@ -575,7 +575,7 @@ F 3 "~" H 7500 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP14
+L Device:Jumper_NO_Small JP14
 U 1 1 5E9C0323
 P 7500 4250
 F 0 "JP14" H 7500 4300 50  0000 C CNN
@@ -586,7 +586,7 @@ F 3 "~" H 7500 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP15
+L Device:Jumper_NO_Small JP15
 U 1 1 5E9C032D
 P 7500 4375
 F 0 "JP15" H 7500 4425 50  0000 C CNN
@@ -599,7 +599,7 @@ $EndComp
 Text Notes 6650 4125 3    50   ~ 0
 I2C
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP5
+L Device:Jumper_NO_Small JP5
 U 1 1 5EAAF7CE
 P 7500 3125
 F 0 "JP5" H 7500 3175 50  0000 C CNN
@@ -641,7 +641,7 @@ Text Notes 875  7525 2    50   ~ 0
 Text Notes 1600 6775 2    50   ~ 0
 ~DTR
 $Comp
-L ProMicro_UART-rescue:USB_B_Mini-Connector J3
+L Connector:USB_B J3
 U 1 1 5ED2E6FC
 P 1450 3100
 F 0 "J3" H 1575 3625 50  0000 C CNN
@@ -1587,7 +1587,7 @@ Connection ~ 2000 5550
 Wire Wire Line
 	6750 2500 6750 3875
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP17
+L Device:Jumper_NO_Small JP17
 U 1 1 5E689CDA
 P 7500 3875
 F 0 "JP17" H 7500 3925 50  0000 C CNN
@@ -1603,7 +1603,7 @@ Connection ~ 6750 3875
 Wire Wire Line
 	6750 3875 6750 4625
 $Comp
-L ProMicro_UART-rescue:Jumper_NO_Small-Device JP18
+L Device:Jumper_NO_Small JP18
 U 1 1 5E6685A0
 P 10250 5000
 F 0 "JP18" H 10250 5075 50  0000 C CNN
@@ -1650,14 +1650,14 @@ Wire Wire Line
 Wire Wire Line
 	3000 4300 3000 4400
 $Comp
-L ProMicro_UART-rescue:Sparkfun_Pro_Micro_3V3-MCU_Module A1
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5ED60A8A
-P 9750 3125
-F 0 "A1" H 9425 4075 50  0000 C CNN
-F 1 "Sparkfun_Pro_Micro_3V3" H 10350 2175 50  0000 C CNN
-F 2 "Module:Sparkfun_Pro_Micro" H 9750 3125 50  0001 C CIN
-F 3 "https://www.sparkfun.com/products/12587" H 9750 2125 50  0001 C CNN
-	1    9750 3125
+P 12350 3100
+F 0 "A1" H 12025 4050 50  0000 C CNN
+F 1 "Sparkfun_Pro_Micro_3V3" H 12950 2150 50  0000 C CNN
+F 2 "Module:Sparkfun_Pro_Micro" H 12350 3100 50  0001 C CIN
+F 3 "https://www.sparkfun.com/products/12587" H 12350 2100 50  0001 C CNN
+	1    12350 3100
 	1    0    0    -1  
 $EndComp
 Connection ~ 9750 4225

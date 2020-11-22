@@ -94,7 +94,7 @@ $EndComp
 Wire Wire Line
 	3250 5700 3250 5600
 $Comp
-L ProMicro_LOG-rescue:Jumper_NO_Small-Device JP2
+L Device:Jumper_NO_Small JP2
 U 1 1 5EB76258
 P 4625 5300
 F 0 "JP2" H 4625 5400 50  0000 C CNN
@@ -187,7 +187,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 4850 4000 5300
 $Comp
-L ProMicro_LOG-rescue:Jumper_NO_Small-Device JP1
+L Device:Jumper_NO_Small JP1
 U 1 1 5EB83C6F
 P 4625 5000
 F 0 "JP1" H 4625 5100 50  0000 C CNN
@@ -451,14 +451,14 @@ SCL
 Text GLabel 9125 3800 0    50   Input ~ 0
 SDA
 $Comp
-L ProMicro_LOG-rescue:Sparkfun_Pro_Micro-MCU_Module A1
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5F84D072
 P 9750 3000
 F 0 "A1" H 9400 4150 50  0000 C CNN
 F 1 "Sparkfun_Pro_Micro" H 10150 1750 50  0000 C CNN
 F 2 "Module:Sparkfun_Pro_Micro" H 9850 1650 50  0001 L CNN
 F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf" H 9750 2200 50  0001 C CNN
-F 4 "dnp" H 9750 3000 50  0001 C CNN "Variant"
+F 4 "DNP" H 9750 3000 50  0001 C CNN "Variant"
 	1    9750 3000
 	1    0    0    -1  
 $EndComp

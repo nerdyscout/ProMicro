@@ -1,27 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Analog_DAC_MCP4725xxx-xCH
-#
-DEF Analog_DAC_MCP4725xxx-xCH U 0 20 Y Y 1 F N
-F0 "U" -250 250 50 H V C CNN
-F1 "Analog_DAC_MCP4725xxx-xCH" 350 250 50 H V C CNN
-F2 "Package_TO_SOT_SMD:SOT-23-6" 0 -250 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-S -300 200 300 -200 0 1 10 f
-X VOUT 1 400 0 100 L 50 50 1 1 O
-X VSS 2 0 -300 100 U 50 50 1 1 W
-X VDD 3 0 300 100 D 50 50 1 1 W
-X SDA 4 -400 0 100 R 50 50 1 1 B
-X SCL 5 -400 100 100 R 50 50 1 1 I
-X A0 6 -400 -100 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x04
 #
 DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
@@ -63,6 +42,24 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Jumper_NO_Small
+#
+DEF Device_Jumper_NO_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Device_Jumper_NO_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_L
 #
 DEF Device_L L 0 40 N N 1 F N
@@ -99,9 +96,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 8 -50 -50 -50 50 N
 P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
 P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
@@ -173,11 +170,32 @@ X ~ 6 300 100 100 L 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
-# MCU_Module_Sparkfun_Pro_Micro
+# ProMicro_MCP4725xxx-xCH
 #
-DEF MCU_Module_Sparkfun_Pro_Micro A 0 20 Y Y 1 F N
+DEF ProMicro_MCP4725xxx-xCH U 0 20 Y Y 1 F N
+F0 "U" -250 250 50 H V C CNN
+F1 "ProMicro_MCP4725xxx-xCH" 350 250 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23-6" 0 -250 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+S -300 200 300 -200 0 1 10 f
+X VOUT 1 400 0 100 L 50 50 1 1 O
+X VSS 2 0 -300 100 U 50 50 1 1 W
+X VDD 3 0 300 100 D 50 50 1 1 W
+X SDA 4 -400 0 100 R 50 50 1 1 B
+X SCL 5 -400 100 100 R 50 50 1 1 I
+X A0 6 -400 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ProMicro_Sparkfun_Pro_Micro
+#
+DEF ProMicro_Sparkfun_Pro_Micro A 0 20 Y Y 1 F N
 F0 "A" -400 1150 50 H V L CNN
-F1 "MCU_Module_Sparkfun_Pro_Micro" 100 -1250 50 H V L CNN
+F1 "ProMicro_Sparkfun_Pro_Micro" 100 -1250 50 H V L CNN
 F2 "Module:Sparkfun_Pro_Micro" 100 -1350 50 H I L CNN
 F3 "" 0 -800 50 H I C CNN
 DRAW
@@ -206,27 +224,6 @@ X SCL/D3 6 -500 -900 100 R 50 50 1 1 B
 X D4/A6 7 -500 700 100 R 50 50 1 1 B
 X D5 8 -500 600 100 R 50 50 1 1 B
 X D6/A7 9 -500 500 100 R 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
-# ProMicro_ANA-rescue_Jumper_NO_Small-Device
-#
-DEF ProMicro_ANA-rescue_Jumper_NO_Small-Device JP 0 30 N N 1 F N
-F0 "JP" 0 80 50 H V C CNN
-F1 "ProMicro_ANA-rescue_Jumper_NO_Small-Device" 10 -60 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*Open*
- Jumper*
- TestPoint*2Pads*
- TestPoint*Bridge*
-$ENDFPLIST
-DRAW
-C -40 0 20 0 1 0 N
-C 40 0 20 0 1 0 N
-X 1 1 -100 0 40 R 50 50 0 1 P
-X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #

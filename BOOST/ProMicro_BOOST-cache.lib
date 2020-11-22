@@ -90,9 +90,9 @@ $FPLIST
  D_*
 $ENDFPLIST
 DRAW
-P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 8 -50 50 -50 -50 N
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -195,11 +195,11 @@ X B 3 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ProMicro_BOOST-rescue_Sparkfun_Pro_Micro-MCU_Module
+# ProMicro_Sparkfun_Pro_Micro
 #
-DEF ProMicro_BOOST-rescue_Sparkfun_Pro_Micro-MCU_Module A 0 20 Y Y 1 F N
+DEF ProMicro_Sparkfun_Pro_Micro A 0 20 Y Y 1 F N
 F0 "A" -400 1150 50 H V L CNN
-F1 "ProMicro_BOOST-rescue_Sparkfun_Pro_Micro-MCU_Module" 100 -1250 50 H V L CNN
+F1 "ProMicro_Sparkfun_Pro_Micro" 100 -1250 50 H V L CNN
 F2 "Module:Sparkfun_Pro_Micro" 100 -1350 50 H I L CNN
 F3 "" 0 -800 50 H I C CNN
 DRAW

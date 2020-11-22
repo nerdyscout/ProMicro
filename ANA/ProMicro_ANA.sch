@@ -485,7 +485,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 1350 5600 1350
 $Comp
-L Analog_DAC:MCP4725xxx-xCH U2
+L ProMicro:MCP4725xxx-xCH U2
 U 1 1 5ED22E8F
 P 6000 1350
 F 0 "U2" H 6250 1600 50  0000 C CNN
@@ -530,7 +530,7 @@ $EndComp
 Wire Wire Line
 	6000 950  6000 1050
 $Comp
-L Analog_DAC:MCP4725xxx-xCH U4
+L ProMicro:MCP4725xxx-xCH U4
 U 1 1 5ED3F41E
 P 6000 2850
 F 0 "U4" H 6250 3100 50  0000 C CNN
@@ -614,7 +614,7 @@ Wire Wire Line
 	3000 5500 3000 875 
 Connection ~ 3000 5500
 $Comp
-L ProMicro_ANA-rescue:Jumper_NO_Small-Device JP2
+L Device:Jumper_NO_Small JP2
 U 1 1 5ED9EA00
 P 3500 5300
 F 0 "JP2" H 3500 5375 50  0000 C CNN
@@ -625,7 +625,7 @@ F 3 "~" H 3500 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ProMicro_ANA-rescue:Jumper_NO_Small-Device JP1
+L Device:Jumper_NO_Small JP1
 U 1 1 5ED9F5C3
 P 3750 4450
 F 0 "JP1" H 3750 4525 50  0000 C CNN
@@ -640,7 +640,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 4550 3750 4650
 $Comp
-L ProMicro_ANA-rescue:Jumper_NO_Small-Device JP4
+L Device:Jumper_NO_Small JP4
 U 1 1 5EDB9151
 P 3750 6450
 F 0 "JP4" H 3750 6525 50  0000 C CNN
@@ -671,7 +671,7 @@ $EndComp
 Wire Wire Line
 	3750 5300 3600 5300
 $Comp
-L ProMicro_ANA-rescue:Jumper_NO_Small-Device JP3
+L Device:Jumper_NO_Small JP3
 U 1 1 5EDEF766
 P 3500 5400
 F 0 "JP3" H 3500 5325 50  0000 C CNN
@@ -1099,7 +1099,7 @@ SCL
 Text GLabel 9125 3800 0    50   Input ~ 0
 SDA
 $Comp
-L MCU_Module:Sparkfun_Pro_Micro A1
+L ProMicro:Sparkfun_Pro_Micro A1
 U 1 1 5F84D072
 P 9750 3000
 F 0 "A1" H 9400 4150 50  0000 C CNN
