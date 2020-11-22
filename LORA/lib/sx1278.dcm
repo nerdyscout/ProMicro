@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SX1278
+D 137 MHz to 525 MHz Low Power Long Range Transceiver, spreading factor from 6 to 12, LoRA, QFN-28
+K low-power lora transceiver
+F https://www.semtech.com/uploads/documents/DS_SX1276-7-8-9_W_APP_V6.pdf
+$ENDCMP
+#
+#End Doc Library
