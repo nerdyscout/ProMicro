@@ -1,0 +1,20 @@
+Description;Part;References;Value;Qty;lcsc#;mpn
+;Sparkfun_Pro_Micro;A1;Sparkfun_Pro_Micro;1;;
+Unpolarized capacitor;C;C3;100n;1;C14663;CC0603KRX7R9BB104
+Unpolarized capacitor;C;C2;1µ;1;C15849;CL10A105KB8NNNC
+Light emitting diode;LED;D1;LED;1;C72043;19-217/GHC-YR1S2/3T
+Atmel 10-pin JTAG connector;AVR-JTAG-10;J1;AVR-JTAG-10;1;;
+Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x04;J3;Display;1;;
+Universal EXTension (UEXT) is a connector layout which includes power and three serial buses: Asynchronous, I2C, and SPI;UEXT_Host;J2;UEXT_Host;1;;
+Open Hardware logo, small;Logo_Open_Hardware_Small;LOGO1;Logo_Open_Hardware_Small;1;;
+Resistor;R;R8;1k;1;;
+Resistor;R;R1;4k7;1;C23162;0603WAF4701T5E
+Resistor;R;R2;4k7;1;C23162;0603WAF4701T5E
+Resistor;R;R3;4k7;1;C23162;0603WAF4701T5E
+Resistor;R;R4;4k7;1;C23162;0603WAF4701T5E
+Resistor;R;R5;4k7;1;C23162;0603WAF4701T5E
+Resistor;R;R6;4k7;1;C23162;0603WAF4701T5E
+Resistor;R;R7;4k7;1;C23162;0603WAF4701T5E
+Resistor;R;R9;4k7;1;C23162;0603WAF4701T5E
+Push button switch, generic, two pins;SW_Push;SW1;reset;1;;B3U-1000P
+Push button switch, generic, two pins;SW_Push;SW2;user;1;;B3U-1000P
