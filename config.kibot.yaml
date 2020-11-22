@@ -10,10 +10,10 @@ preflight:
   filters:
     - filter_msg: 'Courtyards overlap'
       error_number: 45
-      regexp:  'Courtyards overlap'
+      regexp: 'Courtyards overlap'
     - filter_msg: 'Footprint has no courtyard defined'
       error_number: 46
-      regexp:  'Footprint LOGO'
+      regexp: 'Footprint LOGO'
 
 variants:
   - name: 'GPS'
