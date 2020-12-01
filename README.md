@@ -1,5 +1,3 @@
-[![Discord](https://img.shields.io/badge/disord-join-success?logo=discord&logoColor=white)](https://discord.gg/VUHNmndS)
-
 # ProMicro
 
 ## PCBs
