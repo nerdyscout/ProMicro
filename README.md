@@ -6,7 +6,7 @@ collection of various PCBs stackable onto various MCU modules like
 - [Arduino ProMini](https://store.arduino.cc/arduino-pro-mini)
 - [Pro Mini nRF52](https://www.tindie.com/products/prominimicros/pro-mini-nrf52-nordic-nrf52832/)
 
-:warning: whatever MCU module you use, it must run with 3.3V!
+:warning: all modules run with 3.3V, some might be 5V tolerant, but it is up to you to verify!
 
 |PCB |Build |Status |Description |
 | --- | --- | --- | --- |
