@@ -1,0 +1,10 @@
+** Drc report for /home/user/workdir/POS/ProMicro_POS.kicad_pcb **
+** Created on 2021-03-07 11:44:29 **
+
+** Found 1 DRC errors **
+ErrType(46): Footprint has no courtyard defined
+    @(150.495 mm, 93.980 mm): Footprint LOGO1 on B.Cu
+
+** Found 0 unconnected pads **
+
+** End of Report **
