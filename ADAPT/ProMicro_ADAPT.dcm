@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Sparkfun_Pro_Micro
+D Microcontroller module with Atmel 32U4
+K Sparkfun Pro Micro microcontroller module 32U4
+F https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf
+$ENDCMP
+#
+#End Doc Library
