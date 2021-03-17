@@ -1,5 +1,0 @@
-Description;Part;References;Value;Qty;variant;lcsc#;mpn
-Unpolarized capacitor;C;C2;100n;1;;;
-Unpolarized capacitor;C;C3;10µ;1;;;
-Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x03;J1;Conn_01x03;1;modbus, canbus;;
-Open Hardware logo, small;Logo_Open_Hardware_Small;LOGO1;Logo_Open_Hardware_Small;1;;;

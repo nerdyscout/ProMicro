@@ -400,8 +400,6 @@ Connection ~ 1500 2250
 Wire Wire Line
 	1500 2250 1500 1500
 Wire Wire Line
-	9950 1700 9950 1800
-Wire Wire Line
 	10000 5200 10000 5350
 Wire Wire Line
 	10500 5200 10500 5350
@@ -520,8 +518,6 @@ F 4 "dnp" H 9750 3000 50  0001 C CNN "Variant"
 	1    9750 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9750 4400 9750 4300
 Text GLabel 9125 3500 0    50   Input ~ 0
 TXD
 Text GLabel 9125 3600 0    50   Input ~ 0
@@ -600,4 +596,8 @@ NoConn ~ 9250 2400
 NoConn ~ 9250 2300
 NoConn ~ 9250 3900
 NoConn ~ 9250 3800
+Wire Wire Line
+	9950 1700 9950 1800
+Wire Wire Line
+	9750 4300 9750 4400
 $EndSCHEMATC
