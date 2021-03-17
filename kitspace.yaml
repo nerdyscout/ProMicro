@@ -1,39 +1,29 @@
 multi:
-  ProMicro_GPS:
+  ProMicro_BOOST:
+    site: https://nerdyscout.github.io/ProMicro/BOOST
+    summary: 
+    readme: BOOST/README.md
+    bom: BOOST/gerbers/ProMicro_BOOST.csv
+    eda:
+      type: kicad
+      pcb: BOOST/ProMicro_BOOST.kicad_pcb
+    gerbers: BOOST/gerbers
+    color: green
+  ProMicro_POS:
     site: https://nerdyscout.github.io/ProMicro/POS
     summary: 
     readme: POS/README.md
-    bom: POS/gerbers/ProMicro_GPS.csv
+    bom: POS/gerbers/ProMicro_POS.csv
     eda:
       type: kicad
       pcb: POS/ProMicro_POS.kicad_pcb
     gerbers: POS/gerbers
     color: green
-  ProMicro_GYRO:
-    site: https://nerdyscout.github.io/ProMicro/POS
-    summary: 
-    readme: POS/README.md
-    bom: POS/gerbers/ProMicro_GYRO.csv
-    eda:
-      type: kicad
-      pcb: POS/ProMicro_POS.kicad_pcb
-    gerbers: POS/gerbers
-    color: green
-  ProMicro_CANBUS:
+  ProMicro_BUS:
     site: https://nerdyscout.github.io/ProMicro/BUS
     summary: 
     readme: BUS/README.md
-    bom: BUS/gerbers/ProMicro_CANBUS.csv
-    eda:
-      type: kicad
-      pcb: BUS/ProMicro_BUS.kicad_pcb
-    gerbers: BUS/gerbers
-    color: green
-  ProMicro_MODBUS:
-    site: https://nerdyscout.github.io/ProMicro/BUS
-    summary: 
-    readme: BUS/README.md
-    bom: BUS/gerbers/ProMicro_MODBUS.csv
+    bom: BUS/gerbers/ProMicro_BUS.csv
     eda:
       type: kicad
       pcb: BUS/ProMicro_BUS.kicad_pcb
@@ -48,16 +38,6 @@ multi:
       type: kicad
       pcb: CONN/ProMicro_CONN.kicad_pcb
     gerbers: CONN/gerbers
-    color: green
-  ProMicro_RTC:
-    site: https://nerdyscout.github.io/ProMicro/LOG
-    summary: 
-    readme: LOG/README.md
-    bom: LOG/gerbers/ProMicro_RTC.csv
-    eda:
-      type: kicad
-      pcb: LOG/ProMicro_LOG.kicad_pcb
-    gerbers: LOG/gerbers
     color: green
   ProMicro_LOG:
     site: https://nerdyscout.github.io/ProMicro/LOG
