@@ -6,3 +6,8 @@
  * add optional power planes
  * make pins wide enough to be stackable
 
+## Schematic v1.3 / Layout v1.5
+
+ * revert to double layer PCB
+ * user button needs MCU internal pull-up 
+ 

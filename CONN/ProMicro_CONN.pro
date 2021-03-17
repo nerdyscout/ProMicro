@@ -1,4 +1,4 @@
-update=Sa 21 Nov 2020 18:35:01 UTC
+update=Sun 17 Jan 2021 09:25:53 AM CET
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
 LastNetListRead=
-CopperLayerCount=4
+CopperLayerCount=2
 BoardThickness=0.8
 AllowMicroVias=0
 AllowBlindVias=0
@@ -85,11 +85,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
