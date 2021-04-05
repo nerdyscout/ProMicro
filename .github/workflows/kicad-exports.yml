@@ -17,15 +17,13 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: recursive
       - name: get current BRANCH and VERSION
         run: |
           BRANCH=`git branch --show-current`
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
           VERSION=`grep -E '(rev v[0-9]\.[0-9])' $BRANCH/ProMicro_$BRANCH.kicad_pcb`
           echo "VERSION=${VERSION:9:-1}" >> $GITHUB_ENV
-      - uses: nerdyscout/kicad-exports@latest
+      - uses: nerdyscout/kicad-exports@v2.3
         with:
           config: $(echo $(cat fabrication))
           board: ${{ env.BRANCH }}/ProMicro_${{ env.BRANCH }}.kicad_pcb
