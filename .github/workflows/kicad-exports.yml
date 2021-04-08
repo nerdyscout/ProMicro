@@ -3,14 +3,14 @@ name: kicad-exports
 on:
   push:
     branches: [ADAPT, ANA, BOOST, BUS, CONN, DEV, POS, LOG, LORA, QWIIC, UART, WING, ZPM]
-    paths:
-    - '**.sch'
-    - '**.kicad_pcb'
+#    paths:
+#    - '**.sch'
+#    - '**.kicad_pcb'
   pull_request:
     branches: [ADAPT, ANA, BOOST, BUS, CONN, DEV, POS, LOG, LORA, QWIIC, UART, WING, ZPM]
-    paths:
-    - '**.sch'
-    - '**.kicad_pcb'
+#    paths:
+#    - '**.sch'
+#    - '**.kicad_pcb'
       
 jobs:
     kicad-exports:
@@ -23,7 +23,7 @@ jobs:
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
           VERSION=`grep -E '(rev v[0-9]\.[0-9])' $BRANCH/$BRANCH.kicad_pcb`
           echo "VERSION=${VERSION:9:-1}" >> $GITHUB_ENV
-      - uses: nerdyscout/kicad-exports@v2.3
+      - uses: nerdyscout/kicad-exports@develop
         with:
           config: '$(echo $(cat fabrication))'
           board: ${{ env.BRANCH }}/${{ env.BRANCH }}.kicad_pcb
