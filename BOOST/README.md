@@ -5,22 +5,22 @@ This module can be mounted, back on back, to any [Arduino Pro Mini](https://www.
 All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/master/BOOST).
 
 ### Schematic
-[![ProMicro_BOOST-Schematic](docs/img/ProMicro_BOOST-schematic.svg)](docs/ProMicro_BOOST-schematic.pdf)
+[![Schematic](docs/img/BOOST-schematic.svg)](docs/BOOST-schematic.pdf)
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BOOST/docs/bom/ProMicro_BOOST-ibom.html)
-  * [bom.csv](gerbers/ProMicro_BOOST-bom.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BOOST/docs/bom/BOOST-ibom.html)
+  * [bom.csv](gerbers/BOOST-bom.csv)
 
 ## Hardware [![CERN OHL v1.2](../img/oshw.png)](LICENSE.TXT)
 ### Layout
-<a href="docs/ProMicro_BOOST-documentation.pdf"><img src="docs/img/ProMicro_BOOST-top.svg" alt="ProMicro_BOOST-top" width="20%"/></a>
-<a href="docs/ProMicro_BOOST-documentation.pdf"><img src="docs/img/ProMicro_BOOST-bottom.svg" alt="ProMicro_BOOST-bottom" width="20%"/></a>
+<a href="docs/BOOST-documentation.pdf"><img src="docs/img/BOOST-top.svg" alt="BOOST-top" width="20%"/></a>
+<a href="docs/BOOST-documentation.pdf"><img src="docs/img/BOOST-bottom.svg" alt="BOOST-bottom" width="20%"/></a>
 
 ### Gerbers
 can be found within the Github [repository](gerbers).
 
 ## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT)
-  * [readAnalog](examples/ProMicro_BOOST_readAnalog.ino/ProMicro_BOOST_readAnalog.ino)
+  * [readAnalog](examples/readAnalog.ino/readAnalog.ino)
 
 ## external
 ### Links
