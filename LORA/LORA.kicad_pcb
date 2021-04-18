@@ -11,9 +11,10 @@
 
   (page A4)
   (title_block
-    (title ProMicro_LORA)
+    (title LORA)
     (date 2021-02-26)
     (rev v1.3)
+    (company nerdyscout)
   )
 
   (layers

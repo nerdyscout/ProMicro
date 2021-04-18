@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ProMicro_LORA"
+Title "LORA"
 Date "2020-11-21"
 Rev "v1.2"
-Comp ""
+Comp "nerdyscout"
 Comment1 ""
 Comment2 ""
 Comment3 ""
