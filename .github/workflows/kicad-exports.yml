@@ -41,7 +41,7 @@ jobs:
           # See the `pathspec`-documentation for git
           # - https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203
           # - https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
-          file_pattern: ${{ env.BRANCH }}/docs/* ${{ env.BRANCH }}/cad/* ${{ env.BRANCH }}/gerbers/*
+          file_pattern: ${{ env.BRANCH }}/docs/* ${{ env.BRANCH }}/cad/* ${{ env.BRANCH }}/gerbers/* ${{ env.BRANCH }}/cad/*
           # Optional local file path to the repository
           # repository: .
           # Optional commit user and author settings
