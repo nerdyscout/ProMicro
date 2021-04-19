@@ -14,6 +14,7 @@
     (title ProMicro_POS)
     (date 2020-11-19)
     (rev v3.3)
+    (company nerdyscout)
   )
 
   (layers

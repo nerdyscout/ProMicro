@@ -1,22 +1,12 @@
 multi:
-  ProMicro_GPS:
+  POS:
     site: https://nerdyscout.github.io/ProMicro/POS
     summary: 
     readme: POS/README.md
-    bom: POS/gerbers/ProMicro_GPS.csv
+    bom: POS/gerbers/POs-bom.csv
     eda:
       type: kicad
-      pcb: POS/ProMicro_POS.kicad_pcb
-    gerbers: POS/gerbers
-    color: green
-  ProMicro_GYRO:
-    site: https://nerdyscout.github.io/ProMicro/POS
-    summary: 
-    readme: POS/README.md
-    bom: POS/gerbers/ProMicro_GYRO.csv
-    eda:
-      type: kicad
-      pcb: POS/ProMicro_POS.kicad_pcb
+      pcb: POS/POS.kicad_pcb
     gerbers: POS/gerbers
     color: green
   ProMicro_CANBUS:
