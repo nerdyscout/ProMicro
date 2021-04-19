@@ -69,3 +69,14 @@ multi:
       pcb: UART/ProMicro_UART.kicad_pcb
     gerbers: UART/gerbers
     color: green
+  ESP:
+    site: https://nerdyscout.github.io/ProMicro/ESP
+    summary: 
+    readme: ESP/README.md
+    bom: ESP/gerbers/ESP-bom.csv
+    eda:
+      type: kicad
+      pcb: ESP/ESP.kicad_pcb
+    gerbers: UART/gerbers
+    color: green
+  

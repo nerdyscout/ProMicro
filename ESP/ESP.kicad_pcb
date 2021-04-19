@@ -14,6 +14,7 @@
     (title ProMicro_ESP)
     (date 2021-03-13)
     (rev v1.0)
+    (company nerdyscout)
   )
 
   (layers
@@ -73,7 +74,8 @@
     (pad_size 1.7 1.7)
     (pad_drill 1)
     (pad_to_mask_clearance 0)
-    (aux_axis_origin 0 0)
+    (aux_axis_origin 124.46 95.25)
+    (grid_origin 124.46 95.25)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)

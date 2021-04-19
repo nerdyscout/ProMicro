@@ -5,9 +5,9 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ProMicro_ESP"
-Date "2021-03-09"
+Date "2021-04-19"
 Rev "v1.0"
-Comp ""
+Comp "nerdyscout"
 Comment1 ""
 Comment2 ""
 Comment3 ""
