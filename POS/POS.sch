@@ -7,7 +7,7 @@ Sheet 1 1
 Title "ProMicro_POS"
 Date "2020-11-19"
 Rev "v3.3"
-Comp ""
+Comp "nerdyscout"
 Comment1 ""
 Comment2 ""
 Comment3 ""

@@ -14,3 +14,5 @@
 
  * fix ERC and DRC errors
  * add optional power planes
+
+## update all project files
