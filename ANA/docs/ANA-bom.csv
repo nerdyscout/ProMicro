@@ -1,0 +1,16 @@
+References;Description;Part;Value;Qty;mpn;lcsc#
+A1;;Sparkfun_Pro_Micro;Sparkfun_Pro_Micro;1;;
+C5 C6;Unpolarized capacitor;C;100n;2;;
+C2 C4;Unpolarized capacitor;C;4.7µ;2;;
+C1 C3;Unpolarized capacitor;C;10µ;2;;
+D1 D2;Light emitting diode;LED;LED;2;;
+J1;Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x04;Conn_01x04;1;;
+L1 L2;Inductor;L;2.2µ;2;;
+R5 R6 R9 R10;Resistor;R;220;4;;
+R7 R8;Resistor;R;4k7;2;RC0402FR-074K7L;C105871
+R2 R4;Resistor;R;47k;2;;
+R1 R3;Resistor;R;200k;2;;
+U5 U7;Current/power/voltage monitor with Integrated 2mΩ Shunt Resistor, 2.7V - 5.5V, I2C, TSSOP-16;INA260;INA260;2;;
+U6;DC Optocoupler, Vce 35V, CTR 50%, SMDIP-8;LTV-827S;LTV-827S;1;;
+U2 U4;12-bit Digital-to-Analog Converter, integrated EEPROM, I2C interface, SOT-23-6;MCP4725xxx-xCH;MCP4725xxx-xCH;2;;
+U1 U3;High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 2A, SOT-23-6;TLV62569DDC;TLV62569DDC;2;;
