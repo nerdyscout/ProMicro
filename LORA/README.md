@@ -10,27 +10,20 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 ### Schematic
 [![Schematic](docs/img/LORA-schematic.svg)](docs/LORA-schematic.pdf)
 
-### Layout
-<a href="docs/LORA-documentation.pdf"><img src="docs/img/LORA-top.svg" alt="LORA-top" width="20%"/></a>
-<a href="docs/LORA-documentation.pdf"><img src="docs/img/LORA-bottom.svg" alt="LORA-bottom" width="20%"/></a>
-
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LORA/docs/bom/LORA-ibom.html)
   * [bom.csv](gerbers/LORA-bom.csv)
 
 ## Hardware [![CERN OHL v1.2](../img/oshw.png)](LICENSE.TXT)
 ### Layout
-<a href="docs/LORA-documentation.pdf"><img src="docs/img/LORA-top.svg" alt="LORA-top" width="50%"/></a>
-<a href="docs/LORA-documentation.pdf"><img src="docs/img/LORA-bottom.svg" alt="LORA-bottom" width="50%"/></a>
+<a href="docs/LORA-documentation.pdf"><img src="docs/img/LORA-top.svg" alt="LORA-top" width="40%"/></a>
+<a href="docs/LORA-documentation.pdf"><img src="docs/img/LORA-bottom.svg" alt="LORA-bottom" width="40%"/></a>
 
-## Gerbers
+### Gerbers
 can be found within the Github [repository](gerbers).
 
 ## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT)
-| | LORA | 
-| --- | --- |
-| Arduino Nano | [SX1276](examples/Arduino_Nano_LORA/Arduino_Nano_LORA.ino) |
-| Sparkfun ProMicro | [SX1276](examples/Sparkfun_LORA/Sparkfun_LORA.ino) |
+ * [SX1276](examples/SX1276/SX1276.ino)
 
 ## external
 ### Links
