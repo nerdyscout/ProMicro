@@ -7,7 +7,7 @@ Sheet 1 1
 Title "ProMicro_ANA"
 Date "2020-06-01"
 Rev "v1.0"
-Comp ""
+Comp "nerdyscout"
 Comment1 ""
 Comment2 ""
 Comment3 ""
