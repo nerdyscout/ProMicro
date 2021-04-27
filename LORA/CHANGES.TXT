@@ -12,3 +12,4 @@ major update but design is not working!
  * add optional power planes
  * make pins wide enough to be stackable
 
+## update project files
