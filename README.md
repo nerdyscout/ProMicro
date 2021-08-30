@@ -13,9 +13,9 @@ collection of various PCBs stackable onto various MCU modules like
 |[ANA](ANA/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=ANA)](ANA/actions?query=branch%3AANA) | prototype | 2ch analog in/out|
 |[BUS](BUS/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=BUS)](BUS/actions?query=branch%3ABUS) | prototype | Modbus and CANbus module |
 |[CONN](CONN/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=CONN)](CONN/actions?query=branch%3ACONN) | prototype | CONN |
-|[ESP12E](ESP12E) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=ESP12E)](ESP12E/actions?query=branch%3AESP12E) | prototype | ESP12E |
+|[ESP](ESP) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=ESP)](ESP/actions?query=branch%3AESP) | prototype | ESP |
 |[POS](POS/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=POS)](POS/actions?query=branch%3APOS) | prototype | GPS receiver and gyroscope module |
-|[BOOST](BOOST) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=BOOST)](LIPO/actions?query=branch%3ABOOST) | prototype | Lipo battery charger |
+|[BOOST](BOOST) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=BOOST)](BOOST/actions?query=branch%3ABOOST) | prototype | Lipo battery charger |
 |[LOG](LOG/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=LOG)](LOG/actions?query=branch%3ALOG) | prototype | micro SD card shield with real time clock |
 |[LORA](LORA/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=LORA)](LORA/actions?query=branch%3ALORA) | prototype | Lora transceiver 868MHz |
 |[UART](UART/README.md) |[![kicad-exports](https://github.com/nerdyscout/ProMicro/workflows/kicad-exports/badge.svg?branch=UART)](UART/actions?query=branch%3AUART) | prototype | USB to RS232, RS485, SPI, I2C, JTAG |

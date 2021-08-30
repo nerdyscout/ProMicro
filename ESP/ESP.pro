@@ -1,4 +1,4 @@
-update=Sat 13 Mar 2021 02:45:38 PM CET
+update=Thu 29 Apr 2021 09:06:43 PM CEST
 version=1
 last_client=kicad
 [general]
@@ -14,7 +14,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
 PlotDirectoryName=docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
@@ -24,7 +24,7 @@ LabSize=50
 ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
 LastNetListRead=
 CopperLayerCount=4
 BoardThickness=0.8
@@ -77,7 +77,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=2

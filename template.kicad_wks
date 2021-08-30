@@ -19,7 +19,7 @@
   (tbtext "Size: %Z" (name text8:Text) (pos 109 6.9))
   (tbtext "Id: %S/%N" (name text9:Text) (pos 24 4.1))
   (line (name segm7:Line) (start 110 12.5) (end 2 12.5))
-  (tbtext "Title: %T" (name text10:Text) (pos 109 10.7) (font (size 2 2) bold italic))
+  (tbtext "Title: ProMicro_%T" (name text10:Text) (pos 109 10.7) (font (size 2 2) bold italic))
   (tbtext "File: %F" (name text11:Text) (pos 109 14.3))
   (line (name segm8:Line) (start 110 18.5) (end 2 18.5))
   (tbtext "Sheet: %P" (name text12:Text) (pos 109 17))
