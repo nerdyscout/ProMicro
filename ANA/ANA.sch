@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ANA"
-Date "2021-02-21"
-Rev "v1.2"
+Title "ProMicro_ANA"
+Date "2020-06-01"
+Rev "v1.0"
 Comp "nerdyscout"
 Comment1 ""
 Comment2 ""

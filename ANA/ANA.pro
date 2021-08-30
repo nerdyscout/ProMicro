@@ -1,4 +1,4 @@
-update=Sun 21 Feb 2021 09:43:43 AM CET
+update=Thu 29 Apr 2021 09:24:34 PM CEST
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
 LastNetListRead=
-CopperLayerCount=4
+CopperLayerCount=2
 BoardThickness=0.8
 AllowMicroVias=0
 AllowBlindVias=0
@@ -77,7 +77,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=2
@@ -85,11 +85,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0

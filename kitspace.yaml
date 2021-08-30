@@ -89,4 +89,14 @@ multi:
       pcb: UART/UART.kicad_pcb
     gerbers: UART/gerbers
     color: green
+  ANA:
+    site: https://nerdyscout.github.io/ProMicro/ANA
+    summary: 
+    readme: ANA/README.md
+    bom: ANA/gerbers/ANA-bom.csv
+    eda:
+      type: kicad
+      pcb: ANA/ANA.kicad_pcb
+    gerbers: ANA/gerbers
+    color: green
   
