@@ -14,5 +14,8 @@
 
  * fix ERC and DRC errors
  * add optional power planes
+ 
+## Schematic v3.4 / Layout v3.4
 
-## update all project files
+ * removed some caps
+ * made all SMD parts 0603

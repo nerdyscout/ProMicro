@@ -15,5 +15,8 @@
 ## Schematic v1.5 / Layout v1.7
 
 * make pins wide enough to be stackable
-* add optional power planes
 
+## Schematic v1.5 / Layout v1.8
+
+* updated docu
+* rotated PCB

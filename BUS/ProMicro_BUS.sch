@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ProMicro_BUS"
+Title "BUS"
 Date "2020-10-12"
 Rev "v1.3"
-Comp ""
+Comp "nerdsycout"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -383,7 +383,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 5500 8100 5500
 Wire Wire Line
-	4350 5250 4625 5250
+	4900 5250 5175 5250
 Wire Wire Line
 	4350 5850 4625 5850
 Wire Wire Line
@@ -399,8 +399,6 @@ Wire Wire Line
 Connection ~ 1500 2250
 Wire Wire Line
 	1500 2250 1500 1500
-Wire Wire Line
-	9950 1700 9950 1800
 Wire Wire Line
 	10000 5200 10000 5350
 Wire Wire Line
@@ -520,8 +518,6 @@ F 4 "dnp" H 9750 3000 50  0001 C CNN "Variant"
 	1    9750 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9750 4400 9750 4300
 Text GLabel 9125 3500 0    50   Input ~ 0
 TXD
 Text GLabel 9125 3600 0    50   Input ~ 0
@@ -561,7 +557,7 @@ Wire Wire Line
 	10375 2200 10250 2200
 Text GLabel 4625 5850 2    50   Input ~ 0
 ~RST
-Text GLabel 4625 5250 2    50   Input ~ 0
+Text GLabel 5175 5250 2    50   Input ~ 0
 INT
 Text GLabel 2875 4650 0    50   Input ~ 0
 COPI
@@ -600,4 +596,21 @@ NoConn ~ 9250 2400
 NoConn ~ 9250 2300
 NoConn ~ 9250 3900
 NoConn ~ 9250 3800
+Wire Wire Line
+	9950 1700 9950 1800
+Wire Wire Line
+	9750 4300 9750 4400
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 608F494F
+P 4750 5250
+F 0 "JP4" H 4750 5363 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4750 5364 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 5250 50  0001 C CNN
+F 3 "~" H 4750 5250 50  0001 C CNN
+	1    4750 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5250 4350 5250
 $EndSCHEMATC
