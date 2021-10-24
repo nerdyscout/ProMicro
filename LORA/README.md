@@ -12,7 +12,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LORA/docs/bom/LORA-ibom.html)
-  * [bom.csv](gerbers/LORA-bom.csv)
+  * [octopart](docs/bom/LORA-bom_octopart.csv)
 
 ## Hardware [![CERN OHL v1.2](../img/oshw.png)](LICENSE.TXT)
 ### Layout
@@ -22,7 +22,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 ### Gerbers
 can be found within the Github [repository](gerbers).
 
-## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT)
+## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT) (unless otherwise stated)
  * [SX1276](examples/SX1276/SX1276.ino)
 
 ## external

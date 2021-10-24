@@ -9,7 +9,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ANA/docs/bom/ANA-ibom.html)
-  * [bom.csv](gerbers/ANA-bom.csv)
+  * [octopart](docs/bom/ANA-bom_octopart.csv)
 
 ## Hardware [![CERN OHL v1.2](../img/oshw.png)](LICENSE.TXT)
 ### Layout
@@ -19,8 +19,8 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 ### Gerbers
 can be found within the Github [repository](gerbers).
 
-## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT)
-  * [tbd](examples/tbd.ino/tbd.ino)
+## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT) (unless otherwise stated)
+  * [tbd](examples/tbd/tbd.ino)
 
 ## external
 ### Links

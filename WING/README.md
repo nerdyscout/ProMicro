@@ -1,29 +1,23 @@
 # ProMicro_WING
 
-## Documentation
+## Documentation [![CC BY-SA](../img/ccbysa.png)](docs/LICENSE.TXT)
 All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/master/WING).
 
 ### Schematic
-[![ProMicro_WING-Schematic](docs/img/ProMicro_WING-schematic.svg)](docs/ProMicro_WING-schematic.pdf)
-
-### Layout
-<a href="docs/ProMicro_WING-documentation.pdf"><img src="docs/img/ProMicro_WING-top.svg" alt="ProMicro_WING-top" width="20%"/></a>
-<a href="docs/ProMicro_WING-documentation.pdf"><img src="docs/img/ProMicro_WING-bottom.svg" alt="ProMicro_WING-bottom" width="20%"/></a>
+[![Schematic](docs/img/WING-schematic.svg)](docs/WING-schematic.pdf)
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/WING/docs/bom/ProMicro_WING-ibom.html)
-  * [octopart.csv](docs/bom/ProMicro_WING-bom_octopart.csv)
-  * [jlcpcb.csv](gerbers/ProMicro_WING-bom_jlcpcb.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/WING/docs/bom/WING-ibom.html)
+  * [octopart](docs/bom/WING-bom_octopart.csv)
 
-## Gerbers
+## Hardware [![CERN OHL v1.2](../img/oshw.png)](LICENSE.TXT)
+### Layout
+<a href="docs/WING-documentation.pdf"><img src="docs/img/WING-top.svg" alt="WING-top" width="40%"/></a>
+<a href="docs/WING-documentation.pdf"><img src="docs/img/WING-bottom.svg" alt="WING-bottom" width="40%"/></a>
+
+### Gerbers
 can be found within the Github [repository](gerbers).
 
-## Links
+## external
+### Links
   * [hackaday.io](https://hackaday.io/project/171898-promicro)
-
-## License
-Copyright Stefan Herold 2020
-
-This documentation describes Open Hardware and is licensed under the CERN OHL v.1.2.
-
-You may redistribute and modify this documentation under the terms of the CERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions

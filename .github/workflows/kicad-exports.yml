@@ -2,15 +2,17 @@ name: kicad-exports
 
 on:
   push:
-    branches: [ADAPT, ANA, BOOST, BUS, CONN, DEV, ESP, POS, LOG, LORA, QWIIC, UART, WING, ZPM]
+    branches: [ADAPT, ANA, BOOST, BUS, CONN, DEV, ESP, LOG, LORA, POS, QWIIC, UART, WING, ZPM]
     paths:
     - '**.sch'
     - '**.kicad_pcb'
+    - '**.pro'
   pull_request:
-    branches: [ADAPT, ANA, BOOST, BUS, CONN, DEV, ESP, POS, LOG, LORA, QWIIC, UART, WING, ZPM]
+    branches: [ADAPT, ANA, BOOST, BUS, CONN, DEV, ESP, LOG, LORA, POS, QWIIC, UART, WING, ZPM]
     paths:
     - '**.sch'
     - '**.kicad_pcb'
+    - '**.pro'
       
 jobs:
     kicad-exports:
@@ -32,27 +34,11 @@ jobs:
       - name: git commit && git push
         uses: nerdyscout/git-auto-commit-action@force-tags
         with:
-          # Optional branch to push to, defaults to the current branch
-          branch: ${{ env.BRANCH }}-ci
-          # Optional options appended to `git-commit`
-          # See https://git-scm.com/docs/git-commit for a list of available options
-          # commit_options: '--no-verify --signoff'
-          # Optional glob pattern of files which should be added to the commit
-          # See the `pathspec`-documentation for git
-          # - https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203
-          # - https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
-          file_pattern: ${{ env.BRANCH }}/docs/* ${{ env.BRANCH }}/cad/* ${{ env.BRANCH }}/gerbers/* ${{ env.BRANCH }}/cad/*
-          # Optional local file path to the repository
-          # repository: .
-          # Optional commit user and author settings
+          branch: ci
+          file_pattern: ${{ env.BRANCH }}/docs/* ${{ env.BRANCH }}/gerbers/* ${{ env.BRANCH }}/cad/*
           commit_user_name: ci
           commit_user_email: ci@github
           commit_author: kicad-exports
-          # Optional tag message 
-          # Action will create and push a new tag to the remote repository and the defined branch
           tagging_message: ${{ env.BRANCH }}_${{ env.VERSION }}
-          # Optional options appended to `git-push`
-          # See git-push documentation for details: https://git-scm.com/docs/git-push#_options
           push_options: '--tags --force'
-          # Optional: Disable dirty check and always try to create a commit and push
           skip_dirty_check: true

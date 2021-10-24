@@ -3,8 +3,9 @@ gerbers.stencil.kibot.yaml
 docs.board.kibot.yaml
 docs.schema.kibot.yaml
 bom.ibom.kibot.yaml
-step.kibot.yaml
+bom.xlsx.kibot.yaml
 octopart/bom.csv.kibot.yaml
+step.kibot.yaml
 jlcpcb/bom.csv.kibot.yaml
 jlcpcb/position.kibot.yaml
 jlcpcb/plot.green-enig.kibot.yaml

@@ -9,18 +9,18 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/BOOST/docs/bom/BOOST-ibom.html)
-  * [bom.csv](gerbers/BOOST-bom.csv)
+  * [octopart](docs/bom/BOOST-bom_octopart.csv)
 
 ## Hardware [![CERN OHL v1.2](../img/oshw.png)](LICENSE.TXT)
 ### Layout
-<a href="docs/BOOST-documentation.pdf"><img src="docs/img/BOOST-top.svg" alt="BOOST-top" width="20%"/></a>
-<a href="docs/BOOST-documentation.pdf"><img src="docs/img/BOOST-bottom.svg" alt="BOOST-bottom" width="20%"/></a>
+<a href="docs/BOOST-documentation.pdf"><img src="docs/img/BOOST-top.svg" alt="BOOST-top" width="40%"/></a>
+<a href="docs/BOOST-documentation.pdf"><img src="docs/img/BOOST-bottom.svg" alt="BOOST-bottom" width="40%"/></a>
 
 ### Gerbers
 can be found within the Github [repository](gerbers).
 
-## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT)
-  * [readAnalog](examples/readAnalog.ino/readAnalog.ino)
+## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT) (unless otherwise stated)
+  * [readAnalog](examples/readAnalog/readAnalog.ino)
 
 ## external
 ### Links

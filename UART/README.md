@@ -9,14 +9,14 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
 
 ### BoM
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/UART/docs/bom/UART-ibom.html)
-  * [bom.csv](gerbers/UART-bom.csv)
+  * [octopart](docs/bom/UART-bom_octopart.csv)
 
 ## Hardware [![CERN OHL v1.2](../img/oshw.png)](LICENSE.TXT)
 ### Layout
-<a href="docs/UART-documentation.pdf"><img src="docs/img/UART-top.svg" alt="UART-top" width="20%"/></a>
-<a href="docs/UART-documentation.pdf"><img src="docs/img/UART-bottom.svg" alt="UART-bottom" width="20%"/></a>
+<a href="docs/UART-documentation.pdf"><img src="docs/img/UART-top.svg" alt="UART-top" width="40%"/></a>
+<a href="docs/UART-documentation.pdf"><img src="docs/img/UART-bottom.svg" alt="UART-bottom" width="40%"/></a>
 
-## Gerbers
+### Gerbers
 can be found within the Github [repository](gerbers).
 
 ## external
