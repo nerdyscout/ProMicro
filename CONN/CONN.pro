@@ -14,7 +14,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
+PageLayoutDescrFile=
 PlotDirectoryName=/output/docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
@@ -24,7 +24,7 @@ LabSize=50
 ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=/home/user/Projects/ProMicro/template.kicad_wks
+PageLayoutDescrFile=
 LastNetListRead=
 CopperLayerCount=4
 BoardThickness=0.8
@@ -32,11 +32,11 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=1
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.09999999999999999
+MinTrackWidth=0.1
 MinViaDiameter=0.45
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
-MinMicroViaDrill=0.09999999999999999
+MinMicroViaDrill=0.1
 MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.1

@@ -1,0 +1,24 @@
+kibot:
+  version: 1
+
+#preflight:
+#  update_qr: true
+  # filters:
+  #   - filter: 'suppress courtyards overlap'
+  #     regex: 'Courtyards overlap'
+  #     error: 'courtyards_overlap'
+  #   - filter: 'suppress clearance violation'
+  #     regex: 'Clearance violation'
+  #     error: 'clearance'
+  #   - filter: 'suppress board edge clearance violation'
+  #     regex: 'Board edge clearance violation'
+  #     error: 'copper_edge_clearance'
+
+filters:
+  - name: "exclude_any"
+    type: "generic"
+    comment: "Exclude logos, testpoints, fiducials and power"
+    exclude_any:
+      - column: Reference
+        regex: "^(G|#|TP|F).*"
+

@@ -1,0 +1,41 @@
+name: kibot
+
+on: 
+  pull_request:
+  push:
+    branches:
+      - BOOST
+      - BUS
+      - CONN
+      - LOG
+      - LORA
+      - POS
+#    paths:
+#      - '**.kicad_sch'
+#      - '**.kicad_pcb'
+
+jobs:
+  kibot:
+    runs-on: ubuntu-latest 
+    container: ghcr.io/inti-cmnb/kicad8_auto:latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+#    # extract branch name
+    - name: Extract branch name
+      run: |
+        echo "BRANCH_NAME=$(git name-rev --name-only HEAD)" >> $GITHUB_ENV
+        echo $BRANCH_NAME
+
+    # Start of the KiBot steps
+    - name: Run KiBot
+      run: kibot -d $BRANCH_NAME -c $BRANCH_NAME/variant.kibot.yaml -e "$BRANCH_NAME/$BRANCH_NAME.kicad_sch" -b "$BRANCH_NAME/$BRANCH_NAME.kicad_pcb"
+
+    # Upload the artifacts
+    - name: upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: ProMicro_${{ env.BRANCH_NAME }}
+        path: ${{ env.BRANCH_NAME }}
