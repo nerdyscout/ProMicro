@@ -1805,10 +1805,10 @@ Wire Wire Line
 Wire Wire Line
 	6750 2500 6750 4625
 $Comp
-L Device:Jumper_NO_Small JP?
+L Device:Jumper_NO_Small JP101
 U 1 1 60A14634
 P 7500 4625
-F 0 "JP?" H 7500 4675 50  0000 C CNN
+F 0 "JP101" H 7500 4675 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 7525 4725 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7500 4625 50  0001 C CNN
 F 3 "~" H 7500 4625 50  0001 C CNN
