@@ -5,22 +5,21 @@ This module can be mounted to an [Arduino Pro Mini](https://www.sparkfun.com/pro
 All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/master/LOG).
 
 ### Schematic
-[![ProMicro_LOG-Schematic](docs/img/ProMicro_LOG-schematic.svg)](docs/ProMicro_LOG-schematic.pdf)
+[![Schematic](docs/img/LOG-schematic.svg)](docs/LOG-schematic.pdf)
 
 ### BoM
-  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LOG/docs/bom/ProMicro_LOG-ibom.html)
-  * [octopart.csv](docs/bom/ProMicro_LOG-bom_octopart.csv)
-  * [jlcpcb.csv](gerbers/ProMicro_LOG-bom_jlcpcb.csv)
+  * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LOG/docs/bom/LOG-ibom.html)
+  * [octopart](docs/bom/LOG-bom_octopart.csv)
 
 ## Hardware [![CERN OHL v1.2](../img/oshw.png)](LICENSE.TXT)
 ### Layout
-<a href="docs/ProMicro_LOG-documentation.pdf"><img src="docs/img/ProMicro_LOG-top.svg" alt="ProMicro_LOG-top" width="20%"/></a>
-<a href="docs/ProMicro_LOG-documentation.pdf"><img src="docs/img/ProMicro_LOG-bottom.svg" alt="ProMicro_LOG-bottom" width="20%"/></a>
+<a href="docs/LOG-documentation.pdf"><img src="docs/img/LOG-top.svg" alt="LOG-top" width="40%"/></a>
+<a href="docs/LOG-documentation.pdf"><img src="docs/img/LOG-bottom.svg" alt="LOG-bottom" width="40%"/></a>
 
 ### Gerbers
 can be found within the Github [repository](gerbers).
 
-## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT)
+## Code [![MIT](../img/mit.png)](examples/LICENSE.TXT) (unless otherwise stated)
   * [SD CardInfo](examples/CardInfo/CardInfo.ino) 
   * [RTC SetAlarm](examples/SetAlarm/SetAlarm.ino)
   * [OpenLog](examples/OpenLog/OpenLog.ino)
