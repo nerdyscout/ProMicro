@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 31,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -19,7 +19,7 @@
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": true,
+      "lockedItems": false,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -34,6 +34,7 @@
       3,
       4,
       5,
+      6,
       7,
       8,
       9,
@@ -41,6 +42,7 @@
       11,
       12,
       13,
+      14,
       15,
       16,
       17,
@@ -62,7 +64,6 @@
       34,
       35,
       36,
-      37,
       39,
       40
     ],
@@ -76,7 +77,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "LORA.kicad_prl",
+    "filename": "BOOST.kicad_prl",
     "version": 3
   },
   "project": {

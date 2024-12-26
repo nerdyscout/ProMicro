@@ -31,7 +31,7 @@ jobs:
 
     # Start of the KiBot steps
     - name: Run KiBot
-      run: kibot -d $BRANCH_NAME -c $BRANCH_NAME/variant.kibot.yaml -e "$BRANCH_NAME/$BRANCH_NAME.kicad_sch" -b "$BRANCH_NAME/$BRANCH_NAME.kicad_pcb"
+      run: kibot -d $BRANCH_NAME -c $BRANCH_NAME/variant.kibot.yaml -e "$BRANCH_NAME/pcb/$BRANCH_NAME.kicad_sch" -b "$BRANCH_NAME/pcb/$BRANCH_NAME.kicad_pcb"
 
     # Upload the artifacts
     - name: upload artifacts
