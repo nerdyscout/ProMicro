@@ -1,0 +1,74 @@
+name: ArduinoCI
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+    - examples/**
+  pull_request:
+    paths:
+    - examples/**
+
+jobs:
+  build:
+    name: ${{ matrix.boards }} ${{ matrix.examples }} 
+    runs-on: ubuntu-latest
+#    env:
+#      PLATFORM_DEFAULT_URL: https:/........json
+    strategy:
+      matrix:
+        examples:
+          - CardInfo
+#          - OpenLog
+          - SetAlarm
+        boards:
+          - arduino:avr:nano
+          - arduino:avr:micro
+          - arduino:avr:mini
+#          - SparkFun:avr:promicro
+#          - SparkFun:samd:samd21_mini
+#          - Adafruit:xxx:xxx
+        
+        include:
+#          - boards: SparkFun:avr:promicro
+#            platform-url: https://raw.githubusercontent.com/sparkfun/Arduino_Boards/main/IDE_Board_Manager/package_sparkfun_index.json
+#          - boards: SparkFun:samd:samd21_mini
+#            platform-url: https://raw.githubusercontent.com/sparkfun/Arduino_Boards/main/IDE_Board_Manager/package_sparkfun_index.json
+#          - boards: Adafruit:xxx:xxx
+#            platform-url: https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+
+          - examples: CardInfo
+            libraries: SD
+#          - examples: OpenLog
+#            libraries: SDFat, SerialPort
+          - examples: SetAlarm
+            libraries: DS3231M
+
+    steps:
+      - uses: actions/checkout@v3
+
+#      - name: "checkout custom lib: SdFat"
+#        uses: actions/checkout@v3
+#        with:
+#          repository: greiman/SdFat
+#          ref: master
+#          path: CustomSdFat
+#
+#      - name: "checkout custom lib: SerialPort"
+#        uses: actions/checkout@v3
+#        with:
+#          repository: greiman/SerialPort
+#          ref: master
+#          path: CustomSerialPort
+  
+      - uses: ArminJo/arduino-test-compile@v3
+        with:
+#          platform-default-url: ${{ env.PLATFORM_DEFAULT_URL }}
+          platform-url: ${{ matrix.platform-url }}
+          sketch-names-find-start: "examples/${{ matrix.examples }}"
+          sketch-names: "*.ino"
+          arduino-board-fqbn: ${{ matrix.boards }}
+          required-libraries: ${{ matrix.libraries }}
+#          build-properties: ${{ toJson(matrix.properties) }}
+#          debug-compile: true
+#          debug-install: true

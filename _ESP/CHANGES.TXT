@@ -1,4 +1,0 @@
-# CHANGES
-
-## Schematic v1.0 / Layout v1.0
- * first draft

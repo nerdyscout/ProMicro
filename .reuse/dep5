@@ -1,0 +1,22 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ProMicro
+Upstream-Contact: Stefan Herold <stefan.herold@posteo.de>
+Source: nerdyscout.github.io/promicro
+
+# Sample paragraph, commented out:
+#
+Files: */pcb/*kicad* *.kicad_wks */pcb/*.lib
+Copyright: 2024 Stefan Herold stefan.herold@posteo.de
+License: CERN-OHL-S-2.0
+
+Files: */pcb/docs/*
+Copyright: 2024 Stefan Herold stefan.herold@posteo.de
+License: CC-BY-SA-4.0
+
+Files: *.yml lib/* *.TXT img/* .git*
+Copyright: 2024 Stefan Herold stefan.herold@posteo.de
+License: CC0-1.0
+
+Files: **/examples/**/*.ino
+Copyright: 2024 Stefan Herold stefan.herold@posteo.de
+License: MIT

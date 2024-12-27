@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "ProMicro")(type "Legacy")(uri "${KIPRJMOD}/../lib/ProMicro.lib")(options "")(descr ""))
-  (lib (name "POS-rescue")(type "KiCad")(uri "${KIPRJMOD}/POS-rescue.kicad_sym")(options "")(descr ""))
-)
