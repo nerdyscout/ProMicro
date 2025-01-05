@@ -11,7 +11,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LOG/docs/bom/LOG-ibom.html)
   * [octopart](pcb/docs/bom/LOG-bom_octopart.csv)
 
-## Hardware [![CERN OHL v1.2](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
+## Hardware [![CERN-OHL-S-2.0](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
 ### Layout
 <a href="docs/LOG-documentation.pdf"><img src="docs/img/LOG-top.svg" alt="LOG-top" width="40%"/></a>
 <a href="docs/LOG-documentation.pdf"><img src="docs/img/LOG-bottom.svg" alt="LOG-bottom" width="40%"/></a>

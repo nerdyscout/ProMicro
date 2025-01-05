@@ -11,7 +11,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/ZPM/docs/bom/ZPM-ibom.html)
   * [octopart](pcb/docs/bom/ZPM-bom_octopart.csv)
 
-## Hardware [![CERN OHL v1.2](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
+## Hardware [![CERN-OHL-S-2.0](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
 ### Layout
 <a href="docs/ZPM-documentation.pdf"><img src="docs/img/ZPM-top.svg" alt="ZPM-top" width="40%"/></a>
 <a href="docs/ZPM-documentation.pdf"><img src="docs/img/ZPM-bottom.svg" alt="ZPM-bottom" width="40%"/></a>

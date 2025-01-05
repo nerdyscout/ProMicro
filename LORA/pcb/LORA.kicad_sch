@@ -5,10 +5,11 @@
 	(uuid "bf6a5c17-4db0-4c77-ab02-7b666c8f01a1")
 	(paper "A4")
 	(title_block
-		(title "LORA")
-		(date "2024-12-26")
+		(title "ProMicro_LORA")
+		(date "2025-01-05")
 		(rev "v1.2")
-		(company "nerdyscout")
+		(company "Stefan Herold")
+		(comment 1 "CERN-OHL-S-2.0")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"

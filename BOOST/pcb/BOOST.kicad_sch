@@ -5,10 +5,11 @@
 	(uuid "4238536f-e666-491b-9e1e-71d822e9fc88")
 	(paper "A4")
 	(title_block
-		(title "BOOST")
-		(date "2021-04-05")
+		(title "ProMicro_BOOST")
+		(date "2025-01-05")
 		(rev "v1.5")
-		(company "nerdyscout")
+		(company "Stefan Herold")
+		(comment 1 "CERN-OHL-S-2.0")
 	)
 	(lib_symbols
 		(symbol "Battery_Management:MCP73831-2-OT"
@@ -7163,7 +7164,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 273.05 173.99 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -7205,15 +7206,6 @@
 			)
 		)
 		(property "Description" "Open Hardware logo, small"
-			(at 273.05 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 273.05 173.99 0)
 			(effects
 				(font

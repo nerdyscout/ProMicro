@@ -6,9 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "CONN")
-		(date "2021-05-01")
+		(date "2025-01-05")
 		(rev "v1.4")
-		(company "nerdyscout")
+		(company "Stefan Herold")
+		(comment 1 "CERN-OHL-S-2.0")
 	)
 	(lib_symbols
 		(symbol "Connector:AVR-JTAG-10"
@@ -4754,7 +4755,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Small")
 		(at 274.32 175.26 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -4796,15 +4797,6 @@
 			)
 		)
 		(property "Description" "Open Hardware logo, small"
-			(at 274.32 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 274.32 175.26 0)
 			(effects
 				(font

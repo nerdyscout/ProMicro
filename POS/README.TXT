@@ -11,7 +11,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/POS/docs/bom/POS-ibom.html)
   * [octopart](pcb/docs/bom/POS-bom_octopart.csv)
 
-## Hardware [![CERN OHL v1.2](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
+## Hardware [![CERN-OHL-S-2.0](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
 ### Layout
 <a href="docs/POS-documentation.pdf"><img src="docs/img/POS-top.svg" alt="POS-top" width="40%"/></a>
 <a href="docs/POS-documentation.pdf"><img src="docs/img/POS-bottom.svg" alt="POS-bottom" width="40%"/></a>

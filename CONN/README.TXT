@@ -11,7 +11,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/CONN/docs/bom/CONN-ibom.html)
   * [octopart](pcb/docs/bom/CONN-bom_octopart.csv)
 
-## Hardware [![CERN OHL v1.2](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
+## Hardware [![CERN-OHL-S-2.0](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
 ### Layout
 <a href="docs/CONN-documentation.pdf"><img src="docs/img/CONN-top.svg" alt="CONN-top" width="40%"/></a>
 <a href="docs/CONN-documentation.pdf"><img src="docs/img/CONN-bottom.svg" alt="CONN-bottom" width="40%"/></a>

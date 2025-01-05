@@ -14,7 +14,7 @@ All files can be found on [Github](https://github.com/nerdyscout/ProMicro/tree/m
   * [interactiveHTMLBoM](https://nerdyscout.github.io/ProMicro/LORA/docs/bom/LORA-ibom.html)
   * [octopart](pcb/docs/bom/LORA-bom_octopart.csv)
 
-## Hardware [![CERN OHL v1.2](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
+## Hardware [![CERN-OHL-S-2.0](../img/oshw.png)](../LICENSES/CERN-OHL-S-2.0.txt)
 ### Layout
 <a href="docs/LORA-documentation.pdf"><img src="docs/img/LORA-top.svg" alt="LORA-top" width="40%"/></a>
 <a href="docs/LORA-documentation.pdf"><img src="docs/img/LORA-bottom.svg" alt="LORA-bottom" width="40%"/></a>

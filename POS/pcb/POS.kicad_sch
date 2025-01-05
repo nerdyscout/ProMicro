@@ -6,8 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "ProMicro_POS")
-		(date "2021-03-12")
+		(date "2025-01-05")
 		(rev "v3.4")
+		(company "Stefan Herold")
+		(comment 1 "CERN-OHL-S-2.0")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
