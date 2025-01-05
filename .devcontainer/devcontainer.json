@@ -1,0 +1,10 @@
+{
+    "name": "ProMicro",
+    "image": "ghcr.io/inti-cmnb/kicad8_auto_full:latest",
+    "containerEnv": {
+      "DEVCONTAINER": "1",
+      "PIP_BREAK_SYSTEM_PACKAGES": "1",
+      "PIP_ROOT_USER_ACTION": "ignore"
+    }
+  }
+  
