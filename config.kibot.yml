@@ -12,7 +12,7 @@ preflight:
   drc: true
   check_zone_fills: true
   update_qr: true
-  update_stackup: true
+  update_stackup: false
   update_pcb_characteristics: true
   
 import:
