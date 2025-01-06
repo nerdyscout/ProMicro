@@ -21,7 +21,7 @@ jobs:
 
     # Start of the KiBot steps
     - name: Run KiBot
-      run: kibot -d ${{ matrix.pcb }} -c ${{ matrix.pcb }}/variant.kibot.yml -e "${{ matrix.pcb }}/pcb/${{ matrix.pcb }}.kicad_sch" -b "${{ matrix.pcb }}/pcb/${{ matrix.pcb }}.kicad_pcb"
+      run: kibot -d ${{ matrix.pcb }} -c ${{ matrix.pcb }}/pcb/variant.kibot.yml -e "${{ matrix.pcb }}/pcb/${{ matrix.pcb }}.kicad_sch" -b "${{ matrix.pcb }}/pcb/${{ matrix.pcb }}.kicad_pcb"
 
     # git add, commit and push
     - uses: actions4git/add-commit-push@v1
