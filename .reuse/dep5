@@ -13,7 +13,7 @@ Files: */pcb/docs/*
 Copyright: 2024 Stefan Herold stefan.herold@posteo.de
 License: CC-BY-SA-4.0
 
-Files: *.yml lib/* *.TXT img/* .git*
+Files: *.yml lib/* *.TXT img/* .git* .devcontainer/*
 Copyright: 2024 Stefan Herold stefan.herold@posteo.de
 License: CC0-1.0
 
